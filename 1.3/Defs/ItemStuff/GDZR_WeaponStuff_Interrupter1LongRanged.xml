@@ -1,0 +1,289 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!--■■■■■■■■■■■■■■■■■
+     1. WEAPON: Interrupter One Shortrange 
+     2. PROJECTILE
+     3. HIDDEN LIGHT AND DOT DAMAGER
+     4. EFFECTER 
+     5. MOTES
+     ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■1. WEAPON INTERRUPTER 1 LONG RANGED ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■--> 
+  <ThingDef ParentName="GDZR_WEAPON_BaseLow">
+    <defName>GDZR_WEAPON_InterrupterOne</defName>
+    <label>Type INT-R36-01</label>
+    <description>Interrupter designs are the main armaments distributed amongst procurement and containment details.
+      
+    \nA potent area of denial weapon interrupters launch coded dynamos of magnetically bound energy which linger on site and induce neurolysis on contact.</description>
+    <thingClass>ThingWithComps</thingClass>
+    <graphicData>
+      <texPath>Weapons/GDZR_Interrupter1LongRanged</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1</drawSize>
+    </graphicData>
+   <!-- <equippedAngleOffset>45</equippedAngleOffset> -->
+  
+    <soundInteract>Interact_Shotgun</soundInteract>
+  
+    <statBases>
+      <MarketValue>1000</MarketValue>
+      <Mass>3.5</Mass>
+      <AccuracyTouch>0.60</AccuracyTouch>
+      <AccuracyShort>0.75</AccuracyShort>
+      <AccuracyMedium>0.90</AccuracyMedium>
+      <AccuracyLong>0.85</AccuracyLong>
+      <RangedWeapon_Cooldown>1.7</RangedWeapon_Cooldown>
+    </statBases>
+    
+    <verbs>
+      <li>
+        <defaultProjectile>GDZR_PROJECTILE_InterrupterThreeSix</defaultProjectile>          
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <burstShotCount>1</burstShotCount>
+        <ticksBetweenBurstShots>0</ticksBetweenBurstShots>
+        
+        <forcedMissRadius>0.1</forcedMissRadius>
+        <warmupTime>1.5</warmupTime>
+        <range>29.9</range>
+        <soundCast>GDZR_SOUND_InterrupterOne</soundCast>
+        <muzzleFlashScale>8</muzzleFlashScale>
+      </li> 
+    </verbs>
+    <tools>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+    </tools>
+ 
+  </ThingDef>
+  
+  <!--■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ 2) Projectile ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■-->   
+  <ThingDef>
+    <defName>GDZR_PROJECTILE_InterrupterThreeSix</defName>
+    <thingClass>Projectile_Explosive</thingClass>
+    
+    <label>distortion</label>
+    
+    <graphicData>
+      <texPath>Motes/Interrupter/ZR_LightProjectile</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>MoteGlowDistortBackground</shaderType>
+      <shaderParameters>
+        <_distortionIntensity>2</_distortionIntensity>
+        <_brightnessMultiplier>1</_brightnessMultiplier>
+        <_DistortionTex>/Motes/Interrupter/ZR_LightOrbiterDistortion</_DistortionTex>
+      </shaderParameters>
+      <drawSize>0.54</drawSize>
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    
+    <tickerType>Normal</tickerType>
+    <useHitPoints>False</useHitPoints>
+    <neverMultiSelect>True</neverMultiSelect>  
+    
+    <projectile>
+      <arcHeightFactor>0</arcHeightFactor>
+      <shadowSize>0</shadowSize>
+      <explosionEffect>GDZR_EFFECTER_InterrupterDynamo1LR</explosionEffect>
+      <soundExplode>Explosion_EMP</soundExplode>
+      <explosionRadius>0</explosionRadius>
+      <applyDamageToExplosionCellsNeighbors>true</applyDamageToExplosionCellsNeighbors>
+      
+      <preExplosionSpawnThingDef>GDZR_HIDDENDAMAGERLIGHT_Interrupter1LongRanged</preExplosionSpawnThingDef>
+      <!--<postExplosionSpawnThingDef>ZR_GAS_HIDDEN_DEF</postExplosionSpawnThingDef>-->
+      
+      <damageDef>GDZR_DAMAGE_CodedEnergy</damageDef>
+      <damageAmountBase>10</damageAmountBase>
+      <armorPenetrationBase>1.75</armorPenetrationBase>
+      <speed>70</speed>
+    </projectile>
+    
+    <comps>
+      <li Class="Zetas.FleckEmitter_CompProperties">
+        <fleck>ZR_FLECK_MAINTRAIL_INT1DIS_DEF</fleck>
+        <emissionInterval>1</emissionInterval>
+      </li>
+      <li Class="Zetas.FleckEmitterTwo_CompProperties">
+        <fleck>ZR_FLECK_ORBITERTRAIL_INT1DIS_DEF</fleck>
+        <emissionInterval>1</emissionInterval>
+      </li>
+    </comps>
+  </ThingDef>
+  
+<!--■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■3. HIDDEN DOT DAMAGER ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■-->
+  <ThingDef>
+    <defName>GDZR_HIDDENDAMAGERLIGHT_Interrupter1LongRanged</defName>
+    <thingClass>ThingWithComps</thingClass>
+    <label>dynamo</label>
+    
+    <altitudeLayer>Filth</altitudeLayer>
+    <useHitPoints>false</useHitPoints>
+    <drawerType>MapMeshOnly</drawerType>
+    
+    <graphicData>
+      <texPath>Hidden/Hidden</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    
+    <tickerType>Normal</tickerType>
+    <comps>
+      <li Class="Zetas.RadiusDamager.RadiusDamager_CompProperties">
+        <radius>1.2</radius>
+        <cycleCountOnSpawn>1</cycleCountOnSpawn>
+        <ticksBetweenDamage>30</ticksBetweenDamage>
+        
+     
+        <damagePlants>true</damagePlants>
+        <damageAmountPlants>2~7</damageAmountPlants>
+        <damageDefPlants>GDZR_DAMAGE_CodedEnergy</damageDefPlants> 
+        <damagePawns>true</damagePawns>
+        <damageDefPawns>GDZR_DAMAGE_CodedEnergy</damageDefPawns> 
+        <damageAmountPawns>2~5</damageAmountPawns>
+
+      </li>
+      <li Class="CompProperties_DestroyAfterDelay">
+        <delayTicks>360</delayTicks>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>3</glowRadius>
+        <glowColor>(250,250,250,0)</glowColor>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <!--■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■4. EFFECTER DEF ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■-->
+  <EffecterDef>
+    <defName>GDZR_EFFECTER_InterrupterDynamo1LR</defName>
+    <children>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+        <moteDef>ZR_MOTE_LIGHTMAIN_INT1DIS_DEF</moteDef>
+        <spawnLocType>OnSource</spawnLocType>
+        <airTime>6</airTime>
+        <positionRadius>0</positionRadius>
+        <rotationRate>90</rotationRate>
+      </li>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+        <moteDef>ZR_MOTE_LIGHTORBITER_INT1DIS_DEF</moteDef>
+        <spawnLocType>OnSource</spawnLocType>
+        <airTime>6</airTime>
+        <positionRadius>0</positionRadius>
+        <rotationRate>320</rotationRate>
+      </li>
+      <li>
+        <subEffecterClass>SubEffecter_SoundTriggered</subEffecterClass>
+        <soundDef>GDZR_SOUND_OrbSustain</soundDef>
+        <spawnLocType>OnSource</spawnLocType>
+      </li>
+    </children>
+  </EffecterDef>
+  
+<!--■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■5. FLECK & MOTE DEFS ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+    ■■■ MAIN LIGHT MOTE ■■■-->  
+  <ThingDef ParentName="MoteBase">
+    <defName>ZR_MOTE_LIGHTMAIN_INT1DIS_DEF</defName>
+    
+    <graphicData>
+      <texPath>Motes/Interrupter/ZR_LightMain</texPath>
+      <shaderType>MoteGlowDistortBackground</shaderType>
+      <shaderParameters>
+        <_distortionIntensity>2</_distortionIntensity>
+        <_brightnessMultiplier>1</_brightnessMultiplier>
+        <_DistortionTex>/Motes/Interrupter/ZR_LightMainDistortion</_DistortionTex>
+      </shaderParameters>
+      
+      <drawSize>0.8</drawSize>
+    </graphicData>
+    <altitudeLayer>MoteOverheadLow</altitudeLayer>
+    
+    <mote>
+      <fadeInTime>0</fadeInTime>
+      <fadeOutTime>0.2</fadeOutTime>
+      <solidTime>6</solidTime>
+      <growthRate>-0.02</growthRate>
+      <collide>true</collide>
+    </mote>
+  </ThingDef>
+  
+  <!--■■■ ORBITER LIGHT MOTE ■■■-->  
+  <ThingDef ParentName="MoteBase">
+    <defName>ZR_MOTE_LIGHTORBITER_INT1DIS_DEF</defName>
+    
+    <graphicData>
+      <texPath>Motes/Interrupter/ZR_LightOrbiter</texPath>
+      <shaderType>MoteGlowDistortBackground</shaderType>
+      <shaderParameters>
+        <_distortionIntensity>2</_distortionIntensity>
+        <_brightnessMultiplier>1</_brightnessMultiplier>
+        <_DistortionTex>/Motes/Interrupter/ZR_LightOrbiterDistortion</_DistortionTex>
+      </shaderParameters>
+      
+      <drawSize>0.992</drawSize>
+    </graphicData>
+    <altitudeLayer>Blueprint</altitudeLayer>
+    
+    <mote>
+      <fadeInTime>0</fadeInTime>
+      <fadeOutTime>0.2</fadeOutTime>
+      <solidTime>6</solidTime>
+      <growthRate>-0.02</growthRate>
+      <collide>true</collide>
+    </mote>
+  </ThingDef>
+  
+  <!--■■■ MAIN TRAIL FLECK ■■■-->   
+  <FleckDef ParentName="FleckBase">
+    <defName>ZR_FLECK_MAINTRAIL_INT1DIS_DEF</defName>
+    
+    <graphicData>
+      <texPath>Motes/Interrupter/ZR_LightMain</texPath>
+      <shaderType>MoteGlowDistortBackground</shaderType>
+      <shaderParameters>
+        <_distortionIntensity>2</_distortionIntensity>
+        <_brightnessMultiplier>1</_brightnessMultiplier>
+        <_DistortionTex>/Motes/Interrupter/ZR_LightMainDistortion</_DistortionTex>
+      </shaderParameters>
+      
+      <drawSize>0.6</drawSize>
+    </graphicData>
+    <altitudeLayer>PawnState</altitudeLayer>
+    
+    <fadeInTime>0</fadeInTime>
+    <fadeOutTime>0.25</fadeOutTime>
+    <solidTime>0.075</solidTime>
+    <growthRate>-1.8</growthRate>
+    <collide>true</collide>
+  </FleckDef>
+  <!--■■■ ORBITER TRAIL FLECK ■■■-->   
+  <FleckDef ParentName="FleckBase">
+    <defName>ZR_FLECK_ORBITERTRAIL_INT1DIS_DEF</defName>
+    
+    <graphicData>
+      <texPath>Motes/Interrupter/ZR_LightOrbiter</texPath>
+      <shaderType>MoteGlowDistortBackground</shaderType>
+      <shaderParameters>
+        <_distortionIntensity>2</_distortionIntensity>
+        <_brightnessMultiplier>1</_brightnessMultiplier>
+        <_DistortionTex>/Motes/Interrupter/ZR_LightOrbiterDistortion</_DistortionTex>
+      </shaderParameters>
+      
+      <drawSize>0.8</drawSize>
+    </graphicData>
+    <altitudeLayer>PawnUnused</altitudeLayer>
+    
+    <fadeInTime>0</fadeInTime>
+    <fadeOutTime>0.25</fadeOutTime>
+    <solidTime>0.075</solidTime>
+    <growthRate>-1.8</growthRate>
+    <collide>true</collide>
+  </FleckDef>
+</Defs>
