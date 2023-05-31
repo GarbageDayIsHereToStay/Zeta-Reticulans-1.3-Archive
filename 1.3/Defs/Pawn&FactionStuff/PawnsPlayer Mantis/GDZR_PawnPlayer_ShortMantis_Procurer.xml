@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    
+    <!--■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ Pawn Player, Short Mantis, Procurer ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■-->
+    <PawnKindDef ParentName="GDZR_PAWNPLAYER_ProcurerBase">
+        <defName>GDZR_PAWNPLAYER_ShortMantis_Procurer</defName>
+        <label>mantis hybrid</label>	
+        <race>GDZR_RACE_ShortMantis</race>
+        
+        <backstoryFiltersOverride>
+            <li>
+                <categories>
+                    <li>GDZR_Backstories_ShortMantisChild_CAT</li>
+                    <li>ZR_BackstoriesAdult_ShortMantis_Procurer_CAT</li>
+                </categories>
+            </li>
+        </backstoryFiltersOverride>
+    </PawnKindDef>
+</Defs>

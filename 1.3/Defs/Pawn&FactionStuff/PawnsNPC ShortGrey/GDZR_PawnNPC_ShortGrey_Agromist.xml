@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    
+    <!--■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ NPC Pawn, Short Grey, Agronomist ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■-->
+    <PawnKindDef ParentName="GDZR_PAWNNPC_AgronomistBase">
+        <defName>GDZR_PAWNNPC_ShortGrey_Agronomist</defName>
+        <label>short grey</label>	
+        <race>GDZR_RACE_ShortZetaReticulan</race>
+        
+        <backstoryFiltersOverride>
+            <li>
+                <categories>
+                    <li>GDZR_Backstories_ShortGreyChild_CAT</li>
+                    <li>ZR_BackstoriesAdult_ShortGrey_Agronomist_CAT</li>
+                </categories>
+            </li>
+        </backstoryFiltersOverride>
+    </PawnKindDef>
+</Defs>

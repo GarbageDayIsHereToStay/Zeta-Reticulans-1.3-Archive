@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    
+    <!--■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ NPC Pawn, Short Grey, Leader, Analyst ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■-->
+    <PawnKindDef ParentName="GDZR_PAWNNPC_AnalystBase">
+        <defName>GDZR_PAWNNPC_ShortGrey_AnalystLeader</defName>
+        <label>Zeta Reticulan</label>	
+        <race>GDZR_RACE_ShortZetaReticulan</race>
+        
+        <factionLeader>true</factionLeader>
+        <combatPower>80</combatPower>
+        
+        <minGenerationAge>120</minGenerationAge>
+        <maxGenerationAge>280</maxGenerationAge>
+        
+        <backstoryFiltersOverride>
+            <li>
+                <categories>
+                    <li>GDZR_Backstories_ShortGreyChild_CAT</li>
+                    <li>ZR_BackstoriesAdult_ShortGrey_Analyst_CAT</li>
+                </categories>
+            </li>
+        </backstoryFiltersOverride>
+        
+         <weaponMoney>1200~2000</weaponMoney>
+         <weaponTags>
+            <li>ZR_Weapon_LowTier_Tag</li>
+         </weaponTags>
+    </PawnKindDef>
+</Defs>

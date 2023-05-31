@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    
+    <!--■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ Pawn NPC, Short Thrumkin, Agronomist ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■-->
+    <PawnKindDef ParentName="GDZR_PAWNNPC_AgronomistBase">
+        <defName>GDZR_PAWNNPC_ShortThrumkin_Agronomist</defName>
+        <label>scalemen hybrid</label>	
+        <race>GDZR_RACE_ShortThrumkin</race>
+        
+        <backstoryFiltersOverride>
+            <li>
+                <categories>
+                    <li>GDZR_Backstories_ShortThrumkinChild_CAT</li>
+                    <li>ZR_BackstoriesAdult_ShortThrumkin_Agronomist_CAT</li>
+                </categories>
+            </li>
+        </backstoryFiltersOverride>
+    </PawnKindDef>
+</Defs>

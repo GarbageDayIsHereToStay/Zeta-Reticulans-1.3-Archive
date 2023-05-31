@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    
+    <!--■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ Pawn Player, Short Mantis, Therapist ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■-->
+    <PawnKindDef ParentName="GDZR_PAWNPLAYER_TherapistBase">
+        <defName>GDZR_PAWNPLAYER_ShortMantis_Therapist</defName>
+        <label>mantis hybrid</label>	
+        <race>GDZR_RACE_ShortMantis</race>
+        
+        <backstoryFiltersOverride>
+            <li>
+                <categories>
+                    <li>GDZR_Backstories_ShortMantisChild_CAT</li>
+                    <li>ZR_BackstoriesAdult_ShortMantis_Therapist_CAT</li>
+                </categories>
+            </li>
+        </backstoryFiltersOverride>
+    </PawnKindDef>
+</Defs>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    
+    <!--■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ Pawn Player, Short Human, Analyst ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■-->
+    <PawnKindDef ParentName="GDZR_PAWNPLAYER_AnalystBase">
+        <defName>GDZR_PAWNPLAYER_ShortHuman_Analyst</defName>
+        <label>human hybrid</label>	
+        <race>GDZR_RACE_ShortHuman</race>
+        
+        <maxGenerationAge>70</maxGenerationAge>     
+     
+        <backstoryFiltersOverride>
+            <li>
+                <categories>
+                    <li>GDZR_Backstories_ShortHumanChild_CAT</li>
+                    <li>ZR_BackstoriesAdult_ShortHuman_Analyst_CAT</li>
+                </categories>
+            </li>
+        </backstoryFiltersOverride>
+    </PawnKindDef>
+</Defs>
