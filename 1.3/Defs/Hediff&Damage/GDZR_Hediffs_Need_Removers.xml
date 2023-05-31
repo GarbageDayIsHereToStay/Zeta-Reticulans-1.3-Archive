@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+ 
+  <!--■■■■■■■■■■■■■■■■■■ Need Remover ■■■■■■■■■■■■■■■■■■■■■■■-->
+  <HediffDef ParentName="DiseaseBase">
+    <defName>GDZR_HEDIFF_NeedRemover</defName>
+    <label>Short grey need remover</label>
+    <labelNoun>Short grey need remover</labelNoun>
+    <description>I sure hope this doesn't causes bugs somehow!</description>
+    
+ 
+    <chronic>true</chronic>
+    <isBad>false</isBad>
+    <tendable>false</tendable>
+    <everCurableByItem>false</everCurableByItem>
+    <keepOnBodyPartRestoration>true</keepOnBodyPartRestoration>
+    <makesAlert>false</makesAlert>
+    
+    <disablesNeeds>
+      <li>Outdoors</li>
+      <li>Comfort</li>
+      <li>Joy</li>
+    </disablesNeeds>
+    
+    <stages>
+      <li>
+        <becomeVisible>false</becomeVisible>
+      </li>
+    </stages>
+  </HediffDef>
+</Defs>

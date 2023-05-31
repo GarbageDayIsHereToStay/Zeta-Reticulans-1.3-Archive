@@ -1,0 +1,1383 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <TaleDef>
+    <defName>ZR_SCALENE_TALE_DEF</defName>
+    <label>scalene revealed</label>
+    <taleClass>Tale_SinglePawnAndDef</taleClass>
+    <defSymbol>ILLNESS</defSymbol>
+    <type>Volatile</type>
+    <baseInterest>12</baseInterest>
+    <rulePack>
+      <rulesStrings>
+        <li>tale_noun->[PAWN_nameDef]'s skin sloughing off</li>
+        <li>tale_noun->[PAWN_nameDef] being racked by telekinetic energy</li>
+        <li>image->[PAWN_nameFull] staggering through a field [circumstance_group]</li>
+        <li>image->[PAWN_nameFull] lying on the ground [circumstance_group]</li>
+        <li>image->[PAWN_nameFull] lying in bed [circumstance_group]</li>
+        <li>image->[PAWN_nameFull] peering at[circumstance_group]</li>
+        <li>image->[PAWN_nameFull] trying to stare [circumstance_group]</li>
+        <li>image->[PAWN_nameFull] mindlessly removing [PAWN_possessive] clothes [circumstance_group]</li>
+        <li>circumstance_phrase->and sweating uncontrollably</li>
+        <li>circumstance_phrase->and shivering uncontrollably</li>
+        <li>circumstance_phrase->while both sweating and shivering</li>
+        <li>circumstance_phrase->furled over in pain</li>
+        <li>circumstance_phrase->while vomiting</li>
+        <li>circumstance_phrase->with an extreme deformity</li>
+        <li>desc_sentence->[PAWN_nameDef] lies on the ground, wounded.</li>
+        <li>desc_sentence->[Quantity_adjphrase] twisted corpses surround the area.</li>
+        <li>desc_sentence->[PAWN_nameDef]'s flesh is swelling.</li>
+        <li>desc_sentence->[Quantity_adjphrase] dying [Animal]s lay on the ground.</li>
+      </rulesStrings>
+    </rulePack>
+  </TaleDef>
+  
+<!--■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ PARALYSIS HEDIFF ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■-->
+<HediffDef>
+    <defName>GDZR_HEDIFF_ParalysisSurgery</defName>
+    <label>teleletric coma</label>
+    <description>Zeta Reticulans generate coded electical pulses from naturally evolved, but genetically enhanced, psy-limbic nodules nestled under the Reticulan's amygala. These electical signals are channeled cross-biology at close range from electrocyte cell structures within their eyes.
+    \nThis "Telepathy" can take many forms if the Reticulans has time to focus but in general circumstances a disruption of the bodies synaptic transmissions causing paralysis is used. This neural dampening my lead to premanent damage over prolonged exposure.
+    \nAs long as their optical channels remain connected to their psy-limbic nodes they may perform these "staring procedures"; if these optical outputs become severed from their neural mass Reticulans become relatively harmless in unamed combat.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(255,247,0)</defaultLabelColor>
+  <!-- (229,57,57)-->  
+   
+    <priceImpact>false</priceImpact>
+  
+  <!--  <initialSeverity>1</initialSeverity>-->
+    <initialSeverity>100</initialSeverity>
+    <maxSeverity>100</maxSeverity> <!-- 1 sev for every "damage" from tool-->
+    <chronic>false</chronic>
+    <makesSickThought>false</makesSickThought>
+    <taleOnVisible>ZR_SCALENE_TALE_DEF</taleOnVisible>
+  
+    <comps>
+      <li Class="HediffCompProperties_SelfHeal">
+        <healAmount>0.046</healAmount>
+      </li>
+      <li Class="Zetas.Hediffs.DamageBrain_HediffCompProperties">
+        <damageAmount>1</damageAmount>
+        <mtbDaysPerStage>
+          <li>2.74</li>
+          <li>2.73</li>
+          <li>2.72</li>
+          <li>2.71</li>
+          <li>2.70</li>
+          <li>2.69</li>
+          <li>2.68</li>
+          <li>2.67</li>
+          <li>2.66</li>
+          <li>2.65</li>
+          
+          <li>2.64</li>
+          <li>2.63</li>
+          <li>2.62</li>
+          <li>2.61</li>
+          <li>2.60</li>
+          <li>2.59</li>
+          <li>2.58</li>
+          <li>2.57</li>
+          <li>2.56</li>
+          <li>2.55</li>
+        
+          <li>2.54</li>
+          <li>2.53</li>
+          <li>2.52</li>
+          <li>2.51</li>
+          <li>2.50</li>
+          <li>2.49</li>
+          <li>2.48</li>
+          <li>2.47</li>
+          <li>2.46</li>
+          <li>2.45</li>
+          
+          <li>2.44</li>
+          <li>2.43</li>
+          <li>2.42</li>
+          <li>2.41</li>
+          <li>2.40</li>
+          <li>2.39</li>
+          <li>2.38</li>
+          <li>2.37</li>
+          <li>2.36</li>
+          <li>2.35</li>
+          
+          <li>2.34</li>
+          <li>2.33</li>
+          <li>2.32</li>
+          <li>2.31</li>
+          <li>2.30</li>
+          <li>2.29</li>
+          <li>2.28</li>
+          <li>2.27</li>
+          <li>2.26</li>
+          <li>2.25</li>
+          
+          <li>2.24</li>
+          <li>2.23</li>
+          <li>2.22</li>
+          <li>2.21</li>
+          <li>2.20</li>
+          <li>2.19</li>
+          <li>2.18</li>
+          <li>2.17</li>
+          <li>2.16</li>
+          <li>2.15</li>
+          
+          <li>2.14</li>
+          <li>2.13</li>
+          <li>2.12</li>
+          <li>2.11</li>
+          <li>2.10</li>
+          <li>2.09</li>
+          <li>2.08</li>
+          <li>2.07</li>
+          <li>2.06</li>
+          <li>2.05</li>
+          
+          <li>2.04</li>
+          <li>2.03</li>
+          <li>2.02</li>
+          <li>2.01</li>
+          <li>2.00</li>
+          <li>1.99</li>
+          <li>1.98</li>
+          <li>1.97</li>
+          <li>1.96</li>
+          <li>1.95</li>
+          
+          <li>1.94</li>
+          <li>1.93</li>
+          <li>1.92</li>
+          <li>1.91</li>
+          <li>1.90</li>
+          <li>1.89</li>
+          <li>1.88</li>
+          <li>1.87</li>
+          <li>1.86</li>
+          <li>1.85</li>
+          
+          <li>1.84</li>
+          <li>1.83</li>
+          <li>1.82</li>
+          <li>1.81</li>
+          <li>1.80</li>
+          <li>1.79</li>
+          <li>1.78</li>
+          <li>1.77</li>
+          <li>1.76</li>
+          <li>1.75</li>
+        </mtbDaysPerStage>
+      </li>
+    </comps>
+  
+<!--■■■■■■■■■■■■■■■■■■STAGES■■■■■■■■■■■■■■■■■■■■■■■-->
+<stages>
+  <!--■■■ (1)■■■-->  
+  <li>
+    <label>1%</label>
+    <minSeverity>1</minSeverity>
+    <hungerRateFactor>0.30</hungerRateFactor>
+    <capMods>
+      <li>
+        <capacity>Consciousness</capacity>
+       <setMax>0.30</setMax>
+      </li>
+    </capMods>
+ 
+  </li>
+  <!--■■■ (2)■■■-->  
+  <li>
+    <label>2%</label>
+    <minSeverity>2</minSeverity>
+    <hungerRateFactor>0.30</hungerRateFactor>
+    <capMods>
+      <li>
+        <capacity>Consciousness</capacity>
+        <setMax>0.30</setMax>
+      </li>
+    </capMods>
+  </li>
+  <!--■■■ (3)■■■-->  
+  <li>
+    <label>3%</label>
+    <minSeverity>3</minSeverity>
+    <hungerRateFactor>0.29</hungerRateFactor>
+    <capMods>
+      <li>
+        <capacity>Consciousness</capacity>
+        <setMax>0.30</setMax>
+      </li>
+    </capMods>
+  </li>
+  <!--■■■ (4)■■■-->  
+  <li>
+    <label>4%</label>
+    <minSeverity>4</minSeverity>
+    <hungerRateFactor>0.29</hungerRateFactor>
+    <capMods>
+      <li>
+        <capacity>Consciousness</capacity>
+        <setMax>0.30</setMax>
+      </li>
+    </capMods>
+  </li>
+  <!--■■■ (5)■■■-->  
+  <li>
+    <label>5%</label>
+    <minSeverity>5</minSeverity>
+    <hungerRateFactor>0.28</hungerRateFactor>
+    <capMods>
+      <li>
+        <capacity>Consciousness</capacity>
+        <setMax>0.29</setMax>
+      </li>
+    </capMods>
+  </li>
+  <!--■■■ (6)■■■-->  
+  <li>
+    <label>6%</label>
+    <minSeverity>6</minSeverity>
+    <hungerRateFactor>0.28</hungerRateFactor>
+    <capMods>
+      <li>
+        <capacity>Consciousness</capacity>
+        <setMax>0.29</setMax>
+      </li>
+    </capMods>
+  </li>
+  <!--■■■ (7)■■■-->  
+  <li>
+    <label>7%</label>
+    <minSeverity>7</minSeverity>
+    <hungerRateFactor>0.28</hungerRateFactor>
+    <capMods>
+      <li>
+        <capacity>Consciousness</capacity>
+        <setMax>0.29</setMax>
+      </li>
+    </capMods>
+  </li>
+  <!--■■■ (8)■■■-->  
+  <li>
+    <label>8%</label>
+    <minSeverity>8</minSeverity>
+    <hungerRateFactor>0.28</hungerRateFactor>
+    <capMods>
+      <li>
+        <capacity>Consciousness</capacity>
+        <setMax>0.29</setMax>
+      </li>
+    </capMods>
+  </li>
+  <!--■■■ (9)■■■-->  
+  <li>
+    <label>9%</label>
+    <minSeverity>9</minSeverity>
+    <hungerRateFactor>0.27</hungerRateFactor>
+    <capMods>
+      <li>
+        <capacity>Consciousness</capacity>
+        <setMax>0.28</setMax>
+      </li>
+    </capMods>
+  </li>
+  <!--■■■ (10)■■■-->  
+  <li>
+    <label>10%</label>
+    <minSeverity>10</minSeverity>
+    <hungerRateFactor>0.27</hungerRateFactor>
+    <capMods>
+      <li>
+        <capacity>Consciousness</capacity>
+        <setMax>0.28</setMax>
+      </li>
+    </capMods>
+  </li>
+  <!--■■■ (11)■■■-->  
+  <li>
+    <label>11%</label>
+    <minSeverity>11</minSeverity>
+    <hungerRateFactor>0.27</hungerRateFactor>
+    <capMods>
+      <li>
+        <capacity>Consciousness</capacity>
+        <setMax>0.28</setMax>
+      </li>
+    </capMods>
+  </li>
+  <!--■■■ (12)■■■-->  
+  <li>
+    <label>12%</label>
+    <minSeverity>12</minSeverity>
+    <hungerRateFactor>0.27</hungerRateFactor>
+    <capMods>
+      <li>
+        <capacity>Consciousness</capacity>
+        <setMax>0.28</setMax>
+      </li>
+    </capMods>
+  </li>
+  <!--■■■ (13)■■■-->  
+  <li>
+    <label>13%</label>
+    <minSeverity>13</minSeverity>
+    <hungerRateFactor>0.26</hungerRateFactor>
+    <capMods>
+      <li>
+        <capacity>Consciousness</capacity>
+        <setMax>0.27</setMax>
+      </li>
+    </capMods>
+  </li>
+  <!--■■■ (14)■■■-->  
+  <li>
+    <label>14%</label>
+    <minSeverity>14</minSeverity>
+    <hungerRateFactor>0.26</hungerRateFactor>
+    <capMods>
+      <li>
+        <capacity>Consciousness</capacity>
+        <setMax>0.27</setMax>
+      </li>
+    </capMods>
+  </li>
+  <!--■■■ (15)■■■-->  
+  <li>
+    <label>15%</label>
+    <minSeverity>15</minSeverity>
+    <hungerRateFactor>0.26</hungerRateFactor>
+    <capMods>
+      <li>
+        <capacity>Consciousness</capacity>
+        <setMax>0.27</setMax>
+      </li>
+    </capMods>
+  </li>
+  <!--■■■ (16)■■■-->  
+  <li>
+    <label>16%</label>
+    <minSeverity>16</minSeverity>
+    <hungerRateFactor>0.26</hungerRateFactor>
+    <capMods>
+      <li>
+        <capacity>Consciousness</capacity>
+        <setMax>0.27</setMax>
+      </li>
+    </capMods>
+  </li>
+  <!--■■■ (17)■■■-->  
+  <li>
+    <label>17%</label>
+    <minSeverity>17</minSeverity>
+    <hungerRateFactor>0.25</hungerRateFactor>
+    <capMods>
+      <li>
+        <capacity>Consciousness</capacity>
+        <setMax>0.26</setMax>
+      </li>
+    </capMods>
+  </li>
+  <!--■■■ (18)■■■-->  
+  <li>
+    <label>18%</label>
+    <minSeverity>18</minSeverity>
+    <hungerRateFactor>0.25</hungerRateFactor>
+    <capMods>
+      <li>
+        <capacity>Consciousness</capacity>
+        <setMax>0.26</setMax>
+      </li>
+    </capMods>
+  </li>
+  <!--■■■ (19)■■■-->  
+  <li>
+    <label>19%</label>
+    <minSeverity>19</minSeverity>
+    <hungerRateFactor>0.25</hungerRateFactor>
+    <capMods>
+      <li>
+        <capacity>Consciousness</capacity>
+        <setMax>0.26</setMax>
+      </li>
+    </capMods>
+  </li>
+  <!--■■■ (20)■■■-->  
+  <li>
+    <label>20%</label>
+    <minSeverity>20</minSeverity>
+    <hungerRateFactor>0.25</hungerRateFactor>
+    <capMods>
+      <li>
+        <capacity>Consciousness</capacity>
+        <setMax>0.26</setMax>
+      </li>
+    </capMods>
+  </li>
+  <!--■■■ (21)■■■-->  
+  <li>
+    <label>21%</label>
+    <minSeverity>21</minSeverity>
+    <hungerRateFactor>0.24</hungerRateFactor>
+    <capMods>
+      <li>
+        <capacity>Consciousness</capacity>
+        <setMax>0.25</setMax>
+      </li>
+    </capMods>
+  </li>
+  <!--■■■ (22)■■■-->  
+  <li>
+    <label>22%</label>
+    <minSeverity>22</minSeverity>
+    <hungerRateFactor>0.24</hungerRateFactor>
+    <capMods>
+      <li>
+        <capacity>Consciousness</capacity>
+        <setMax>0.25</setMax>
+      </li>
+    </capMods>
+  </li>
+  <!--■■■ (23)■■■-->  
+  <li>
+    <label>23%</label>
+    <minSeverity>23</minSeverity>
+    <hungerRateFactor>0.24</hungerRateFactor>
+    <capMods>
+      <li>
+        <capacity>Consciousness</capacity>
+        <setMax>0.25</setMax>
+      </li>
+    </capMods>
+  </li>
+  <!--■■■ (24)■■■-->  
+  <li>
+    <label>24%</label>
+    <minSeverity>24</minSeverity>
+    <hungerRateFactor>0.24</hungerRateFactor>
+    <capMods>
+      <li>
+        <capacity>Consciousness</capacity>
+        <setMax>0.25</setMax>
+      </li>
+    </capMods>
+  </li>
+        <!--■■■ (25)■■■-->  
+        <li>
+          <label>25%</label>
+          <minSeverity>25</minSeverity>
+          <hungerRateFactor>0.23</hungerRateFactor>
+          <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+              <setMax>0.24</setMax>
+            </li>
+          </capMods>
+        </li>
+        <!--■■■ (26)■■■-->  
+        <li>
+          <label>26%</label>
+          <minSeverity>26</minSeverity>
+          <hungerRateFactor>0.23</hungerRateFactor>
+          <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+              <setMax>0.24</setMax>
+            </li>
+          </capMods>
+        </li>
+        <!--■■■ (27)■■■-->  
+        <li>
+          <label>27%</label>
+          <minSeverity>27</minSeverity>
+          <hungerRateFactor>0.23</hungerRateFactor>
+          <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+              <setMax>0.24</setMax>
+            </li>
+          </capMods>
+        </li>
+        <!--■■■ (28)■■■-->  
+        <li>
+          <label>28%</label>
+          <minSeverity>28</minSeverity>
+          <hungerRateFactor>0.23</hungerRateFactor>
+          <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+              <setMax>0.24</setMax>
+            </li>
+          </capMods>
+        </li>
+        <!--■■■ (29)■■■-->  
+        <li>
+          <label>29%</label>
+          <minSeverity>29</minSeverity>
+          <hungerRateFactor>0.22</hungerRateFactor>
+          <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+              <setMax>0.23</setMax>
+            </li>
+          </capMods>
+        </li>
+        <!--■■■ (30)■■■-->  
+        <li>
+          <label>30%</label>
+          <minSeverity>30</minSeverity>
+          <hungerRateFactor>0.22</hungerRateFactor>
+          <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+              <setMax>0.23</setMax>
+            </li>
+          </capMods>
+        </li>
+        <!--■■■ (31)■■■-->  
+        <li>
+          <label>31%</label>
+          <minSeverity>31</minSeverity>
+          <hungerRateFactor>0.22</hungerRateFactor>
+          <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+              <setMax>0.23</setMax>
+            </li>
+          </capMods>
+        </li>
+        <!--■■■ (32)■■■-->  
+        <li>
+          <label>32%</label>
+          <minSeverity>32</minSeverity>
+          <hungerRateFactor>0.22</hungerRateFactor>
+          <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+              <setMax>0.23</setMax>
+            </li>
+          </capMods>
+        </li>
+        <!--■■■ (33)■■■-->  
+        <li>
+          <label>33%</label>
+          <minSeverity>33</minSeverity>
+          <hungerRateFactor>0.21</hungerRateFactor>
+          <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+              <setMax>0.22</setMax>
+            </li>
+          </capMods>
+        </li>
+        <!--■■■ (34)■■■-->  
+        <li>
+          <label>34%</label>
+          <minSeverity>34</minSeverity>
+          <hungerRateFactor>0.21</hungerRateFactor>
+          <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+              <setMax>0.22</setMax>
+            </li>
+          </capMods>
+        </li>
+        <!--■■■ (35)■■■-->  
+        <li>
+          <label>35%</label>
+          <minSeverity>35</minSeverity>
+          <hungerRateFactor>0.21</hungerRateFactor>
+          <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+              <setMax>0.22</setMax>
+            </li>
+          </capMods>
+        </li>
+        <!--■■■ (36)■■■-->  
+        <li>
+          <label>36%</label>
+          <minSeverity>36</minSeverity>
+          <hungerRateFactor>0.21</hungerRateFactor>
+          <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+              <setMax>0.22</setMax>
+            </li>
+          </capMods>
+        </li>
+        <!--■■■ (37)■■■-->  
+        <li>
+          <label>37%</label>
+          <minSeverity>37</minSeverity>
+          <hungerRateFactor>0.20</hungerRateFactor>
+          <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+              <setMax>0.21</setMax>
+            </li>
+          </capMods>
+        </li>
+        <!--■■■ (38)■■■-->  
+        <li>
+          <label>38%</label>
+          <minSeverity>38</minSeverity>
+          <hungerRateFactor>0.20</hungerRateFactor>
+          <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+              <setMax>0.21</setMax>
+            </li>
+          </capMods>
+        </li>
+        <!--■■■ (39)■■■-->  
+        <li>
+          <label>39%</label>
+          <minSeverity>39</minSeverity>
+          <hungerRateFactor>0.20</hungerRateFactor>
+          <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+              <setMax>0.21</setMax>
+            </li>
+          </capMods>
+        </li>
+        <!--■■■ (40)■■■ -->  
+        <li>
+          <label>40%</label>
+          <minSeverity>40</minSeverity>
+          <hungerRateFactor>0.20</hungerRateFactor>
+          <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+              <setMax>0.21</setMax>
+            </li>
+          </capMods>
+        </li>
+        <!--■■■ (41)■■■-->  
+        <li>
+          <label>41%</label>
+          <minSeverity>41</minSeverity>
+          <hungerRateFactor>0.19</hungerRateFactor>
+          <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+              <setMax>0.20</setMax>
+            </li>
+          </capMods>
+        </li>
+        <!--■■■ (42)■■■-->  
+        <li>
+          <label>42%</label>
+          <minSeverity>42</minSeverity>
+          <hungerRateFactor>0.19</hungerRateFactor>
+          <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+              <setMax>0.20</setMax>
+            </li>
+          </capMods>
+        </li>
+        <!--■■■ (43)■■■-->  
+        <li>
+          <label>43%</label>
+          <minSeverity>43</minSeverity>
+          <hungerRateFactor>0.19</hungerRateFactor>
+          <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+              <setMax>0.20</setMax>
+            </li>
+          </capMods>
+        </li>
+        <!--■■■ (44)■■■-->  
+        <li>
+          <label>44%</label>
+          <minSeverity>44</minSeverity>
+          <hungerRateFactor>0.19</hungerRateFactor>
+          <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+              <setMax>0.19</setMax>
+            </li>
+          </capMods>
+        </li>
+        <!--■■■ (45)■■■-->  
+        <li>
+          <label>45%</label>
+          <minSeverity>45</minSeverity>
+          <hungerRateFactor>0.18</hungerRateFactor>
+          <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+              <setMax>0.19</setMax>
+            </li>
+          </capMods>
+        </li>
+        <!--■■■ (46)■■■-->  
+        <li>
+          <label>46%</label>
+          <minSeverity>46</minSeverity>
+          <hungerRateFactor>0.18</hungerRateFactor>
+          <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+              <setMax>0.19</setMax>
+            </li>
+          </capMods>
+        </li>
+        <!--■■■ (47)■■■-->  
+        <li>
+          <label>47%</label>
+          <minSeverity>47</minSeverity>
+          <hungerRateFactor>0.18</hungerRateFactor>
+          <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+              <setMax>0.18</setMax>
+            </li>
+          </capMods>
+        </li>
+        <!--■■■ (48)■■■-->  
+        <li>
+          <label>48%</label>
+          <minSeverity>48</minSeverity>
+          <hungerRateFactor>0.18</hungerRateFactor>
+          <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+              <setMax>0.18</setMax>
+            </li>
+          </capMods>
+        </li>  
+        <!--■■■ (49)■■■-->  
+        <li>
+          <label>49%</label>
+          <minSeverity>49</minSeverity>
+          <hungerRateFactor>0.17</hungerRateFactor>
+          <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+              <setMax>0.18</setMax>
+            </li>
+          </capMods>
+        </li>  
+        <!--■■■ (50)■■■-->  
+        <li>
+          <label>50%</label>
+          <minSeverity>50</minSeverity>
+          <hungerRateFactor>0.17</hungerRateFactor>
+          <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+              <setMax>0.17</setMax>
+            </li>
+          </capMods>
+        </li>   
+        <!--■■■ (51)■■■-->  
+        <li>
+          <label>51%</label>
+          <minSeverity>51</minSeverity>
+          <hungerRateFactor>0.17</hungerRateFactor>
+          <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+              <setMax>0.17</setMax>
+            </li>
+          </capMods>
+        </li>
+        <!--■■■ (52)■■■-->  
+        <li>
+          <label>52%</label>
+          <minSeverity>52</minSeverity>
+          <hungerRateFactor>0.17</hungerRateFactor>
+          <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+              <setMax>0.17</setMax>
+            </li>
+          </capMods>
+        </li>
+        <!--■■■ (53)■■■-->  
+        <li>
+          <label>53%</label>
+          <minSeverity>53</minSeverity>
+          <hungerRateFactor>0.16</hungerRateFactor>
+          <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+              <setMax>0.16</setMax>
+            </li>
+          </capMods>
+        </li>
+        <!--■■■ (54)■■■-->  
+        <li>
+          <label>54%</label>
+          <minSeverity>54</minSeverity>
+          <hungerRateFactor>0.16</hungerRateFactor>
+          <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+              <setMax>0.16</setMax>
+            </li>
+          </capMods>
+        </li>
+        <!--■■■ (55)■■■-->  
+        <li>
+          <label>55%</label>
+          <minSeverity>55</minSeverity>
+          <hungerRateFactor>0.16</hungerRateFactor>
+          <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+              <setMax>0.16</setMax>
+            </li>
+          </capMods>
+        </li>
+        <!--■■■ (56)■■■-->  
+        <li>
+          <label>56%</label>
+          <minSeverity>56</minSeverity>
+          <hungerRateFactor>0.16</hungerRateFactor>
+          <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+              <setMax>0.15</setMax>
+            </li>
+          </capMods>
+        </li>
+        <!--■■■ (57)■■■-->  
+        <li>
+          <label>57%</label>
+          <minSeverity>57</minSeverity>
+          <hungerRateFactor>0.15</hungerRateFactor>
+          <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+              <setMax>0.15</setMax>
+            </li>
+          </capMods>
+        </li>
+        <!--■■■ (58)■■■-->  
+        <li>
+          <label>58%</label>
+          <minSeverity>58</minSeverity>
+          <hungerRateFactor>0.15</hungerRateFactor>
+          <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+              <setMax>0.15</setMax>
+            </li>
+          </capMods>
+        </li>
+        <!--■■■ (59)■■■-->  
+        <li>
+          <label>59%</label>
+          <minSeverity>59</minSeverity>
+          <hungerRateFactor>0.15</hungerRateFactor>
+          <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+              <setMax>0.14</setMax>
+            </li>
+          </capMods>
+        </li>
+        <!--■■■ (60)■■■-->  
+        <li>
+          <label>60%</label>
+          <minSeverity>60</minSeverity>
+          <hungerRateFactor>0.15</hungerRateFactor>
+          <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+             <setMax>0.14</setMax>
+            </li>
+          </capMods>
+        </li>
+        <!--■■■ (61)■■■-->  
+        <li>
+          <label>61%</label>
+          <minSeverity>61</minSeverity>
+          <hungerRateFactor>0.14</hungerRateFactor>
+          <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+             <setMax>0.14</setMax>
+            </li>
+          </capMods>
+        </li>
+        <!--■■■ (62)■■■-->  
+        <li>
+          <label>62%</label>
+          <minSeverity>62</minSeverity>
+          <hungerRateFactor>0.14</hungerRateFactor>
+          <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+              <setMax>0.13</setMax>
+            </li>
+          </capMods>
+        </li>
+        <!--■■■ (63)■■■-->  
+        <li>
+          <label>63%</label>
+          <minSeverity>63</minSeverity>
+          <hungerRateFactor>0.14</hungerRateFactor>
+          <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+              <setMax>0.13</setMax>
+            </li>
+          </capMods>
+        </li>
+        <!--■■■ (64)■■■-->  
+        <li>
+          <label>64%</label>
+          <minSeverity>64</minSeverity>
+          <hungerRateFactor>0.14</hungerRateFactor>
+          <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+              <setMax>0.13</setMax>
+            </li>
+          </capMods>
+        </li>
+        <!--■■■ (65)■■■-->  
+        <li>
+          <label>65%</label>
+          <minSeverity>65</minSeverity>
+          <hungerRateFactor>0.13</hungerRateFactor>
+          <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+              <setMax>0.12</setMax>
+            </li>
+          </capMods>
+        </li>
+        <!--■■■ (66)■■■-->  
+        <li>
+          <label>66%</label>
+          <minSeverity>66</minSeverity>
+          <hungerRateFactor>0.13</hungerRateFactor>
+          <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+              <setMax>0.12</setMax>
+            </li>
+          </capMods>
+        </li>
+        <!--■■■ (67)■■■-->  
+        <li>
+          <label>67%</label>
+          <minSeverity>67</minSeverity>
+          <hungerRateFactor>0.13</hungerRateFactor>
+          <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+              <setMax>0.12</setMax>
+            </li>
+          </capMods>
+        </li>
+        <!--■■■ (68)■■■-->  
+        <li>
+          <label>68%</label>
+          <minSeverity>68</minSeverity>
+          <hungerRateFactor>0.13</hungerRateFactor>
+          <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+              <setMax>0.11</setMax>
+            </li>
+          </capMods>
+        </li>
+        <!--■■■ (69)■■■-->  
+        <li>
+          <label>69%</label>
+          <minSeverity>69</minSeverity>
+          <hungerRateFactor>0.12</hungerRateFactor>
+          <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+              <setMax>0.11</setMax>
+            </li>
+          </capMods>
+        </li>
+        <!--■■■ (70)■■■-->  
+        <li>
+          <label>70%</label>
+          <minSeverity>70</minSeverity>
+          <hungerRateFactor>0.12</hungerRateFactor>
+          <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+              <setMax>0.11</setMax>
+            </li>
+          </capMods>
+        </li>
+        <!--■■■ (71)■■■-->  
+        <li>
+          <label>71%</label>
+          <minSeverity>71</minSeverity>
+          <hungerRateFactor>0.12</hungerRateFactor>
+          <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+              <setMax>0.10</setMax>
+            </li>
+          </capMods>
+        </li>
+        <!--■■■ (72)■■■-->  
+        <li>
+          <label>72%</label>
+          <minSeverity>72</minSeverity>
+          <hungerRateFactor>0.12</hungerRateFactor>
+          <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+              <setMax>0.10</setMax>
+            </li>
+          </capMods>
+        </li>
+        <!--■■■ (73)■■■-->  
+        <li>
+          <label>73%</label>
+          <minSeverity>73</minSeverity>
+          <hungerRateFactor>0.11</hungerRateFactor>
+          <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+              <setMax>0.10</setMax>
+            </li>
+          </capMods>
+        </li>
+        <!--■■■ (74)■■■-->  
+        <li>
+          <label>74%</label>
+          <minSeverity>74</minSeverity>
+          <hungerRateFactor>0.11</hungerRateFactor>
+          <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+              <setMax>0.09</setMax>
+            </li>
+          </capMods>
+        </li>
+        <!--■■■ (75)■■■-->  
+        <li>
+          <label>75%</label>
+          <minSeverity>75</minSeverity>
+          <hungerRateFactor>0.11</hungerRateFactor>
+          <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+              <setMax>0.09</setMax>
+            </li>
+          </capMods>
+        </li>
+        <!--■■■ (76)■■■-->  
+        <li>
+          <label>76%</label>
+          <minSeverity>76</minSeverity>
+          <hungerRateFactor>0.11</hungerRateFactor>
+          <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+              <setMax>0.09</setMax>
+            </li>
+          </capMods>
+        </li>
+        <!--■■■ (77)■■■-->  
+        <li>
+          <label>77%</label>
+          <minSeverity>77</minSeverity>
+          <hungerRateFactor>0.10</hungerRateFactor>
+          <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+              <setMax>0.08</setMax>
+            </li>
+          </capMods>
+        </li>
+        <!--■■■ (78)■■■-->  
+        <li>
+          <label>78%</label>
+          <minSeverity>78</minSeverity>
+          <hungerRateFactor>0.10</hungerRateFactor>
+          <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+              <setMax>0.08</setMax>
+            </li>
+          </capMods>
+        </li>
+        <!--■■■ (79)■■■-->  
+        <li>
+          <label>79%</label>
+          <minSeverity>79</minSeverity>
+          <hungerRateFactor>0.10</hungerRateFactor>
+          <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+              <setMax>0.08</setMax>
+            </li>
+          </capMods>
+        </li>
+        <!--■■■ (80)■■■-->  
+        <li>
+          <label>80%</label>
+          <minSeverity>80</minSeverity>
+          <hungerRateFactor>0.10</hungerRateFactor>
+          <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+              <setMax>0.07</setMax>
+            </li>
+          </capMods>
+        </li>
+        <!--■■■ (81)■■■-->  
+        <li>
+          <label>81%</label>
+          <minSeverity>81</minSeverity>
+          <hungerRateFactor>0.09</hungerRateFactor>
+          <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+              <setMax>0.07</setMax>
+            </li>
+          </capMods>
+        </li>
+        <!--■■■ (82)■■■-->  
+        <li>
+          <label>82%</label>
+          <minSeverity>82</minSeverity>
+          <hungerRateFactor>0.09</hungerRateFactor>
+          <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+              <setMax>0.07</setMax>
+            </li>
+          </capMods>
+        </li>
+        <!--■■■ (83)■■■-->  
+        <li>
+          <label>83%</label>
+          <minSeverity>83</minSeverity>
+          <hungerRateFactor>0.09</hungerRateFactor>
+          <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+              <setMax>0.06</setMax>
+            </li>
+          </capMods>
+        </li>
+        <!--■■■ (84)■■■-->  
+        <li>
+          <label>84%</label>
+          <minSeverity>84</minSeverity>
+          <hungerRateFactor>0.09</hungerRateFactor>
+          <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+              <setMax>0.06</setMax>
+            </li>
+          </capMods>
+        </li>
+        <!--■■■ (85)■■■-->  
+        <li>
+          <label>85%</label>
+          <minSeverity>85</minSeverity>
+          <hungerRateFactor>0.08</hungerRateFactor>
+          <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+              <setMax>0.06</setMax>
+            </li>
+          </capMods>
+        </li>
+        <!--■■■ (86)■■■-->  
+        <li>
+          <label>86%</label>
+          <minSeverity>86</minSeverity>
+          <hungerRateFactor>0.08</hungerRateFactor>
+          <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+              <setMax>0.05</setMax>
+            </li>
+          </capMods>
+        </li>
+        <!--■■■ (87)■■■-->  
+        <li>
+          <label>87%</label>
+          <minSeverity>87</minSeverity>
+          <hungerRateFactor>0.08</hungerRateFactor>
+          <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+              <setMax>0.05</setMax>
+            </li>
+          </capMods>
+        </li>
+        <!--■■■ (88)■■■-->  
+        <li>
+          <label>88%</label>
+          <minSeverity>88</minSeverity>
+          <hungerRateFactor>0.08</hungerRateFactor>
+          <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+              <setMax>0.05</setMax>
+            </li>
+          </capMods>
+        </li>
+        <!--■■■ (89)■■■-->  
+        <li>
+          <label>89%</label>
+          <minSeverity>89</minSeverity>
+          <hungerRateFactor>0.07</hungerRateFactor>
+          <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+              <setMax>0.04</setMax>
+            </li>
+          </capMods>
+        </li>
+        <!--■■■ (90)■■■-->  
+        <li>
+          <label>90%</label>
+          <minSeverity>90</minSeverity>
+          <hungerRateFactor>0.07</hungerRateFactor>
+          <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+              <setMax>0.04</setMax>
+            </li>
+          </capMods>
+        </li>
+        <!--■■■ (91)■■■-->  
+        <li>
+          <label>91%</label>
+          <minSeverity>91</minSeverity>
+          <hungerRateFactor>0.07</hungerRateFactor>
+          <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+              <setMax>0.04</setMax>
+            </li>
+          </capMods>
+        </li>
+        <!--■■■ (92)■■■-->  
+        <li>
+          <label>92%</label>
+          <minSeverity>92</minSeverity>
+          <hungerRateFactor>0.07</hungerRateFactor>
+          <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+              <setMax>0.03</setMax>
+            </li>
+          </capMods>
+        </li>
+        <!--■■■ (93)■■■-->  
+        <li>
+          <label>93%</label>
+          <minSeverity>93</minSeverity>
+          <hungerRateFactor>0.06</hungerRateFactor>
+          <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+              <setMax>0.03</setMax>
+            </li>
+          </capMods>
+        </li>
+        <!--■■■ (94)■■■-->  
+        <li>
+          <label>94%</label>
+          <minSeverity>94</minSeverity>
+          <hungerRateFactor>0.06</hungerRateFactor>
+          <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+              <setMax>0.03</setMax>
+            </li>
+          </capMods>
+        </li>
+        <!--■■■ (95)■■■-->  
+        <li>
+          <label>95%</label>
+          <minSeverity>95</minSeverity>
+          <hungerRateFactor>0.06</hungerRateFactor>
+          <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+            <setMax>0.02</setMax>
+            </li>
+          </capMods>
+        </li>
+        <!--■■■ (96)■■■-->  
+        <li>
+          <label>96%</label>
+          <minSeverity>96</minSeverity>
+          <hungerRateFactor>0.06</hungerRateFactor>
+          <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+            <setMax>0.02</setMax>
+            </li>
+          </capMods>
+        </li>
+        <!--■■■ (97)■■■-->  
+        <li>
+          <label>97%</label>
+          <minSeverity>97</minSeverity>
+          <hungerRateFactor>0.05</hungerRateFactor>
+          <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+             <setMax>0.02</setMax>
+            </li>
+          </capMods>
+        </li>
+        <!--■■■ (98)■■■-->  
+        <li>
+          <label>98%</label>
+          <minSeverity>98</minSeverity>
+          <hungerRateFactor>0.05</hungerRateFactor>
+          <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+            <setMax>0.01</setMax>
+            </li>
+          </capMods>
+        </li>
+        <!--■■■ (99)■■■-->  
+        <li>
+          <label>99%</label>
+          <minSeverity>99</minSeverity>
+          <hungerRateFactor>0.05</hungerRateFactor>
+          <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+            <setMax>0.01</setMax>
+            </li>
+          </capMods>
+        </li>
+        <!--■■■ (100)■■■-->  
+       <li>
+          <label>100%</label>
+          <minSeverity>100</minSeverity>
+          <hungerRateFactor>0.05</hungerRateFactor>
+          <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+             <setMax>0.01</setMax>
+            </li>
+         </capMods>
+      </li>
+  </stages>
+  
+</HediffDef>
+    
+  
+</Defs>

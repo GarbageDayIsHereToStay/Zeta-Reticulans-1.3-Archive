@@ -1,0 +1,458 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!--■■■■■■■■■■■■■■■■■
+     GRAVITATIONAL SINGULARITY
+  1. DAMAGE Gravitational Singularity 
+  2. HEDIFF Ionizing Radiation
+  3. EFFECTER 
+  4. MOTE
+  5. IMPACT SOUND
+  ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ 1. DAMAGE GRAVITATIONAL SINGULARITY ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■-->
+  <DamageDef Name="ZR_DAMAGE_STARE_BASE">
+    <defName>GDZR_DAMAGE_GravitationalSingularity</defName>
+    <label>gravitational singularity damage</label>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    
+    <hediff>ZR_HEDIFF_GRAVITATIONALWARPING_DEF</hediff>
+    <hediffSkin>ZR_HEDIFF_GRAVITATIONALWARPING_DEF</hediffSkin>
+    <hediffSolid>ZR_HEDIFF_GRAVITATIONALWARPING_DEF</hediffSolid>
+    <additionalHediffs>
+      <li>
+        <hediff>GDZR_HEDIFF_GravitationalScalene</hediff>
+        <severityPerDamageDealt>0.01234</severityPerDamageDealt>
+     <!--   <victimSeverityScaling>ZR_STAT_SCALENE_SUSCEPTIBILITY_DEF</victimSeverityScaling>-->
+        <victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+      </li>
+    </additionalHediffs>
+    
+    <damageEffecter>ZR_EFFECTER_SINGULARITYDAMAGE_DEF</damageEffecter>
+    <defaultDamage>5</defaultDamage>
+    <defaultArmorPenetration>1.7</defaultArmorPenetration>
+    <armorCategory>Blunt</armorCategory>
+    <impactSoundType>ZR_SOUNDIMPACT_SINGULARITY_DEF</impactSoundType>
+    
+    <harmsHealth>true</harmsHealth>
+    <makesBlood>true</makesBlood>
+    <externalViolence>true</externalViolence>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <hasForcefulImpact>false</hasForcefulImpact>
+    
+    <deathMessage>{0} has died from telekinetic radiation.</deathMessage>
+    
+    <makesAnimalsFlee>true</makesAnimalsFlee>
+  </DamageDef>
+  
+  <!--■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ 2. HEDIFF GRAVITATIONAL WARPING ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■-->
+  
+<HediffDef ParentName="InjuryBase">
+    <defName>ZR_HEDIFF_GRAVITATIONALWARPING_DEF</defName>
+    <label>gravitational warping</label>
+
+    <labelNoun>gravitational warping</labelNoun>
+    <labelNounPretty>{0} in the {1}</labelNounPretty>
+    <description>Structural collapse caused by telekinetic particle excitement. 
+    \nIn organic tissues these subatomic vibrations cause devastating effects such as severe edema, cellular sloughing, deep tissue liquefaction, and osteonecrosis; similar to concentrated, highly directed exposure from traditional radiation sources. The wounds left behind are slow to heal and prone to infection.
+    \nTelekinesis causes no lingering radiological contamination but hemocyte pumping through the affected areas at the moment of psychokinetic cross sectioning will deform into elongted triangluar shapes, a chronic blood condition called "scalene cell"
+    \nRepeated application of this telekinesis will ultimately break the hardest of bonds and render matter down into particulate, however, mechanoids and the grand majority of other inorganics are resilient to the most debilitating aspects of this radiation. Because of this resilience (and their general lack of organs) Zetas will take precautions to avoid contact with non-biologicals.
+    \nA Zeta Reticulan may perform these "staring procedures" as long as their optical channels remain connected to their psy-limbic nodes. If these optical outputs become severed from their neural mass Reticulans become relatively harmless in unamed combat.</description><!-- WHOS THE REAL MONSTER NOW?! HUMAN SCUM! -->
+  
+  
+     <hediffClass>Hediff_Injury</hediffClass>
+  
+    <isBad>true</isBad>
+    <tendable>true</tendable>
+  
+    <maxSeverity>50</maxSeverity> <!-- Sev applies 1:1 for each point of dmg)-->
+  
+   <injuryProps>
+    <painPerSeverity>0.08</painPerSeverity>
+    <averagePainPerSeverityPermanent>0.014</averagePainPerSeverityPermanent>
+    <bleedRate>0.09</bleedRate>
+    <canMerge>true</canMerge>
+    <destroyedLabel>Disintegrated</destroyedLabel>
+    <destroyedOutLabel>Disintegrated</destroyedOutLabel>
+   </injuryProps>
+  
+  <comps>
+    <li Class="HediffCompProperties_SelfHeal">
+      <healIntervalTicksStanding>600</healIntervalTicksStanding>
+      <healAmount>-0.05</healAmount>
+    </li>
+    <li Class="HediffCompProperties_Immunizable">
+      <severityPerDayNotImmuneRandomFactor>
+        <min>-0.0125</min> <!--1=80-->
+        <max>0.00875</max> <!--1=114-->
+      </severityPerDayNotImmuneRandomFactor>
+    </li>
+    <li Class="HediffCompProperties_TendDuration">
+      <labelTendedWell>bandaged</labelTendedWell>
+      <labelTendedWellInner>tended</labelTendedWellInner>
+      <labelSolidTendedWell>tended</labelSolidTendedWell>
+    </li>
+    <li Class="HediffCompProperties_Infecter">
+      <infectionChance>0.5</infectionChance>
+    </li>
+    <li Class="HediffCompProperties_GetsPermanent">
+      <becomePermanentChanceFactor>1</becomePermanentChanceFactor>
+      <permanentLabel>warping</permanentLabel>
+      <instantlyPermanentLabel>gnarled</instantlyPermanentLabel>
+    </li>
+  </comps>
+ 
+<!--■■■■■■■■■■■■■■■■■■STAGES■■■■■■■■■■■■■■■■■■■■■■■-->
+  <!--■■■(1)■■■-->
+  <stages>
+    <li>
+      <label>initial</label>
+      <lifeThreatening>true</lifeThreatening>
+      <becomeVisible>true</becomeVisible>
+      <minSeverity>0.01</minSeverity>
+      <partEfficiencyOffset>-0.01</partEfficiencyOffset>
+      <capMods>
+        <li>
+          <capacity>BloodFiltration</capacity>
+          <offset>-0.025</offset>
+        </li>
+        <li>
+          <capacity>BloodPumping</capacity>
+          <offset>-0.025</offset>
+        </li>
+      </capMods>
+    </li>
+    <!--■■■(2)■■■-->
+    <li>
+      <label>initial</label>
+      <lifeThreatening>true</lifeThreatening>
+      <minSeverity>0.8</minSeverity>
+      <partEfficiencyOffset>-0.05</partEfficiencyOffset>
+      <capMods>
+        <li>
+          <capacity>BloodFiltration</capacity>
+          <offset>-0.040</offset>
+        </li>
+        <li>
+          <capacity>BloodPumping</capacity>
+          <offset>-0.040</offset>
+        </li>
+      </capMods>
+    </li>
+    <!--■■■(3)■■■-->
+    <li>
+      <label>minor</label>
+      <lifeThreatening>true</lifeThreatening>
+      <minSeverity>1.6</minSeverity>
+      <partEfficiencyOffset>-0.075</partEfficiencyOffset>
+      <capMods>
+        <li>
+          <capacity>BloodFiltration</capacity>
+          <offset>-0.055</offset>
+        </li>
+        <li>
+          <capacity>BloodPumping</capacity>
+          <offset>-0.055</offset>
+        </li>
+      </capMods>
+    </li>
+    <!--■■■(4)■■■-->
+    <li>
+      <label>minor</label>
+      <lifeThreatening>true</lifeThreatening>
+      <minSeverity>2.4</minSeverity>
+      <partEfficiencyOffset>-0.1</partEfficiencyOffset>
+      <capMods>
+        <li>
+          <capacity>BloodFiltration</capacity>
+          <offset>-0.065</offset>
+        </li>
+        <li>
+          <capacity>BloodPumping</capacity>
+          <offset>-0.065</offset>
+        </li>
+      </capMods>
+    </li>
+    <!--■■■(5)■■■-->
+    <li>
+      <label>moderate</label>
+      <lifeThreatening>true</lifeThreatening>
+      <minSeverity>3.1</minSeverity>
+      <partEfficiencyOffset>-0.125</partEfficiencyOffset>
+      <capMods>
+        <li>
+          <capacity>BloodFiltration</capacity>
+          <offset>-0.072</offset>
+        </li>
+        <li>
+          <capacity>BloodPumping</capacity>
+          <offset>-0.072</offset>
+        </li>
+      </capMods>
+    </li>
+    <!--■■■(6)■■■-->
+    <li>
+      <label>moderate</label>
+      <lifeThreatening>true</lifeThreatening>
+      <minSeverity>4</minSeverity>
+      <partEfficiencyOffset>-0.1375</partEfficiencyOffset>
+      <capMods>
+        <li>
+          <capacity>BloodFiltration</capacity>
+          <offset>-0.079</offset>
+        </li>
+        <li>
+          <capacity>BloodPumping</capacity>
+          <offset>-0.079</offset>
+        </li>
+      </capMods>
+    </li>
+    <!--■■■(7)■■■-->
+    <li>
+      <label>moderate</label>
+      <lifeThreatening>true</lifeThreatening>
+      <minSeverity>5.5</minSeverity>
+      <partEfficiencyOffset>-0.150</partEfficiencyOffset>
+      <capMods>
+        <li>
+          <capacity>BloodFiltration</capacity>
+          <offset>-0.085</offset>
+        </li>
+        <li>
+          <capacity>BloodPumping</capacity>
+          <offset>-0.085</offset>
+        </li>
+      </capMods>
+    </li>
+    <!--■■■(8)■■■-->
+    <li>
+      <label>moderate</label>
+      <lifeThreatening>true</lifeThreatening>
+      <minSeverity>6.5</minSeverity>
+      <partEfficiencyOffset>-0.175</partEfficiencyOffset>
+      <capMods>
+        <li>
+          <capacity>BloodFiltration</capacity>
+          <offset>-0.09</offset>
+        </li>
+        <li>
+          <capacity>BloodPumping</capacity>
+          <offset>-0.09</offset>
+        </li>
+      </capMods>
+    </li>
+    <!--■■■(9)■■■-->
+    <li>
+      <label>serious</label>
+      <lifeThreatening>true</lifeThreatening>
+      <minSeverity>7.5</minSeverity>
+      <partEfficiencyOffset>-0.2</partEfficiencyOffset>
+      <capMods>
+        <li>
+          <capacity>BloodFiltration</capacity>
+          <offset>-0.095</offset>
+        </li>
+        <li>
+          <capacity>BloodPumping</capacity>
+          <offset>-0.95</offset>
+        </li>
+      </capMods>
+    </li>
+    <!--■■■(10)■■■-->
+    <li>
+      <label>serious</label>
+      <lifeThreatening>true</lifeThreatening>
+      <minSeverity>12</minSeverity>
+      <partEfficiencyOffset>-0.21</partEfficiencyOffset>
+      <capMods>
+        <li>
+          <capacity>BloodFiltration</capacity>
+          <offset>-0.1</offset>
+        </li>
+        <li>
+          <capacity>BloodPumping</capacity>
+          <offset>-0.1</offset>
+        </li>
+      </capMods>
+    </li>
+    <!--■■■ EXTREME(11) Levels are for stacking on high health body part, torso + large creatures■■■-->
+    <li>
+      <label>extreme</label>
+      <lifeThreatening>true</lifeThreatening>
+      <minSeverity>16.5</minSeverity>
+      <partEfficiencyOffset>-0.22</partEfficiencyOffset>
+      <capMods>
+        <li>
+          <capacity>BloodFiltration</capacity>
+          <offset>-0.105</offset>
+        </li>
+        <li>
+          <capacity>BloodPumping</capacity>
+          <offset>-0.105</offset>
+        </li>
+      </capMods>
+    </li>
+    <!--■■■ EXTREME(12) ■■■-->
+    <li>
+      <label>extreme</label>
+      <lifeThreatening>true</lifeThreatening>
+      <minSeverity>23.5</minSeverity>
+      <partEfficiencyOffset>-0.23</partEfficiencyOffset>
+      <capMods>
+        <li>
+          <capacity>BloodFiltration</capacity>
+          <offset>-0.11</offset>
+        </li>
+        <li>
+          <capacity>BloodPumping</capacity>
+          <offset>-0.11</offset>
+        </li>
+      </capMods>
+    </li> 
+    <!--■■■ EXTREME(13) ■■■-->
+    <li>
+      <label>extreme</label>
+      <lifeThreatening>true</lifeThreatening>
+      <minSeverity>27.5</minSeverity>
+      <partEfficiencyOffset>-0.24</partEfficiencyOffset>
+      <capMods>
+        <li>
+          <capacity>BloodFiltration</capacity>
+          <offset>-0.12</offset>
+        </li>
+        <li>
+          <capacity>BloodPumping</capacity>
+          <offset>-0.12</offset>
+        </li>
+      </capMods>
+    </li> 
+    <!--■■■ EXTREME(14) ■■■-->
+    <li>
+      <label>extreme</label>
+      <lifeThreatening>true</lifeThreatening>
+      <minSeverity>31</minSeverity>
+      <partEfficiencyOffset>-0.25</partEfficiencyOffset>
+      <capMods>
+        <li>
+          <capacity>BloodFiltration</capacity>
+          <offset>-0.13</offset>
+        </li>
+        <li>
+          <capacity>BloodPumping</capacity>
+          <offset>-0.13</offset>
+        </li>
+      </capMods>
+    </li> 
+    <!--■■■ EXTREME(15) ■■■-->
+    <li>
+      <label>extreme</label>
+      <lifeThreatening>true</lifeThreatening>
+      <minSeverity>35</minSeverity>
+      <partEfficiencyOffset>-0.26</partEfficiencyOffset>
+      <capMods>
+        <li>
+          <capacity>BloodFiltration</capacity>
+          <offset>-0.14</offset>
+        </li>
+        <li>
+          <capacity>BloodPumping</capacity>
+          <offset>-0.14</offset>
+        </li>
+      </capMods>
+    </li> 
+    <!--■■■ EXTREME(16) ■■■-->
+    <li>
+      <label>extreme</label>
+      <lifeThreatening>true</lifeThreatening>
+      <minSeverity>39</minSeverity>
+      <partEfficiencyOffset>-0.27</partEfficiencyOffset>
+      <capMods>
+        <li>
+          <capacity>BloodFiltration</capacity>
+          <offset>-0.15</offset>
+        </li>
+        <li>
+          <capacity>BloodPumping</capacity>
+          <offset>-0.15</offset>
+        </li>
+      </capMods>
+    </li> 
+   </stages>
+</HediffDef>
+
+  
+  <!--■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ 3. EFFECTER DEF ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■-->
+  <EffecterDef>
+    <defName>ZR_EFFECTER_SINGULARITYDAMAGE_DEF</defName>
+    <children>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+        <moteDef>ZR_MOTE_MICROSINGULARITY_DEF</moteDef>
+        <burstCount>3</burstCount>
+        <positionLerpFactor>1</positionLerpFactor>
+        <spawnLocType>OnSource</spawnLocType>
+        <airTime>1~1</airTime>
+        <positionRadius>0.25</positionRadius>
+        <rotation>0~330</rotation>
+        <rotationRate>120~220</rotationRate>
+      </li>
+    </children>
+  </EffecterDef>
+  
+  <!--■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ 4. MOTE DEFS ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■-->
+  <ThingDef ParentName="MoteBase">
+    <defName>ZR_MOTE_MICROSINGULARITY_DEF</defName>
+    <thingClass>MoteThrownAttached</thingClass>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <graphicData>
+      <texPath>Things/Mote/Black</texPath>
+      <shaderType>MoteGlowDistortBackground</shaderType>
+      <shaderParameters>
+        <_DistortionTex>/Motes/Distortion/ZR_TelekineticRadiationDistortionMask</_DistortionTex>
+        <_distortionIntensity>0.3</_distortionIntensity>
+        <_brightnessMultiplier>1.2</_brightnessMultiplier>
+      </shaderParameters>
+      <drawSize>1</drawSize>
+    </graphicData>
+    
+    <mote>
+      <fadeInTime>0.02</fadeInTime>
+      <fadeOutTime>0.175</fadeOutTime>
+      <solidTime>0.2</solidTime>
+      <growthRate>-2.4</growthRate>
+      <collide>false</collide>
+    </mote>
+  </ThingDef>
+  
+  <!--■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ 5. IMPACT SOUND DEFS ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■-->
+  <ImpactSoundTypeDef>
+    <defName>ZR_SOUNDIMPACT_SINGULARITY_DEF</defName>
+    <soundDef>GunTail_Medium</soundDef>
+    <playOnlyIfHitPawn>true</playOnlyIfHitPawn>
+  </ImpactSoundTypeDef>
+ <!-- 
+   MetalHitImportant / Xylophone sound
+   Interact_Ignite / Small maraca
+   Interceptor_BlockProjectile / Small wet ping
+   EnergyShield_AbsorbDamage / Ping pong pick axe
+   ThumpCannon_Impact / Vibey impact thing
+   EnergyShield_Broken / Glass breaking > alien blaster
+   Explosion_Thump / Bass drum + Thunder
+   Explosion_Stun / Fast drum gunshot
+   PunchThroughRoofMetal / Hard tin can pickaxe
+   FireBurning / Soft Ripping
+   Tunnel_End / Plastic block clunk
+   GunTail_Medium / very quiet crack
+   GunTail_Heavy / Heavy swoosh
+   Roof_Collapse / Thunky kind of gunshot
+   Pawn_Melee_SmallScratch_HitPawn / Squishy tearing
+   Pawn_Melee_SmallScratch_HitBuilding / Whomping on tin
+   Pawn_Melee_BigBash_HitPawn / Dull thud tap
+   Pawn_Melee_MechanoidSlash_HitPawn / metal like slice
+   Pawn_MeleeDodge / like a potato sack being punched
+   Pawn_Melee_MechanoidSlash_Miss / Ching woosh
+   ThingUninstalled / Tap mp mp mp
+   
+   Can't play because oneshot
+   HissJet
+   Tornado
+   GeyserSpray
+   -->
+</Defs>
