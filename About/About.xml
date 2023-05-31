@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Zeta Reticulans [Player/Hostile Factions]</name>
+  <author>GarbageDayIsHereToStay</author>
+  <packageId>GarbageDayIsHereToStay.ZetaReticulans</packageId>
+  <supportedVersions>
+    <li>1.3</li>
+  </supportedVersions>
+  <modDependencies>
+   <li>
+      <packageId>erdelf.HumanoidAlienRaces</packageId>
+      <displayName>Humanoid Alien Races 2.0</displayName>
+      <steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=839005762</steamWorkshopUrl>
+    </li>
+    </modDependencies>
+  <description>(Newest patch notes on workshop; Release Version: 18-05-2023, small update to make xenotype playable)
+\nCold and mechanical Zeta Reticulans are unaffected by most human emotions. Their frustrations mostly stem from whether work standards are being kept and mission guidelines followed; Their greatest joy is working in their field of expertise.
+ </description>
+</ModMetaData>
