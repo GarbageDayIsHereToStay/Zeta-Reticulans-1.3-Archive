@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!--■■■■■■■■■■■■■■■■■
+     1. WEAPON: Singularity Interruption Grenade 1
+     2. PROJECTILE
+     3. HIDDEN LIGHT AND DOT DAMAGER
+     4. EFFECTER 
+     5. MOTE
+     ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■1. WEAPON SINGULARITY GRENADE 1 ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■--> 
+  
+  <ThingDef ParentName="BaseHumanMakeableGun">
+    <defName>GDZR_WEAPON_SingularityGrenade</defName>
+    <label>singularity bomb</label>
+    <description>A singularity encased in a graviton compressing envelope. Used in breaching operations, excavation efforts, or to incapacitate large groups of bio-assets when sample recovery is of secondary concern.</description>
+    <tickerType>Normal</tickerType>
+    <techLevel>Ultra</techLevel>
+    <graphicData>
+      <texPath>Weapons/GDZR_SingularityGrenade</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.82</drawSize>
+    </graphicData>    
+    <equippedAngleOffset>38</equippedAngleOffset>
+    
+    <statBases>
+      <Mass>12</Mass>
+      <RangedWeapon_Cooldown>0.25</RangedWeapon_Cooldown>
+      <WorkToMake>24000</WorkToMake>
+      <MarketValue>1000</MarketValue>
+    </statBases>
+    <costList>
+      <Steel>20</Steel>
+      <ComponentIndustrial>6</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>MicroelectronicsBasics</researchPrerequisite>
+    </recipeMaker>
+
+    <weaponTags>
+      <li>Gun</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>RangedHeavy</li>
+    </weaponClasses>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <thingCategories>
+      <li>Grenades</li>
+    </thingCategories>
+    <thingSetMakerTags>
+      <li>RewardStandardLowFreq</li>
+    </thingSetMakerTags>
+    <relicChance>0</relicChance>
+    
+    <verbs>
+      <li>
+        <label>launch singularity</label>   
+        <verbClass>Verb_ShootOneUse</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <onlyManualCast>True</onlyManualCast>
+        <range>4.9</range>
+        <forcedMissRadius>1.9</forcedMissRadius>
+        <warmupTime>2</warmupTime>
+        <noiseRadius>4</noiseRadius>
+        <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+        <soundCast>ThrowGrenade</soundCast>
+        <drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <defaultProjectile>GDZR_PROJECTILE_SingularityGrenade</defaultProjectile>
+        <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+      </li>
+    </verbs>
+    
+    <comps>
+   <!--   <li Class="CompProperties_Explosive">
+        <explosionEffect>GDZR_EFFECTER_SingularityGrenade</explosionEffect>
+        <preExplosionSpawnThingDef>GDZR_THING_HiddenDamagerAndLight_SingularityGrenade</preExplosionSpawnThingDef>
+        <explosionSound>Explosion_EMP</explosionSound>
+        <explosiveRadius>3.6</explosiveRadius>
+        <explosiveDamageType>Cut</explosiveDamageType>
+        <damageAmountBase>0</damageAmountBase>
+      </li>-->
+      <li Class="Zetas.SpawnOnDestroy_CompProperties">
+        <effecterDef>GDZR_EFFECTER_SingularityGrenade</effecterDef>
+        <spawnThingDef>GDZR_THING_HiddenDamagerAndLight_SingularityGrenade</spawnThingDef>
+      </li>
+    </comps>
+    
+   <!-- <tools>
+      <li>
+        <label>barrel</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>11.7</power>
+        <cooldownTime>2.6</cooldownTime>
+      </li>
+    </tools>-->
+  </ThingDef>
+  
+ 
+  <!--■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■2. PROJECTILE ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■--> 
+  
+  <ThingDef Name="GDZR_PROJECTILE_GrenadeBase" Abstract="True">
+    <category>Projectile</category>
+    <altitudeLayer>Projectile</altitudeLayer>
+    <thingClass>Projectile_Explosive</thingClass>
+    <label>projectile</label>
+    <tickerType>Normal</tickerType>
+    <useHitPoints>true</useHitPoints>
+    
+    <statBases>
+      <MaxHitPoints>30</MaxHitPoints>
+    </statBases>
+    
+    <neverMultiSelect>True</neverMultiSelect>
+    <graphicData>
+      <shaderType>Transparent</shaderType>
+    </graphicData>
+    <projectile>
+      <speed>14</speed>
+      <arcHeightFactor>0</arcHeightFactor>
+      <shadowSize>0</shadowSize>
+    </projectile>
+  </ThingDef>
+  
+  <ThingDef ParentName="GDZR_PROJECTILE_GrenadeBase">
+    <defName>GDZR_PROJECTILE_SingularityGrenade</defName>
+    <label>Singularity grenade</label>
+    <!-- Class enables post/pre thing spawn even if projectile lands on an unpassble cell -->
+    <thingClass>Zetas.Projectile_Singularity</thingClass>
+    
+    <graphicData>
+      <texPath>Weapons/GDZR_SingularityGrenade</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.82</drawSize>
+    </graphicData>
+    
+    <projectile>
+      <explosionEffect>GDZR_EFFECTER_SingularityGrenade</explosionEffect>
+      <soundExplode>Explosion_EMP</soundExplode>
+      <explosionRadius>0</explosionRadius>
+      <speed>14</speed>    
+      <preExplosionSpawnThingDef>GDZR_THING_HiddenDamagerAndLight_SingularityGrenade</preExplosionSpawnThingDef>
+      <ai_IsIncendiary>true</ai_IsIncendiary> 
+      <arcHeightFactor>20</arcHeightFactor>
+      <shadowSize>0.8</shadowSize>
+            
+      <damageDef>GDZR_DAMAGE_GravitationalSingularity</damageDef>
+      <damageAmountBase>100</damageAmountBase>
+
+      <!-- Use default damage from explosion def -->
+      <explosionDelay>0</explosionDelay>
+    </projectile>
+    
+    <comps>
+    <!-- CompProperties_Explosive satisfies VerbProperties CausesExplosion bool without using a harmony patch -->
+    <li Class="CompProperties_Explosive">
+      <explosiveRadius>0</explosiveRadius>
+      <explosiveDamageType>Cut</explosiveDamageType>
+      <damageAmountBase>0</damageAmountBase>
+      <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+    </li>
+    </comps>
+  </ThingDef>
+
+  <!--■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■3. HIDDEN LIGHTS AND DAMAGERS ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■-->
+  <ThingDef>
+    <defName>GDZR_THING_HiddenDamagerAndLight_SingularityGrenade</defName>
+    <thingClass>ThingWithComps</thingClass>
+    
+    <label>light and DOT</label>
+    
+    <altitudeLayer>Weather</altitudeLayer>
+    <useHitPoints>false</useHitPoints>
+    <drawerType>MapMeshOnly</drawerType>
+    
+    <graphicData>
+      <texPath>Hidden/Hidden</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    
+    <tickerType>Normal</tickerType>
+    <comps>
+      <li Class="Zetas.FleckEmitter_CompProperties">
+       <fleck>ZR_FLECK_SINGULARITYBLACKEXPANDING_GRE1_DEF</fleck>
+        <emissionInterval>3</emissionInterval>
+      </li>
+      <li Class="Zetas.FleckEmitterTwo_CompProperties">
+       <fleck>ZR_FLECK_SINGULARITYBLACKSHRINKING_GRE1_DEF</fleck>
+        <emissionInterval>1</emissionInterval>
+      </li>
+      
+      <li Class="Zetas.RadiusDamager.RadiusDamager_CompProperties">
+        <radius>4.2</radius>
+        <cycleCountOnSpawn>1</cycleCountOnSpawn>
+        <ticksBetweenDamage>20</ticksBetweenDamage>
+        
+        <damagePawns>true</damagePawns> 
+        <damageDefPawns>GDZR_DAMAGE_GravitationalSingularity</damageDefPawns> 
+        <damageAmountPawns>2~6</damageAmountPawns>
+        
+        <damagePlants>true</damagePlants>
+        <damageDefPlants>GDZR_DAMAGE_GravitationalSingularity</damageDefPlants>
+        <damageAmountPlants>10~30</damageAmountPlants>
+        
+        <damageItems>true</damageItems>
+        <damageDefItems>GDZR_DAMAGE_GravitationalSingularity</damageDefItems>
+        <damageAmountItems>1~10</damageAmountItems>
+        
+        <damageBuildings>true</damageBuildings>
+        <damageDefBuildings>GDZR_DAMAGE_GravitationalSingularity</damageDefBuildings>
+        <damageAmountBuildings>22~60</damageAmountBuildings>
+        
+        
+        <destroyFilth>true</destroyFilth>
+        <!-- 
+        <radius>4.2
+        <cycleCountOnSpawn>1
+        <ticksBetweenDamage>20
+                                  
+        <destroyTheseDefs><li> undefined = none
+        <destroyFilth> default = false
+        <immuneFilth><li> undefined = none
+      
+        <damageDefPawns> Cut is default for undefined damage defs
+        <damageAmountPawns> X~Y, 1~10 is default range for undefined damage amounts        
+        <damagePawns> default = false
+        <immuneRaces><li> undefined = none
+        <immunePawns><li> undefined = none
+        
+        <damagePlants> default = false
+        <damageDefPlants> default = cut
+        <damageAmountPlants>  X~Y, 1~10 is default range for undefined damage amounts   
+        <immunePlants><li> undefined = none
+        
+        <damageBuildings> default = false
+        <damageDefBuildings> default = cut
+        <damageAmountBuildings>  X~Y, 1~10 is default range for undefined damage amounts  
+        <immuneBuildings><li> undefined = none
+       
+        <damageItems> default = false
+        <damageDefItems> default = cut
+        <damageAmountItems>  X~Y, 1~10 is default range for undefined damage amounts   
+        <immuneItems><li> undefined = none
+        
+    
+        -->
+      </li>
+      
+      <li Class="CompProperties_DestroyAfterDelay">
+        <delayTicks>1200</delayTicks>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>1</glowRadius>
+        <glowColor>(250,250,250,0)</glowColor>
+      </li>
+    </comps>
+  </ThingDef>
+  
+</Defs>

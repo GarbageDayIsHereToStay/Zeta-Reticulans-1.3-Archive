@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!--■■■■■■■■■■■■■■■■■
+     CODE ENERGY; Used in weapons to deliver paralysis hediff through an electricity like effect
+  1. DAMAGE Coded Energy
+  2. HEDIFF Ionizing Radiation
+  ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ 1. DAMAGE, CODED ENERGY ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■-->
+  <DamageDef Name="GDZR_DAMAGE_CodedEnergyBase">
+    <defName>GDZR_DAMAGE_CodedEnergy</defName>
+    <workerClass>DamageWorker_AddInjury</workerClass>
+    <deathMessage>{0} has died from synaptic shock.</deathMessage>
+    
+    <label>coded energy</label>
+    
+    <damageEffecter>GDZR_EFFECTER_CodedEnergy</damageEffecter>
+    <isExplosive>true</isExplosive>
+    <hediff>GDZR_HEDIFF_IonizingRadiation</hediff>
+    <hediffSkin>GDZR_HEDIFF_IonizingRadiation</hediffSkin>
+    <hediffSolid>GDZR_HEDIFF_IonizingRadiation</hediffSolid>
+    <additionalHediffs>
+      <li>
+        <hediff>GDZR_HEDIFF_Paralysis</hediff>
+        <severityPerDamageDealt>1</severityPerDamageDealt>
+        <victimSeverityScalingByInvBodySize>true</victimSeverityScalingByInvBodySize>
+      </li>
+    </additionalHediffs>
+    
+    <defaultDamage>1</defaultDamage>
+    <armorCategory>Heat</armorCategory>
+    <harmsHealth>true</harmsHealth>
+    <makesBlood>false</makesBlood>
+    <externalViolence>true</externalViolence>
+    <externalViolenceForMechanoids>true</externalViolenceForMechanoids>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <hasForcefulImpact>false</hasForcefulImpact>
+    <impactSoundType>GDZR_IMPACTSOUND_CodedEnergy</impactSoundType>
+    
+    <defaultStoppingPower>8</defaultStoppingPower>
+    <defaultArmorPenetration>0.40</defaultArmorPenetration>
+    <buildingDamageFactor>0.05</buildingDamageFactor>
+    <plantDamageFactor>1</plantDamageFactor>
+    <minDamageToFragment>20</minDamageToFragment>
+    
+    <explosionAffectOutsidePartsOnly>true</explosionAffectOutsidePartsOnly>
+    <explosionHeatEnergyPerCell>0</explosionHeatEnergyPerCell>
+    <explosionCellFleck>BlastEMP</explosionCellFleck>
+    <explosionColorCenter>(22,22,22)</explosionColorCenter>
+    <explosionColorEdge>(32,32,32)</explosionColorEdge>
+    <soundExplosion>Electric</soundExplosion>
+    <combatLogRules>Damage_Bomb</combatLogRules>
+    
+    <makesAnimalsFlee>true</makesAnimalsFlee>
+  </DamageDef>
+  
+  <!--■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ 2. HEDIFF IONIZING RADIATION ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■-->
+  <HediffDef ParentName="InjuryBase">
+    <defName>GDZR_HEDIFF_IonizingRadiation</defName>
+    <label>radation burn</label>
+    <labelNoun>a burn</labelNoun>
+    <description>A burn.</description>
+    <comps>
+      <li Class="HediffCompProperties_TendDuration">
+        <labelTendedWell>bandaged</labelTendedWell>
+        <labelTendedWellInner>tended</labelTendedWellInner>
+        <labelSolidTendedWell>tended</labelSolidTendedWell>
+      </li>
+      <li Class="HediffCompProperties_Infecter">
+        <infectionChance>0.30</infectionChance>
+      </li>
+      <li Class="HediffCompProperties_GetsPermanent">
+        <permanentLabel>cauterized nerves</permanentLabel>
+      </li>
+    </comps>
+    <injuryProps>
+      <painPerSeverity>0.004</painPerSeverity>
+      <averagePainPerSeverityPermanent>0.002</averagePainPerSeverityPermanent>
+      <canMerge>true</canMerge>
+      <destroyedLabel>Burned off</destroyedLabel>
+      <destroyedOutLabel>Burned out</destroyedOutLabel>
+    </injuryProps>
+    
+  </HediffDef>
+ 
+</Defs>

@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+  <!--■■■■■■■■■■■■■■■■■
+     SLEEPING
+     1. Zeta Reticulan (Base)
+     1a) Blood
+     2b) Flesh
+     3a) Effecter
+     2. Hybrid Red/Grey Blood (Base; for generic red blood races)
+     3. Forsaken
+     4. Mantis
+     5. Moyo
+      ■■■■■■■■■■■■■■■■■--> 
+  <!--■■■■■■■■■■■■■■■■■■1. ZETA RETICULAN ■■■■■■■■■■■■■■■■■■■■■■■ 
+      ■■■ HIT EFEECTER ■■■-->
+  <EffecterDef>
+    <defName>GDZR_EFFECTER_ZetaBloodSpray</defName>
+    <children>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+        <positionRadius>0.4</positionRadius>
+        <fleckDef>AirPuff</fleckDef>
+        <burstCount>4~5</burstCount>
+        <speed>0.4~0.8</speed>
+        <scale>1.0~1.1</scale>
+        <color>(42, 42, 42)</color>
+        <spawnLocType>OnSource</spawnLocType>
+      </li>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+        <positionRadius>0.1</positionRadius>
+        <fleckDef>BloodSplash</fleckDef>
+        <burstCount>2~3</burstCount>
+        <scale>1.1~1.4</scale>
+        <color>(42, 42, 42)</color>
+        <spawnLocType>OnSource</spawnLocType>
+      </li>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+        <positionRadius>0.0</positionRadius>
+        <fleckDef>BodyImpact</fleckDef>
+        <burstCount>1</burstCount>
+        <scale>0.4</scale>
+        <color>(42, 42, 42)</color>
+        <spawnLocType>OnSource</spawnLocType>
+      </li>
+    </children>
+    <offsetTowardsTarget>0.25~0.25</offsetTowardsTarget>
+    <positionRadius>0.1</positionRadius>
+  </EffecterDef>
+  
+  <!--■■■■■■■■■■■■■■■■■■2. Hybrid Red/Grey ■■■■■■■■■■■■■■■■■■■■■■■
+      ■■■ HIT EFEECTER ■■■-->
+  <EffecterDef>
+    <defName>GDZR_EFFECTER_HybridBasicBloodSpray</defName>
+    <children>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+        <positionRadius>0.4</positionRadius>
+        <fleckDef>AirPuff</fleckDef>
+        <burstCount>4~5</burstCount>
+        <speed>0.4~0.8</speed>
+        <scale>1.0~1.1</scale>
+        <color>(114, 47, 55)</color>
+        <spawnLocType>OnSource</spawnLocType>
+      </li>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+        <positionRadius>0.1</positionRadius>
+        <fleckDef>BloodSplash</fleckDef>
+        <burstCount>2~3</burstCount>
+        <scale>1.1~1.4</scale>
+        <color>(114, 47, 55)</color>
+        <spawnLocType>OnSource</spawnLocType>
+      </li>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+        <positionRadius>0.0</positionRadius>
+        <fleckDef>BodyImpact</fleckDef>
+        <burstCount>1</burstCount>
+        <scale>0.4</scale>
+        <color>(114, 47, 55)</color>
+        <spawnLocType>OnSource</spawnLocType>
+      </li>
+    </children>
+    <offsetTowardsTarget>0.25~0.25</offsetTowardsTarget>
+    <positionRadius>0.1</positionRadius>
+  </EffecterDef>
+  
+  <!--■■■■■■■■■■■■■■■■■■3. FORSAKEN ■■■■■■■■■■■■■■■■■■■■■■■
+      ■■■ HIT EFEECTER ■■■-->
+  <EffecterDef>
+  <defName>GDZR_EFFECTER_ForsakenBloodSpray</defName>
+  <children>
+    <li>
+      <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+      <positionRadius>0.4</positionRadius>
+      <fleckDef>AirPuff</fleckDef>
+      <burstCount>4~5</burstCount>
+      <speed>0.4~0.8</speed>
+      <scale>1.0~1.1</scale>
+      <color>(255,239,78)</color>
+      <spawnLocType>OnSource</spawnLocType>
+    </li>
+    <li>
+      <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+      <positionRadius>0.1</positionRadius>
+      <fleckDef>BloodSplash</fleckDef>
+      <burstCount>2~3</burstCount>
+      <scale>1.1~1.4</scale>
+      <color>(255,239,78)</color>
+      <spawnLocType>OnSource</spawnLocType>
+    </li>
+    <li>
+      <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+      <positionRadius>0.0</positionRadius>
+      <fleckDef>BodyImpact</fleckDef>
+      <burstCount>1</burstCount>
+      <scale>0.4</scale>
+      <color>(255,239,78, 60)</color>
+      <spawnLocType>OnSource</spawnLocType>
+    </li>
+  </children>
+  <offsetTowardsTarget>0.25~0.25</offsetTowardsTarget>
+  <positionRadius>0.1</positionRadius>
+  </EffecterDef>
+  
+  <!--■■■■■■■■■■■■■■■■■■4. MANTIS ■■■■■■■■■■■■■■■■■■■■■■■
+      ■■■ HIT EFEECTER ■■■-->
+  <EffecterDef>
+    <defName>GDZR_EFFECTER_MantisBloodSpray</defName>
+      <children>
+        <li>
+          <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+          <positionRadius>0.4</positionRadius>
+          <fleckDef>AirPuff</fleckDef>
+          <burstCount>4~5</burstCount>
+          <speed>0.4~0.8</speed>
+          <scale>1.0~1.3</scale>
+          <color>(94, 99, 81)</color>
+          <spawnLocType>OnSource</spawnLocType>
+        </li>
+        <li>
+          <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+          <positionRadius>0.1</positionRadius>
+          <fleckDef>BloodSplash</fleckDef>
+          <burstCount>2~3</burstCount>
+          <scale>1.6~2.1</scale>
+          <color>(94, 99, 81)</color>
+          <spawnLocType>OnSource</spawnLocType>
+        </li>
+        <li>
+          <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+          <positionRadius>0.0</positionRadius>
+          <fleckDef>BodyImpact</fleckDef>
+          <burstCount>1</burstCount>
+          <scale>0.55</scale>
+          <color>(94, 99, 81, 60)</color>
+          <spawnLocType>OnSource</spawnLocType>
+        </li>
+      </children>
+      <offsetTowardsTarget>0.25~0.25</offsetTowardsTarget>
+      <positionRadius>0.1</positionRadius>
+    </EffecterDef>
+  
+  <!--■■■■■■■■■■■■■■■■■■5. MOYO ■■■■■■■■■■■■■■■■■■■■■■■
+      ■■■ HIT EFEECTER ■■■-->
+  <EffecterDef>
+    <defName>ZR_EFFECTER_MOYOSPRAY_DEF</defName>
+    <children>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+        <positionRadius>0.4</positionRadius>
+        <fleckDef>AirPuff</fleckDef>
+        <burstCount>4~5</burstCount>
+        <speed>0.4~0.8</speed>
+        <scale>1.0~1.3</scale>
+        <color>(28, 53, 130)</color>
+        <spawnLocType>OnSource</spawnLocType>
+      </li>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+        <positionRadius>0.1</positionRadius>
+        <fleckDef>BloodSplash</fleckDef>
+        <burstCount>2~3</burstCount>
+        <scale>1.6~2.1</scale>
+        <color>(28, 53, 130)</color>
+        <spawnLocType>OnSource</spawnLocType>
+      </li>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+        <positionRadius>0.0</positionRadius>
+        <fleckDef>BodyImpact</fleckDef>
+        <burstCount>1</burstCount>
+        <scale>0.55</scale>
+        <color>(28, 53, 130, 60)</color>
+        <spawnLocType>OnSource</spawnLocType>
+      </li>
+    </children>
+    <offsetTowardsTarget>0.25~0.25</offsetTowardsTarget>
+    <positionRadius>0.1</positionRadius>
+  </EffecterDef>
+
+</Defs>

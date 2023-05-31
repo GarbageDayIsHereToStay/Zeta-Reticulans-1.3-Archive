@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ 1 ITEM, SUBSCRIPTION CHIP ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■--> 
+  <ThingDef Name="GDZR_AMMO_WafferBase" ParentName="ResourceBase" Abstract="True">
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Standard_Drop</soundDrop>
+    <tickerType>Normal</tickerType>
+    <stackLimit>40</stackLimit>
+    <techLevel>Industrial</techLevel>
+    <statBases>
+      <MaxHitPoints>60</MaxHitPoints>
+      <MarketValue>400</MarketValue>
+      <Mass>1.25</Mass>
+      <Flammability>1.0</Flammability>
+      <DeteriorationRate>1.5</DeteriorationRate>
+    </statBases>
+    <thingCategories>
+      <li>MortarShells</li>
+    </thingCategories>
+    <tradeTags>
+      <li>MortarShell</li>
+    </tradeTags>
+  </ThingDef>
+  
+  <ThingDef ParentName="GDZR_AMMO_WafferBase">
+    <defName>GDZR_AMMO_AllocatorWaffer</defName>
+    <label>allocator waffer</label> <!-- allocation coupon, allocator waffer -->
+       
+    <description>A quantumly encrypted quick response code. Accepted by consignment Redeemable at your nearest allocator pad.</description>
+    <graphicData>
+      <texPath>Items/SubscriptionChip</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <drawSize>1.2</drawSize>
+    </graphicData>
+    <stackLimit>40</stackLimit>
+    
+    <comps>
+    <li Class="CompProperties_Glower">
+      <glowRadius>1</glowRadius>
+      <glowColor>(24,24,24,0)</glowColor>
+    </li>
+    </comps>
+  </ThingDef>
+  
+</Defs>

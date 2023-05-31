@@ -1,0 +1,93 @@
+﻿<Defs>
+<!--■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ EFFECTER: Power Gneerator, Powered effects ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+    ■■■■■■■■■■■■■■■■■■ EFFECTER: Powered Generator ■■■■■■■■■■■■■■■■■■■■■■■-->
+  <EffecterDef>
+    <defName>GDZR_EFFECTER_TechTrap1X</defName>
+    <children>
+      <!--<li>
+        <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+        <moteDef>GDZR_MOTE_TrapGlowGrow</moteDef>
+        <spawnLocType>OnSource</spawnLocType>
+        <maxMoteCount>1</maxMoteCount>
+        <burstCount>1</burstCount>
+        
+        <absoluteAngle>false</absoluteAngle>
+       <rotation>0</rotation>
+        <ticksBetweenMotes>6000</ticksBetweenMotes>
+      </li>-->
+      
+      <!--   <li>
+        <subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+        <moteDef>GDZR_MOTE_TrapGlowGrow</moteDef>
+        <spawnLocType>OnSource</spawnLocType>
+        <chancePerTick>0.05</chancePerTick>
+      </li> -->
+     <li>
+        <subEffecterClass>SubEffecter_SprayerContinuous</subEffecterClass>
+        <spawnLocType>OnSource</spawnLocType>
+        
+        <moteDef>GDZR_MOTE_TrapGlowGrow</moteDef>
+        <burstCount>1</burstCount>
+        <rotation>0</rotation>
+        <positionOffset>0,0,0</positionOffset> 
+        
+        <ticksBetweenMotes>140</ticksBetweenMotes>
+      </li>
+  <!--<li>
+        <subEffecterClass>SubEffecter_DrifterEmoteChance</subEffecterClass>
+        <moteDef>GDZR_MOTE_TrapGlowGrow</moteDef>
+        <spawnLocType>OnSource</spawnLocType>
+        <chancePerTick>0.05</chancePerTick>
+      </li>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerContinuous</subEffecterClass>
+        <moteDef>GDZR_MOTE_TrapGlowShrink</moteDef>
+        <spawnLocType>OnSource</spawnLocType>
+        <maxMoteCount>1</maxMoteCount>
+        <ticksBetweenMotes>60</ticksBetweenMotes>
+      </li>-->
+    </children>
+  </EffecterDef>
+  
+  <!--■■■ GLOW GROW ■■■-->
+  <ThingDef ParentName="MoteBase">
+    <defName>GDZR_MOTE_TrapGlowGrow</defName>
+    <graphicData>
+      <texPath>Motes/Electrical/GDZR_TrapPowerGlow</texPath>
+      <shaderType>TransparentPostLight</shaderType>
+      <drawSize>1.1718</drawSize>
+    </graphicData> 
+    
+    <altitudeLayer>MoteBelowThings</altitudeLayer>
+    
+    <drawOffscreen>false</drawOffscreen>
+    <mote>
+      <solidTime>2</solidTime>
+      <fadeInTime>1</fadeInTime>
+      <fadeOutTime>1</fadeOutTime>
+      <growthRate>0</growthRate>
+    </mote>
+  </ThingDef>
+  
+  <!--■■■ GLOW SHRINK ■■■-->
+  <ThingDef ParentName="MoteBase">
+    <defName>GDZR_MOTE_TrapGlowShrink</defName>
+    
+    <graphicData>
+      <texPath>Motes/Electrical/GDZR_TrapPowerGlow</texPath>
+      <shaderType>MoteGlow</shaderType>
+      <drawSize>1.1718</drawSize>
+    </graphicData> 
+    
+    <altitudeLayer>MoteBelowThings</altitudeLayer>
+    
+    <drawOffscreen>true</drawOffscreen>
+    <mote>
+      <fadeInTime>0</fadeInTime>
+      <fadeOutTime>0</fadeOutTime>
+      <solidTime>2</solidTime>
+      <growthRate>0</growthRate>
+    </mote>
+  </ThingDef>
+  
+</Defs>

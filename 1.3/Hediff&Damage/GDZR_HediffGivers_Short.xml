@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <HediffGiverSetDef>
+    <defName>GDZR_HEDIFFGIVER_NeedRemover</defName>
+    <hediffGivers>
+      
+      <li Class="HediffGiver_Birthday">
+        <hediff>GDZR_HEDIFF_NeedRemover</hediff>
+        
+        <ageFractionChanceCurve>
+          <points>
+            <li>(0, 1)</li>
+            <li>(1, 1)</li>
+          </points>
+        </ageFractionChanceCurve>
+      </li>
+    </hediffGivers>
+  </HediffGiverSetDef>
+  
+  <!--■■■■■■■■■■■■■■■■■■ ZETA ■■■■■■■■■■■■■■■■■■■■■■■-->
+  <HediffGiverSetDef>
+    <defName>GDZR_HEDIFFGIVERS_ShortZetaReticulan</defName>
+    <hediffGivers>
+      
+      
+      <li Class="HediffGiver_Birthday">
+        <hediff>GDZR_HEDIFF_ShortZetaLabel</hediff>
+        
+        <ageFractionChanceCurve>
+          <points>
+            <li>(0, 1)</li>
+            <li>(1, 1)</li>
+          </points>
+        </ageFractionChanceCurve>
+      </li>
+    </hediffGivers>
+  </HediffGiverSetDef>
+
+  
+   <!--■■■■■■■■■■■■■■■■■■ THRUMKIN ■■■■■■■■■■■■■■■■■■■■■■■-->
+    <HediffGiverSetDef>
+      <defName>GDZR_HEDIFFGIVERS_ShortThrumkin</defName>
+      <hediffGivers>
+        
+        
+        <li Class="HediffGiver_Birthday">
+          <hediff>GDZR_HEDIFF_ShortThrumkinLabel</hediff>
+          
+          <ageFractionChanceCurve>
+            <points>
+              <li>(0, 1)</li>
+              <li>(1, 1)</li>
+            </points>
+          </ageFractionChanceCurve>
+        </li>
+      </hediffGivers>
+    </HediffGiverSetDef>
+  
+  <!--■■■■■■■■■■■■■■■■■■ FORSAKEN ■■■■■■■■■■■■■■■■■■■■■■■-->
+  <HediffGiverSetDef>
+    <defName>GDZR_HEDIFFGIVERS_ShortForsaken</defName>
+    <hediffGivers>
+      
+      
+      <li Class="HediffGiver_Birthday">
+        <hediff>GDZR_HEDIFF_ShortForsakenLabel</hediff>
+        
+        <ageFractionChanceCurve>
+          <points>
+            <li>(0, 1)</li>
+            <li>(1, 1)</li>
+          </points>
+        </ageFractionChanceCurve>
+      </li>
+    </hediffGivers>
+  </HediffGiverSetDef>
+  
+  <!--■■■■■■■■■■■■■■■■■■ HUMAN ■■■■■■■■■■■■■■■■■■■■■■■-->
+  <HediffGiverSetDef>
+    <defName>GDZR_HEDIFFGIVERS_ShortHuman</defName>
+    <hediffGivers>
+      
+      <li Class="HediffGiver_Birthday">
+        <hediff>GDZR_HEDIFF_ShortHumanLabel</hediff>
+        
+        <ageFractionChanceCurve>
+          <points>
+            <li>(0, 1)</li>
+            <li>(1, 1)</li>
+          </points>
+        </ageFractionChanceCurve>
+      </li>
+    </hediffGivers>
+  </HediffGiverSetDef>
+  
+  <!--■■■■■■■■■■■■■■■■■■ SCALEMEN ■■■■■■■■■■■■■■■■■■■■■■■-->
+  <HediffGiverSetDef>
+    <defName>GDZR_HEDIFFGIVERS_ShortScalemen</defName>
+    <hediffGivers>
+      
+      <li Class="HediffGiver_Birthday">
+        <hediff>GDZR_HEDIFF_ShortScalemenLabel</hediff>
+        
+        <ageFractionChanceCurve>
+          <points>
+            <li>(0, 1)</li>
+            <li>(1, 1)</li>
+          </points>
+        </ageFractionChanceCurve>
+      </li>
+    </hediffGivers>
+  </HediffGiverSetDef>
+  
+  <!--■■■■■■■■■■■■■■■■■■ MANTIS ■■■■■■■■■■■■■■■■■■■■■■■-->
+  <HediffGiverSetDef>
+    <defName>GDZR_HEDIFFGIVERS_ShortMantis</defName>
+    <hediffGivers>
+      
+      <li Class="HediffGiver_Birthday">
+        <hediff>GDZR_HEDIFF_ShortMantisLabel</hediff>
+        
+        <ageFractionChanceCurve>
+          <points>
+            <li>(0, 1)</li>
+            <li>(1, 1)</li>
+          </points>
+        </ageFractionChanceCurve>
+      </li>
+    </hediffGivers>
+  </HediffGiverSetDef>
+ 
+  <!--■■■■■■■■■■■■■■■■■■ Moyo ■■■■■■■■■■■■■■■■■■■■■■■-->
+  <HediffGiverSetDef>
+    <defName>GDZR_HEDIFFGIVERS_ShortMoyo</defName>
+    <hediffGivers>
+      
+      <li Class="HediffGiver_Birthday">
+        <hediff>GDZR_HEDIFF_ShortMoyoLabel</hediff>
+        
+        <ageFractionChanceCurve>
+          <points>
+            <li>(0, 1)</li>
+            <li>(1, 1)</li>
+          </points>
+        </ageFractionChanceCurve>
+      </li>
+    </hediffGivers>
+  </HediffGiverSetDef>
+</Defs>

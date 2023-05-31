@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef Name="GDZR_BUILDABLE_TrapBase" ParentName="BuildingBase" Abstract="True">
+    <thingClass>Building_TrapExplosive</thingClass>
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+        <rect>(0.1,0,0.8,0.3)</rect>
+      </damageData>
+    </graphicData>
+    <uiIconOffset>(0,-0.14)</uiIconOffset>
+    <altitudeLayer>Building</altitudeLayer>
+    <rotatable>false</rotatable>
+    <tickerType>Normal</tickerType>
+    <stealable>false</stealable>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <thingCategories>
+      <li>BuildingsSecurity</li>
+    </thingCategories>
+    <statBases>
+      <Mass>4</Mass>
+      <MaxHitPoints>200</MaxHitPoints>
+      <WorkToBuild>1400</WorkToBuild>
+      <Flammability>1</Flammability>
+      <Beauty>-4</Beauty>
+      <TrapSpringChance>1.0</TrapSpringChance>
+    </statBases>
+<!--   <designationCategory>Security</designationCategory>-->
+    <building>
+      <isTrap>true</isTrap>
+      <trapDestroyOnSpring>true</trapDestroyOnSpring>
+      <trapPeacefulWildAnimalsSpringChanceFactor>0</trapPeacefulWildAnimalsSpringChanceFactor>
+      <expandHomeArea>false</expandHomeArea>
+      <ai_chillDestination>false</ai_chillDestination>
+    </building>
+
+    <placeWorkers>
+      <li>PlaceWorker_NeverAdjacentTrap</li>
+    </placeWorkers>
+  </ThingDef>
+
+  <ThingDef ParentName="GDZR_BUILDABLE_TrapBase">
+    <defName>GDZR_BUILDABLE_TrapSingularity</defName>
+    <thingClass>Building_TrapExplosive</thingClass>
+    
+    <label>singularity trap</label>
+    <description>A singularity encased in a graviton compressing envelope. Used in defensive positions to incapacitate large groups of bio-assets when sample recovery is of secondary concern.
+     \nMay also be used to erase evidence of Reticulan activity.</description>
+    <graphicData>
+      <texPath>Buildables/Traps/GDZR_SingularityTrap</texPath>
+    </graphicData>
+
+    <designationHotKey>Misc7</designationHotKey>
+    <comps>
+      <li Class="CompProperties_Explosive">
+  <!--  <explosionEffect>GDZR_EFFECTER_SingularityGrenade</explosionEffect>-->
+        <explosionSound>Explosion_EMP</explosionSound>
+        <wickTicks>0</wickTicks>
+        <damageAmountBase>1</damageAmountBase>
+        <explosiveDamageType>Cut</explosiveDamageType>
+        <explosiveRadius>1</explosiveRadius>
+        <!--    <postExplosionSpawnThingDef>GDZR_THING_HiddenDamagerAndLight_SingularityGrenade</postExplosionSpawnThingDef>
+         <preExplosionSpawnThingDef>GDZR_THING_HiddenDamagerAndLight_SingularityGrenade</preExplosionSpawnThingDef>
+        <postExplosionSpawnThingDef>Gas_Smoke</postExplosionSpawnThingDef>-->
+      <!--  <damageAmountBase>0</damageAmountBase>
+        <requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>-->
+      </li>
+      <li Class="Zetas.SpawnOnDestroy_CompProperties">
+        <effecterDef>GDZR_EFFECTER_SingularityGrenade</effecterDef>
+        <spawnThingDef>GDZR_THING_HiddenDamagerAndLight_SingularityGrenade</spawnThingDef>
+      </li>
+    </comps>
+
+    <specialDisplayRadius>3.9</specialDisplayRadius>
+  </ThingDef>
+
+ <!-- <ThinkTreeDef>
+    <defName>BurningResponse</defName>
+    <thinkRoot Class="ThinkNode_ConditionalBurning">
+      <subNodes>
+        <li Class="ThinkNode_Priority">
+          <subNodes>
+            <li Class="ThinkNode_ConditionalIntelligence">
+              <minIntelligence>ToolUser</minIntelligence>
+              <subNodes>
+                <li Class="JobGiver_JumpInWater" />
+              </subNodes>
+            </li>
+            <li Class="JobGiver_ExtinguishSelf" />
+            <li Class="JobGiver_RunRandom">
+              <maxDanger>Deadly</maxDanger>
+            </li>
+          </subNodes>
+        </li>
+      </subNodes>
+    </thinkRoot>
+  </ThinkTreeDef>-->
+  
+</Defs>
