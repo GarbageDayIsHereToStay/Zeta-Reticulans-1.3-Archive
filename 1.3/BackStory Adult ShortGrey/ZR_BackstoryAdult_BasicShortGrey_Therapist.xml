@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <!--■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ BACKSTORIES ADULT ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+        ■■■ THERAPIST ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■-->
+    <AlienRace.BackstoryDef>
+        <defName>ZR_BACKSTORYADULT_SHORTGREY_THERAPIST_DEF</defName>
+        <title>xeno therapist</title>
+        <titleShort>therapist</titleShort>
+        <baseDescription>A specialist in xenosociology, and behavioral conditioning [PAWN_nameDef] is well versed in the psycho-social imaging procedures.</baseDescription>
+        
+        <slot>Adulthood</slot>
+        
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        
+       
+        <spawnCategories>
+            <li>ZR_BackstoriesAdult_ShortGrey_Therapist_CAT</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+    <AlienRace.BackstoryDef>
+        <defName>ZR_BACKSTORYADULT_SHORTGREY_THERAPISTTHIN_DEF</defName>
+        <title>xeno therapist</title>
+        <titleShort>therapist</titleShort>
+        <baseDescription>A specialist in xenosociology, and behavioral conditioning [PAWN_nameDef] is well versed in the psycho-social imaging procedures.</baseDescription>
+        
+        <slot>Adulthood</slot>
+        
+        <bodyTypeGlobal>Thin</bodyTypeGlobal>
+        
+       
+        <spawnCategories>
+            <li>ZR_BackstoriesAdult_ShortGrey_Therapist_CAT</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+</Defs>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <!--■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ Backstories Adult ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+        ■■■ Disassembler ■■■-->
+    <AlienRace.BackstoryDef>
+        <defName>GDZR_BACKSTORY_AdultShortMoyo_Disassembler</defName>
+        <title>specimen disassembler</title>
+        <titleShort>disassembler</titleShort>
+        <baseDescription>[PAWN_nameDef] is practiced in the handling of biomaterialsattendants are tasked with the en suite staging of bio-asset's, preliminary examinations, basic imaging procedures, and non-critical tissue extraction.</baseDescription>
+        
+        <slot>Adulthood</slot>
+        
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <bodyTypeMale>Male</bodyTypeMale>
+        
+        <spawnCategories>
+           <li>GDZR_BACKSTORYCAT_AdultShortMoyo_Disassembler_CAT</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>  
+    <AlienRace.BackstoryDef>
+        <defName>GDZR_BACKSTORY_AdultShortMoyo_DisassemblerThin</defName>
+        <title>specimen disassembler</title>
+        <titleShort>disassembler</titleShort>
+        <baseDescription>[PAWN_nameDef] is practiced in the handling of biomaterialsattendants are tasked with the en suite staging of bio-asset's, preliminary examinations, basic imaging procedures, and non-critical tissue extraction.</baseDescription>
+        
+        <slot>Adulthood</slot>
+        
+        <bodyTypeGlobal>Thin</bodyTypeGlobal>
+        
+        <spawnCategories>
+            <li>GDZR_BACKSTORYCAT_AdultShortMoyo_Disassembler_CAT</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef> 
+</Defs>

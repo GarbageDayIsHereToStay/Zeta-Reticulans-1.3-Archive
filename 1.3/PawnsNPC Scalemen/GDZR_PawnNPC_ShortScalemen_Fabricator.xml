@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    
+    <!--■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ Pawn NPC, Short Scalemen, Fabricator ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■-->
+    <PawnKindDef ParentName="GDZR_PAWNNPC_FabricatorBase">
+        <defName>GDZR_PAWNNPC_ShortScalemen_Fabricator</defName>
+        <label>scalemen hybrid</label>	
+        <race>GDZR_RACE_ShortScalemen</race>
+        
+        <combatPower>60</combatPower>
+        <isFighter>true</isFighter>
+        <fleeHealthThresholdRange>0.7~0.8</fleeHealthThresholdRange> 
+        
+        <backstoryFiltersOverride>
+            <li>
+                <categories>
+                    <li>GDZR_Backstories_ShortScalemenChild_CAT</li>
+                    <li>ZR_BackstoriesAdult_ShortScalemen_Fabricator_CAT</li>
+                </categories>
+            </li>
+        </backstoryFiltersOverride>
+    </PawnKindDef>
+</Defs>
