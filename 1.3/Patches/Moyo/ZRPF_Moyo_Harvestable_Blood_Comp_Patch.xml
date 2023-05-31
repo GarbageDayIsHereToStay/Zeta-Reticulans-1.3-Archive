@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Moyo-From the depth</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <success>Always</success>
+      <operations>
+        
+<!--■■■■■■■■■■■■■■■■■■ COMPS ■■■■■■■■■■■■■■■■■■■■■■■-->    
+<li Class="PatchOperationSequence">
+          <success>Always</success>
+          <operations>
+            <li Class="PatchOperationTest">
+              <xpath>*/AlienRace.ThingDef_AlienRace[defName="ZR_RACE_SHORTMOYO_HYBRID_DEF"]/comps</xpath>
+              <success>Invert</success>
+            </li>
+            <li Class="PatchOperationAdd">
+              <xpath>*/AlienRace.ThingDef_AlienRace[defName="ZR_RACE_SHORTMOYO_HYBRID_DEF"]</xpath>
+              <value>
+                <comps />
+              </value>
+            </li>
+          </operations>
+        </li>
+        <li Class="PatchOperationAdd">
+          <success>Always</success>
+          <xpath>*/AlienRace.ThingDef_AlienRace[defName="ZR_RACE_SHORTMOYO_HYBRID_DEF"]/comps</xpath>
+          <value>
+            <li Class="HPF.CompProperties_ResourceHarvestable">
+              <harvestJobDef>ExtractDeepBlue_Job</harvestJobDef>
+              <saveUniqueKey>HPFDeepBlueFullness</saveUniqueKey>
+              <thingDef>Moyo_BloodBag</thingDef>
+              <intervalDays>6.666666667</intervalDays>
+              <amount>1</amount>
+              <inspectText>Moyo BloodBag</inspectText>
+              <constraints>
+                <li Class="HPF.ConstraintPawnAgeOver">
+                  <age>1</age>
+                </li>
+              </constraints>
+            </li>
+          </value>
+</li>
+
+      </operations>
+    </match>
+  </Operation>
+  
+</Patch>
+

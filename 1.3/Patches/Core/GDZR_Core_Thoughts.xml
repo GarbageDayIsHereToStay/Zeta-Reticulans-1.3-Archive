@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+  
+<Patch>
+<!--■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ TIER ONE ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+    ■■■ ROCK CHUNK BASE  ■■■-->
+  
+  <!-- This is in the C#, making the patch useless 
+    
+     if (billDoer.needs.mood != null)
+			{
+				Pawn_StoryTracker story = billDoer.story;
+				if (((story != null) ? story.traits : null) != null && billDoer.story.traits.HasTrait(TraitDefOf.Bloodlust))
+				{
+					billDoer.needs.mood.thoughts.memories.TryGainMemory(ThoughtDefOf.HarvestedOrgan_Bloodlust, null, null);
+				}
+			} 
+
+  <Operation Class="PatchOperationSequence">
+    <operations>
+      
+      
+ 
+      <li Class="PatchOperationAdd">
+        <success>Always</success>
+        <xpath>/Defs/ThoughtDef[defName = "HarvestedOrgan_Bloodlust"]/requiredTraits</xpath>
+        <value>
+            <li>GDZR_TRAIT_ZetaMentality</li>
+        </value>
+      </li>
+      
+      </operations>
+  </Operation>   -->
+  
+  </Patch>
+  

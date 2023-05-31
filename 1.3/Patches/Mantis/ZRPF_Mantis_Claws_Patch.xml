@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Mantis race</li>
+      <li>Lighter Than Fast</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <success>Always</success>
+      <operations>
+        
+        <li Class="PatchOperationAdd">
+          <xpath>*/BodyPartDef[defName="GDZR_BODYPART_MantisClawRight"]</xpath>
+          <value>
+            <spawnThingOnRemoved>LTF_MantisRightClaws</spawnThingOnRemoved>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>*/BodyPartDef[defName="GDZR_BODYPART_MantisClawLeft"]</xpath>
+          <value>
+            <spawnThingOnRemoved>LTF_MantisLeftClaws</spawnThingOnRemoved>
+          </value>
+        </li>     
+        
+      </operations>
+    </match>
+  </Operation>
+  
+</Patch>

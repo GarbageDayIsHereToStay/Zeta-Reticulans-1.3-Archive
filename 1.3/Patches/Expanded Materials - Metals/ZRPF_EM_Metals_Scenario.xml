@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Expanded Materials - Metals</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <success>Always</success>
+      <operations>
+<!--■■■■■■■■■■■■■■■■■■ SCENARIO ■■■■■■■■■■■■■■■■■■■■■■■-->    
+        <li Class="PatchOperationRemove">
+          <xpath>*/ScenarioDef[defName="ZR_SCENARIO_DEF"]/scenario/parts/li[4][@Class="ScenPart_StartingThing_Defined"]</xpath>
+        </li>
+        
+        <li Class="PatchOperationAdd">
+          <xpath>*/ScenarioDef[defName="ZR_SCENARIO_DEF"]/scenario/parts</xpath>
+          <value>
+            <li Class="ScenPart_StartingThing_Defined">
+              <def>StartingThing_Defined</def>
+              <thingDef>VMEu_Concrete</thingDef>
+              <count>450</count>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>*/ScenarioDef[defName="ZR_SCENARIO_DEF"]/scenario/parts</xpath>
+          <value>
+            <li Class="ScenPart_StartingThing_Defined">
+              <def>StartingThing_Defined</def>
+              <thingDef>Steel</thingDef>
+              <count>450</count>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>*/ScenarioDef[defName="ZR_SCENARIO_DEF"]/scenario/parts</xpath>
+          <value>
+            <li Class="ScenPart_StartingThing_Defined">
+              <def>StartingThing_Defined</def>
+              <thingDef>VMEu_Iron</thingDef>
+              <count>75</count>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>*/ScenarioDef[defName="ZR_SCENARIO_DEF"]/scenario/parts</xpath>
+          <value>
+            <li Class="ScenPart_StartingThing_Defined">
+              <def>StartingThing_Defined</def>
+              <thingDef>VMEu_Copper</thingDef>
+              <count>75</count>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>*/ScenarioDef[defName="ZR_SCENARIO_DEF"]/scenario/parts</xpath>
+          <value>
+            <li Class="ScenPart_StartingResearch">
+              <def>StartingResearch</def>
+              <project>VMEu_ConcreteMaking</project>
+            </li>
+          </value>
+        </li>     
+      </operations>
+    </match>
+  </Operation>
+  
+</Patch>
+

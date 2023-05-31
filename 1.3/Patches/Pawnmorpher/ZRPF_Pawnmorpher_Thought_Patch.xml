@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Pawnmorpher</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <success>Always</success>
+      <operations>
+        
+<!--■■■■■■■■■■■■■■■■■
+    MOD- PAWN MORPHER
+    1. Morph Frustrated
+    2. Morph Pleased
+    ■■■■■■■■■■■■■■■■■--> 
+        
+<!--■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■MOD THOUGHTS- PAWN MORPHER■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■--> 
+    <!--■■■1. MORPH FRUSTRATED■■■-->
+          <li Class="PatchOperationAdd">
+          <success>Always</success>
+          <xpath>Defs</xpath>
+          <value>
+            <ThoughtDef>
+              <defName>ZR_FurryNoMutations</defName>
+              <workerClass>Pawnmorph.Thoughts.Worker_MorphFrustrated</workerClass>
+              <validWhileDespawned>true</validWhileDespawned>
+              <requiredTraits>
+                <li>MutationAffinity</li>
+              </requiredTraits>
+              <stages>
+                <li>
+                  <label>morphological research frustrated</label>
+                  <description>The Reticulan existential experience has been throughly documented; I should pursue other, less known, experientials.</description>
+                  <baseMoodEffect>-2</baseMoodEffect>
+                </li>
+              </stages>
+            </ThoughtDef>
+          </value>
+        </li>
+        
+        <!--■■■2. MORPH PLEASED ■■■-->
+        <li Class="PatchOperationAdd">
+          <success>Always</success>
+          <xpath>Defs</xpath>
+          <value>
+            <ThoughtDef>
+              <defName>ZR_FurryMutationThoughtsHappy</defName>
+              <workerClass>Pawnmorph.Thoughts.Worker_HasMutations</workerClass>
+              <validWhileDespawned>true</validWhileDespawned>
+              <requiredTraits>
+                <li>MutationAffinity</li>
+              </requiredTraits>
+              <stages>
+                <li>
+                  <label>morphological study initiated</label>
+                  <description>This experence is sure to be illuminating.</description>
+                  <baseMoodEffect>1</baseMoodEffect>
+                </li>
+                <li>
+                  <label>morphological study: phase 2</label>
+                  <description>This is not the same as not being like this, yes, interesting.</description>
+                  <baseMoodEffect>2</baseMoodEffect>
+                </li>
+                <li>
+                  <label>morphological study: phase 3</label>
+                  <description>I feel like i've learned a thing or two, or three.</description>
+                  <baseMoodEffect>3</baseMoodEffect>
+                </li>
+                <li>
+                  <label>morphological study: phase 4</label>
+                  <description>My trove of biometric information is growing more well rounded. This hands on approach is really getting results.</description>
+                  <baseMoodEffect>4</baseMoodEffect>
+                </li>
+                <li>
+                  <label>morphological study: phase 5</label>
+                  <description>I'm becoming truly well-informed. The science brokers will be very interested in reclaiming my new bio-knowledge.</description>
+                  <baseMoodEffect>6</baseMoodEffect>
+                </li>
+                <li>
+                  <label>anthro body is complete</label>
+                  <description>The set of records gleaned from my experience are vast and i've increased my gene value immensely. My body is testament to a job well done.</description>
+                  <baseMoodEffect>8</baseMoodEffect>
+                </li>
+              </stages>
+            </ThoughtDef>
+          </value>
+        </li>
+        
+      </operations>
+    </match>
+  </Operation>
+</Patch>
+
