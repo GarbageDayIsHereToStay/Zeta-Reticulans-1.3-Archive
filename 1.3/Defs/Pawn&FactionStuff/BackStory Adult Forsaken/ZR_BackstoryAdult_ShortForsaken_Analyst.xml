@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <!--■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ BACKSTORIES ADULT ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+        ■■■ ANALYST ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■-->
+    <AlienRace.BackstoryDef>
+        <defName>ZR_BACKSTORYADULT_SHORTFORSAKEN_ANALYST_DEF</defName>
+        <title>analyst</title>
+        <titleShort>analyst</titleShort>
+        <baseDescription>[PAWN_nameDef]'s function is to process collected data into information packets for interpretation and catalog by Reticulan central science brokerages.</baseDescription>
+        
+        <slot>Adulthood</slot>
+        
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <bodyTypeMale>Male</bodyTypeMale>
+     
+        <spawnCategories>
+            <li>ZR_BackstoriesAdult_ShortForsaken_Analyst_CAT</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+    <AlienRace.BackstoryDef>
+        <defName>ZR_BACKSTORYADULT_SHORTFORSAKEN_ANALYSTTHIN_DEF</defName>
+        <title>analyst</title>
+        <titleShort>analyst</titleShort>
+        <baseDescription>[PAWN_nameDef]'s function is to process collected data into information packets for interpretation and catalog by Reticulan central science brokerages.</baseDescription>
+        
+        <slot>Adulthood</slot>
+        
+        <bodyTypeGlobal>Thin</bodyTypeGlobal>
+        
+        <spawnCategories>
+            <li>ZR_BackstoriesAdult_ShortForsaken_Analyst_CAT</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+</Defs>

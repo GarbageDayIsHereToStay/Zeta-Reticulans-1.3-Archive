@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <!--■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ Backstories Adult ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+        ■■■ Therapist ■■■-->
+    <AlienRace.BackstoryDef>
+        <defName>GDZR_BACKSTORY_AdultShortMoyo_Therapist</defName>
+        <title>xeno therapist</title>
+        <titleShort>therapist</titleShort>
+        <baseDescription>A specialist in xenosociology, and behavioral conditioning [PAWN_nameDef] is well versed in the psycho-social imaging procedures.</baseDescription>
+        
+        <slot>Adulthood</slot>
+        
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <bodyTypeMale>Male</bodyTypeMale>
+        
+        <spawnCategories>
+            <li>GDZR_BACKSTORYCAT_AdultShortMoyo_Therapist_CAT</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+    <AlienRace.BackstoryDef>
+        <defName>GDZR_BACKSTORY_AdultShortMoyo_TherapistThin</defName>
+        <title>xeno therapist</title>
+        <titleShort>therapist</titleShort>
+        <baseDescription>A specialist in xenosociology, and behavioral conditioning [PAWN_nameDef] is well versed in the psycho-social imaging procedures.</baseDescription>
+        
+        <slot>Adulthood</slot>
+        
+        <bodyTypeGlobal>Thin</bodyTypeGlobal>
+        
+        <spawnCategories>
+            <li>GDZR_BACKSTORYCAT_AdultShortMoyo_Therapist_CAT</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+</Defs>
