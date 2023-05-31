@@ -1,0 +1,338 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!--<ThingDef ParentName="ApparelNoQualityBase" Name="ZROrbitalUtilityBase" Abstract="True">
+    <thingCategories>
+      <li>ApparelUtility</li>
+    </thingCategories>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponSpecial/OrbitalTargeter</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>1200</MarketValue>
+      <Mass>0.2</Mass>
+      <Beauty>-3</Beauty>
+      <Flammability>0.5</Flammability>
+    </statBases>
+    <techLevel>Spacer</techLevel>
+    <tradeability>Sellable</tradeability>
+    <soundInteract>Standard_Pickup</soundInteract>
+    <tickerType>Normal</tickerType>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <thingSetMakerTags>
+      <li>SingleUseWeapon</li>
+    </thingSetMakerTags>
+    <apparel>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <scoreOffset>4</scoreOffset>
+      <careIfWornByCorpse>false</careIfWornByCorpse>
+      <careIfDamaged>false</careIfDamaged>
+      <ignoredByNonViolent>true</ignoredByNonViolent>
+      <wearPerDay>0</wearPerDay>
+      <bodyPartGroups>
+        <li>Waist</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Belt</li>
+      </layers>
+    </apparel>
+  </ThingDef>-->
+  
+  <!--■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ ALLOCATOR PAD ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■-->
+  <ThingDef ParentName="ApparelNoQualityBase">
+    <defName>GDZR_APPAREL_Allocator</defName>
+    <thingClass>Zetas.AllocatorApparel_ThingClass</thingClass>
+    
+    <label>allocator</label>
+    <description>Arterial flows of consignment drones pump a logistical lifeblood through the reaches of the Reticulan
+      &lt;i&gt;this will give you things, god damn there's so much writing i need to do. buy more chips from orbital traders&lt;/i&gt;.</description>
+    
+    <graphicData>
+      <texPath>Apparel/Allocator</texPath> <!--<texPath>Things/Item/Equipment/WeaponSpecial/OrbitalTargeterPowerBeam/OrbitalTargeterPowerBeam</texPath>-->
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(0.6,0.6)</drawSize>
+      <drawOffsetNorth>(-0.2,0,0)</drawOffsetNorth>
+      <drawOffsetEast>(0.16,0,-0.22)</drawOffsetEast>
+      <drawOffsetSouth>(0.16,0.01,-0.18)</drawOffsetSouth>
+      <drawOffsetWest>(-0.16,0,-0.22)</drawOffsetWest>
+    </graphicData>
+    <!--<equippedAngleOffset>-65</equippedAngleOffset>-->
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <MarketValue>1200</MarketValue>
+      <Mass>0.2</Mass>
+      <Beauty>0</Beauty>
+      <Flammability>0.1</Flammability>
+    </statBases>
+    <techLevel>Ultra</techLevel>
+    <tradeability>All</tradeability>
+    <soundInteract>Standard_Pickup</soundInteract>
+    
+    
+    <equippedStatOffsets>
+      <GlobalLearningFactor>0.1</GlobalLearningFactor>
+      <ResearchSpeed>0.2</ResearchSpeed>
+      <FixBrokenDownBuildingSuccessChance>0.5</FixBrokenDownBuildingSuccessChance>
+      <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">0.2</SlaveSuppressionOffset>
+      <!--  
+       <PsychicSensitivity>
+      <NegotiationAbility>1.0
+      <TradePriceImprovement> 1.0tho
+      <DrugSellPriceImprovement> Zero
+      <SocialImpact>1.0 -->
+    </equippedStatOffsets>
+    
+    <apparel>
+      <wornGraphicPath>Apparel/Allocator</wornGraphicPath>
+      <ai_pickUpOpportunistically>false</ai_pickUpOpportunistically>
+     
+   <!-- <wornGraphicData>
+      <renderUtilityAsPack>false</renderUtilityAsPack>
+        <north>
+          <male>  <offset>(0.3,0)</offset> </male>
+          <female><offset>(0.3,0)</offset> </female>
+          <thin>  <offset>(0.3,0)</offset> </thin>
+          <hulk>  <offset>(0.3,0)</offset> </hulk>
+          <fat>   <offset>(0.3,0)</offset> </fat>
+        </north>
+        <south>
+          <male>  <offset>(-1,0)</offset> </male>
+          <female><offset>(-1,0)</offset> </female>
+          <thin>  <offset>(-1,0)</offset> </thin>
+          <hulk>  <offset>(-1,0)</offset> </hulk>
+          <fat>   <offset>(-1,0)</offset> </fat>
+        </south>
+        <east>
+            <male><offset>(-1,0)</offset></male>
+            <female><offset>(-1,0)</offset></female>
+            <thin><offset>(-1,0)</offset></thin>
+            <hulk><offset>(-1,0)</offset></hulk>
+            <fat><offset>(-1,0)</offset></fat>
+        </east>
+        
+        <male>  <scale>(0.1,0.1)</scale> </male>
+        <female><scale>(0.1,0.1</scale> </female>
+        <thin>  <scale>(0.1,0.1)</scale> </thin>
+        <hulk>  <scale>(0.1,0.1)</scale> </hulk>
+        <fat>   <scale>(0.1,0.1)</scale> </fat>
+      </wornGraphicData>-->
+      
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <careIfWornByCorpse>false</careIfWornByCorpse>
+      <careIfDamaged>false</careIfDamaged>
+      <wearPerDay>0</wearPerDay>
+      <bodyPartGroups>
+        <li>Hands</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Shell</li>
+       <!-- <li>Belt</li>-->
+      </layers>
+    </apparel>
+    
+    <thingCategories>
+      <li>ApparelUtility</li>
+    </thingCategories>
+    
+    <thingSetMakerTags>
+      <li>RewardStandardLowFreq</li>
+      <li>RewardStandardQualitySuper</li>
+    </thingSetMakerTags>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    
+    <verbs>
+      <li Class="Zetas.Transporter.ZetaVerbProperties">
+        <label>meal x6</label>
+        <verbClass>Zetas.Transporter.Verb_BeamSpawner</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <commandIcon>Icons/GDZR_Meal</commandIcon>
+  <!--     public TaleDef colonyWideTaleDef;  -->
+        <range>44.9</range>
+
+        <warmupTime>2</warmupTime>
+        <spawnListRandom>
+          <li>GDZR_MEAL_Nutriment</li>
+        </spawnListRandom>
+       <spawnCountRandom>6</spawnCountRandom>
+       
+        <ai_AvoidFriendlyFireRadius>1</ai_AvoidFriendlyFireRadius>
+     
+        <soundAiming>OrbitalTargeter_Aiming</soundAiming>
+        <soundCast>OrbitalTargeter_Fire</soundCast>
+        <onlyManualCast>true</onlyManualCast>
+        <mustCastOnOpenGround>true</mustCastOnOpenGround>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+      </li>
+      <li Class="Zetas.Transporter.ZetaVerbProperties">
+        <label>medicine x4</label>
+        <verbClass>Zetas.Transporter.Verb_BeamSpawner</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <commandIcon>Icons/ZR_MedicineUltratech</commandIcon>
+        
+        <range>44.9</range>
+        
+        <spawnListRandom>
+          <li>MedicineUltratech</li>
+        </spawnListRandom>
+        <spawnCountRandom>4</spawnCountRandom>
+        
+        <warmupTime>1.5</warmupTime>
+        <noiseRadius>4</noiseRadius>
+        <ai_IsBuildingDestroyer>false</ai_IsBuildingDestroyer>
+        <soundCast>ThrowGrenade</soundCast>
+        <mustCastOnOpenGround>true</mustCastOnOpenGround>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+      </li>
+      <li Class="Zetas.Transporter.ZetaVerbProperties">
+        <label>chemfuel x35</label>
+        <verbClass>Zetas.Transporter.Verb_BeamSpawner</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <commandIcon>Icons/GDZR_Chemfuel</commandIcon>
+        
+        <range>44.9</range>
+        
+        <spawnListRandom>
+          <li>Chemfuel</li>
+        </spawnListRandom>
+        <spawnCountRandom>35</spawnCountRandom>
+        
+        <warmupTime>1.5</warmupTime>
+        <noiseRadius>4</noiseRadius>
+        <ai_IsBuildingDestroyer>false</ai_IsBuildingDestroyer>
+        <soundCast>ThrowGrenade</soundCast>
+        <mustCastOnOpenGround>true</mustCastOnOpenGround>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+      </li>
+      <li Class="Zetas.Transporter.ZetaVerbProperties">
+        <label>steel x40</label>
+        <verbClass>Zetas.Transporter.Verb_BeamSpawner</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <commandIcon>Icons/ZR_Steel</commandIcon>
+        
+        
+        <range>44.9</range>
+        
+        <spawnListRandom>
+          <li>Steel</li>
+        </spawnListRandom>
+        <spawnCountRandom>40</spawnCountRandom>
+        
+        <warmupTime>1.5</warmupTime>
+        <noiseRadius>4</noiseRadius>
+        <ai_IsBuildingDestroyer>false</ai_IsBuildingDestroyer>
+        <soundCast>ThrowGrenade</soundCast>
+        <mustCastOnOpenGround>true</mustCastOnOpenGround>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+      </li>
+      <li Class="Zetas.Transporter.ZetaVerbProperties">
+        <label>component, industrial x3</label>
+        <verbClass>Zetas.Transporter.Verb_BeamSpawner</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <commandIcon>Icons/ZR_ComponentIndustrial</commandIcon>
+        
+        <range>44.9</range>
+        
+        <spawnListRandom>
+          <li>ComponentIndustrial</li>
+        </spawnListRandom>
+        <spawnCountRandom>3</spawnCountRandom>
+        
+        <warmupTime>1.5</warmupTime>
+        <noiseRadius>4</noiseRadius>
+        <ai_IsBuildingDestroyer>false</ai_IsBuildingDestroyer>
+        <soundCast>ThrowGrenade</soundCast>
+        <mustCastOnOpenGround>true</mustCastOnOpenGround>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+      </li>
+      <li Class="Zetas.Transporter.ZetaVerbProperties">
+        <label>component, spacer x1</label>
+        <verbClass>Zetas.Transporter.Verb_BeamSpawner</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <commandIcon>Icons/ZR_ComponentSpacer</commandIcon>
+        
+        <range>44.9</range>
+        
+        <spawnListRandom>
+          <li>ComponentSpacer</li>
+        </spawnListRandom>
+        <spawnCountRandom>1</spawnCountRandom>
+        
+        <warmupTime>1.5</warmupTime>
+        <noiseRadius>4</noiseRadius>
+        <ai_IsBuildingDestroyer>false</ai_IsBuildingDestroyer>
+        <soundCast>ThrowGrenade</soundCast>
+        <mustCastOnOpenGround>true</mustCastOnOpenGround>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+      </li>
+    
+    </verbs>
+    <comps>
+     <li Class="CompProperties_Reloadable">
+        <maxCharges>8</maxCharges>
+        <destroyOnEmpty>false</destroyOnEmpty>
+        <ammoDef>GDZR_AMMO_AllocatorWaffer</ammoDef>
+        <ammoCountToRefill>1</ammoCountToRefill>
+        <hotKey>Misc4</hotKey>
+        <chargeNoun>redeem allocation</chargeNoun>
+        <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+      </li> 
+    </comps>
+    <modExtensions>
+      <li Class="OversizedApparel.Extension">
+        <drawSize>(0.4, 0.4)</drawSize>
+      </li>
+    </modExtensions>
+  </ThingDef>    
+  
+  <!--■■■ BEAM ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■-->
+  <ThingDef ParentName="EtherealThingBase">
+    <defName>ZR_BEAM_TRANSPORTSMALL_DEF</defName>
+    <label>transport beam</label>
+    <thingClass>Zetas.Transporter.TransportBeam_ThingClass</thingClass>
+    
+    <drawerType>RealtimeOnly</drawerType>
+    <drawOffscreen>true</drawOffscreen>
+    <seeThroughFog>true</seeThroughFog>
+    
+    <tickerType>Normal</tickerType>
+    
+    <comps>
+      <li Class="Zetas.Transporter.TransportBeam_CompProperties">
+        <width>1</width>
+        <color>(200,200,200,256)</color>  <!--<color>(126,253,0, 242)</color> prutty necron green-->
+        <angle>0</angle>  
+        <duration>500</duration>
+        <angleRange>0</angleRange>
+        <soundDef>GDZR_SOUND_OrbitalBeamSubtle</soundDef>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowColor>200,200,200</glowColor>
+        <overlightRadius>8</overlightRadius>
+        <glowRadius>8</glowRadius>
+      </li>
+      <li Class="Zetas.MiscComps.Effecter_CompProperties">
+        <compClass>Zetas.MiscComps.Effecter_Comp</compClass>   
+        <effecter1st>GDZR_EFFECTER_TransportBeamSpeckColumn</effecter1st>
+        <effecter2nd>GDZR_EFFECTER_ParticleParalysisItem</effecter2nd>
+      </li>
+    </comps>
+  </ThingDef>
+
+
+</Defs>
