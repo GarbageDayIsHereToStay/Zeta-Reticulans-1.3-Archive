@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs> 
+  
+<!--■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ TELEPATHY ABILITY STAT DEF ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■-->
+    <!-- <efficiencyStat> for staring procedure surgery-->
+<StatDef>
+    <defName>GDZR_STAT_Telelectrics</defName>
+
+    <category>BasicsPawn</category>
+    <label>telelectrics</label>
+    <description>Zeta reticulans generate coded electical pulses from naturally evolved, and genetically enhanced, psy-limbic nodules nestled under the Zeta's amygala which are tranferred cross-biology at close ranges from electrocyte cell structures within their eyes.</description>
+    
+    <defaultBaseValue>1</defaultBaseValue>
+    <showZeroBaseValue>true</showZeroBaseValue>
+    <minValue>0</minValue>
+    
+    <toStringStyle>PercentZero</toStringStyle>
+
+    <scenarioRandomizable>true</scenarioRandomizable>
+    
+    <showOnMechanoids>false</showOnMechanoids>
+    <showOnNonWorkTables>false</showOnNonWorkTables> 
+ 
+    <displayPriorityInCategory>3500</displayPriorityInCategory>
+   <!-- <capacityOffsets>
+        <li>
+            <capacity>GDZR_PAWNCAPACITY_Telelectrics</capacity>
+            <scale>1000</scale>
+  
+        </li>
+       <li>
+            <capacity>Manipulation</capacity>
+            <scale>8</scale>
+            <max>1</max>
+        </li>
+    </capacityOffsets> -->
+    <capacityFactors>
+        <li>
+            <capacity>GDZR_PAWNCAPACITY_Telelectrics</capacity>
+        </li>
+    </capacityFactors> 
+</StatDef>
+ 
+</Defs>
+

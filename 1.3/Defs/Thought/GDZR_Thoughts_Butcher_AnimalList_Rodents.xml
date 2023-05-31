@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+<!--■■■■■■■■■■■■■■■■■
+    Thoughts, Animal Butcher, Rodents
+    Core
+  1) Alphabeaver
+  2) Boomrat
+  3) Capybara
+  4) Chinchilla
+  5) Hare 
+  6) Raccoon
+  7) Rat
+  8) Snowhare
+  9) Squirrel
+  ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ Thoughts, Animal Butcher, Rodent ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■   
+  ■■■ 1) Alphabeaver ■■■-->
+  <ThoughtDef>
+    <defName>GDZR_THOUGHT_ButcheredAnimalAlphabeaver</defName>
+    
+    <icon>Icons/ZR_MeatKnowledge</icon>
+    <showBubble>true</showBubble>
+    
+    <durationDays>2</durationDays>
+    <stackLimit>100</stackLimit>
+    <stackedEffectMultiplier>1</stackedEffectMultiplier>
+    <stages>
+      <li>
+        <label>bio-asset inspected (Alphabeaver)</label>
+        <description>A bio-asset's physical attributes have been recorded for use in demographic analysis.</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <!--■■■ 2) Boomrat ■■■-->
+  <ThoughtDef>
+    <defName>GDZR_THOUGHT_ButcheredAnimalBoomrat</defName>
+    
+    <icon>Icons/ZR_MeatKnowledge</icon>
+    <showBubble>true</showBubble>
+    
+    <durationDays>2</durationDays>
+    <stackLimit>100</stackLimit>
+    <stackedEffectMultiplier>1</stackedEffectMultiplier>
+    <stages>
+      <li>
+        <label>bio-asset inspected (Boomrat)</label>
+        <description>A bio-asset's physical attributes have been recorded for use in demographic analysis.
+        \nBio-engineered blisters of flamable fluid erupt on death, igniting though bioelectric spasm, and spreading flames over comparatively large areas relative to the small size of the species.
+        \nHandling should be avoided in the absence of fire abatement.</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <!--■■■ 3) Capybara ■■■-->
+  <ThoughtDef>
+    <defName>GDZR_THOUGHT_ButcheredAnimalCapybara</defName>
+    
+    <icon>Icons/ZR_MeatKnowledge</icon>
+    <showBubble>true</showBubble>
+    
+    <durationDays>2</durationDays>
+    <stackLimit>100</stackLimit>
+    <stackedEffectMultiplier>1</stackedEffectMultiplier>
+    <stages>
+      <li>
+        <label>bio-asset inspected (Capybara)</label>
+        <description>A bio-asset's physical attributes have been recorded for use in demographic analysis.
+        \nA large water loving verbrate, related to Earth rats. Despite their semiaquatic nature juicing is not reccomended.</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <!--■■■ 4) Chinchilla ■■■-->
+  <ThoughtDef>
+    <defName>GDZR_THOUGHT_ButcheredAnimalChinchilla</defName>
+    
+    <icon>Icons/ZR_MeatKnowledge</icon>
+    <showBubble>true</showBubble>
+    
+    <durationDays>2</durationDays>
+    <stackLimit>100</stackLimit>
+    <stackedEffectMultiplier>1</stackedEffectMultiplier>
+    <stages>
+      <li>
+        <label>bio-asset inspected (Chinchilla)</label>
+        <description>A bio-asset's physical attributes have been recorded for use in demographic analysis.
+        \nDense, soft, pettable fur and extreme cutiness offer little too the Zetan assembly.</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <!--■■■ 5) Guinea Pig ■■■-->
+  <ThoughtDef>
+    <defName>GDZR_THOUGHT_ButcheredAnimalGuineaPig</defName>
+    
+    <icon>Icons/ZR_MeatKnowledge</icon>
+    <showBubble>true</showBubble>
+    
+    <durationDays>2</durationDays>
+    <stackLimit>100</stackLimit>
+    <stackedEffectMultiplier>1</stackedEffectMultiplier>
+    <stages>
+      <li>
+        <label>bio-asset inspected (Guinea Pig)</label>
+        <description>A bio-asset's physical attributes have been recorded for use in demographic analysis.
+        \nA popular livestock animal among humans this small herd animal produces unusually high levels of insulin production, prehaps explaining.</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <!--■■■ 5) Hare ■■■-->
+  <ThoughtDef>
+    <defName>GDZR_THOUGHT_ButcheredAnimalHare</defName>
+    
+    <icon>Icons/ZR_MeatKnowledge</icon>
+    <showBubble>true</showBubble>
+    
+    <durationDays>2</durationDays>
+    <stackLimit>100</stackLimit>
+    <stackedEffectMultiplier>1</stackedEffectMultiplier>
+    <stages>
+      <li>
+        <label>bio-asset inspected (Hare)</label>
+        <description>A bio-asset's physical attributes have been recorded for use in demographic analysis.</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <!--■■■ 6) Raccoon ■■■-->
+  <ThoughtDef>
+    <defName>GDZR_THOUGHT_ButcheredAnimalRaccoon</defName>
+    
+    <icon>Icons/ZR_MeatKnowledge</icon>
+    <showBubble>true</showBubble>
+    
+    <durationDays>2</durationDays>
+    <stackLimit>100</stackLimit>
+    <stackedEffectMultiplier>1</stackedEffectMultiplier>
+    <stages>
+      <li>
+        <label>bio-asset inspected (Raccoon)</label>
+        <description>A bio-asset's physical attributes have been recorded for use in demographic analysis.
+        \nThis species has been known to inflitrate deep into our facilties in order to access our waste disposal areas.</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <!--■■■ 7) Rat ■■■    For mice -->     \nA small warm blooded invertebrate orginally from the Human's home system. Planet of "Mars". -->
+  <ThoughtDef>
+    <defName>GDZR_THOUGHT_ButcheredAnimalRat</defName>
+    
+    <icon>Icons/ZR_MeatKnowledge</icon>
+    <showBubble>true</showBubble>
+    
+    <durationDays>2</durationDays>
+    <stackLimit>100</stackLimit>
+    <stackedEffectMultiplier>1</stackedEffectMultiplier>
+    <stages>
+      <li>
+        <label>bio-asset inspected (Rat)</label>
+        <description>A bio-asset's physical attributes have been recorded for use in demographic analysis.
+        \nRats prey at night and stalk at night, often a group of rats will contain a rat of larger than normal size who makes many and/or all the rules.</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <!--■■■ 8) Snowhare ■■■-->
+  <ThoughtDef>
+    <defName>GDZR_THOUGHT_ButcheredAnimalSnowhare</defName>
+    
+    <icon>Icons/ZR_MeatKnowledge</icon>
+    <showBubble>true</showBubble>
+    
+    <durationDays>2</durationDays>
+    <stackLimit>100</stackLimit>
+    <stackedEffectMultiplier>1</stackedEffectMultiplier>
+    <stages>
+      <li>
+        <label>bio-asset inspected (Snowhare)</label>
+        <description>A bio-asset's physical attributes have been recorded for use in demographic analysis.</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <!--■■■ 9) Squirrel ■■■-->
+  <ThoughtDef>
+    <defName>GDZR_THOUGHT_ButcheredAnimalSquirrel</defName>
+    
+    <icon>Icons/ZR_MeatKnowledge</icon>
+    <showBubble>true</showBubble>
+    
+    <durationDays>2</durationDays>
+    <stackLimit>100</stackLimit>
+    <stackedEffectMultiplier>1</stackedEffectMultiplier>
+    <stages>
+      <li>
+        <label>bio-asset inspected (Squirrel)</label>
+        <description>A bio-asset's physical attributes have been recorded for use in demographic analysis.
+        \n</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+</Defs>

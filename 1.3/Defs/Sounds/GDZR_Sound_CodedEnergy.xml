@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  
+  <ImpactSoundTypeDef>
+    <defName>GDZR_IMPACTSOUND_CodedEnergy</defName>
+    <!-- <playOnlyIfHitPawn>true</playOnlyIfHitPawn> -->
+    <soundDef>GDZR_SOUND_CodedEnergy</soundDef>
+  </ImpactSoundTypeDef>
+  
+  <SoundDef>
+    <defName>GDZR_SOUND_CodedEnergy</defName>    
+    <context>MapOnly</context> 
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <onCamera>True</onCamera>      
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>GDZR_Sound_CodedEnergyHit</clipPath>
+          </li>
+        </grains>           
+        <volumeRange>8~10</volumeRange>
+        <pitchRange>1.1~1.15</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+</Defs>

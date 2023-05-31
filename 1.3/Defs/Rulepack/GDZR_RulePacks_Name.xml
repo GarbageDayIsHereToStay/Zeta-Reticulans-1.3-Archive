@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+<!--■■■■■■■■■■■■■■■■■■PAWN NAMES■■■■■■■■■■■■■■■■■■■■■■■-->
+  
+  <RulePackDef>
+    <defName>GDZR_RULEPACK_Namer</defName>
+    <rulePack>
+      <rulesFiles>
+        <li>GDZRname->Names/GDZR_Names</li>
+        <li>GDZRnamelast->Names/GDZR_NamesLast</li>
+      </rulesFiles>
+      <rulesStrings>
+        <li>r_name->[GDZRname] [GDZRnamelast]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  
+  <RulePackDef>
+    <defName>GDZR_RULEPACK_NamerMale</defName>
+    <include>
+      <li>GDZR_RULEPACK_Namer</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[GDZRname] [GDZRnamelast]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  
+  <RulePackDef>
+    <defName>GDZR_RULEPACK_NamerFemale</defName>
+    <include>
+      <li>GDZR_RULEPACK_Namer</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[GDZRname] [GDZRnamelast]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  
+<!--■■■■■■■■■■■■■■■■■■FACTION NAMES■■■■■■■■■■■■■■■■■■■■■■■-->
+  
+  <RulePackDef>
+    <defName>GDZR_RULEPACK_NamerFaction</defName>
+    <rulePack>
+      <rulesFiles>
+        <li>GDZRname->Names/GDZR_Factions</li>
+      </rulesFiles>
+      <rulesStrings>
+        <li>r_name->[GDZRname]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  
+  <RulePackDef>
+    <defName>GDZR_RULEPACK_NamerSettlement</defName>
+    <rulePack>
+      <rulesFiles>
+        <li>GDZRname->Names/GDZR_Settlements</li>
+      </rulesFiles>
+      <rulesStrings>
+        <li>r_name->[GDZRname]</li>
+      </rulesStrings>
+   
+    </rulePack>
+  </RulePackDef>
+  
+</Defs>

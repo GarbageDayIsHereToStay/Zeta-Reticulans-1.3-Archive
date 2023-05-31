@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <TraderKindDef>
+    <defName>GDZR_TRADER_OrbitalRebateLow</defName>
+    <label>reticulan rebate drone</label>
+    <orbital>true</orbital>
+    <faction>GDZR_FACTION_Player</faction>
+    <hideThingsNotWillingToTrade>true</hideThingsNotWillingToTrade>
+    <requestable>true</requestable>
+    <commonality>9</commonality>
+    
+    <stockGenerators>
+
+      <!--■■■ RESOURCES ■■■-->
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Silver</thingDef>
+        <countRange>5000~20000</countRange>
+      </li>
+
+      <!-- Buying -->
+      <li Class="StockGenerator_BuySingleDef">
+        <thingDef>Plasteel</thingDef>
+      </li>
+      <li Class="StockGenerator_BuySingleDef">
+        <thingDef>Gold</thingDef>
+      </li>
+      <li Class="StockGenerator_BuySingleDef">
+        <thingDef>Silver</thingDef>
+      </li>
+      <li Class="StockGenerator_BuySingleDef">
+        <thingDef>Jade</thingDef>
+      </li>
+      <li Class="StockGenerator_BuySingleDef">
+        <thingDef>ComponentSpacer</thingDef>
+      </li>
+      <li Class="StockGenerator_BuySingleDef">
+        <thingDef>ComponentIndustrial</thingDef>
+      </li>
+      <li Class="StockGenerator_BuySingleDef">
+        <thingDef>MedicineUltratech</thingDef>
+      </li>
+    
+      <li Class="StockGenerator_BuySingleDef">
+        <thingDef>MealSurvivalPack</thingDef>
+      </li>
+      <li Class="StockGenerator_BuyTradeTag">
+        <tag>Drugs</tag>
+      </li>
+    
+      <li Class="StockGenerator_BuyTradeTag"><tag>BodyPartsNatural</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>TechHediff</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>ImplantEmpireCommon</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>ImplantEmpireRoyal</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>Artifact</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>PsylinkNeuroformer</tag></li>
+
+
+    </stockGenerators>
+  </TraderKindDef>
+
+</Defs>

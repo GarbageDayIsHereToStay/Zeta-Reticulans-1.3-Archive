@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<ScenarioDef>
+	
+	<defName>GDZR_Scenario</defName>
+	<label>&lt;color=#aeaeae&gt;Research Co-op&lt;/color&gt;</label> <!-- DFDAC8 very faint but i like-->
+	<description>&lt;color=#aeaeae&gt;Assets have been leveraged&lt;/color&gt; and contracts with science brokers committed to. Establishing a research depot is this co-op's priority. Sample processing and knowledge acquisition must meet projections as the Assembly gears through one the most crucial work-intervals of its current praxis.
+		
+		   &lt;color=#aeaeae&gt;Threads of the Assembly's empire puncture their way through the territorial spheres of a thousand different sovereignties; garrotting a vast array of life in sector sweeping experimentation. 
+		
+         During Earthman's antiquity the Reticulan homeworld was brought under central unification. Shortly after a sweeping reorganization began. The world and it's satellites were cracked into subdivisons, laminated in reinforcing polymers, and redirected outwards to run itinerant on the quadrant. Shadowed between the stars, engulfed in darkness, and doused with heat lensing dissipation fields these megalithic nautilus serve as deep space commodity exchanges, labour brokers, and the techno-vaults of the Assembly.
+		
+         From those ultratech grimoires an inkspill of shadowed infrastructure slicks out like a passing wake as they glide unseen along the edges of transit-lanes and slink elliptic around populated star systems.
+		
+         Left nestled inside pockets of interstellar dust and powdered over by the obscuring gasses of chemical giants, great chromed cornucopias manufacture gleaming rivers of saucer shaped consignment drones. On scattered planets specialized production bureau are plunged deep into blackened oceanic trenches or concealed by atmospheres of volcanic choke too churn the planet's flesh undetected. And below glitterworld grandopolis processing caverns are beam-cut and the above biology sorted at leisure.&lt;/color&gt;</description>
+	
+	
+	<scenario>
+		<summary>Four zeta reticulans have formed a research co-op.</summary>
+		<playerFaction>
+			<def>PlayerFaction</def>
+			<factionDef>GDZR_FACTION_Player</factionDef>
+		</playerFaction>
+		<parts>
+			<!-- Game start dialo-->
+			<li Class="ScenPart_GameStartDialog">
+				<def>GameStartDialog</def>
+				<text>Assets have been leveraged and contracts with science brokers committed to. Establishing a research depot is this co-op's priority; Sample processing and knowledge acquisition must meet projections.</text>
+				<closeSound>GDZR_SOUND_StartingMusic</closeSound>
+			</li>
+			<li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+				<def>ConfigPage_ConfigureStartingPawns</def>
+				<pawnCount>4</pawnCount>
+				<pawnChoiceCount>10</pawnChoiceCount>
+			</li>
+		    <li Class="Zetas.Transporter.ScenPart_TBeamArriveMethod">
+				<def>GDZR_SCENEPART_TransportBeamArriveMethod</def>
+		    	<startingThought>GDZR_THOUGHT_NewColonyOptimism</startingThought>
+			</li>
+		
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>GDZR_APPAREL_Allocator</thingDef>
+				<count>1</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>GDZR_AMMO_AllocatorWaffer</thingDef>
+				<count>6</count>
+			</li>
+			
+		    <li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>GDZR_WEAPON_InterrupterOne</thingDef>
+				<count>1</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>GDZR_WEAPON_SingularityGrenade</thingDef>
+			</li>
+	        <li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>GDZR_BUILDABLE_TrapSingularity</thingDef>
+			</li>
+		<!--	<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>GDZR_APPAREL_PowerArmor</thingDef>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>GDZR_APPAREL_PowerArmor</thingDef>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>GDZR_APPAREL_ArmorHelmet</thingDef>
+				<count>1</count>
+			</li>-->
+			
+			<!--<li Class="Zetas.ScenPart_StartingThing_Random"> 
+				<def>StartingThing_Defined</def>
+				<count>1</count>  Text is C# code to say "x1" the item it picks from the list
+				<thingList>
+					<li>GDZR_WEAPON_SingularityGrenade</li>
+					<li>GDZR_WEAPON_InterrupterOne</li>
+					<li>ZR_WEAPON_INTERRUPTER1MEDIUM_DEF</li>
+					<li>ZR_WEAPON_INTERRUPTER2MEDIUM_DEF</li>
+					<li>ZR_WEAPON_INTERRUPTER5SHORT_DEF</li>
+				</thingList>
+			</li>
+			<li Class="Zetas.ScenPart_StartingThing_Random"> 
+				<def>StartingThing_Defined</def>
+				<count>3</count>
+				<thingList>
+					<li>GDZR_WEAPON_SingularityGrenade</li>
+					<li>GDZR_WEAPON_InterrupterOne</li>
+					<li>ZR_WEAPON_INTERRUPTER1MEDIUM_DEF</li>
+					<li>ZR_WEAPON_INTERRUPTER2MEDIUM_DEF</li>
+					<li>ZR_WEAPON_INTERRUPTER5SHORT_DEF</li>
+				</thingList>
+			</li>-->
+			
+			<!--
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>Silver</thingDef>
+				<count>2000</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>Steel</thingDef>
+				<count>200</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>WoodLog</thingDef>
+				<count>75</count>
+			</li>
+	
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>ComponentSpacer</thingDef>
+				<count>2</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>ComponentIndustrial</thingDef>
+				<count>30</count>
+			</li>
+				<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>Yayo</thingDef>
+				<count>75</count>
+			</li>
+				<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>WakeUp</thingDef>
+				<count>12</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>MealSurvivalPack</thingDef>
+				<count>20</count>
+			</li>
+            <li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>ZROrbitalTradeBeacon</thingDef>
+				<count>1</count>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>ZRCommsConsole</thingDef>
+				<count>1</count>
+			</li>-->
+			<!--<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+			    <thingDef>ZR_BUILDABLE_SHORTTURRET1_DEF</thingDef>
+				<count>1</count>
+			</li>-->
+		
+			<!--<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>ZRApparel_ShieldBelt</thingDef>
+				<count>1</count>
+			</li>-->
+			<!-- 
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>GDZR_WEAPON_SingularityGrenade</thingDef>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>ZR_WEAPON_INTERRUPTIONGRENADE2_DEF</thingDef>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>GDZR_WEAPON_InterrupterOne</thingDef>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>ZR_WEAPON_INTERRUPTER1MEDIUM_DEF</thingDef>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>ZR_WEAPON_INTERRUPTER2MEDIUM_DEF</thingDef>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>ZR_WEAPON_INTERRUPTER5SHORT_DEF</thingDef>
+			</li>
+			-->
+		</parts>
+	</scenario>
+	
+</ScenarioDef>
+</Defs>

@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+<!--■■■■■■■■■■■■■■■■■
+     BEING A JERK, ANIMAL LIST
+  1. Gazelle aka "GDZR_THOUGHT_ButcheredAnimalGazelle"
+■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■BEING A JERK■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■-->
+<!--■■■ Timber Wolf ■■■-->
+<ThoughtDef>
+  <defName>GDZR_THOUGHT_ButcheredAnimalWolfTimber</defName>
+    
+    <icon>Icons/ZR_MeatKnowledge</icon>
+    <showBubble>true</showBubble>
+    
+    <durationDays>2</durationDays>
+    <stackLimit>100</stackLimit>
+    <stackedEffectMultiplier>1</stackedEffectMultiplier>
+    <stages>
+      <li>
+        <label>bio-asset inspected (Timber Wolf)</label>
+        <description>A bio-asset's physical attributes have been recorded for use in demographic analysis.
+        \nA predatory canid. Canids are roughly delineated between "good boys" and "bad boys", the latter of which applies to the Timber wolf.</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+    </stages>
+</ThoughtDef>
+  
+  <!--■■■ Artic Wolf ■■■-->
+  <ThoughtDef>
+    <defName>GDZR_THOUGHT_ButcheredAnimalWolfArctic</defName>
+    
+    <icon>Icons/ZR_MeatKnowledge</icon>
+    <showBubble>true</showBubble>
+    
+    <durationDays>2</durationDays>
+    <stackLimit>100</stackLimit>
+    <stackedEffectMultiplier>1</stackedEffectMultiplier>
+    <stages>
+      <li>
+        <label>bio-asset inspected (Artic Wolf)</label>
+        <description>A bio-asset's physical attributes have been recorded for use in demographic analysis.
+        \nA predatory canid of the "bad boy" variety. Found most often in ice cool enviroments.</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <!--■■■ Fennec Fox ■■■-->
+  <ThoughtDef>
+    <defName>GDZR_THOUGHT_ButcheredAnimalFoxFennec</defName>
+    
+    <icon>Icons/ZR_MeatKnowledge</icon>
+    <showBubble>true</showBubble>
+    
+    <durationDays>2</durationDays>
+    <stackLimit>100</stackLimit>
+    <stackedEffectMultiplier>1</stackedEffectMultiplier>
+    <stages>
+      <li>
+        <label>bio-asset inspected (Fennec Fox)</label>
+        <description>A bio-asset's physical attributes have been recorded for use in demographic analysis.</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <!--■■■ Red Fox ■■■-->
+  <ThoughtDef>
+    <defName>GDZR_THOUGHT_ButcheredAnimalFoxRed</defName>
+    
+    <icon>Icons/ZR_MeatKnowledge</icon>
+    <showBubble>true</showBubble>
+    
+    <durationDays>2</durationDays>
+    <stackLimit>100</stackLimit>
+    <stackedEffectMultiplier>1</stackedEffectMultiplier>
+    <stages>
+      <li>
+        <label>bio-asset inspected (Red Fox)</label>
+        <description>A bio-asset's physical attributes have been recorded for use in demographic analysis.</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <!--■■■ Arctic Fox ■■■-->
+  <ThoughtDef>
+    <defName>GDZR_THOUGHT_ButcheredAnimalFoxArctic</defName>
+    
+    <icon>Icons/ZR_MeatKnowledge</icon>
+    <showBubble>true</showBubble>
+    
+    <durationDays>2</durationDays>
+    <stackLimit>100</stackLimit>
+    <stackedEffectMultiplier>1</stackedEffectMultiplier>
+    <stages>
+      <li>
+        <label>bio-asset inspected (Arctic Fox)</label>
+        <description>A bio-asset's physical attributes have been recorded for use in demographic analysis.</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <!--■■■ Warg ■■■-->
+  <ThoughtDef>
+    <defName>GDZR_THOUGHT_ButcheredAnimalWarg</defName>
+    
+    <icon>Icons/ZR_MeatKnowledge</icon>
+    <showBubble>true</showBubble>
+    
+    <durationDays>2</durationDays>
+    <stackLimit>100</stackLimit>
+    <stackedEffectMultiplier>1</stackedEffectMultiplier>
+    <stages>
+      <li>
+        <label>bio-asset inspected (Warg)</label>
+        <description>A bio-asset's physical attributes have been recorded for use in demographic analysis.
+        \A large, predatory canid. An extremely bad boy to be avoided.</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>  
+</Defs>

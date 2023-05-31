@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!--■■■■■■■■■■■■■■■■■■
+  
+  <ThoughtDef>
+    <defName>ZR_WasImprisoned</defName>
+    <durationDays>6</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>was imprisoned</label>
+        <description>The colony had me in jail for a while, like a caged animal.</description>
+        <baseMoodEffect>-10</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+
+  <ThoughtDef>
+    <defName>ZR_AteInImpressiveDiningRoom</defName>
+    <durationDays>1</durationDays>
+    <stackLimit>1</stackLimit>fr
+    <stages>
+      <li IsNull="True" />
+  
+      <li IsNull="True" />
+
+      <li IsNull="True" />
+   
+      <li>
+        <label>decent dining room</label>
+        <description>I ate my meal in a decent dining room.</description>
+        <baseMoodEffect>2</baseMoodEffect>
+      </li>
+      <li>
+        <label>slightly impressive dining room</label>
+        <description>I ate my meal in a slightly impressive dining room.</description>
+        <baseMoodEffect>3</baseMoodEffect>
+      </li>
+      <li>
+        <label>somewhat impressive dining room</label>
+        <description>I ate my meal in an impressive dining room.</description>
+        <baseMoodEffect>4</baseMoodEffect>
+      </li>
+      <li>
+        <label>very impressive dining room</label>
+        <description>I ate my meal in a very impressive dining room.</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+      <li>
+        <label>extremely impressive dining room</label>
+        <description>I ate my meal in an extremely impressive dining room. I could stay there forever.</description>
+        <baseMoodEffect>6</baseMoodEffect>
+      </li>
+      <li>
+        <label>unbelievably impressive dining room</label>
+        <description>I ate my meal in an unbelievably impressive dining room. I could stay there forever.</description>
+        <baseMoodEffect>7</baseMoodEffect>
+      </li>
+      <li>
+        <label>wondrously impressive dining room</label>
+        <description>I ate my meal in a wonderful dining room. I could stay there forever.</description>
+        <baseMoodEffect>8</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+ 
+
+  
+  <ThoughtDef>
+    <defName>ZR_WasImprisoned</defName>
+    <durationDays>6</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>was imprisoned</label>
+        <description>The colony had me in jail for a while, like a caged animal.</description>
+        <baseMoodEffect>-10</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+
+  <ThoughtDef>
+    <defName>GDZR_THOUGHT_PsychicDrone</defName>
+    <workerClass>ThoughtWorker_PsychicDrone</workerClass>
+    <effectMultiplyingStat>PsychicSensitivity</effectMultiplyingStat>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>psychic soothe</label>
+        <description>It's like a calming voice at the back of my mind, soothing me, settling my nerves.</description>
+        <baseMoodEffect>16</baseMoodEffect>
+      </li>
+      <li>
+        <label>low psychic drone</label>
+        <description>It's like a scratching at the back of my mind. A voice, whispering. I can only make out a few words, and I don't like them.</description>
+        <baseMoodEffect>-12</baseMoodEffect>
+      </li>
+      <li>
+        <label>moderate psychic drone</label>
+        <description>I feel like someone is always just out of sight, speaking to me. The voice changes but the message doesn't. I'm supposed to hurt people. Make it go away!</description>
+        <baseMoodEffect>-22</baseMoodEffect>
+      </li>
+      <li>
+        <label>high psychic drone</label>
+        <description>The voice is unbearably loud. It's hard to concentrate. I find myself talking back to it, yelling at it. But it just keeps shouting!</description>
+        <baseMoodEffect>-30</baseMoodEffect>
+      </li>
+      <li>
+        <label>extreme psychic drone</label>
+        <description>My heart pounds and I'm sweating. All I can think of is hurting and suffering and all these enemies around me. They're my nightmare, my nightmare, my nightmare...</description>
+        <baseMoodEffect>-40</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+
+
+<ThoughtDef>
+    <defName>ZR_DefeatedHostileFactionLeader</defName>
+    <icon>Things/Mote/ThoughtSymbol/Skull</icon>
+    <showBubble>true</showBubble>
+    <durationDays>6</durationDays>
+    <stackLimit>5</stackLimit>
+    <stages>
+      <li>
+        <label>defeated hostile leader {0}</label>
+        <description>They were leading efforts to destroy us, and I took them down!</description>
+        <baseMoodEffect>10</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+
+
+  
+  <ThoughtDef>
+    <defName>ZR_UsedPrivateBathroom</defName>
+    <durationDays>1</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>awful bathroom</label>
+        <description>My bathroom is an awful place.</description>
+        <baseMoodEffect>-4</baseMoodEffect>
+      </li>
+      <li IsNull="True" />            --> 
+      <!-- dull -->
+      
+  <!--   <li>
+        <label>decent bathroom</label>
+        <description>My bathroom is very interesting. I like it.</description>
+        <baseMoodEffect>2</baseMoodEffect>
+      </li>
+      <li>
+        <label>slightly impressive bathroom</label>
+        <description>My bathroom is actually slightly impressive. I like it.</description>
+        <baseMoodEffect>3</baseMoodEffect>
+      </li>
+      <li>
+        <label>impressive bathroom</label>
+        <description>My bathroom is impressive. I love it!</description>
+        <baseMoodEffect>4</baseMoodEffect>
+      </li>
+      <li>
+        <label>very impressive bathroom</label>
+        <description>My bathroom is very impressive. This is the best place ever!</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+      <li>
+        <label>extremely impressive bathroom</label>
+        <description>My bathroom is extremely impressive. This is the best place ever!</description>
+        <baseMoodEffect>6</baseMoodEffect>
+      </li>
+      <li>
+        <label>unbelievably impressive bathroom</label>
+        <description>My bathroom is unbelievably impressive. This is the best place ever!</description>
+        <baseMoodEffect>7</baseMoodEffect>
+      </li>
+      <li>
+        <label>wondrously impressive bathroom</label>
+        <description>My bathroom is the best place one can ever imagine. It's wonderful.</description>
+        <baseMoodEffect>8</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  -->
+  
+ <!--■■■■■■■■■■■■■■■■■
+     SOCIAL
+  1. Attended Conference aka "AttendedParty"
+  2. Original Co-partner aka "CrashedTogether"
+     ■■■■■■■■■■■■■■■■■--> 
+ 
+<!--■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■SOCIAL■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■--> 
+<!--■■■1. ATTENDED CONFERENCE■■■-->
+<ThoughtDef>
+    <defName>GDZR_THOUGHT_AttendedParty</defName>
+    <durationDays>2</durationDays>
+    <stackLimit>10</stackLimit>
+    <stages>
+      <li>
+        <label>attended conference</label>
+        <description>Group consultations increase the co-op's coordination and efficiency.</description>
+        <baseMoodEffect>6</baseMoodEffect>
+      </li>
+    </stages>
+</ThoughtDef>
+  
+<!--■■■2. ORIGINAL CO-PARTNER■■■-->
+<ThoughtDef>
+    <defName>GDZR_THOUGHT_CrashedTogether</defName>
+    <thoughtClass>Thought_MemorySocial</thoughtClass>
+    <durationDays>45</durationDays>
+    <stackLimit>300</stackLimit>
+    <stackLimitForSameOtherPawn>1</stackLimitForSameOtherPawn>
+    <stages>
+      <li>
+        <label>original co-partner</label>
+        <baseOpinionOffset>15</baseOpinionOffset>
+      </li>
+    </stages>
+</ThoughtDef>
+  
+</Defs>

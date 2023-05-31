@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <TraderKindDef>
+    <defName>GDZR_TRADER_OrbitaVivariumLow</defName>
+    <label>reticulan vivarium saucer</label>
+    <orbital>true</orbital>
+    <faction>GDZR_FACTION_Player</faction>
+    <hideThingsNotWillingToTrade>true</hideThingsNotWillingToTrade>
+    <requestable>false</requestable>
+    <commonality>5</commonality>
+    <stockGenerators>
+
+      <!--■■■ RESOURCES ■■■-->
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Silver</thingDef>
+        <countRange>2000~10000</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Leather_Human</thingDef>
+        <countRange>100~600</countRange>
+        <price>Exorbitant</price>
+      </li>
+      
+      <!--■■■ FOOD ■■■-->
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Hay</thingDef>
+        <countRange>200~1000</countRange>
+        <price>Exorbitant</price>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Kibble</thingDef>
+        <countRange>100~800</countRange>
+        <price>Exorbitant</price>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Meat_Human</thingDef>
+        <countRange>100~800</countRange>
+        <price>Exorbitant</price>
+      </li>
+      
+      <!--■■■ PARTS■■■-->
+      <li Class="StockGenerator_Tag">
+        <tradeTag>TechHediff</tradeTag>
+        <thingDefCountRange>1~5</thingDefCountRange>
+        <countRange>-8~2</countRange>
+        <price>Exorbitant</price>
+      </li>
+      <li Class="StockGenerator_Category">
+        <categoryDef>BodyPartsNatural</categoryDef>
+        <price>Exorbitant</price>
+        <thingDefCountRange>-2~8</thingDefCountRange>
+        <countRange>1~4</countRange>
+      </li>
+
+      
+      <!--■■■ LIVESTOCK ■■■-->
+      <li Class="StockGenerator_Slaves">
+        <countRange>-1~4</countRange>
+        <slaveKindDef>Slave</slaveKindDef>
+        <price>Exorbitant</price>
+      </li>
+      <li Class="StockGenerator_Animals">
+        <tradeTagsSell>
+          <li>AnimalFarm</li>
+          <li>AnimalPet</li>
+          <li>AnimalCommon</li>
+          <li>AnimalUncommon</li>
+          <li>AnimalFighter</li>
+        </tradeTagsSell>
+        <tradeTagsBuy>
+          <li>AnimalPet</li>
+          <li>AnimalInsect</li>
+          <li>AnimalExotic</li>
+        </tradeTagsBuy>
+        <kindCountRange>5~8</kindCountRange>
+        <countRange>3~5</countRange>
+        <price>Exorbitant</price>
+      </li>
+      
+      <!--■■■ WEAPONS ■■■-->
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>GDZR_WEAPON_InterrupterOne</thingDef>
+        <countRange>-6~1</countRange>
+        <price>Exorbitant</price>
+      </li>
+      
+
+      <!--■■■ BUYING ■■■-->
+      <li Class="StockGenerator_BuySlaves" />
+
+
+    </stockGenerators>
+  </TraderKindDef>
+
+</Defs>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+<!--■■■■■■■■■■■■■■■■■
+    1. Stare 
+    a) Hit
+    b) Miss
+    ■■■■■■■■■■■■■■■■■--> 
+   
+<!--■■■■■■■■■■■■■■■■■■1. STARE■■■■■■■■■■■-->
+<!---■■■A) HIT■■■-->
+<SoundDef>
+    <defName>GDZR_SOUND_StareHit</defName>  
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>ZR_Sound_Stare_Hit</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>7.91151~8.93479</volumeRange>      
+        <pitchRange>1~1.14837</pitchRange>
+     </li>
+    </subSounds>
+</SoundDef>
+  
+<!---■■■B) MISS■■■-->
+<SoundDef>
+    <defName>GDZR_SOUND_StareMiss</defName>  
+    <context>MapOnly</context>
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>ZR_Sound_Stare_Miss</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>7.91151~8.93479</volumeRange>      
+        <pitchRange>1~1.14837</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+</Defs>

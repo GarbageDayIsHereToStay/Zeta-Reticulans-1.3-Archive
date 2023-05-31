@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<!--■■■■■■■■■■■■■■■■■
+		1. Thought
+        2. Surgery
+        3. Main Hediff
+        ■■■■■■■■■■■■■■■■■--> 
+	<!--■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ THOUGHT ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■--> 
+	<!--<ThoughtDef>
+		<defName>ZR_THOUGHT_STARINGFEAR</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>GDZR_HEDIFF_ParalysisSurgery</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>horrifying hallucinations</label>
+				<description>A series of terrifying mirage are playing out in {PAWN_possessive} mind as their snyapse fire off
+			
+				</description>
+				<baseMoodEffect>-30</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>-->
+	
+	<!--<description>A series of terrifying mirage are playing out in {PAWN_possessive} mind, messed up things like:
+					A skeleton calls {PAWN_pronoun} boring then points and laughs at their genitals,
+					
+					a nuclear bomb explodes directly above a flock of adorable ducklings, 
+					
+					there's a spooky doll sitting in a rocking chair while ghostly childern sing somewhere out of view,
+				  
+				    a large spider mutters something in french and procedes to slash a woman's eyeball with a razor blade, 
+				    
+				    {PAWN_nameDef} is part of a hotdog eating contest and they're losing badly
+				    
+				    there is a bat
+				    
+				    a bee repeatly stings a flower, hurting what it loves most in a senseless display of bee-rage.
+				    
+				    they deliver a 50 foot sub to a backyard party and everyone immediately digs in and grabs some sub, a few pat you on the back and jokingly say "my hero" as they pass you, 
+				    {PAWN_nameDef} then announces "that'll be 80$" except no one in the group answers, they say it again.. and again.. no ones saying anything at all! they're pretending {PAWN_nameDef} is not even there!
+				    
+				    they're in a sauna next to a bludging Arnold Schwarzenegger he's nude and he won't dancing his pecs, he's humming "enter the gladiators" as loudly as he can while he rips off his own face
+				 
+				    season 4 of "fullhouse" is playing on a television set
+				    
+				    a werewolf and a frankenstein's monster are up to no good
+				    
+				    TWO skeletons calls {PAWN_pronoun} boring then they both point and laughs at {PAWN_possessive} genitals
+				</description>-->
+	
+	<!--■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ SURGERY ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■--> 
+
+	<Zetas.Recipes.RecipeDefZeta ParentName="GDZR_RECIPE_SurgeryStaringBase">
+		<defName>GDZR_RECIPE_StaringParalysis</defName>
+		<label>Staring procedure: Paralysis inducement</label>
+		<description>Suppress the recipients brainwaves, forcing them into a short coma and slowing their metabolism to a crawl.</description>
+		<descriptionHyperlinks>
+			<HediffDef>GDZR_HEDIFF_ParalysisSurgery</HediffDef>
+		</descriptionHyperlinks>
+		
+		<workerClass>Zetas.Recipes.Recipe_Staring</workerClass>
+		<jobString>Staring Procedure.</jobString>
+		<workAmount>1000</workAmount>
+		<hideBodyPartNames>true</hideBodyPartNames>
+		<surgerySuccessChanceFactor>10</surgerySuccessChanceFactor>
+
+		<appliedOnFixedBodyParts>
+			<li>Brain</li>
+		</appliedOnFixedBodyParts> 
+		
+		<addsHediff>GDZR_HEDIFF_ParalysisSurgery</addsHediff>
+	<!--	<thoughtDefs>
+		  <li>GDZR_THOUGHT_Phrenography</li>
+		</thoughtDefs>-->
+	</Zetas.Recipes.RecipeDefZeta>
+	
+</Defs>

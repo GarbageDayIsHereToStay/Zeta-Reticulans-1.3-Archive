@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ <!--■■■■■■■■■■■■■■■■■  
+     MISC
+  1. Composed Thoughts aka "Catharsis"
+  2. Initial Foundation aka "NewColonyOptimism"
+  3. Initial Progress aka "NewColonyHope"
+  4. Work
+  5. Pain
+  6. Clothed Nudist
+  7. Nudist
+  8. Sick
+  9. Soaking Wet
+  10. Missing Tounge
+   ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■MISC■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+   ■■■1. CATHARSIS ■■■-->
+<ThoughtDef>
+    <defName>GDZR_THOUGHT_Catharsis</defName>
+    <durationDays>2</durationDays>
+    <stackLimit>3</stackLimit>
+    <stackedEffectMultiplier>1</stackedEffectMultiplier>
+    <stages>
+      <li>
+        <label>composed thoughts</label>
+        <description>I have organized my thoughts and I am eager to get back to my work.</description>
+        <baseMoodEffect>8</baseMoodEffect>
+      </li>
+    </stages>
+</ThoughtDef>
+
+<!--■■■2. INITIAL FOUNDATION ■■■-->
+<ThoughtDef>
+    <defName>GDZR_THOUGHT_NewColonyOptimism</defName>
+    <durationDays>6</durationDays>
+    <nextThought>GDZR_THOUGHT_NewColonyHope</nextThought>
+    <stages>
+      <li>
+        <label>initial foundation</label>
+        <description>I am motivated to establish a facility and begin data collection.</description>
+        <baseMoodEffect>12</baseMoodEffect>
+      </li>
+    </stages>
+</ThoughtDef>
+  
+<!--■■■3. INITIAL PROGRESS ■■■-->
+<ThoughtDef>
+    <defName>GDZR_THOUGHT_NewColonyHope</defName>
+    <durationDays>8</durationDays>
+    <stages>
+      <li>
+        <label>initial progress</label>
+        <description>The co-op seems to be progressing on schedule.</description>
+        <baseMoodEffect>4</baseMoodEffect>
+      </li>
+    </stages>
+</ThoughtDef>
+  
+<!--■■■4. WORK ■■■-->
+<ThoughtDef>
+    <defName>GDZR_THOUGHT_FreedFromSlavery</defName>
+    <durationDays>6</durationDays>
+    <stackLimit>1</stackLimit>
+    <nextThought>GDZR_THOUGHT_NewColonyHope</nextThought>
+    <stages>
+      <li>
+        <label>recently leased</label>
+        <description>I get to contribute to a new project.</description>
+        <baseMoodEffect>6</baseMoodEffect>
+      </li>
+    </stages>
+</ThoughtDef>
+  
+
+<!--■■■5. PAIN ■■■-->
+<ThoughtDef>
+    <defName>GDZR_THOUGHT_Pain</defName>
+    <workerClass>ThoughtWorker_Pain</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <nullifyingTraits>
+      <li>Masochist</li>
+    </nullifyingTraits>
+    <stages>
+      <li>
+        <label>negligible pain</label>
+        <description>The pain is negligible.</description>
+        <baseMoodEffect>-2</baseMoodEffect>
+      </li>
+      <li>
+        <label>minor pain</label>
+        <description>This pain is starting to interfere with my thought process.</description>
+        <baseMoodEffect>-4</baseMoodEffect>
+      </li>
+      <li>
+        <label>serious pain</label>
+        <description>I need to seek treatment immediately and stop this distraction.</description>
+        <baseMoodEffect>-6</baseMoodEffect>
+      </li>
+      <li>
+        <label>mind-shattering pain</label>
+        <description>Without pain. without sacrifice.. we would have.. nothing...</description>
+        <baseMoodEffect>-8</baseMoodEffect>
+      </li>
+    </stages>
+</ThoughtDef>
+  
+<!--■■■6. CLOTHED NUDIST ■■■--> 
+<ThoughtDef>
+    <defName>GDZR_THOUGHT_ClothedNudist</defName>
+    <workerClass>ThoughtWorker_NudistNude</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <invert>true</invert>
+    <requiredTraits>
+      <li>Nudist</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>constraining clothes</label>
+        <description>These drapings attract unhygienic stains and hinder the fluidity of my action.
+        \nI should seek the smooth uniformity of nudity.</description>
+        <baseMoodEffect>-2</baseMoodEffect>
+      </li>
+    </stages>
+</ThoughtDef>
+  
+<!--■■■7. NUDIST ■■■--> 
+<ThoughtDef>
+    <defName>GDZR_THOUGHT_HappyNude</defName>
+    <workerClass>ThoughtWorker_NudistNude</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <requiredTraits>
+      <li>Nudist</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>unrestricted nude</label>
+        <description>No material to snag, a lowered drag rate which saves me valuable micro seconds on every movement, and an easy to clean surface.
+        \nMy nakedness is efficiency in it's rawest state.</description>
+        <baseMoodEffect>4</baseMoodEffect>
+      </li>
+    </stages>
+</ThoughtDef>
+  
+<!--■■■8. SICK ■■■--> 
+<ThoughtDef>
+    <defName>GDZR_THOUGHT_Sick</defName>
+    <workerClass>ThoughtWorker_Sick</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>sick</label>
+        <description>I've have stopped feeling healthy. Not feeling well contravenes co-op procedure and reflects poorly on me.</description>
+        <baseMoodEffect>-6</baseMoodEffect>
+      </li>
+    </stages>
+</ThoughtDef>
+  
+  
+  <!--■■■9) SOAKING WET ■■■--> 
+<ThoughtDef>
+    <defName>GDZR_THOUGHT_SoakingWet</defName>
+    <durationDays>0.1</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>soaking wet</label>
+        <description>I am soaking wet; thats several degrees more wetness than advised.</description>
+        <baseMoodEffect>-4</baseMoodEffect>
+      </li>
+    </stages>
+</ThoughtDef>
+  
+  <!--■■■9) Missing Tounge ■■■--> 
+  <ThoughtDef>
+    <defName>GDZR_MissingTongue</defName>
+    <workerClass>ThoughtWorker_MissingTongue</workerClass>
+    <stages>
+      <li>
+        <label>missing tongue</label>
+        <description>I am missing my tongue. It is so frustrating not being able to speak!</description>
+        <baseMoodEffect>-2</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+</Defs>

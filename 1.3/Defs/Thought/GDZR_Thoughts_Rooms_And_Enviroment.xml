@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+   
+ <!--■■■■■■■■■■■■■■■■■
+     ROOMS & ENVIROMENT
+  1. Brightness   
+  2. Cold 
+  2. Darkness
+  3. Psychic Emanator Soothe
+  4. Psychic Drone
+  5. Heat
+  6. Hospital Patient Room Stats 
+  7. Magnetospheric Lighting aka "Aurora"
+  8. Need Beauty
+     ■■■■■■■■■■■■■■■■■--> 
+
+<!--■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ROOMS & ENVIROMENT■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+    ■■■1. Brightness■■■-->  
+  <ThoughtDef>
+    <defName>GDZR_THOUGHT_EnvironmentBright</defName>
+    <workerClass>Zetas.Thoughts.ThoughtWorker_Bright</workerClass> <!-- Try again with adding eye covers -->
+    
+    <stages>
+      <li>
+        <label>sensitive eyes</label>
+        <description>The light is too bright and overwhelming my senses.</description>
+        <baseMoodEffect>-2</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+<!--■■■2. COLD■■■-->
+<ThoughtDef>
+    <defName>GDZR_THOUGHT_EnvironmentCold</defName>
+    <workerClass>ThoughtWorker_Cold</workerClass>
+  
+   <!-- 
+     Doesn't show :(
+     <showBubble>true</showBubble>
+    <icon>Icons/GDZR_Cold</icon>-->
+
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>chilly</label>
+        <description>The temperature is too low.</description>
+        <baseMoodEffect>-2</baseMoodEffect>
+      </li>
+      <li>
+        <label>cold</label>
+        <description>The low temperature is affecting my fine motor control and making it difficult to work.</description>
+        <baseMoodEffect>-4</baseMoodEffect>
+      </li>   
+      <li>
+        <label>numbing cold</label>
+        <description>These conditions are dangerous. My extremities are becoming stiff and hard to move. My metabolic processess are slowing.</description>
+        <baseMoodEffect>-8</baseMoodEffect>
+      </li>
+      <li>
+        <label>absolutely freezing</label>
+        <description>If I don't escape these conditions and raise my core temperature i'll die.</description>
+        <baseMoodEffect>-12</baseMoodEffect>
+      </li>
+    </stages>
+</ThoughtDef>  
+  
+<!--■■■3. DARKNESS■■■-->
+<ThoughtDef>
+    <defName>GDZR_THOUGHT_EnvironmentDark</defName>
+   
+    <workerClass>ThoughtWorker_Dark</workerClass>
+    <stages>
+      <li>
+        <label>darkness</label>
+        <description>I need at least some light to work efficiently.</description>
+        <baseMoodEffect>-2</baseMoodEffect>
+      </li>
+    </stages>
+</ThoughtDef>
+  
+<!--■■■5. PSYCHIC EMANATOR SOOTHE■■■-->
+<ThoughtDef>
+    <defName>GDZR_THOUGHT_PsychicEmanatorSoothe</defName>
+  
+    <workerClass>ThoughtWorker_PsychicEmanatorSoothe</workerClass>
+    <effectMultiplyingStat>PsychicSensitivity</effectMultiplyingStat>
+    <stages>
+      <li>
+        <label>psychic emanator soothe</label>
+        <description>The psychic emanator makes me feel strange, but also very relaxed.</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+    </stages>
+</ThoughtDef>
+  
+<!--■■■5. PSYCHIC DRONE■■■-->
+<ThoughtDef>
+    <defName>GDZR_THOUGHT_PsychicDrone</defName>
+  
+    <workerClass>ThoughtWorker_PsychicDrone</workerClass>
+    <effectMultiplyingStat>PsychicSensitivity</effectMultiplyingStat>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>psychic soothe</label>
+        <description>The synchronizing tempo of a distant psyneural beat helps to pace my actions. The words "Harder","Better","Faster" and "Stronger" are discernible, instructions i'll make sure to apply to my work.</description>
+        <baseMoodEffect>4</baseMoodEffect>
+      </li>
+      <li>
+        <label>low psychic drone</label>
+        <description>It's like a scratching at the back of my mind. A voice, whispering. I can only make out a few words "Hey now, hey now, hear what I say now".</description>
+        <baseMoodEffect>-4</baseMoodEffect>
+      </li>
+      <li>
+        <label>moderate psychic drone</label>
+        <description>I feel like someone is just out of sight, just around the corner. The voice changes but the message doesn't. I'm supposed to "Party", and "Move my body".</description>
+        <baseMoodEffect>-8</baseMoodEffect>
+      </li>
+      <li>
+        <label>high psychic drone</label>
+        <description>The voice is unbearably loud. It warns that "The Venga bus is comin" and that an "An interstate free disco" is upon us. It's hard to concentrate. I find myself singing along with it.</description>
+        <baseMoodEffect>-12</baseMoodEffect>
+      </li>
+      <li>
+        <label>extreme psychic drone</label>
+        <description>We like to party. We like, we like to party. We like to party. We like, we like to party</description>
+        <!--<description>My heart pounds and I'm sweating. All I can think of is hurting and suffering and all these enemies around me. They're my nightmare, my nightmare, my nightmare...</description>-->
+        <baseMoodEffect>-16</baseMoodEffect>
+      </li>
+    </stages>
+</ThoughtDef>
+  
+<!--■■■6. HEAT■■■-->
+<ThoughtDef>
+    <defName>GDZR_THOUGHT_EnvironmentHot</defName>
+  
+    <workerClass>ThoughtWorker_Hot</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>warm</label>
+        <description>The temperature is too high.</description>
+        <baseMoodEffect>-4</baseMoodEffect>
+      </li>
+      <li>
+        <label>hot</label>
+        <description>I need to decrease my internal temperature before necrosis begins and my brain tissue is damaged.</description>
+        <baseMoodEffect>-8</baseMoodEffect>
+      </li>    
+      <li>
+        <label>sweltering hot</label>
+        <description>I can feel fluid drawing from my extremities into cooling vacuoles around my brain; I am in extreme danger.</description>
+        <baseMoodEffect>-16</baseMoodEffect>
+      </li>
+      <li>
+        <label>blistering hot</label>
+        <description>If I don't escape these conditions and lower my core temperature i'll be die.</description>
+        <baseMoodEffect>-20</baseMoodEffect>
+      </li>     
+    </stages>
+</ThoughtDef>
+  
+<!--■■■7. HOSPITAL PATIENT ROOM STATS■■■-->
+<ThoughtDef>
+    <defName>GDZR_THOUGHT_HospitalPatientRoomStats</defName>
+    <workerClass>ThoughtWorker_HospitalPatientRoomStats</workerClass>
+    <stages>    
+      <!--Awful (Stage 1)-->
+      <li>
+        <label>primitive treatment center</label>
+        <description>This medical center is underequipped and poorly maintained.</description>
+        <baseMoodEffect>-2</baseMoodEffect>
+      </li>
+      <!--Dull (Stage 2)-->
+      <li>
+        <label>primitive treatment center</label>
+        <description>This medical center is underequipped and poorly maintained.</description>
+        <baseMoodEffect>-2</baseMoodEffect>
+      </li>
+      <!--Null (Stage 3) <li IsNull="True" />-->
+      <li>
+        <label>rudimentary treatment center</label>
+        <description>These facilities are basic but will suffice while I convalesce.</description>
+        <baseMoodEffect>0</baseMoodEffect>
+      </li>
+      <!--Null (Stage 4) <li IsNull="True" />-->
+      <li>
+        <label>rudimentary treatment center</label>
+        <description>These facilities are basic but will suffice while I convalesce.</description>
+        <baseMoodEffect>0</baseMoodEffect>
+      </li>
+      <!--Slightly Impressive (Stage 5)-->
+      <li>
+        <label>satisfactory treatment center</label>
+        <description>This facility is competently planned and well maintained, indicating improved health outcomes are likely.</description>
+        <baseMoodEffect>2</baseMoodEffect>
+      </li>
+      <!--Somewhat Impressive (Stage 6)-->
+      <li>
+        <label>satisfactory treatment center</label>
+        <description>This facility is competently planned and well maintained, indicating improved health outcomes are likely</description>
+        <baseMoodEffect>2</baseMoodEffect>
+      </li>
+      <!--Very Impressive (Stage 6)-->
+      <li>
+        <label>advanced treatment center</label>
+        <description>Excellent engineering and advanced amenities will undoubtly aid in my recovery.</description>
+        <baseMoodEffect>4</baseMoodEffect>
+      </li>
+      <!--Extremely Impressive (Stage 8)-->
+      <li>
+        <label>advanced treatment center</label>
+        <description>Excellent engineering and advanced amenities will undoubtly aid in my recovery.</description>
+        <baseMoodEffect>4</baseMoodEffect>
+      </li>
+      <!--Unbelievably Impressive (Stage 9)-->
+      <li>
+        <label>innovative treatment center</label>
+        <description>Sophisticated technologies, innovative design, and ingenius administration assure i'll make a quick recovery.</description>
+        <baseMoodEffect>6</baseMoodEffect>
+      </li>
+      <!--Wondrously Impressive (Stage 10)-->
+      <li>
+        <label>innovative treatment center</label>
+        <description>Sophisticated technologies, innovative design, and ingenius administration assure i'll make a quick recovery.</description>
+        <baseMoodEffect>6</baseMoodEffect>
+      </li>
+    </stages>
+</ThoughtDef>
+ 
+<!--■■■8. MAGNETOSPHERIC LIGHTING■■■-->
+<ThoughtDef>
+    <defName>GDZR_THOUGHT_Aurora</defName>
+  
+    <workerClass>ThoughtWorker_Aurora</workerClass>
+    <gameCondition>Aurora</gameCondition>
+    <stages>
+      <li>
+        <label>magnetospheric lighting</label>
+        <description>The extra illumnation makes night operations more efficient.</description>
+        <baseMoodEffect>2</baseMoodEffect>
+      </li>
+    </stages>
+</ThoughtDef>
+  
+<!--■■■9. NEED BEAUTY■■■-->
+<ThoughtDef>
+    <defName>GDZR_THOUGHT_NeedBeauty</defName>
+    <workerClass>ThoughtWorker_NeedBeauty</workerClass>
+    <stages>
+      <li>
+        <label>flithy environment</label>
+        <description>This place is filthy. These conditions will hinder work severely and cause unacceptable rates of material spoilage.</description>
+        <baseMoodEffect>-15</baseMoodEffect>
+      </li>
+      <li>
+        <label>soiled environment</label>
+        <description>This place is soiled. Working in these conditions is inefficient and will cause research contamnation.</description>
+        <baseMoodEffect>-8</baseMoodEffect>
+      </li>
+      <li>
+        <label>crude environment</label>
+        <description>This place does not meet the co-op's minimum design and sanitation regulations.</description>
+        <baseMoodEffect>-3</baseMoodEffect>
+      </li>
+      <li>
+        <label>tidy environment</label>
+        <description>This place meets basic project guidelines.</description>
+        <baseMoodEffect>3</baseMoodEffect>
+      </li>
+      <li>
+        <label>efficient environment</label>
+        <description>This place is sanitary and the layout is efficent.</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+      <li>
+        <label>ergonomic environment</label>
+        <description>This place is nearly sterile and the room design is extremely ergonomic.</description>
+        <baseMoodEffect>10</baseMoodEffect>
+      </li>
+    </stages>
+</ThoughtDef>
+
+</Defs>

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!--■■■■■■■■■■■■■■■■■  
+    Player Pawn Bases
+ 1) Main Base
+ 2) Agronomist Base   
+ 3) Analyst Base
+ 4) Disassembler Base
+ 5) Fabricator Bsse
+ 7) Procurer Base
+ 8) Therapist Base
+  ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ Player Pawn Bases ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  ■■■■■■■■■■■■■■■■■■ 1) Player pawn, Main Base ■■■■■■■■■■■■■■■■■■■■■■■-->
+  <ThoughtDef>
+      <defName>GDZR_THOUGHT_Joywire</defName>
+      <workerClass>ThoughtWorker_Hediff</workerClass>
+      <hediff>Joywire</hediff>
+      <validWhileDespawned>true</validWhileDespawned>
+      <stages>
+        <li>
+          <label>joywire</label>
+          <description>My serotonin is soaring.</description>
+          <baseMoodEffect>12</baseMoodEffect>
+        </li>
+      </stages>
+  </ThoughtDef>
+ 
+ 
+</Defs>

@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    
+ <!--■■■■■■■■■■■■■■■■■
+     MOD- DUB'S BAD HYGIENE (BowelLevel + HygieneLevel are in the patch.xml)
+  1. Cooling Water (Bath) aka "ColdBath"
+  2. Cooling Water (Shower) aka "ColdShower"
+  3. Discharged On Myself aka "SoiledSelf"
+  4. Drank Discharges aka "DrankUrine"
+  5. Drank Filthy Water
+  6. Open expulsion aka "openDefecation"
+  7. Warming Water (Bath) aka "HotBath"
+  8. Warming Water (Shower) aka "HotShower"
+     ■■■■■■■■■■■■■■■■■--> 
+
+<!--■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■MOD THOUGHTS- DUB'S BAD HYGIENE■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■--> 
+<!--■■■1. COOLING WATER (BATH)■■■-->
+<ThoughtDef>
+    <defName>GDZR_THOUGHT_ColdBath</defName>
+    <durationDays>0.1</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>cooling water</label>
+        <description>The cold water has abated my hyperthermia. The cooling vacuoles around my brain are contracting.</description>
+        <baseMoodEffect>6</baseMoodEffect>
+      </li>
+    </stages>
+    <showBubble>true</showBubble>
+</ThoughtDef>
+  
+<!--■■■2. COOLING WATER (SHOWER)■■■-->
+<ThoughtDef>
+    <defName>GDZR_THOUGHT_ColdShower</defName>
+    <durationDays>0.1</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>cooling water</label>
+        <description>The cold water has abated my hyperthermia. The cooling vacuoles around my brain are contracting.</description>
+        <baseMoodEffect>6</baseMoodEffect>
+      </li>
+    </stages>
+    <showBubble>true</showBubble>
+</ThoughtDef>
+  
+<!--■■■3. DISCHARGED ON MYSELF■■■-->
+<ThoughtDef>
+    <defName>GDZR_THOUGHT_SoiledSelf</defName>
+    <durationDays>1</durationDays>
+    <stackLimit>3</stackLimit>
+    <stages>
+      <li>
+        <label>discharged on myself</label>
+        <description>My accretion sacks have undergone catastrophic failure and I am now covered in my own waste explulsions.</description>
+        <baseMoodEffect>-12</baseMoodEffect>
+      </li>
+    </stages>
+    <showBubble>true</showBubble>
+</ThoughtDef>
+  
+<!--■■■4. DRANK DISCHARGE■■■-->
+<ThoughtDef>
+    <defName>GDZR_THOUGHT_DrankUrine</defName>
+    <durationDays>1</durationDays>
+    <stackLimit>3</stackLimit>
+    <stages>
+      <li>
+        <label>drank discharge</label>
+        <description>I drank my own discharge.</description>
+        <baseMoodEffect>-12</baseMoodEffect>
+      </li>
+    </stages>
+    <showBubble>true</showBubble>
+</ThoughtDef>
+  
+<!--■■■5. DRANK FILTHY WATER■■■-->
+<ThoughtDef>
+    <defName>GDZR_THOUGHT_DrankDirtyWater</defName>
+    <durationDays>0.1</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>drank filthy water</label>
+        <description>I drank contaminated water.</description>
+        <baseMoodEffect>-6</baseMoodEffect>
+      </li>
+    </stages>
+    <showBubble>true</showBubble>
+</ThoughtDef>
+
+<!--■■■6. OPEN EXPULSION■■■-->
+<ThoughtDef>
+    <defName>GDZR_THOUGHT_openDefecation</defName>
+    <durationDays>0.15</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>open expulsion</label>
+        <description>I discharged my accretion sacks in the open; This is an unwieldy process. Proper disposal fixtures are required.</description>
+        <baseMoodEffect>-4</baseMoodEffect>
+      </li>
+    </stages>
+    <showBubble>true</showBubble>
+</ThoughtDef>
+  
+<!--■■■7. WARMING WATER (BATH)■■■-->
+<ThoughtDef>
+    <defName>GDZR_THOUGHT_HotBath</defName>
+    <durationDays>0.1</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>warming water</label>
+        <description>The hot water has abated my hypothermia and my fine motor control is returning.</description>
+        <baseMoodEffect>2</baseMoodEffect>
+      </li>
+    </stages>
+    <showBubble>true</showBubble>
+</ThoughtDef>
+  
+<!--■■■8. WARMING WATER (SHOWER)■■■-->
+<ThoughtDef>
+    <defName>GDZR_THOUGHT_HotShower</defName>
+    <durationDays>0.1</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>warming water</label>
+        <description>The hot water has abated my hypothermia and my fine motor control is returning.</description>
+        <baseMoodEffect>2</baseMoodEffect>
+      </li>
+    </stages>
+    <showBubble>true</showBubble>
+</ThoughtDef>
+  
+  <!--■■■■■■■■■■■■■■■■■■
+
+  <ThoughtDef>
+    <defName>ZR_UsedPrivateBathroom</defName>
+    <durationDays>1</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>awful bathroom</label>
+        <description>My bathroom is an awful place.</description>
+        <baseMoodEffect>-4</baseMoodEffect>
+      </li>
+      <li IsNull="True" />            --> 
+  <!-- dull -->
+  
+  <!--   <li>
+        <label>decent bathroom</label>
+        <description>My bathroom is very interesting. I like it.</description>
+        <baseMoodEffect>2</baseMoodEffect>
+      </li>
+      <li>
+        <label>slightly impressive bathroom</label>
+        <description>My bathroom is actually slightly impressive. I like it.</description>
+        <baseMoodEffect>3</baseMoodEffect>
+      </li>
+      <li>
+        <label>impressive bathroom</label>
+        <description>My bathroom is impressive. I love it!</description>
+        <baseMoodEffect>4</baseMoodEffect>
+      </li>
+      <li>
+        <label>very impressive bathroom</label>
+        <description>My bathroom is very impressive. This is the best place ever!</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+      <li>
+        <label>extremely impressive bathroom</label>
+        <description>My bathroom is extremely impressive. This is the best place ever!</description>
+        <baseMoodEffect>6</baseMoodEffect>
+      </li>
+      <li>
+        <label>unbelievably impressive bathroom</label>
+        <description>My bathroom is unbelievably impressive. This is the best place ever!</description>
+        <baseMoodEffect>7</baseMoodEffect>
+      </li>
+      <li>
+        <label>wondrously impressive bathroom</label>
+        <description>My bathroom is the best place one can ever imagine. It's wonderful.</description>
+        <baseMoodEffect>8</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef> -->
+  
+</Defs>

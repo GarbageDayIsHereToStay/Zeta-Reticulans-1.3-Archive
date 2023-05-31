@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+<!--■■■■■■■■■■■■■■■■■
+
+■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■BEING A JERK■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■-->
+
+  <!--■■■ Ostrich ■■■-->
+  <ThoughtDef>
+    <defName>GDZR_THOUGHT_ButcheredAnimalOstrich</defName>
+    
+    <icon>Icons/ZR_MeatKnowledge</icon>
+    <showBubble>true</showBubble>
+    
+    <durationDays>2</durationDays>
+    <stackLimit>100</stackLimit>
+    <stackedEffectMultiplier>1</stackedEffectMultiplier>
+    <stages>
+      <li>
+        <label>bio-asset inspected (Ostrich)</label>
+        <description>A bio-asset's physical attributes have been recorded for use in demographic analysis.</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <!--■■■ Emu ■■■-->
+  <ThoughtDef>
+    <defName>GDZR_THOUGHT_ButcheredAnimalEmu</defName>
+    
+    <icon>Icons/ZR_MeatKnowledge</icon>
+    <showBubble>true</showBubble>
+    
+    <durationDays>2</durationDays>
+    <stackLimit>100</stackLimit>
+    <stackedEffectMultiplier>1</stackedEffectMultiplier>
+    <stages>
+      <li>
+        <label>bio-asset inspected (Emu)</label>
+        <description>A bio-asset's physical attributes have been recorded for use in demographic analysis.</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <!--■■■ Cassowary ■■■-->
+  <ThoughtDef>
+    <defName>GDZR_THOUGHT_ButcheredAnimalCassowary</defName>
+    
+    <icon>Icons/ZR_MeatKnowledge</icon>
+    <showBubble>true</showBubble>
+    
+    <durationDays>2</durationDays>
+    <stackLimit>100</stackLimit>
+    <stackedEffectMultiplier>1</stackedEffectMultiplier>
+    <stages>
+      <li>
+        <label>bio-asset inspected (Cassowary)</label>
+        <description>A bio-asset's physical attributes have been recorded for use in demographic analysis.</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <!--■■■ Chicken ■■■-->
+  <ThoughtDef>
+    <defName>GDZR_THOUGHT_ButcheredAnimalChicken</defName>
+    
+    <icon>Icons/ZR_MeatKnowledge</icon>
+    <showBubble>true</showBubble>
+    
+    <durationDays>2</durationDays>
+    <stackLimit>100</stackLimit>
+    <stackedEffectMultiplier>1</stackedEffectMultiplier>
+    <stages>
+      <li>
+        <label>bio-asset inspected (Chicken)</label>
+        <description>A bio-asset's physical attributes have been recorded for use in demographic analysis.</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <!--■■■ Duck ■■■-->
+  <ThoughtDef>
+    <defName>GDZR_THOUGHT_ButcheredAnimalDuck</defName>
+    
+    <icon>Icons/ZR_MeatKnowledge</icon>
+    <showBubble>true</showBubble>
+    
+    <durationDays>2</durationDays>
+    <stackLimit>100</stackLimit>
+    <stackedEffectMultiplier>1</stackedEffectMultiplier>
+    <stages>
+      <li>
+        <label>bio-asset inspected (Duck)</label>
+        <description>A bio-asset's physical attributes have been recorded for use in demographic analysis.</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <!--■■■ Turkey ■■■-->
+  <ThoughtDef>
+    <defName>GDZR_THOUGHT_ButcheredAnimalTurkey</defName>
+    
+    <icon>Icons/ZR_MeatKnowledge</icon>
+    <showBubble>true</showBubble>
+    
+    <durationDays>2</durationDays>
+    <stackLimit>100</stackLimit>
+    <stackedEffectMultiplier>1</stackedEffectMultiplier>
+    <stages>
+      <li>
+        <label>bio-asset inspected (Turkey)</label>
+        <description>A bio-asset's physical attributes have been recorded for use in demographic analysis.</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+ 
+</Defs>

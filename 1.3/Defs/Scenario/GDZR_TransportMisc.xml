@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+ <ThingDef ParentName="SkyfallerBase">
+    <defName>GDZR_DROPPOD_TransportBeamIncoming</defName>  
+    <thingClass>Zetas.Transporter.TBeamIncoming</thingClass>
+    
+    <label>transport beam (incoming)</label>
+    <description>Dev Info: ~Drop pod~ traveling through the air</description>
+    
+    <graphicData>
+      <texPath>Hidden/Hidden</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutFlying</shaderType>
+      <drawSize>1.9</drawSize>
+    </graphicData>
+   
+   <skyfaller>
+     <speed>1</speed>
+     <ticksToImpactRange>1</ticksToImpactRange>
+     <movementType>Decelerate</movementType>
+     <shadow>Hidden/Hidden</shadow>
+     <shadowSize>(2, 2)</shadowSize>
+   <!--  <anticipationSound>DropPod_Fall</anticipationSound>
+     <anticipationSoundTicks>100</anticipationSoundTicks>-->
+     <motesPerCell>0</motesPerCell>
+   </skyfaller>
+  </ThingDef>
+  
+ <!-- <ThingDef Abstract="True" Name="EtherealThingBase">
+    <category>Ethereal</category>
+    <useHitPoints>false</useHitPoints>
+    <drawerType>None</drawerType>
+  </ThingDef>-->
+  
+  <ThingDef>
+    <defName>GDZR_DROPPOD_ActiveTransportBeam</defName>
+    <!--<category>Item</category>-->
+    <category>PsychicEmitter</category>
+    
+    <label>transport beam</label>
+    <description>Dev Info: ~Drop pod~ as landed but pre-thing spawn</description>
+    <graphicData>
+      <texPath>Hidden/Hidden</texPath>
+      <!--<texPath>Things/Special/DropPod</texPath>-->
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>1.9</drawSize>
+      <shadowData>
+        <volume>(0.8, 0.6, 0.8)</volume>
+      </shadowData>
+    </graphicData>
+    
+    <altitudeLayer>Building</altitudeLayer>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <thingClass>Zetas.Transporter.ActiveTBeam</thingClass>  <!--<thingClass>ActiveDropPod</thingClass>-->
+    <scatterableOnMapGen>false</scatterableOnMapGen>
+    <tickerType>Normal</tickerType>
+
+    <blockWind>true</blockWind> 
+    <useHitPoints>false</useHitPoints>
+    <statBases>
+     <!-- <MaxHitPoints>500</MaxHitPoints>-->
+      <Flammability>0</Flammability>
+    </statBases>
+    <selectable>true</selectable>
+    
+  </ThingDef>
+
+  <ThingDef ParentName="EtherealThingBase">
+    <defName>GDZR_BEAM_DropPodBeam</defName>
+    <thingClass>Zetas.Transporter.TransportBeam_ThingClass</thingClass>   
+    
+    <label>transport beam</label>
+    <description>Dev Info: The light beam which spawns at the same time as the skyfaller.</description>
+    
+    <drawerType>RealtimeOnly</drawerType>
+    <drawOffscreen>true</drawOffscreen>
+    <seeThroughFog>true</seeThroughFog>
+    
+    <tickerType>Normal</tickerType>
+    
+    <comps>
+      <li Class="Zetas.Transporter.TransportBeam_CompProperties">
+        <width>1</width>
+        <color>(200,200,200,256)</color>  <!--<color>(126,253,0, 242)</color> prutty necron green-->
+        <angle>0</angle>
+        <duration>450</duration>
+        <angleRange>0</angleRange>
+        <soundDef>GDZR_SOUND_OrbitalBeamSubtle</soundDef>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowColor>200,200,200</glowColor>
+        <overlightRadius>8</overlightRadius>
+        <glowRadius>8</glowRadius>
+      </li>
+      <li Class="Zetas.MiscComps.Effecter_CompProperties">
+        <compClass>Zetas.MiscComps.Effecter_Comp</compClass>   
+        <effecter1st>GDZR_EFFECTER_TransportBeamSpeckColumn</effecter1st>
+      </li>
+    </comps>
+  </ThingDef>
+</Defs>

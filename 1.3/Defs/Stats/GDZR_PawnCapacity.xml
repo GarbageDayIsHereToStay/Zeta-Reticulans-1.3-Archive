@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+  
+  <!-- Tied to Consciousness in the workerClass -->
+  <PawnCapacityDef>
+    <defName>GDZR_PAWNCAPACITY_Telelectrics</defName>
+    <label>telelectrics</label>
+    <listOrder>1000</listOrder>
+    <workerClass>Zetas.PawnCapacityWorker_Telelectrics</workerClass>
+    <labelMechanoids>Data processing</labelMechanoids>
+    <minValue>0</minValue>
+  </PawnCapacityDef>
+  
+  <!-- Tag is used in C# PawnCapacityWorker -->
+  <BodyPartTagDef>
+    <defName>GDZR_BODYPARTTAG_TelelectricsSource</defName>
+  </BodyPartTagDef>
+  
+</Defs>

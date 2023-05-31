@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+<!--■■■■■■■■■■■■■■■■■
+     BEING A JERK, RACE LIST
+  1. Gazelle aka "GDZR_THOUGHT_ButcheredHumanlikeZeta"
+■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■BEING A JERK■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■   
+■■■ Zeta ■■■-->
+<ThoughtDef>
+    <defName>GDZR_THOUGHT_ButcheredHumanlikeZeta</defName>
+
+    <icon>Icons/ZR_MeatKnowledge</icon>
+    <showBubble>true</showBubble>
+  
+    <durationDays>2</durationDays>
+    <stackLimit>100</stackLimit>
+    <stackedEffectMultiplier>1</stackedEffectMultiplier>
+    <stages>
+      <li>
+        <label>bio-asset inspected (Zeta)</label>
+        <description>Reticulan physiology follows physicochemical templated physicochemical attributes have been recorded for use in demographic analysis.</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+    </stages>
+</ThoughtDef>
+  
+<!--■■■ Human ■■■-->
+  <ThoughtDef>
+    <defName>GDZR_THOUGHT_ButcheredHumanlikeHuman</defName>
+    
+    <icon>Icons/ZR_MeatKnowledge</icon>
+    <showBubble>true</showBubble>
+    
+    <durationDays>2</durationDays>
+    <stackLimit>100</stackLimit>
+    <stackedEffectMultiplier>1</stackedEffectMultiplier>
+    <stages>
+      <li>
+        <label>bio-asset inspected (Human)</label>                                                                               
+        <description>A bio-asset's physical attributes have been recorded for use in demographic analysis.        
+          \nHumanity's genestock is largely uncontrolled but at this stage of stellar spermia genetic drift remains predicable, with some engineered exceptions existing in pockets. 
+          \nSuperintendence is ongoing.</description>
+        <baseMoodEffect>2</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+</Defs>

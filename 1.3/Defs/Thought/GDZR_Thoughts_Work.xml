@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <!--■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ Thought, Work Passion ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■-->
+  <ThoughtDef>
+    <defName>GDZR_THOUGHT_DoingPassionateWork</defName>
+    <workerClass>Zetas.Thoughts.ThoughtWorker_PassionateWork</workerClass>
+    <stages>
+      <li>
+        <label>working:</label>
+        <description>The higher my expertise, the higher my productivity, the higher my sense of propitiation.</description>
+        <baseMoodEffect>0</baseMoodEffect>
+      </li>
+      <li>
+        <label>working:</label>  <!--■(1)■-->  
+        <description>The higher my expertise, the higher my productivity, the higher my sense of propitiation.</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>   
+      <li>
+        <label>working:</label>  <!--■(2)■-->  
+        <description>The higher my expertise, the higher my productivity, the higher my sense of propitiation.</description>
+        <baseMoodEffect>2</baseMoodEffect>
+      </li>  
+      <li>
+        <label>working:</label>  <!--■(3)■-->  
+        <description>The higher my expertise, the higher my productivity, the higher my sense of propitiation.</description>
+        <baseMoodEffect>3</baseMoodEffect>
+      </li> 
+      <li>
+        <label>working:</label>  <!--■(4)■-->  
+        <description>The higher my expertise, the higher my productivity, the higher my sense of propitiation.</description>
+        <baseMoodEffect>4</baseMoodEffect>
+      </li> 
+      <li>
+        <label>working:</label>  <!--■(5)■-->  
+        <description>The higher my expertise, the higher my productivity, the higher my sense of propitiation.</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li> 
+      <li>
+        <label>working:</label>  <!--■(6)■-->  
+        <description>The higher my expertise, the higher my productivity, the higher my sense of propitiation.</description>
+        <baseMoodEffect>6</baseMoodEffect>
+      </li> 
+      <li>
+        <label>working:</label>  <!--■(7)■-->  
+        <description>The higher my expertise, the higher my productivity, the higher my sense of propitiation.</description>
+        <baseMoodEffect>7</baseMoodEffect>
+      </li> 
+      <li>
+        <label>working:</label>  <!--■(8)■-->  
+        <description>The higher my expertise, the higher my productivity, the higher my sense of propitiation.</description>
+        <baseMoodEffect>8</baseMoodEffect>
+      </li> 
+      <li>
+        <label>working:</label>  <!--■(9)■-->  
+        <description>The higher my expertise, the higher my productivity, the higher my sense of propitiation.</description>
+        <baseMoodEffect>9</baseMoodEffect>
+      </li> 
+      <li>
+        <label>working:</label>  <!--■(10)■-->  
+        <description>The higher my expertise, the higher my productivity, the higher my sense of propitiation.</description>
+        <baseMoodEffect>10</baseMoodEffect>
+      </li> 
+      <li>
+        <label>working:</label>  <!--■(11)■-->  
+        <description>The higher my expertise, the higher my productivity, the higher my sense of propitiation.</description>
+        <baseMoodEffect>11</baseMoodEffect>
+      </li>
+      <li>
+        <label>working:</label>  <!--■(12)■-->  
+        <description>The higher my expertise, the higher my productivity, the higher my sense of propitiation.</description>
+        <baseMoodEffect>12</baseMoodEffect>
+      </li>
+      <li>
+        <label>working:</label>  <!--■(13)■-->  
+        <description>The higher my expertise, the higher my productivity, the higher my sense of propitiation.</description>
+        <baseMoodEffect>13</baseMoodEffect>
+      </li>
+      <li>
+        <label>working:</label>  <!--■(14)■-->  
+        <description>The higher my expertise, the higher my productivity, the higher my sense of propitiation.</description>
+        <baseMoodEffect>14</baseMoodEffect>
+      </li>
+      <li>
+        <label>working:</label> <!--■(15)■-->  
+        <description>The higher my expertise, the higher my productivity, the higher my sense of propitiation.</description>
+        <baseMoodEffect>15</baseMoodEffect>
+      </li>
+      <li>
+        <label>working:</label> <!--■(16)■-->  
+        <description>The higher my expertise, the higher my productivity, the higher my sense of propitiation.</description>
+        <baseMoodEffect>16</baseMoodEffect>
+      </li>
+      <li>
+        <label>working:</label> <!--■(17)■-->
+        <description>The higher my expertise, the higher my productivity, the higher my sense of propitiation.</description>
+        <baseMoodEffect>17</baseMoodEffect>
+      </li>
+      <li>
+        <label>working:</label> <!--■(18)■-->
+        <description>The higher my expertise, the higher my productivity, the higher my sense of propitiation.</description>
+        <baseMoodEffect>18</baseMoodEffect>
+      </li>
+      <li>
+        <label>working:</label> <!--■(19)■-->
+        <description>The higher my expertise, the higher my productivity, the higher my sense of propitiation.</description>
+        <baseMoodEffect>19</baseMoodEffect>
+      </li>
+      <li>
+        <label>working:</label> <!--■(20)■-->
+        <description>The higher my expertise, the higher my productivity, the higher my sense of propitiation.</description>
+        <baseMoodEffect>20</baseMoodEffect>
+      </li>
+      <!--■■■ Null skill stages ■■■-->
+      <li>
+        <label>not working</label> <!--■(21)■-->
+        <description>Work brings meaning and i'm productive in this field.</description>
+        <baseMoodEffect>-2</baseMoodEffect>
+      </li>
+      <li>
+        <label>working: Unskilled labour</label> <!--■(22)■-->
+        <description>Indispensable but low proficiency work.</description>
+        <baseMoodEffect>4</baseMoodEffect>
+      </li>
+      <li>
+        <label>working: Bio-asset work 23</label> <!--■(23)■-->
+        <description>Work brings meaning and i'm productive in this field.</description>
+        <baseMoodEffect>8</baseMoodEffect>
+      </li>
+      <li>
+        <label>working: Bio-asset work 23</label> <!--■(23)■-->
+        <description>Work brings meaning and i'm productive in this field.</description>
+        <baseMoodEffect>8</baseMoodEffect>
+      </li>
+<!--      <li>
+        <label>working: no work</label>
+        <description>Work brings meaning and i'm productive in this field.</description>
+        <baseMoodEffect>-2</baseMoodEffect>
+      </li>
+      <li>
+        <label>working anywork</label> 
+        <description>Work brings meaning and i'm productive in this field.</description>
+        <baseMoodEffect>2</baseMoodEffect>
+      </li>
+      <li>
+        <label>minor passion for my work</label>
+        <description>Work brings meaning and i'm productive in this field.</description>
+        <baseMoodEffect>10</baseMoodEffect>
+      </li>
+      <li>
+        <label>burning passion for my work</label>
+        <description>This is my field of expertise. I feel like i'm working at peak efficiency.</description>
+        <baseMoodEffect>20</baseMoodEffect>
+      </li>
+      <li>
+        <label>working: efficiency comptroller</label>
+        <description>Work brings meaning and i'm productive in this field.</description>
+        <baseMoodEffect>50</baseMoodEffect>
+      </li> -->
+    </stages>
+  <!-- <comps>
+     <li Class="Zetas.Thoughts.CompProperties_Reloadable">
+       <maxCharges>10</maxCharges>
+       <destroyOnEmpty>false</destroyOnEmpty>
+       <ammoDef>GDZR_AMMO_AllocatorWaffer</ammoDef>
+       <ammoCountToRefill>1</ammoCountToRefill>
+       <hotKey>Misc4</hotKey>
+       <chargeNoun>redeem teleporter allocation</chargeNoun>
+       <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+     </li>
+   </comps>-->
+</ThoughtDef>
+  
+  <!--■■■10. WORK PASSION ■■■
+  <ThoughtDef>
+    <defName>GDZR_THOUGHT_DoingPassionateWork</defName>
+    <workerClass>ThoughtWorker_PassionateWork</workerClass>
+    <stages>
+      <li>
+        <label>minor passion for my work</label>
+        <description>Work brings meaning and i'm productive in this field.</description>
+        <baseMoodEffect>10</baseMoodEffect>
+      </li>
+      <li>
+        <label>burning passion for my work</label>
+        <description>This is my field of expertise. I feel like i'm working at peak efficiency.</description>
+        <baseMoodEffect>20</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>-->
+</Defs>

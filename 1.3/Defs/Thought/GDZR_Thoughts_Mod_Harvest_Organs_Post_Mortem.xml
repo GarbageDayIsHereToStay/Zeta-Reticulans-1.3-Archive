@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+<!--■■■■■■■■■■■■■■■■■
+     MOD- HARVEST ORGANS POST MORTEM
+  1. Biomaterial Salvaged (Pawn) aka "HarvestedHumanlikeCorpse"
+  2. Biomaterial Salvaged (Colony) aka "KnowHarvestedHumanlikeCorpse"
+     ■■■■■■■■■■■■■■■■■--> 
+
+<!--■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■MOD THOUGHTS- HARVEST ORGANS POST MORTEM■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■--> 
+<!--■■■1. BIOMATERIAL SALVAGED (PAWN)■■■-->
+<ThoughtDef>
+  <defName>GDZR_THOUGHT_HarvestedHumanlikeCorpse</defName>
+  
+    <icon>Icons/ZR_OrganKnowledge</icon>
+    <showBubble>true</showBubble>
+  
+    <durationDays>2</durationDays>
+    <stackLimit>100</stackLimit>
+    <stackedEffectMultiplier>1</stackedEffectMultiplier>
+    <stages>
+      <li>
+        <label>biomaterial salvaged</label>
+        <description>Excising material from cadavers is less instructive than extraction from a living system.</description> 
+        <baseMoodEffect>4</baseMoodEffect>
+      </li>
+    </stages>
+</ThoughtDef>
+  
+<!--■■■2. BIOMATERIAL SALVAGED (COLONY)■■■-->
+<ThoughtDef>
+    <defName>GDZR_THOUGHT_KnowHarvestedHumanlikeCorpse</defName>
+  
+    <icon>Icons/ZR_OrganKnowledge</icon>
+    <showBubble>true</showBubble>
+  
+    <durationDays>2</durationDays>
+    <stackLimit>100</stackLimit>
+    <stackedEffectMultiplier>1</stackedEffectMultiplier>
+    <stages>
+      <li>
+        <label>biomaterial salvaged</label>
+        <description>Excising material from cadavers is less instructive than extraction from a living system.</description>
+        <baseMoodEffect>4</baseMoodEffect>
+      </li>
+    </stages>
+</ThoughtDef> 
+  
+</Defs>

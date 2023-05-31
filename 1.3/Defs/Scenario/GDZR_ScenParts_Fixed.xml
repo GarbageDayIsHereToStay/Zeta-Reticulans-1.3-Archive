@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  <ScenPartDef>
+    <defName>GDZR_SCENEPART_TransportBeamArriveMethod</defName>
+    <label>transport beam</label>
+    <category>Fixed</category>
+    <scenPartClass>Zetas.Transporter.ScenPart_TBeamArriveMethod</scenPartClass>
+    <summaryPriority>470</summaryPriority>
+  </ScenPartDef>
+
+</Defs>

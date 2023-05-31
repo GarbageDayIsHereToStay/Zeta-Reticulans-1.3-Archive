@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!--■■■■■■■■■■■■■■■■■  
+    Player Pawn Bases
+ 1) Main Base
+ 2) Agronomist Base   
+ 3) Analyst Base
+ 4) Disassembler Base
+ 5) Fabricator Bsse
+ 7) Procurer Base
+ 8) Therapist Base
+  ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ Thoughts, Expectations ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■-->
+  <ThoughtDef>
+    <defName>GDZR_THOUGHT_Expectations</defName>
+    <hediff>GDZR_HEDIFF_EnigmaImplant</hediff>
+    <workerClass>Zetas.Thoughts.ThoughtWorker_ExpectationsHediff</workerClass>
+    <stages>
+      <!-- First 6 are in descending order, to preserve localizations indices -->
+      <li>
+        <label>sky-high qoutas</label>
+        <description>I should be made very comfortable here.</description>
+        <baseMoodEffect>-10</baseMoodEffect>
+      </li>
+      <li>
+        <label>high qoutas</label>
+        <description>There's no reason I shouldn't have the things I want.</description>
+        <baseMoodEffect>-8</baseMoodEffect>
+      </li>
+      <li>
+        <label>moderate qoutas</label>
+        <description>I can't expect to be totally pampered.</description>
+        <baseMoodEffect>-6</baseMoodEffect>
+      </li>
+      <li>
+        <label>low qoutas</label>
+        <description>I can't expect great comforts.</description>
+        <baseMoodEffect>-4</baseMoodEffect>
+      </li>
+      <li>
+        <label>very low qoutas</label>
+        <description>I need to keep myself strong to survive.</description>
+        <baseMoodEffect>-2</baseMoodEffect>
+      </li>
+      <li>
+        <label>production adjournment</label>
+        <description>Monitoring suites in geostationary orbit have determined a temporary respite is in order. Survival is now regarded as the co-ops top priority.</description>
+        <baseMoodEffect>0</baseMoodEffect>
+      </li>
+
+      <!-- Later are in ascending order, to preserve localizations indices -->
+      <li>
+        <label>noble expectations</label>
+        <description>I am above the little people and should be made happy every moment.</description>
+        <baseMoodEffect>-6</baseMoodEffect>
+      </li>
+      <li>
+        <label>royal expectations</label>
+        <description>My majesty... I can hardly believe it myself. A moment's discomfort is below me.</description>
+        <baseMoodEffect>-12</baseMoodEffect>
+      </li>
+
+      <!-- per-role expectations -->
+      <li>
+        <label>elite expectations</label>
+        <description>I shouldn't have to endure any inconveniences that distract me from my important role.</description>
+        <baseMoodEffect>-6</baseMoodEffect>
+      </li>
+      <li>
+        <label>supreme expectations</label>
+        <description>My importance here is uncontested, so my comfort must be a critical priority for my people.</description>
+        <baseMoodEffect>-12</baseMoodEffect>
+      </li>
+
+    </stages>
+    <validWhileDespawned>true</validWhileDespawned>
+  </ThoughtDef>
+
+</Defs>

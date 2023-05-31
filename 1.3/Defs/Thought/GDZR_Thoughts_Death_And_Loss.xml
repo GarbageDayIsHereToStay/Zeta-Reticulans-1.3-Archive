@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+ <!--■■■■■■■■■■■■■■■■■
+     DEATH & LOSS
+  1. Co-op Resources Lost aka "ColonistLost"
+  2. Co-op Resources Squandered aka "KnowColonistDied"
+  3. Negligent Handling aka "KilledHumanlikeBloodlust"
+     ■■■■■■■■■■■■■■■■■--> 
+   
+<!--■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■DEATH & LOSS■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■--> 
+<!--■■■1. CO-OP RESOURCES LOST■■■-->
+<ThoughtDef>
+    <defName>GDZR_THOUGHT_ColonistLost</defName>
+    <icon>Icons/ZR_WastedAssets</icon>
+    <showBubble>true</showBubble>
+  
+    <durationDays>2</durationDays>
+    <stackLimit>5</stackLimit>
+    <stackedEffectMultiplier>1</stackedEffectMultiplier>
+    <stages>
+      <li>
+        <label>co-op resources lost</label>
+        <description>Co-op resources have been lost. 
+          \nKeeping co-op members safe so they can attend to their duties and acquired bio-assets in remunerative custody is a priority.</description> <!--  \nKeeping co-op members safe so they can attend to their duties and acquired bio-assets in remunerative custody is a priority.-->
+        <baseMoodEffect>-4</baseMoodEffect>
+      </li>
+    </stages>
+</ThoughtDef>
+  
+<!--■■■2. CO-OP RESOURCES SQUANDERED■■■-->
+<ThoughtDef ParentName="DeathMemory">
+    <defName>GDZR_THOUGHT_KnowColonistDied</defName>
+  
+    <icon>Icons/ZR_WastedAssets</icon>
+    <showBubble>true</showBubble>
+  
+    <durationDays>2</durationDays>
+    <stackLimit>5</stackLimit>
+    <stackedEffectMultiplier>1</stackedEffectMultiplier>
+<!--<nullifyingTraits>
+      <li>Psychopath</li>
+      <li>Bloodlust</li> 
+    </nullifyingTraits> -->
+    <stages>
+      <li>
+        <label>co-op resources squandered</label>
+        <description>Co-op resources have been wasted. 
+          \nKeeping co-op members alive to perform work functions and acquired bio-assets vital until they can be processed is a priority.</description>
+        <baseMoodEffect>-4</baseMoodEffect>
+      </li>
+    </stages>
+</ThoughtDef>
+  
+  <!--■■■3. NEGLIGENT HANDLING■■■-->
+  <ThoughtDef>
+    <defName>GDZR_THOUGHT_KilledHumanlikeBloodlust</defName>
+    
+    <icon>Icons/ZR_WastedAssets</icon>
+    <showBubble>true</showBubble>
+    
+    <durationDays>2</durationDays>
+    <stackLimit>10</stackLimit>
+    <stackedEffectMultiplier>1</stackedEffectMultiplier>
+    <stages>
+      <li>
+        <label>negligent handling</label>
+        <description>We gain more from processing living bio-assets. Although a certain amount of loss is expected as part of normal operations this failure reflects on me.
+          \nSelf-management is crucial to the success of the whole.</description>
+        <baseMoodEffect>-2</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+</Defs>

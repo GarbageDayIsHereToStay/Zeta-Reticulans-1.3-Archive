@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <TraderKindDef>
+    <defName>GDZR_TRADER_OrbitalCanteenLow</defName>
+    <label>reticulan canteen saucer</label>
+    <orbital>true</orbital>
+    <faction>GDZR_FACTION_Player</faction>
+    <hideThingsNotWillingToTrade>true</hideThingsNotWillingToTrade>
+    <requestable>false</requestable>
+    <commonality>6</commonality>
+    <stockGenerators>
+
+      <!--■■■ RESOURCES ■■■
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Silver</thingDef>
+        <countRange>1600~6000</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>ComponentIndustrial</thingDef>
+        <countRange>-3~20</countRange>
+        <price>Exorbitant</price>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>ComponentSpacer</thingDef>
+        <countRange>-8~4</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>MedicineUltratech</thingDef>
+        <countRange>-1~20</countRange>
+        <price>Exorbitant</price>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Plasteel</thingDef>
+        <countRange>-40~150</countRange>
+        <price>Exorbitant</price>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Chemfuel</thingDef>
+        <countRange>-80~200</countRange>
+        <price>Exorbitant</price>
+      </li>-->
+ 
+      
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>GDZR_AMMO_AllocatorWaffer</thingDef>
+        <countRange>1~100</countRange>
+        <price>Exorbitant</price>
+      </li>
+      
+      <!--■■■ ARMOUR ■■■-->
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>GDZR_APPAREL_SlipSuitWhite</thingDef>
+        <countRange>-2~3</countRange>
+        <price>Exorbitant</price>
+      </li>
+      
+      <!--■■■ APPAREL ■■■-->
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>GDZR_APPAREL_Allocator</thingDef>
+        <countRange>-4~2</countRange>
+        <price>Exorbitant</price>
+      </li>
+      
+      <!--■■■ WEAPONS ■■■-->
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>GDZR_WEAPON_InterrupterOne</thingDef>
+        <countRange>-1~2</countRange>
+        <price>Exorbitant</price>
+      </li>
+      
+      <!--■■■ BUYING ■■■-->
+      <li Class="StockGenerator_BuyTradeTag"><tag>Artifact</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>PsylinkNeuroformer</tag></li>
+      
+      
+      <!--■■■ IMPLANTS ■■■
+      <li Class="StockGenerator_Tag">
+        <tradeTag>TechHediff</tradeTag>
+        <thingDefCountRange>1~5</thingDefCountRange>
+        <countRange>-5~3</countRange>
+        <price>Exorbitant</price>
+      </li>-->
+      
+      <!--■■■ MEDICINE & DRUGS ■■■
+      <li Class="StockGenerator_Category">
+        <categoryDef>Drugs</categoryDef>
+        <thingDefCountRange>-1~2</thingDefCountRange>
+        <totalPriceRange>500~5000</totalPriceRange>
+        <price>Exorbitant</price>
+      </li>-->
+
+      <!--■■■ FOOD ■■■
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>MealSurvivalPack</thingDef>
+        <countRange>1~40</countRange>
+        <price>Exorbitant</price>
+      </li>-->
+
+      <!-- Exotic
+      <li Class="StockGenerator_Tag">
+        <tradeTag>Artifact</tradeTag>
+        <thingDefCountRange>-6~1</thingDefCountRange>
+        <price>Exorbitant</price>
+      </li> -->
+      
+      <!--■■■ RETICULAN RESOURCES ■■■-->
+      <li Class="StockGenerator_Slaves">
+        <countRange>-3~4</countRange>
+        <slaveKindDef>GDZR_PAWNPLAYER_ShortGrey_Fabricator</slaveKindDef>
+        <price>Normal</price>
+      </li>
+      
+      <!--■ Short Grey ■-->
+      <li Class="StockGenerator_Slaves">
+        <countRange>-3~2</countRange>
+        <slaveKindDef>GDZR_PAWNNPC_ShortGrey_Agronomist</slaveKindDef>
+        <price>Normal</price>
+      </li> 
+      <li Class="StockGenerator_Slaves">
+        <countRange>-3~2</countRange>
+        <slaveKindDef>GDZR_PAWNNPC_ShortGrey_Analyst</slaveKindDef>
+        <price>Normal</price>
+      </li>
+      <li Class="StockGenerator_Slaves">
+        <countRange>-3~2</countRange>
+        <slaveKindDef>GDZR_PAWNNPC_ShortGrey_Disassembler</slaveKindDef>
+        <price>Normal</price>
+      </li>
+      <li Class="StockGenerator_Slaves">
+        <countRange>-3~2</countRange>
+        <slaveKindDef>GDZR_PAWNNPC_ShortGrey_Fabricator</slaveKindDef>
+        <price>Normal</price>
+      </li>
+      <li Class="StockGenerator_Slaves">
+        <countRange>-3~2</countRange>
+        <slaveKindDef>GDZR_PAWNNPC_ShortGrey_Procurer</slaveKindDef>
+        <price>Normal</price>
+      </li>
+      <li Class="StockGenerator_Slaves">
+        <countRange>-3~2</countRange>
+        <slaveKindDef>GDZR_PAWNNPC_ShortGrey_Therapist</slaveKindDef>
+        <price>Normal</price>
+      </li>
+      
+      <!--■ Short Forsaken ■-->
+      <li Class="StockGenerator_Slaves">
+        <countRange>-4~1</countRange>
+        <slaveKindDef>GDZR_PAWNNPC_ShortGrey_Agronomist</slaveKindDef>
+        <price>Normal</price>
+      </li> 
+      <li Class="StockGenerator_Slaves">
+        <countRange>-4~1</countRange>
+        <slaveKindDef>GDZR_PAWNNPC_ShortGrey_Analyst</slaveKindDef>
+        <price>Normal</price>
+      </li>
+      <li Class="StockGenerator_Slaves">
+        <countRange>-4~1</countRange>
+        <slaveKindDef>GDZR_PAWNNPC_ShortGrey_Disassembler</slaveKindDef>
+        <price>Normal</price>
+      </li>
+      <li Class="StockGenerator_Slaves">
+        <countRange>-4~1</countRange>
+        <slaveKindDef>GDZR_PAWNNPC_ShortGrey_Fabricator</slaveKindDef>
+        <price>Normal</price>
+      </li>
+      <li Class="StockGenerator_Slaves">
+        <countRange>-4~1</countRange>
+        <slaveKindDef>GDZR_PAWNNPC_ShortGrey_Procurer</slaveKindDef>
+        <price>Normal</price>
+      </li>
+      <li Class="StockGenerator_Slaves">
+        <countRange>-4~1</countRange>
+        <slaveKindDef>GDZR_PAWNNPC_ShortGrey_Therapist</slaveKindDef>
+        <price>Normal</price>
+      </li>
+    </stockGenerators>
+  </TraderKindDef>
+
+</Defs>

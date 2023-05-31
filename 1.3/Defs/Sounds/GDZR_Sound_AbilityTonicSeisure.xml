@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  
+  <SoundDef>
+    <defName>GDZR_SOUND_AbilityTonicSeizure</defName>    
+    <maxVoices>1</maxVoices>  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <onCamera>True</onCamera>      
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>GDZR_Sound_CodedEnergyHit</clipPath>
+          </li>
+        </grains>           
+        <volumeRange>10~12</volumeRange>
+        <pitchRange>1.0~1.2</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+</Defs>

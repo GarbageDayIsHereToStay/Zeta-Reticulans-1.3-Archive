@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+<!--■■■■■■■■■■■■■■■■■
+     BEING A JERK, ANIMAL LIST
+  1) Cobra aka "GDZR_THOUGHT_ButcheredAnimalCombra"
+  2) Iguana aka "GDZR_THOUGHT_ButcheredAnimalIguana"
+  3) Tortoise aka "GDZR_THOUGHT_ButcheredAnimalTortoise"
+■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ Thoughts, Animal Butcher, Reptiles ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+■■■ 1) Cobra ■■■-->
+  <ThoughtDef>
+    <defName>GDZR_THOUGHT_ButcheredAnimalCobra</defName>
+    
+    <icon>Icons/ZR_MeatKnowledge</icon>
+    <showBubble>true</showBubble>
+    
+    <durationDays>2</durationDays>
+    <stackLimit>100</stackLimit>
+    <stackedEffectMultiplier>1</stackedEffectMultiplier>
+    <stages>
+      <li>
+        <label>bio-asset inspected (Cobra)</label>
+        <description>A bio-asset's physical attributes have been recorded for use in demographic analysis.
+        
+        A tubular vertabrate.</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <!--■■■ 2) Iguana ■■■-->
+  <ThoughtDef>
+    <defName>GDZR_THOUGHT_ButcheredAnimalIguana</defName>
+    
+    <icon>Icons/ZR_MeatKnowledge</icon>
+    <showBubble>true</showBubble>
+    
+    <durationDays>2</durationDays>
+    <stackLimit>100</stackLimit>
+    <stackedEffectMultiplier>1</stackedEffectMultiplier>
+    <stages>
+      <li>
+        <label>bio-asset inspected (Iguana)</label>
+        <description>A bio-asset's physical attributes have been recorded for use in demographic analysis.
+     
+        A misshapen lump of a reptile</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <!--■■■ 3) Tortoise ■■■-->
+  <ThoughtDef>
+    <defName>GDZR_THOUGHT_ButcheredAnimalTortoise</defName>
+    
+    <icon>Icons/ZR_MeatKnowledge</icon>
+    <showBubble>true</showBubble>
+    
+    <durationDays>2</durationDays>
+    <stackLimit>100</stackLimit>
+    <stackedEffectMultiplier>1</stackedEffectMultiplier>
+    <stages>
+      <li>
+        <label>bio-asset inspected (Tortoise)</label>
+        <description>A bio-asset's physical attributes have been recorded for use in demographic analysis.</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+</Defs>

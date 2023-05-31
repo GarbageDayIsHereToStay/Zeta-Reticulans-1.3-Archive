@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ <!--■■■■■■■■■■■■■■■■■
+     DRUGS
+  1.    
+  1. Smoke Leaf
+  2. Inebriated
+  3. Psychite Tea
+  4. Flake
+  5. Yayo
+  6. Go Juice
+  7. Wake-up
+
+     ■■■■■■■■■■■■■■■■■--> 
+ 
+<!--■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■FOOD■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+    ■■■ Anesthetic ■■■-->
+  <ThoughtDef>
+    <defName>GDZR_THOUGHT_AnestheticHigh</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>Anesthetic</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <visible>false</visible>
+      </li>
+      <li>
+        <label>anesthetic wooziness</label>
+        <description>The chemical anesthetic in my system cognitively</description>
+        <baseMoodEffect>-2</baseMoodEffect>
+      </li>
+      <li>
+        <visible>false</visible>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+<!--■■■ Smoke Leaf ■■■-->
+  <ThoughtDef>
+    <defName>GDZR_THOUGHT_SmokeleafHigh</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>SmokeleafHigh</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>high on smokeleaf</label>
+        <description>Vaporized smokeleaf releases an pain-fighting analgesic but negatively affects cognitive function.</description>
+        <baseMoodEffect>-2</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+<!--■■■ INEBRIATED ■■■--> 
+  <ThoughtDef>
+    <defName>GDZR_THOUGHT_Inebriated</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>AlcoholHigh</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>minor ethanol poisoning</label>
+        <description>Ethanol is a low-utility chemical that negatively affects cognitive function and causes internal damage.</description>
+        <baseMoodEffect>-2</baseMoodEffect>
+      </li>
+      <li>
+        <label>ethanol poisoning</label>
+        <description>Ethhanol is  low-utility chemicaall.. that negaativvely afffects cooggnitivve funkttion.. ann caausess internall dammaage.</description>
+        <baseMoodEffect>-6</baseMoodEffect>
+      </li>     
+      <li>
+        <label>advanced ethanol poisoning</label>
+        <description>Etthhannool chemm-che-chemall.. nooo goood foor meee</description>
+        <baseMoodEffect>-12</baseMoodEffect>
+      </li>
+      <li>
+        <label>extreme ethanol poisoning</label>
+        <description>Baaaa-    -aaaaad</description>
+        <baseMoodEffect>-20</baseMoodEffect>
+      </li>   
+    </stages>
+  </ThoughtDef>
+  
+<!--■■■ PSYCHITE TEA ■■■--> 
+  <ThoughtDef>
+    <defName>GDZR_THOUGHT_PsychiteTeaHigh</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>PsychiteTeaHigh</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>psychite tea</label>
+        <description>A slight stimulatory effect. The benefits are negligible compared to the labour outputs associated with refined psychite compounds.</description>
+        <baseMoodEffect>2</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+<!--■■■ FLAKE ■■■--> 
+  <ThoughtDef>
+    <defName>GDZR_THOUGHT_FlakeHigh</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>FlakeHigh</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>high on flake</label>
+        <description>My mind feels focused and primed for work.</description>
+        <baseMoodEffect>6</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+<!--■■■ YAYO ■■■--> 
+  <ThoughtDef>
+    <defName>GDZR_THOUGHT_YayoHigh</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>YayoHigh</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>high on yayo</label>
+        <description>My mind feels focused and primed for work.</description>
+        <baseMoodEffect>6</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  <!--■■■ GO JUICE ■■■--> 
+  <ThoughtDef>
+    <defName>GDZR_THOUGHT_GoJuiceHigh</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>GoJuiceHigh</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>high on go-juice</label>
+        <description>Accelerated reflexs help me achieve peak procurement efficiency. No bio-asset will be left behind.</description>
+        <baseMoodEffect>6</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+   
+  <!--■■■ WAKEUP ■■■--> 
+  <ThoughtDef>
+    <defName>GDZR_THOUGHT_WakeUpHigh</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>WakeUpHigh</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>high on wake-up</label>
+        <description>My synapses are firing into overdrive and I can feel my prevous mental fatigue lift away. A steady supply of this stimulant would drive the co-op's productivity into overdrive and all but assure operational success.</description>
+        <baseMoodEffect>12</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  
+</Defs>

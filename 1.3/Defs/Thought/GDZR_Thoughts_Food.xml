@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ <!--■■■■■■■■■■■■■■■■■
+     FOOD
+  1. Ate Awful Meal
+  2. Ate From Bio-asset (Animal) aka "AteCorpse"
+  3. Ate From Bio-asset (Humanlike) aka "AteHumanlikeMeatDirect"
+  4. Ate From Bio-asset (Insect) aka "AteInsectMeatDirect"
+  5. Ate Kibble
+  6. Ate Raw Biomaterial aka "AteRawFood"
+  7. Ate Rotten Biomaterial aka "AteRottenFood"
+  8. Need Food
+     ■■■■■■■■■■■■■■■■■--> 
+ 
+<!--■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■FOOD■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■--> 
+<!--■■■1. ATE AWFUL MEAL■■■-->
+<ThoughtDef>
+    <defName>GDZR_THOUGHT_AteAwfulMeal</defName>
+    <durationDays>1</durationDays>
+    <stages>
+      <li>
+        <label>ate awful meal</label>
+        <description>I ate poorly prepared nourishment. This is suboptimal for digestion.</description>
+        <baseMoodEffect>-2</baseMoodEffect>
+      </li>
+    </stages>
+</ThoughtDef> 
+  
+<!--■■■2. ATE FROM BIO-ASSET (ANIMAL)■■■-->
+<ThoughtDef>
+    <defName>GDZR_THOUGHT_AteCorpse</defName>
+  
+    <showBubble>true</showBubble>
+    <icon>Things/Mote/ThoughtSymbol/Food</icon>
+  
+    <durationDays>1</durationDays>
+    <stages>
+      <li>
+        <label>ate from bio-asset</label>
+        <description>I ate directly from a bio-asset. Properly preparing nourishment would aid in consumption and digestion.</description>
+        <baseMoodEffect>-6</baseMoodEffect>
+      </li>
+    </stages>
+</ThoughtDef>
+  
+<!--■■■3. ATE FROM BIO-ASSET (HUMANLIKE)■■■-->
+<ThoughtDef>
+    <defName>GDZR_THOUGHT_AteHumanlikeMeatDirect</defName>
+  
+    <showBubble>true</showBubble>
+    <icon>Things/Mote/ThoughtSymbol/Food</icon>
+  
+    <durationDays>1</durationDays>
+    <stages>
+      <li>
+        <label>ate from bio-asset</label>
+        <description>I ate directly from a bio-asset. Properly preparing nourishment would aid in consumption and digestion.</description>
+        <baseMoodEffect>-6</baseMoodEffect>
+      </li>
+    </stages>
+</ThoughtDef>
+  
+<!--■■■4. ATE FROM BIO-ASSET (INSECT)■■■-->
+<ThoughtDef>
+    <defName>GDZR_THOUGHT_AteInsectMeatDirect</defName>
+  
+    <showBubble>true</showBubble>
+    <icon>Things/Mote/ThoughtSymbol/Food</icon>
+  
+    <durationDays>1</durationDays>
+    <stages>
+      <li>
+        <label>ate from bio-asset</label>
+        <description>I ate directly from a bio-asset. Properly preparing nourishment would aid in consumption and digestion.</description>
+        <baseMoodEffect>-6</baseMoodEffect>
+      </li>
+    </stages>
+</ThoughtDef>
+  
+<ThoughtDef>
+    <defName>GDZR_THOUGHT_AteKibble</defName>
+    <showBubble>true</showBubble>
+    <icon>Things/Mote/ThoughtSymbol/Food</icon>
+    <durationDays>1</durationDays>
+    <stages>
+      <li>
+        <label>ate kibble</label>
+        <description>I ate biomaterial designed for lower, hardier, lifeforms. My digestive system will have a hard time processing this.</description>
+        <baseMoodEffect>-4</baseMoodEffect>
+      </li>
+    </stages>
+</ThoughtDef>
+  
+  
+<!--■■■6. ATE RAW BIOMATERIAL■■■-->
+<ThoughtDef>
+    <defName>GDZR_THOUGHT_AteRawFood</defName>
+  
+    <showBubble>true</showBubble>
+    <icon>Things/Mote/ThoughtSymbol/Food</icon>
+  
+    <durationDays>1</durationDays>
+    <stages>
+      <li>
+        <label>ate raw biomaterial</label>
+        <description>I ate unprocessed biomaterial. Properly preparing nourishment would aid in consumption and digestion.</description>
+        <baseMoodEffect>-4</baseMoodEffect>
+      </li>
+    </stages>
+</ThoughtDef>
+
+<!--■■■6. ATE ROTTEN BIOMATERIAL■■■-->
+<ThoughtDef>
+    <defName>GDZR_THOUGHT_AteRottenFood</defName>
+  
+    <showBubble>true</showBubble>
+    <icon>Things/Mote/ThoughtSymbol/Food</icon>
+  
+    <durationDays>1</durationDays>
+    <stages>
+      <li>
+        <label>ate rotten biomaterial</label>
+        <description>I ate some decaying, putrid biomaterial. My digestive system can't handle this.</description>
+        <baseMoodEffect>-10</baseMoodEffect>
+      </li>
+    </stages>
+</ThoughtDef>
+
+<!--■■■7. NEED FOOD■■■-->
+<ThoughtDef>
+    <defName>GDZR_THOUGHT_NeedFood</defName>
+  
+    <workerClass>ThoughtWorker_NeedFood</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>hungry</label>
+        <description>I require nourishment.</description>
+        <baseMoodEffect>-4</baseMoodEffect>
+      </li>
+      <li>
+        <label>ravenously hungry</label>
+        <description>My dietary needs are not being met. This will effect my work soon.</description>
+        <baseMoodEffect>-8</baseMoodEffect>
+      </li>
+      <li>
+        <label>malnourished</label>
+        <description>A long time has passed since my last nourishment. My work is suffering and my body is starting to lose mass.</description>
+        <baseMoodEffect>-12</baseMoodEffect>
+      </li>
+      <li>
+        <label>badly malnourished</label>
+        <description>My body is wasting away. It's difficult to focus on my tasks.</description>
+        <baseMoodEffect>-16</baseMoodEffect>
+      </li>
+      <li>
+        <label>starving</label>
+        <description>It's almost impossible to concentrate. My limbs are hard to move. I am in pain.</description>
+        <baseMoodEffect>-22</baseMoodEffect>
+      </li>
+      <li>
+        <label>advanced starvation</label>
+        <description>I can barely move or think. Losing consciousness is a risk. The pain is severe.</description>
+        <baseMoodEffect>-28</baseMoodEffect>
+      </li>
+      <li>
+        <label>extreme starvation</label>
+        <description>Sustenance... anything... </description>
+        <baseMoodEffect>-34</baseMoodEffect>
+      </li>
+    </stages>
+</ThoughtDef>
+  
+</Defs>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!--■■■■■■■■■■■■■■■■■
+    Traits
+ 1) Zeta Base
+ 2) Agromist
+ 3) Analyst
+ 4) Disassembler
+ 5) Fabricator
+ 6) Procurer 
+ 7) Therapist
+    ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ Traits ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+    ■■■ 1) Trait, Zeta Base  ■■■-->
+  <TraitDef Name="GDZR_TRAIT_ZetaBase" Abstract="True">
+    <commonality>0</commonality>
+    <degreeDatas>
+      <li>
+        <label>social engineering</label>
+        <description>Cold and mechanical Zeta Reticulans are unaffected by most human emotions. Their frustrations mostly stem from whether work standards are being kept and mission guidelines followed; Their greatest joy is working in their field of expertise.</description>
+        
+        <statFactors>
+          <CertaintyLossFactor MayRequire="Ludeon.RimWorld.Ideology">0.1</CertaintyLossFactor>
+        </statFactors>
+        
+        <disallowedMentalStates>
+          <li>Berserk</li>
+          <li>MurderousRage</li>
+          <li>Tantrum</li>
+          <li>TargetedTantrum</li>
+          <li>BedroomTantrum</li>
+          <li>InsultingSpree</li>
+          <li>TargetedInsultingSpree</li>
+          <li>Wander_Sad</li>
+        </disallowedMentalStates>
+        
+        <allowedMeditationFocusTypes>
+          <li>Minimal</li>
+        </allowedMeditationFocusTypes>
+        
+        <mentalBreakInspirationGainSet>
+          <li>Frenzy_Work</li>
+        </mentalBreakInspirationGainSet>
+        <mentalBreakInspirationGainReasonText>As a work lovin' zeta, [PAWN_nameIndef] has experienced an inspiration.</mentalBreakInspirationGainReasonText>
+        <mentalBreakInspirationGainChance>0.5</mentalBreakInspirationGainChance>       
+      </li>
+    </degreeDatas>
+  </TraitDef>
+  
+  <!--■■■■■■■■■■■■■■■■■■ 2) Trait, Agromist ■■■■■■■■■■■■■■■■■■■■■■■-->
+  <TraitDef ParentName="GDZR_TRAIT_ZetaBase">
+    <defName>GDZR_TRAIT_Agromist</defName>
+    <conflictingPassions> <!-- 9 Disallowed-->
+      <li>Intellectual</li>
+      <li>Construction</li>
+      <li>Crafting</li>
+      <li>Shooting</li> 
+      <li>Melee</li>
+      <li>Medicine</li>
+      <li>Artistic</li>
+      <li>Social</li>
+      <li>Animals</li>
+    </conflictingPassions>
+  </TraitDef>
+  
+  <!--■■■■■■■■■■■■■■■■■■ 3) Trait, Analyst ■■■■■■■■■■■■■■■■■■■■■■■-->
+  <TraitDef ParentName="GDZR_TRAIT_ZetaBase">
+    <defName>GDZR_TRAIT_Analyst</defName>
+    <commonality>0</commonality>
+    <conflictingPassions>
+      <li>Construction</li>
+      <li>Crafting</li>
+      <li>Shooting</li>
+      <li>Melee</li>
+      <li>Plants</li>
+      <li>Artistic</li>
+      <li>Social</li>
+      <li>Animals</li>
+      <li>Mining</li>
+    </conflictingPassions>
+  </TraitDef>
+  
+  <!--■■■■■■■■■■■■■■■■■■ 4) Trait, Disassembler ■■■■■■■■■■■■■■■■■■■■■■■-->
+  <TraitDef ParentName="GDZR_TRAIT_ZetaBase">
+    <defName>GDZR_TRAIT_Disassembler</defName>
+    <conflictingPassions>
+      <li>Melee</li>
+      <li>Animals</li>
+      <li>Social</li>
+      <li>Shooting</li>
+      <li>Plants</li>
+      <li>Crafting</li>
+      <li>Construction</li>
+      <li>Artistic</li>
+      <li>Mining</li>
+    </conflictingPassions>
+  </TraitDef>
+  
+  <!--■■■■■■■■■■■■■■■■■■ 5) Trait, Fabricator ■■■■■■■■■■■■■■■■■■■■■■■-->
+  <TraitDef ParentName="GDZR_TRAIT_ZetaBase">
+    <defName>GDZR_TRAIT_Fabricator</defName>
+    <conflictingPassions>
+      <li>Artistic</li>
+      <li>Intellectual</li>
+      <li>Shooting</li>
+      <li>Melee</li>
+      <li>Plants</li>
+      <li>Medicine</li>
+      <li>Social</li>
+      <li>Cooking</li>
+      <li>Animals</li>
+    </conflictingPassions>
+  </TraitDef>
+  
+  <!--■■■■■■■■■■■■■■■■■■ 6) Trait, Procurer ■■■■■■■■■■■■■■■■■■■■■■■-->
+  <TraitDef ParentName="GDZR_TRAIT_ZetaBase">
+    <defName>GDZR_TRAIT_Procurer</defName>
+    <conflictingPassions> <!-- only 8 Disallowed, because shooting/melee + social(3-5) jobs are rare/or otherwise useless but effective "attack ground/walls to boost mood" time dumps-->
+      <li>Animals</li>
+      <li>Cooking</li>
+      <li>Intellectual</li>
+      <li>Construction</li>
+      <li>Mining</li>
+      <li>Plants</li>
+      <li>Crafting</li>
+      <li>Artistic</li>
+    </conflictingPassions>
+  </TraitDef>
+  
+  <!--■■■■■■■■■■■■■■■■■■ 7) Trait, Therapist ■■■■■■■■■■■■■■■■■■■■■■■-->
+  <TraitDef ParentName="GDZR_TRAIT_ZetaBase">
+    <defName>GDZR_TRAIT_Therapist</defName>
+    <conflictingPassions> <!-- only 7 Disallowed, because social/animal jobs are rare and int/med/art stats roll low-->
+      <li>Melee</li>
+      <li>Plants</li>
+      <li>Cooking</li>
+      <li>Construction</li>
+      <li>Crafting</li>
+      <li>Shooting</li>
+      <li>Mining</li>
+    </conflictingPassions>
+  </TraitDef>
+  
+  
+  
+  
+  <!--■■■ Hybrid Mentality ■■■
+  Dev Note: More types of mental breaks allowed
+  
+  <TraitDef>
+    <defName>GDZR_TRAIT_HybridMentality</defName>
+    <commonality>0</commonality>
+    <degreeDatas>
+      <li>
+        <label>social engineering</label>
+        <description>{PAWN_nameDef} was taught that eating human meat is wrong and horrible. But one time, long ago, {PAWN_pronoun} tried it... and {PAWN_pronoun} liked it.</description>
+        
+        <statFactors>
+          <CertaintyLossFactor MayRequire="Ludeon.RimWorld.Ideology">0.1</CertaintyLossFactor>
+        </statFactors>
+        
+        <disallowedMentalStates>
+          <li>Berserk</li>
+          <li>MurderousRage</li>
+          <li>TargetedTantrum</li>
+          <li>InsultingSpree</li>
+          <li>TargetedInsultingSpree</li>
+        </disallowedMentalStates>
+        
+        <allowedMeditationFocusTypes>
+          <li>Minimal</li>
+        </allowedMeditationFocusTypes>
+        
+        <mentalBreakInspirationGainSet>
+          <li>Frenzy_Work</li>
+        </mentalBreakInspirationGainSet>
+        <mentalBreakInspirationGainReasonText>As a work lovin' zeta, [PAWN_nameIndef] has experienced an inspiration.</mentalBreakInspirationGainReasonText>
+        <mentalBreakInspirationGainChance>0.5</mentalBreakInspirationGainChance>    
+      </li>
+    </degreeDatas>
+  </TraitDef>-->
+</Defs>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+<!--■■■■■■■■■■■■■■■■■■ ORB SOUND DEFS ■■■■■■■■■■■-->
+<SoundDef>
+    <defName>GDZR_SOUND_InterrupterOne</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>6</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>ZR_Sound_Gel_Applicator</clipFolderPath>
+          </li>
+        </grains>
+        <volumeRange>
+          <min>100</min>        
+          <max>100</max>
+        </volumeRange>       
+        <pitchRange>
+          <min>0.8082353</min>        
+          <max>1.205882</max>
+        </pitchRange>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+</SoundDef>
+  
+  <SoundDef>
+    <defName>GDZR_SOUND_OrbSustain</defName>   
+    <context>MapOnly</context>
+    <maxSimultaneous>9</maxSimultaneous>  
+    <subSounds>
+      <li>   
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>ZR_Sound_OrbSustain</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>7~9</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+<!--■■■■■■■■■■■■■■■■■■ SINGULARITY SOUND DEFS ■■■■■■■■■■■-->
+  
+  <SoundDef>
+    <defName>GDZR_SOUND_SingularitySustain</defName>   
+    <context>MapOnly</context>
+    <maxSimultaneous>9</maxSimultaneous>  
+    <subSounds>
+      <li>   
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>ZR_Sound_SingularitySustain</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>300~310</volumeRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+</Defs>

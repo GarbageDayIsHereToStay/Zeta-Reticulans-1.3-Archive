@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+ <!--■■■■■■■■■■■■■■■■■
+     SLEEPING
+  1. Need Rest
+  2. Rest Period Disturbed aka "SleepDisturbed"
+  3. Slept In Alcove aka "SleptInBedroom"
+  4. Slept In Cold
+  5. Slept In Drey aka "SleptInBarracks"
+  6. Slept In Heat
+  7. Slept On Ground
+  8. Slept Outside
+    ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ Traits, Sleeping ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ 
+    ■■■1. NEED REST■■■-->
+<ThoughtDef>
+    <defName>GDZR_THOUGHT_NeedRest</defName>
+    <workerClass>ThoughtWorker_NeedRest</workerClass>
+    <stages>
+      <li>
+        <label>drowsy</label>
+        <description>It's becoming hard to organize my thoughts. I need to rest.</description>
+        <baseMoodEffect>-4</baseMoodEffect>
+      </li>
+      <li>
+        <label>tired</label>
+        <description>I risk making serious mistakes in this state. Co-op guidelines strongly recommend I cease working.</description>
+        <baseMoodEffect>-8</baseMoodEffect>
+      </li>
+      <li>
+        <label>exhausted</label>
+        <description>I'm close to physical collapse; I need to retire to somewhere my body won't be harmed when I do.</description>
+        <baseMoodEffect>-12</baseMoodEffect>
+      </li>
+    </stages>
+</ThoughtDef>
+ 
+<!--■■■2. SLEEP DISTURBED■■■-->
+<ThoughtDef>
+    <defName>GDZR_THOUGHT_SleepDisturbed</defName>
+  
+    <icon>Icons/ZR_SleepDistrubed</icon>
+    <showBubble>true</showBubble>
+  
+    <durationDays>1</durationDays>
+    <stackLimit>5</stackLimit>
+    <stackedEffectMultiplier>1</stackedEffectMultiplier>
+    <stages>
+      <li>
+        <label>rest period disturbed</label>
+        <description>A stable circadian rhythm is crucial for mental fitness.</description>
+        <baseMoodEffect>-1</baseMoodEffect>
+      </li>
+    </stages>
+</ThoughtDef>  
+
+<!--■■■3. SLEPT IN ALCOVE■■■-->
+<ThoughtDef>
+    <defName>GDZR_THOUGHT_SleptInBedroom</defName>
+    <durationDays>1</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <!--Awful (Stage 1)-->
+      <li>
+        <label>satisfactory rest alcove</label>
+        <description>My last used rest alcove was sufficient.</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+      <!--Dull (Stage 2)-->
+      <li>
+        <label>satisfactory rest alcove</label>
+        <description>My last used rest alcove was sufficient.</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+      <!--Mediocre (Stage 3)-->
+      <li>
+        <label>satisfactory rest alcove</label>
+        <description>My last used rest alcove was sufficient.</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+      <!--Decent (Stage 4)-->
+      <li>
+        <label>satisfactory rest alcove</label>
+        <description>My last used rest alcove was sufficient.</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+      <!--Slightly Impressive (Stage 5)-->
+      <li>
+        <label>satisfactory rest alcove</label>
+        <description>My last used rest alcove was sufficient.</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+      <!--Impressive (Stage 6)-->
+      <li>
+        <label>alcove surpassed benchmarks</label>
+        <description>The last rest alcove I used was well engineered and surpassed recommended benchmarks.</description>
+        <baseMoodEffect>3</baseMoodEffect>
+      </li>
+      <!--Very Impressive (Stage 7)-->
+      <li>
+        <label>alcove surpassed benchmarks</label>
+        <description>The last rest alcove I used was well engineered and surpassed recommended benchmarks.</description>
+        <baseMoodEffect>3</baseMoodEffect>
+      </li>
+      <!--Extremely Impressive (Stage 8)-->
+      <li>
+        <label>alcove surpassed benchmarks</label>
+        <description>The last rest alcove I used was well engineered and surpassed recommended benchmarks.</description>
+        <baseMoodEffect>3</baseMoodEffect>
+      </li>
+      <!--Unbelievably Impressive (Stage 9)-->
+      <li>
+        <label>ergonomic alcove</label>
+        <description>A culmination of our best designs and knowledge, resting in that last alcove left my mind feeling ordered.</description>
+        <baseMoodEffect>6</baseMoodEffect>
+      </li>
+      <!--Wondrously Impressive (Stage 10)-->
+      <li>
+        <label>ergonomic alcove</label>
+        <description>A culmination of our best designs and knowledge, resting in that last alcove left my mind feeling ordered.</description>
+        <baseMoodEffect>6</baseMoodEffect>
+      </li>
+    </stages>
+</ThoughtDef>
+
+<!--■■■4. SLEPT IN COLD■■■--> 
+<ThoughtDef>
+    <defName>GDZR_THOUGHT_SleptInCold</defName>
+    <durationDays>1</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>slept in the cold</label>
+        <description>I slept in the cold. 
+          \nWe need to heat our facilities better.</description>
+        <baseMoodEffect>-2</baseMoodEffect>
+      </li>
+    </stages>
+</ThoughtDef>
+  
+<!--■■■5. SLEPT IN DREY■■■-->
+<ThoughtDef>
+    <defName>GDZR_THOUGHT_SleptInBarracks</defName>
+    <durationDays>1</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <!--Awful (Stage 1)-->
+      <li>
+        <label>emergency drey</label>
+        <description>Co-op protocols recommend individual rest alcoves to limit disruptions. It's imperative that we optimize our operating procedures.</description>
+        <baseMoodEffect>-8</baseMoodEffect>
+      </li>
+      <!--Dull (Stage 2)-->
+      <li>
+        <label>emergency drey</label>
+        <description>Co-op protocols recommend individual rest alcoves to limit disruptions. It's imperative that we optimize our operating procedures.</description>
+        <baseMoodEffect>-8</baseMoodEffect>
+      </li>
+      <!--Mediocre (Stage 3)-->
+      <li>
+        <label>emergency drey</label>
+        <description>Co-op protocols recommend individual rest alcoves to limit disruptions. It's imperative that we optimize our operating procedures.</description>
+        <baseMoodEffect>-8</baseMoodEffect>
+      </li>
+      <!--Decent (Stage 4)-->
+      <li>
+        <label>resting drey</label>
+        <description>Communal resting drey are not advised even if a room's structural and sanitation parameters would otherwise meet set benchmarks.</description>
+        <baseMoodEffect>-4</baseMoodEffect>
+      </li>
+      <!--Slightly Impressive (Stage 5)-->
+      <li>
+        <label>resting drey</label>
+        <description>Communal resting drey are not advised even if a room's structural and sanitation parameters would otherwise meet set benchmarks.</description>
+        <baseMoodEffect>-4</baseMoodEffect>
+      </li>
+      <!--Impressive (Stage 6)-->
+      <li>
+        <label>resting drey</label>
+        <description>Communal resting drey are not advised even if a room's structural and sanitation parameters would otherwise meet set benchmarks.</description>
+        <baseMoodEffect>-4</baseMoodEffect>
+      </li>
+      <!--Very Impressive (Stage 7)-->
+      <li>
+        <label>resting drey</label>
+        <description>Communal resting drey are not advised even if a room's structural and sanitation parameters would otherwise meet set benchmarks.</description>
+        <baseMoodEffect>-4</baseMoodEffect>
+      </li>
+      <!--Extremely Impressive (Stage 8)-->
+      <li>
+        <label>resting drey</label>
+        <description>Communal resting drey are not advised even if a room's structural and sanitation parameters would otherwise meet set benchmarks.</description>
+        <baseMoodEffect>-4</baseMoodEffect>
+      </li>
+      <!--Unbelievably Impressive (Stage 9)-->
+      <li>
+        <label>well-built drey</label>
+        <description>Despite its cleanliness and excellent design continued use of any shared resting drey will cut into long-term productivity margins.</description>
+        <baseMoodEffect>-2</baseMoodEffect>
+      </li>
+      <!--Wondrously Impressive (Stage 10)-->
+      <li>
+        <label>well-built drey</label>
+        <description>Despite its cleanliness and excellent design continued use of any shared resting drey will cut into long-term productivity margins.</description>
+        <baseMoodEffect>-2</baseMoodEffect>
+      </li>
+    </stages>
+</ThoughtDef>
+
+<!--■■■6. SLEPT IN HEAT■■■-->
+<ThoughtDef>
+    <defName>GDZR_THOUGHT_SleptInHeat</defName>
+    <durationDays>1</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>slept in the heat</label>
+        <description>I slept in the heat. 
+          \nWe need to cool our facilities better.</description>
+        <baseMoodEffect>-6</baseMoodEffect>
+      </li>
+    </stages>
+</ThoughtDef>
+  
+<!--■■■7. SLEPT ON GROUND■■■--> 
+<ThoughtDef>
+    <defName>GDZR_THOUGHT_SleptOnGround</defName>
+    <durationDays>1</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>slept on ground</label>
+        <description>I should be resting on an elevated plane with proper cranial support.</description>
+        <baseMoodEffect>-2</baseMoodEffect>
+      </li>
+    </stages>
+</ThoughtDef>
+  
+<!--■■■8. SLEPT OUTSIDE■■■--> 
+<ThoughtDef>
+    <defName>GDZR_THOUGHT_SleptOutside</defName>
+    <durationDays>1</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>slept outside</label>
+        <description>I had to sleep outdoors without any protection from the elements.</description>
+        <baseMoodEffect>-6</baseMoodEffect>
+      </li>
+    </stages>
+</ThoughtDef>
+  
+</Defs>
