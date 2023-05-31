@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+<FactionDef>
+  <defName>GDZR_FACTION_Player</defName>
+  <label>Zeta Reticulan</label>
+  <description>Your research compound.</description>
+  
+  <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+  <factionIconPath>World/WorldObjects/Expanding/Town</factionIconPath>
+  <colorSpectrum>
+    <li>(200, 200, 200)</li>
+  </colorSpectrum>
+  
+  <fixedName>Zeta Reticulan</fixedName>
+  <factionNameMaker>GDZR_RULEPACK_NamerFaction</factionNameMaker>
+  <settlementNameMaker>GDZR_RULEPACK_NamerSettlement</settlementNameMaker>
+  <playerInitialSettlementNameMaker>GDZR_RULEPACK_NamerSettlement</playerInitialSettlementNameMaker>
+  
+  <isPlayer>true</isPlayer>
+  <basicMemberKind>GDZR_PAWNPLAYER_ShortGrey_Fabricator</basicMemberKind>
+  
+  <pawnSingular>researcher</pawnSingular>
+  <pawnsPlural>researchers</pawnsPlural>
+  
+  <backstoryCategories>
+    <li>GDZR_Backstories_ShortGreyChild_CAT</li>
+    <li>ZR_BackstoriesAdult_ShortGrey_CAT</li>
+  </backstoryCategories>
+  <geneticVariance>0.1</geneticVariance>
+  <apparelStuffFilter>
+    <thingDefs>
+      <li>Hyperweave</li>
+    </thingDefs>
+  </apparelStuffFilter>
+  
+  <allowedCultures><li>Astropolitan</li></allowedCultures>
+  <!--■■■ IDEOLOGY ■■■
+  <requiredMemes>
+    <li MayRequire="Ludeon.RimWorld.Ideology">ZR_MEMESTRUCTURE_RETICULAN_DEF</li>
+    <li MayRequire="Ludeon.RimWorld.Ideology">ZR_MEME_DEF</li>
+  </requiredMemes>  -->
+  
+<!--  <disallowedMemes>
+    <li>AnimalPersonhood</li>
+  </disallowedMemes>-->
+  
+  <!--■■■ TECH ■■■-->  
+  <techLevel>Ultra</techLevel>
+  <startingResearchTags>
+    <li>ClassicStart</li>
+    <li>ClassicStartTechprints</li>
+    <li>GDZR_StartingTech_TAG</li>
+  </startingResearchTags>
+  
+  <raidLootValueFromPointsCurve>
+    <points>
+      <li>(35,     15)</li>
+      <li>(100,   120)</li>
+      <li>(1000,  500)</li>
+      <li>(2000,  800)</li>
+      <li>(4000, 1000)</li>
+    </points>
+  </raidLootValueFromPointsCurve>
+</FactionDef>
+  
+</Defs>

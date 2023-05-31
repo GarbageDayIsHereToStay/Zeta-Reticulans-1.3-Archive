@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+<!--■■■■■■■■■■■■■■■■■  
+    Player Pawn Bases
+  1) Main Base
+  2) Agronomist Base   
+  3) Analyst Base
+  4) Disassembler Base
+  5) Fabricator Bsse
+  7) Procurer Base
+  8) Therapist Base
+  ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ Player Pawn Bases ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+  ■■■■■■■■■■■■■■■■■■ 1) Player pawn, Main Base ■■■■■■■■■■■■■■■■■■■■■■■-->
+  <PawnKindDef Name="GDZR_PAWNPLAYER_ZetaBase" Abstract="True">
+      <defaultFactionType>GDZR_FACTION_Player</defaultFactionType>
+      
+      <combatPower>60</combatPower>
+      
+      <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+      <forceNormalGearQuality>true</forceNormalGearQuality>
+      
+      <fleeHealthThresholdRange>0.7~0.8</fleeHealthThresholdRange> 
+      <initialResistanceRange>30~40</initialResistanceRange>
+      <initialWillRange>8~10</initialWillRange>
+      <chemicalAddictionChance>0</chemicalAddictionChance>
+      
+      <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+      
+      <minGenerationAge>22</minGenerationAge>
+      <maxGenerationAge>200</maxGenerationAge>
+      
+      <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+      
+      <!-- <apparelColor>(195,191,188)</apparelColor>-->
+      <apparelRequired>
+          <li>GDZR_APPAREL_SlipSuitWhite</li>
+      </apparelRequired>
+      
+      <techHediffsChance>0</techHediffsChance>
+      <techHediffsMaxAmount>0</techHediffsMaxAmount>
+      <allowOldAgeInjuries>true</allowOldAgeInjuries> <!-- Turns off birthdays => HediffGivers-->
+      <techHediffsRequired><li>GDZR_IMPLANT_EnigmaImplant</li></techHediffsRequired>
+      <!-- <techHediffsMoney>
+            <min>0</min>
+            <max>0</max>
+        </techHediffsMoney>
+        <techHediffsTags>
+            <li>Advanced</li>
+            <li>ImplantEmpireCommon</li>
+        </techHediffsTags>
+        <techHediffsDisallowTags>
+            <li>AestheticNose</li>
+            <li>Joywire</li>
+            <li>LoveEnhancer</li>
+            <li>Mindscrew</li>
+            <li>PsychicHarmonization</li>
+            <li>VenomFangs</li>
+            <li>AestheticShaper</li>
+            <li>FieldHand</li>
+            <li>PainCauser</li>
+        </techHediffsDisallowTags> -->
+  </PawnKindDef>
+    
+    <!--■■■■■■■■■■■■■■■■■■ 2) Player pawn, Agronomist ■■■■■■■■■■■■■■■■■■■■■■■-->
+    <PawnKindDef Name="GDZR_PAWNPLAYER_AgronomistBase" ParentName="GDZR_PAWNPLAYER_ZetaBase" Abstract="True"> 
+        <forcedTraits>
+            <li>GDZR_TRAIT_Agromist</li>
+        </forcedTraits>
+        
+        <skills>
+            <!--■ 7~9 ■-->
+            <li>
+                <skill>Plants</skill>
+                <range>7~9</range>
+            </li>  
+            <!--■ 3~5 ■-->
+            <li>
+                <skill>Mining</skill>
+                <range>3~5</range>
+            </li>
+            <!--■ 2~4 ■-->
+            <li>
+                <skill>Cooking</skill>
+                <range>2~4</range>
+            </li>        
+            <!--■ 1~3 ■-->
+            <li>
+                <skill>Intellectual</skill>
+                <range>1~3</range>
+            </li>
+            <!--■ 0~2 ■-->
+            <li>
+                <skill>Construction</skill>
+                <range>0~2</range>
+            </li>
+            <li>
+                <skill>Crafting</skill>
+                <range>0~2</range>
+            </li>   
+            <li>
+                <skill>Shooting</skill>
+                <range>0~2</range>
+            </li>
+            <li>
+                <skill>Melee</skill>
+                <range>0~2</range>
+            </li>
+            <li>
+                <skill>Medicine</skill>
+                <range>0~2</range>
+            </li>   
+            <li>
+                <skill>Artistic</skill>
+                <range>0~2</range>
+            </li>
+            <li>
+                <skill>Social</skill>
+                <range>0~2</range>
+            </li>            
+            <li>
+                <skill>Animals</skill>
+                <range>0~2</range>
+            </li>     
+        </skills>
+    </PawnKindDef>
+    
+    <!--■■■■■■■■■■■■■■■■■■ 3) Player pawn, Analyst ■■■■■■■■■■■■■■■■■■■■■■■-->
+    <PawnKindDef Name="GDZR_PAWNPLAYER_AnalystBase" ParentName="GDZR_PAWNPLAYER_ZetaBase" Abstract="True"> 
+        <forcedTraits>
+            <li>GDZR_TRAIT_Analyst</li>
+        </forcedTraits>
+        
+        <skills>
+            <!--■ 12~14 ■-->
+            <li>
+                <skill>Intellectual</skill>
+                <range>12~14</range>
+            </li>
+            <!--■ 5~7 ■-->
+            <li>
+                <skill>Medicine</skill>
+                <range>4~6</range>
+            </li> 
+            <!--■ 3~5 ■-->
+            <li>
+                <skill>Cooking</skill>
+                <range>3~5</range>
+            </li>    
+            <!--■ 0~2 ■-->
+            <li>
+                <skill>Construction</skill>
+                <range>0~2</range>
+            </li>
+            <li>
+                <skill>Crafting</skill>
+                <range>0~2</range>
+            </li>   
+            
+            <li>
+                <skill>Shooting</skill>
+                <range>0~2</range>
+            </li>
+            <li>
+                <skill>Melee</skill>
+                <range>0~2</range>
+            </li>
+            <li>
+                <skill>Plants</skill>
+                <range>0~2</range>
+            </li> 
+            <li>
+                <skill>Artistic</skill>
+                <range>0~2</range>
+            </li>
+            <li>
+                <skill>Social</skill>
+                <range>0~2</range>
+            </li>            
+            <li>
+                <skill>Animals</skill>
+                <range>0~2</range>
+            </li>  
+            <li>
+                <skill>Mining</skill>
+                <range>0~2</range>
+            </li>
+        </skills>
+    </PawnKindDef>
+    
+    <!--■■■■■■■■■■■■■■■■■■ 4) Player pawn, Disassembler ■■■■■■■■■■■■■■■■■■■■■■■-->
+    <PawnKindDef Name="GDZR_PAWNPLAYER_DisassemblerBase" ParentName="GDZR_PAWNPLAYER_ZetaBase" Abstract="True"> 
+        <forcedTraits>
+            <li>GDZR_TRAIT_Disassembler</li>
+        </forcedTraits>
+        
+        <skills>
+            <!--■ 9~11 ■-->
+            <li>
+                <skill>Medicine</skill>
+                <range>9~11</range>
+            </li>
+            <!--■ 7~9 ■-->
+            <li>
+                <skill>Cooking</skill>
+                <range>7~9</range>
+            </li>
+            <!--■ 3~5 ■-->
+            <li>
+                <skill>Intellectual</skill>
+                <range>3~5</range>
+            </li>
+            <!--■ 2~4 ■-->
+            <li>
+                <skill>Melee</skill>
+                <range>2~4</range>
+            </li>
+            <!--■ 1~3 ■-->
+            <li>
+                <skill>Animals</skill>
+                <range>1~3</range>
+            </li>
+            <li>               
+                <skill>Social</skill>
+                <range>1~3</range>
+            </li>
+            <!--■ 0~2 ■-->  
+            <li>
+                <skill>Shooting</skill>
+                <range>0~2</range>
+            </li>
+            <li>
+                <skill>Plants</skill>
+                <range>0~2</range>
+            </li>
+            <li>
+                <skill>Crafting</skill>
+                <range>0~2</range>
+            </li>
+            <li>
+                <skill>Construction</skill>
+                <range>0~2</range>
+            </li>
+            <li>
+                <skill>Artistic</skill>
+                <range>0~2</range>
+            </li>    
+            <li>
+                <skill>Mining</skill>
+                <range>0~2</range>
+            </li>
+        </skills>
+    </PawnKindDef>
+    
+    <!--■■■■■■■■■■■■■■■■■■ 5) Player pawn, Fabricator ■■■■■■■■■■■■■■■■■■■■■■■-->
+    <PawnKindDef Name="GDZR_PAWNPLAYER_FabricatorBase" ParentName="GDZR_PAWNPLAYER_ZetaBase" Abstract="True"> 
+        <forcedTraits>
+            <li>GDZR_TRAIT_Fabricator</li>
+        </forcedTraits>
+        
+        <skills>
+            <!--■ 7~9 ■-->
+            <li>
+                <skill>Construction</skill>
+                <range>7~9</range>
+            </li>
+            <li>
+                <skill>Mining</skill>
+                <range>7~9</range>
+            </li>
+            <!--■ 5~7 ■-->
+            <li>
+                <skill>Crafting</skill>
+                <range>5~7</range>
+            </li>
+            <!--■ 2~4 ■-->
+            <li>
+                <skill>Artistic</skill>
+                <range>2~4</range>
+            </li>  
+            <!--■ 1~3 ■-->
+            <li>
+                <skill>Intellectual</skill>
+                <range>1~3</range>
+            </li>
+            <!--■ 0~2 ■-->
+            <li>
+                <skill>Shooting</skill>
+                <range>0~2</range>
+            </li>
+            <li>
+                <skill>Melee</skill>
+                <range>0~2</range>
+            </li>
+            <li>
+                <skill>Plants</skill>
+                <range>0~2</range>
+            </li>  
+            <li>
+                <skill>Medicine</skill>
+                <range>0~2</range>
+            </li>    
+            <li>
+                <skill>Social</skill>
+                <range>0~2</range>
+            </li>
+            <li>
+                <skill>Cooking</skill>
+                <range>0~2</range>
+            </li>
+            <li>
+                <skill>Animals</skill>
+                <range>0~2</range>
+            </li>         
+        </skills>
+    </PawnKindDef>
+    
+    <!--■■■■■■■■■■■■■■■■■■ 6) Player pawn, Procurer ■■■■■■■■■■■■■■■■■■■■■■■-->
+    <PawnKindDef Name="GDZR_PAWNPLAYER_ProcurerBase" ParentName="GDZR_PAWNPLAYER_ZetaBase" Abstract="True"> 
+        <forcedTraits>
+            <li>GDZR_TRAIT_Procurer</li>
+        </forcedTraits>
+        
+        <skills>
+            <li>
+                <skill>Melee</skill>
+                <range>9~10</range>
+            </li>
+            <!--■ 7~9 ■--> 
+            <li>
+                <skill>Shooting</skill>
+                <range>7~9</range>
+            </li>
+            <!--■ 3~5 ■-->
+            <li>
+                <skill>Medicine</skill>
+                <range>3~5</range>
+            </li>
+            <li>
+                <skill>Social</skill>
+                <range>3~5</range>
+            </li>
+            <!--■ 1~3 ■-->
+            <li>
+                <skill>Animals</skill>
+                <range>1~3</range>
+            </li>  
+            <li>
+                <skill>Cooking</skill>
+                <range>1~3</range>
+            </li>
+           
+            <li>
+                <skill>Intellectual</skill>
+                <range>1~3</range>
+            </li>
+            <!--■ 0~2 ■-->          
+            <li>
+                <skill>Construction</skill>
+                <range>0~2</range>
+            </li>
+            <li>
+                <skill>Mining</skill>
+                <range>0~2</range>
+            </li>
+            <li>
+                <skill>Plants</skill>
+                <range>0~2</range>
+            </li>
+            
+            <li>
+                <skill>Crafting</skill>
+                <range>0~2</range>
+            </li>
+            <li>
+                <skill>Artistic</skill>
+                <range>0~2</range>
+            </li>       
+        </skills>
+    </PawnKindDef>
+    
+    <!--■■■■■■■■■■■■■■■■■■ 7) Player pawn, Therapist ■■■■■■■■■■■■■■■■■■■■■■■-->
+    <PawnKindDef Name="GDZR_PAWNPLAYER_TherapistBase" ParentName="GDZR_PAWNPLAYER_ZetaBase" Abstract="True"> 
+        <forcedTraits>
+            <li>GDZR_TRAIT_Therapist</li>
+        </forcedTraits>
+        
+        <skills> 
+            <!--■ 7~9 ■-->
+            <li>
+                <skill>Social</skill>
+                <range>7~9</range>
+            </li>            
+            <li>
+                <skill>Animals</skill>
+                <range>7~9</range>
+            </li> 
+            <!--■ 3~5 ■-->
+            <li>
+                <skill>Intellectual</skill>
+                <range>3~5</range>
+            </li>
+            <li>
+                <skill>Medicine</skill>
+                <range>3~5</range>
+            </li>
+            <li>
+                <skill>Artistic</skill>
+                <range>3~5</range>
+            </li>
+            <!--■ 2~4 ■-->
+            <li>
+                <skill>Melee</skill>
+                <range>2~4</range>
+            </li>
+            <!--■ 1~3 ■-->
+            <li>
+                <skill>Plants</skill>
+                <range>1~3</range>
+            </li>  
+            <!--■ 0~2 ■-->
+            <li>
+                <skill>Cooking</skill>
+                <range>0~2</range>
+            </li>  
+            <li>
+                <skill>Construction</skill>
+                <range>0~2</range>
+            </li>
+            <li>
+                <skill>Crafting</skill>
+                <range>0~2</range>
+            </li>   
+            <li>
+                <skill>Shooting</skill>
+                <range>0~2</range>
+            </li>
+            <li>
+                <skill>Mining</skill>
+                <range>0~2</range>
+            </li>
+        </skills>
+    </PawnKindDef>
+    
+
+    <!--■■■ ORB BASE■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■-->   
+    <PawnKindDef Name="ZR_PAWNPLAYER_ORBBASE_DEF" Abstract="True">
+        <defaultFactionType>GDZR_FACTION_Player</defaultFactionType>
+        
+        <combatPower>10</combatPower>
+        
+        <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+        <forceNormalGearQuality>true</forceNormalGearQuality>
+        
+        
+        <initialResistanceRange>100</initialResistanceRange>
+        <initialWillRange>100</initialWillRange>
+        <chemicalAddictionChance>0</chemicalAddictionChance>
+        
+        <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+        
+        <minGenerationAge>0</minGenerationAge>
+        <maxGenerationAge>1</maxGenerationAge>
+        <lifeStages>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Pawn/Mechanoid/Centipede</texPath>
+                    <graphicClass>Graphic_Multi</graphicClass>
+                    <drawSize>3</drawSize>
+                    <shadowData>
+                        <volume>(0.6, 0.8, 0.6)</volume>
+                    </shadowData>
+                </bodyGraphicData>
+            </li>
+        </lifeStages>
+        
+        <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+        
+        <techHediffsChance>0</techHediffsChance>
+        <techHediffsMaxAmount>0</techHediffsMaxAmount>
+    </PawnKindDef>
+    
+</Defs>

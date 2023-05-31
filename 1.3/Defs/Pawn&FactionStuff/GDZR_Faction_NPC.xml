@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <FactionDef Name="ZetaReticulanBase" ParentName="FactionBase">
+    <defName>GDZR_FACTION_NPC</defName>
+    <label>tottally aliens</label>
+    <description>A loose confederation of pirate gangs who've agreed to mostly fight outsiders instead of fighting each other.\n\nPirates don't sow, they don't build, and they rarely trade. Driven by a blood-and-honor culture that values personal strength and ruthlessness, they enrich themselves by raiding and robbing their more productive neighbors.\n\nTheir technology level depends mostly on who they've managed to steal from recently. Mostly they carry gunpowder weapons, though some prefer to stab victims at close range.</description>
+    
+    <settlementTexturePath>World/WorldObjects/ZR_Settlement</settlementTexturePath>
+    <factionIconPath>World/WorldObjects/ZR_Faction_Base</factionIconPath>
+    <colorSpectrum>
+      <li>(200, 200, 200)</li>
+    </colorSpectrum>
+    
+    <fixedName>Zeta Reticulan</fixedName>
+    <pawnSingular>researcher</pawnSingular>
+    <pawnsPlural>researchers</pawnsPlural>
+    <leaderTitle>boss</leaderTitle>
+
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <settlementGenerationWeight>0.12</settlementGenerationWeight>
+    <maxConfigurableAtWorldCreation>200</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>20</configurationListOrderPriority>
+    <canMakeRandomly>true</canMakeRandomly>
+    <naturalEnemy>true</naturalEnemy>
+    <hostileToFactionlessHumanlikes>true</hostileToFactionlessHumanlikes>
+    
+    <listOrderPriority>10</listOrderPriority>
+    <canSiege>true</canSiege>
+    <canStageAttacks>true</canStageAttacks>
+ 
+    <factionNameMaker>NamerFactionPirate</factionNameMaker>
+    <settlementNameMaker>NamerSettlementPirate</settlementNameMaker>
+
+    <techLevel>Ultra</techLevel>
+    
+    <!--■■■ IDEOLOGY ■■■-->
+    <allowedCultures><li>GDZR_CULTURE_ZetaReticulan</li></allowedCultures>
+    <requiredMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+    </requiredMemes>
+    <allowedMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">PainIsVirtue</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">FleshPurity</li>
+    </allowedMemes>
+    <structureMemeWeights>
+      <Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Ideological>
+    </structureMemeWeights>
+    
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>GDZR_Backstories_ShortGreyChild_CAT</li>
+          <li>ZR_BackstoriesAdult_ShortGrey_Procurer_CAT</li>
+        </categories>
+      </li>
+    </backstoryFilters>
+    <geneticVariance>0.8</geneticVariance>
+    
+    <!--■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ENCOUNTERS■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■-->
+    <allowedArrivalTemperatureRange>-60~45</allowedArrivalTemperatureRange>
+    <raidLootMaker>PirateRaidLootMaker</raidLootMaker>
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(0,35)</li>
+        <li>(70, 50)</li>
+        <li>(700, 100)</li>
+        <li>(1300, 150)</li>
+        <li>(100000, 10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+    
+    <pawnGroupMakers>
+    <li>
+   <!--■■■ Low ■■■-->
+      <kindDef>Combat</kindDef>
+      <commonality>100</commonality>
+      <disallowedStrategies>
+        <li>Siege</li>
+      </disallowedStrategies>
+      <options>
+        <!--■ SHORT GREY ■-->
+        <GDZR_PAWNNPC_ShortGrey_Agronomist>1</GDZR_PAWNNPC_ShortGrey_Agronomist>
+        <GDZR_PAWNNPC_ShortGrey_Analyst>1</GDZR_PAWNNPC_ShortGrey_Analyst>
+        <GDZR_PAWNNPC_ShortGrey_Disassembler>1</GDZR_PAWNNPC_ShortGrey_Disassembler>
+        <GDZR_PAWNNPC_ShortGrey_Fabricator>1</GDZR_PAWNNPC_ShortGrey_Fabricator>
+        <GDZR_PAWNNPC_ShortGrey_Procurer>3</GDZR_PAWNNPC_ShortGrey_Procurer>
+        <GDZR_PAWNNPC_ShortGrey_Therapist>1</GDZR_PAWNNPC_ShortGrey_Therapist>
+        <!--■ FORSAKEN ■-->
+        <GDZR_PAWNNPC_ShortForsaken_Agronomist>1</GDZR_PAWNNPC_ShortForsaken_Agronomist>
+        <GDZR_PAWNNPC_ShortForsaken_Analyst>1</GDZR_PAWNNPC_ShortForsaken_Analyst>
+        <GDZR_PAWNNPC_ShortForsaken_Disassembler>1</GDZR_PAWNNPC_ShortForsaken_Disassembler>
+        <GDZR_PAWNNPC_ShortForsaken_Fabricator>1</GDZR_PAWNNPC_ShortForsaken_Fabricator>
+        <GDZR_PAWNNPC_ShortForsaken_Procurer>3</GDZR_PAWNNPC_ShortForsaken_Procurer>
+        <GDZR_PAWNNPC_ShortForsaken_Therapist>1</GDZR_PAWNNPC_ShortForsaken_Therapist>
+        <!--■ HUMAN ■-->
+        <GDZR_PAWNNPC_ShortHuman_Agronomist>1</GDZR_PAWNNPC_ShortHuman_Agronomist>
+        <GDZR_PAWNNPC_ShortHuman_Analyst>1</GDZR_PAWNNPC_ShortHuman_Analyst>
+        <GDZR_PAWNNPC_ShortHuman_Disassembler>1</GDZR_PAWNNPC_ShortHuman_Disassembler>
+        <GDZR_PAWNNPC_ShortHuman_Fabricator>1</GDZR_PAWNNPC_ShortHuman_Fabricator>
+        <GDZR_PAWNNPC_ShortHuman_Procurer>3</GDZR_PAWNNPC_ShortHuman_Procurer>
+        <GDZR_PAWNNPC_ShortHuman_Therapist>1</GDZR_PAWNNPC_ShortHuman_Therapist>
+        <!--■ MANTIS ■-->
+        <GDZR_PAWNNPC_ShortMantis_Agronomist>1</GDZR_PAWNNPC_ShortMantis_Agronomist>
+        <GDZR_PAWNNPC_ShortMantis_Analyst>1</GDZR_PAWNNPC_ShortMantis_Analyst>
+        <GDZR_PAWNNPC_ShortMantis_Disassembler>1</GDZR_PAWNNPC_ShortMantis_Disassembler>
+        <GDZR_PAWNNPC_ShortMantis_Fabricator>1</GDZR_PAWNNPC_ShortMantis_Fabricator>
+        <GDZR_PAWNNPC_ShortMantis_Procurer>3</GDZR_PAWNNPC_ShortMantis_Procurer>
+        <GDZR_PAWNNPC_ShortMantis_Therapist>1</GDZR_PAWNNPC_ShortMantis_Therapist>
+        <!--■ MANTIS ■-->
+        <GDZR_PAWNNPC_ShortMoyo_Agronomist>1</GDZR_PAWNNPC_ShortMoyo_Agronomist>
+        <GDZR_PAWNNPC_ShortMoyo_Analyst>1</GDZR_PAWNNPC_ShortMoyo_Analyst>
+        <GDZR_PAWNNPC_ShortMoyo_Disassembler>1</GDZR_PAWNNPC_ShortMoyo_Disassembler>
+        <GDZR_PAWNNPC_ShortMoyo_Fabricator>1</GDZR_PAWNNPC_ShortMoyo_Fabricator>
+        <GDZR_PAWNNPC_ShortMoyo_Procurer>3</GDZR_PAWNNPC_ShortMoyo_Procurer>
+        <GDZR_PAWNNPC_ShortMoyo_Therapist>1</GDZR_PAWNNPC_ShortMoyo_Therapist>
+        <!--■ SHORT SCALEMEN ■-->
+        <GDZR_PAWNNPC_ShortScalemen_Agronomist>1</GDZR_PAWNNPC_ShortScalemen_Agronomist>
+        <GDZR_PAWNNPC_ShortScalemen_Analyst>1</GDZR_PAWNNPC_ShortScalemen_Analyst>
+        <GDZR_PAWNNPC_ShortScalemen_Disassembler>1</GDZR_PAWNNPC_ShortScalemen_Disassembler>
+        <GDZR_PAWNNPC_ShortScalemen_Fabricator>1</GDZR_PAWNNPC_ShortScalemen_Fabricator>
+        <GDZR_PAWNNPC_ShortScalemen_Procurer>3</GDZR_PAWNNPC_ShortScalemen_Procurer>
+        <GDZR_PAWNNPC_ShortScalemen_Therapist>1</GDZR_PAWNNPC_ShortScalemen_Therapist>
+        <!--■ SHORT THRUMKIN ■-->
+        <GDZR_PAWNNPC_ShortThrumkin_Agronomist>1</GDZR_PAWNNPC_ShortThrumkin_Agronomist>
+        <GDZR_PAWNNPC_ShortThrumkin_Analyst>1</GDZR_PAWNNPC_ShortThrumkin_Analyst>
+        <GDZR_PAWNNPC_ShortThrumkin_Disassembler>1</GDZR_PAWNNPC_ShortThrumkin_Disassembler>
+        <GDZR_PAWNNPC_ShortThrumkin_Fabricator>1</GDZR_PAWNNPC_ShortThrumkin_Fabricator>
+        <GDZR_PAWNNPC_ShortThrumkin_Procurer>3</GDZR_PAWNNPC_ShortThrumkin_Procurer>
+        <GDZR_PAWNNPC_ShortThrumkin_Therapist>1</GDZR_PAWNNPC_ShortThrumkin_Therapist>
+        
+        
+        <GDZR_PAWNNPC_ShortGrey_AnalystLeader>1</GDZR_PAWNNPC_ShortGrey_AnalystLeader>
+      </options>
+    </li>
+  <!--  <li>
+      <kindDef>Trader</kindDef>
+      <traders>
+        <OKRA_TRIBAL_TRADER_DEF>1</OKRA_TRIBAL_TRADER_DEF>
+      </traders>
+      <carriers>
+        <Elephant>2</Elephant>
+      </carriers>
+      <guards>
+        <ZR_PAWNNPC_SHORTGREY_DEF>3</ZR_PAWNNPC_SHORTGREY_DEF>
+      </guards>
+    </li> -->
+    <li>
+      <kindDef>Settlement</kindDef>
+      <options>
+        <!--■ SHORT GREY ■-->
+        <GDZR_PAWNNPC_ShortGrey_Agronomist>1</GDZR_PAWNNPC_ShortGrey_Agronomist>
+        <GDZR_PAWNNPC_ShortGrey_Analyst>1</GDZR_PAWNNPC_ShortGrey_Analyst>
+        <GDZR_PAWNNPC_ShortGrey_Disassembler>1</GDZR_PAWNNPC_ShortGrey_Disassembler>
+        <GDZR_PAWNNPC_ShortGrey_Fabricator>1</GDZR_PAWNNPC_ShortGrey_Fabricator>
+        <GDZR_PAWNNPC_ShortGrey_Procurer>3</GDZR_PAWNNPC_ShortGrey_Procurer>
+        <GDZR_PAWNNPC_ShortGrey_Therapist>1</GDZR_PAWNNPC_ShortGrey_Therapist>
+        <!--■ FORSAKEN ■-->
+        <GDZR_PAWNNPC_ShortForsaken_Agronomist>1</GDZR_PAWNNPC_ShortForsaken_Agronomist>
+        <GDZR_PAWNNPC_ShortForsaken_Analyst>1</GDZR_PAWNNPC_ShortForsaken_Analyst>
+        <GDZR_PAWNNPC_ShortForsaken_Disassembler>1</GDZR_PAWNNPC_ShortForsaken_Disassembler>
+        <GDZR_PAWNNPC_ShortForsaken_Fabricator>1</GDZR_PAWNNPC_ShortForsaken_Fabricator>
+        <GDZR_PAWNNPC_ShortForsaken_Procurer>3</GDZR_PAWNNPC_ShortForsaken_Procurer>
+        <GDZR_PAWNNPC_ShortForsaken_Therapist>1</GDZR_PAWNNPC_ShortForsaken_Therapist>
+        <!--■ HUMAN ■-->
+        <GDZR_PAWNNPC_ShortHuman_Agronomist>1</GDZR_PAWNNPC_ShortHuman_Agronomist>
+        <GDZR_PAWNNPC_ShortHuman_Analyst>1</GDZR_PAWNNPC_ShortHuman_Analyst>
+        <GDZR_PAWNNPC_ShortHuman_Disassembler>1</GDZR_PAWNNPC_ShortHuman_Disassembler>
+        <GDZR_PAWNNPC_ShortHuman_Fabricator>1</GDZR_PAWNNPC_ShortHuman_Fabricator>
+        <GDZR_PAWNNPC_ShortHuman_Procurer>3</GDZR_PAWNNPC_ShortHuman_Procurer>
+        <GDZR_PAWNNPC_ShortHuman_Therapist>1</GDZR_PAWNNPC_ShortHuman_Therapist>
+        <!--■ MANTIS ■-->
+        <GDZR_PAWNNPC_ShortMantis_Agronomist>1</GDZR_PAWNNPC_ShortMantis_Agronomist>
+        <GDZR_PAWNNPC_ShortMantis_Analyst>1</GDZR_PAWNNPC_ShortMantis_Analyst>
+        <GDZR_PAWNNPC_ShortMantis_Disassembler>1</GDZR_PAWNNPC_ShortMantis_Disassembler>
+        <GDZR_PAWNNPC_ShortMantis_Fabricator>1</GDZR_PAWNNPC_ShortMantis_Fabricator>
+        <GDZR_PAWNNPC_ShortMantis_Procurer>3</GDZR_PAWNNPC_ShortMantis_Procurer>
+        <GDZR_PAWNNPC_ShortMantis_Therapist>1</GDZR_PAWNNPC_ShortMantis_Therapist>
+        <!--■ SHORT SCALEMEN ■-->
+        <GDZR_PAWNNPC_ShortScalemen_Agronomist>1</GDZR_PAWNNPC_ShortScalemen_Agronomist>
+        <GDZR_PAWNNPC_ShortScalemen_Analyst>1</GDZR_PAWNNPC_ShortScalemen_Analyst>
+        <GDZR_PAWNNPC_ShortScalemen_Disassembler>1</GDZR_PAWNNPC_ShortScalemen_Disassembler>
+        <GDZR_PAWNNPC_ShortScalemen_Fabricator>1</GDZR_PAWNNPC_ShortScalemen_Fabricator>
+        <GDZR_PAWNNPC_ShortScalemen_Procurer>3</GDZR_PAWNNPC_ShortScalemen_Procurer>
+        <GDZR_PAWNNPC_ShortScalemen_Therapist>1</GDZR_PAWNNPC_ShortScalemen_Therapist>
+        
+        <GDZR_PAWNNPC_ShortGrey_AnalystLeader>1</GDZR_PAWNNPC_ShortGrey_AnalystLeader>
+      </options>
+    </li>
+  </pawnGroupMakers>
+
+  </FactionDef>
+  
+</Defs>

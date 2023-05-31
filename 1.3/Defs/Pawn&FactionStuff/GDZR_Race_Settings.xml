@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+<!--■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■RACE SETTINGS■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■-->  
+<AlienRace.RaceSettings>
+    <defName>GDZR_RACE_Settings</defName>
+    <pawnKindSettings>
+      
+      
+      <startingColonists>
+        <!--■■■ DEFAULT CHANCE (Shortgrey Fabricator is the base faction pawn so it's not listed here) ■■■-->
+        <li>
+          <pawnKindEntries>
+            <li>
+              <kindDefs>
+                <!--■  SHORT GREY ■-->
+                <li>GDZR_PAWNPLAYER_ShortGrey_Agronomist</li>
+                <li>GDZR_PAWNPLAYER_ShortGrey_Analyst</li>
+                <li>GDZR_PAWNPLAYER_ShortGrey_Therapist</li>
+                <li>GDZR_PAWNPLAYER_ShortGrey_Disassembler</li>
+                <li>GDZR_PAWNPLAYER_ShortGrey_Procurer</li>
+              </kindDefs>
+              <chance>100</chance>
+            </li>
+          </pawnKindEntries>
+          <factionDefs>
+            <li>GDZR_FACTION_Player</li>
+          </factionDefs>
+        </li>
+        <!--■■■ LOW CHANCE ■■■-->
+        <li>
+          <pawnKindEntries>
+            <li>
+              <kindDefs>
+                <!-- ■ FORSAKEN ■-->
+                <li>GDZR_PAWNPLAYER_ShortForsaken_Agronomist</li>
+                <li>GDZR_PAWNPLAYER_ShortForsaken_Analyst</li>
+                <li>GDZR_PAWNPLAYER_ShortForsaken_Fabricator</li> 
+                <li>GDZR_PAWNPLAYER_ShortForsaken_Therapist</li>
+                <li>GDZR_PAWNPLAYER_ShortForsaken_Disassembler</li>
+                <li>GDZR_PAWNPLAYER_ShortForsaken_Procurer</li>
+                <!-- ■ HUMAN ■-->
+                <li>GDZR_PAWNPLAYER_ShortHuman_Agronomist</li>
+                <li>GDZR_PAWNPLAYER_ShortHuman_Analyst</li>
+                <li>GDZR_PAWNPLAYER_ShortHuman_Fabricator</li> 
+                <li>GDZR_PAWNPLAYER_ShortHuman_Therapist</li>
+                <li>GDZR_PAWNPLAYER_ShortHuman_Disassembler</li>
+                <li>GDZR_PAWNPLAYER_ShortHuman_Procurer</li>
+                <!-- ■ MANTIS ■-->
+                <li>GDZR_PAWNPLAYER_ShortMantis_Agronomist</li>
+                <li>GDZR_PAWNPLAYER_ShortMantis_Analyst</li>
+                <li>GDZR_PAWNPLAYER_ShortMantis_Fabricator</li> 
+                <li>GDZR_PAWNPLAYER_ShortMantis_Therapist</li>
+                <li>GDZR_PAWNPLAYER_ShortMantis_Disassembler</li>
+                <li>GDZR_PAWNPLAYER_ShortMantis_Procurer</li>
+                <!-- ■ SCALEMEN ■-->
+                <li>GDZR_PAWNPLAYER_ShortMoyo_Agronomist</li>
+                <li>GDZR_PAWNPLAYER_ShortMoyo_Analyst</li>
+                <li>GDZR_PAWNPLAYER_ShortMoyo_Fabricator</li> 
+                <li>GDZR_PAWNPLAYER_ShortMoyo_Therapist</li>
+                <li>GDZR_PAWNPLAYER_ShortMoyo_Disassembler</li>
+                <li>GDZR_PAWNPLAYER_ShortMoyo_Procurer</li>
+                <!-- ■ THRUMKIN ■-->
+                <li>GDZR_PAWNPLAYER_ShortThrumkin_Agronomist</li>
+                <li>GDZR_PAWNPLAYER_ShortThrumkin_Analyst</li>
+                <li>GDZR_PAWNPLAYER_ShortThrumkin_Fabricator</li> 
+                <li>GDZR_PAWNPLAYER_ShortThrumkin_Therapist</li>
+                <li>GDZR_PAWNPLAYER_ShortThrumkin_Disassembler</li>
+                <li>GDZR_PAWNPLAYER_ShortThrumkin_Procurer</li>
+                <!-- ■ SCALEMEN ■-->
+                <li>GDZR_PAWNPLAYER_ShortScalemen_Agronomist</li>
+                <li>GDZR_PAWNPLAYER_ShortScalemen_Analyst</li>
+                <li>GDZR_PAWNPLAYER_ShortScalemen_Fabricator</li> 
+                <li>GDZR_PAWNPLAYER_ShortScalemen_Therapist</li>
+                <li>GDZR_PAWNPLAYER_ShortScalemen_Disassembler</li>
+                <li>GDZR_PAWNPLAYER_ShortScalemen_Procurer</li>
+              </kindDefs>
+              <chance>40</chance>
+              </li>
+          </pawnKindEntries>
+          <factionDefs>
+            <li>GDZR_FACTION_Player</li>
+          </factionDefs>
+        </li>
+      </startingColonists>
+      
+    <!--■■■ REFUGEE ■■■
+      <alienrefugeekinds>
+        <li>
+          <kindDefs>
+            <li>ZR_PAWNPLAYER_SHORTGREY_SOLDIER_DEF</li>
+          </kindDefs>
+          <chance>1</chance>
+        </li>
+        <li>
+          <kindDefs>
+            <li>ZR_PAWNPLAYER_SHORTGREY_SOLDIER_DEF</li>
+            <li>ZR_PLAYER_PAWN_HUMAN_HYBRID_DEF</li>
+            <li>ZR_PLAYER_PAWN_GERZEE_HYBRID_DEF</li>
+            <li>ZR_PLAYER_PAWN_FORSAKEN_HYBRID_DEF</li>
+            <li>ZR_PLAYER_PAWN_THRUMKIN_HYBRID_DEF</li>
+            <li>ZR_PLAYER_PAWN_SCALEMEN_HYBRID_DEF</li>
+            <li>ZR_PLAYER_PAWN_CACTOID_HYBRID_DEF</li>
+            <li>ZR_PLAYER_PAWN_MOYO_HYBRID_DEF</li>
+            <li>ZR_PLAYER_PAWN_MANTIS_HYBRID_DEF</li>
+            <li>ZR_PLAYER_PAWN_ASTORIEL_HYBRID_DEF</li>
+            <li>ZR_PLAYER_PAWN_DROW_HYBRID_DEF</li>
+            <li>ZR_PLAYER_PAWN_NIGHTELF_HYBRID_DEF</li>
+          </kindDefs>
+          <chance>1</chance>
+        </li>
+      </alienrefugeekinds>-->  
+       
+    <!--■■■ WANDERERS ■■■
+      <alienwandererkinds>
+        <li>
+          <pawnKindEntries>
+            <li>
+              <kindDefs>
+                <li>ZR_PAWNPLAYER_SHORTGREY_SOLDIER_DEF</li>
+              </kindDefs>
+              <chance>20</chance>
+            </li>
+            <li>
+              <kindDefs>
+                <li>ZR_PAWNPLAYER_SHORTGREY_SOLDIER_DEF</li>
+                <li>ZR_PLAYER_PAWN_HUMAN_HYBRID_DEF</li>
+                <li>ZR_PLAYER_PAWN_GERZEE_HYBRID_DEF</li>
+                <li>ZR_PLAYER_PAWN_FORSAKEN_HYBRID_DEF</li>
+                <li>ZR_PLAYER_PAWN_THRUMKIN_HYBRID_DEF</li>
+                <li>ZR_PLAYER_PAWN_SCALEMEN_HYBRID_DEF</li>
+                <li>ZR_PLAYER_PAWN_CACTOID_HYBRID_DEF</li>
+                <li>ZR_PLAYER_PAWN_MOYO_HYBRID_DEF</li>
+                <li>ZR_PLAYER_PAWN_MANTIS_HYBRID_DEF</li>
+                <li>ZR_PLAYER_PAWN_ASTORIEL_HYBRID_DEF</li>
+                <li>ZR_PLAYER_PAWN_DROW_HYBRID_DEF</li>
+                <li>ZR_PLAYER_PAWN_NIGHTELF_HYBRID_DEF</li>
+              </kindDefs>
+              <chance>15</chance>
+            </li>
+          </pawnKindEntries>
+          <factionDefs>
+            <li>GDZR_FACTION_Player</li>
+          </factionDefs>
+        </li>
+        
+        <li>
+          <pawnKindEntries>
+            <li>
+              <kindDefs>
+                <li>ZR_PAWNPLAYER_SHORTGREY_SOLDIER_DEF</li>
+                <li>ZR_PLAYER_PAWN_HUMAN_HYBRID_DEF</li>
+                <li>ZR_PLAYER_PAWN_GERZEE_HYBRID_DEF</li>
+                <li>ZR_PLAYER_PAWN_FORSAKEN_HYBRID_DEF</li>
+                <li>ZR_PLAYER_PAWN_THRUMKIN_HYBRID_DEF</li>
+                <li>ZR_PLAYER_PAWN_SCALEMEN_HYBRID_DEF</li>
+                <li>ZR_PLAYER_PAWN_CACTOID_HYBRID_DEF</li>
+                <li>ZR_PLAYER_PAWN_MOYO_HYBRID_DEF</li>
+                <li>ZR_PLAYER_PAWN_MANTIS_HYBRID_DEF</li>
+                <li>ZR_PLAYER_PAWN_ASTORIEL_HYBRID_DEF</li>
+                <li>ZR_PLAYER_PAWN_DROW_HYBRID_DEF</li>
+                <li>ZR_PLAYER_PAWN_NIGHTELF_HYBRID_DEF</li>
+              </kindDefs>
+              <chance>6</chance>
+            </li>
+          </pawnKindEntries>
+          <factionDefs>
+            <li>PlayerColony</li>
+          </factionDefs>
+        </li>
+        
+        <li>
+          <pawnKindEntries>
+            <li>
+              <kindDefs>
+                <li>ZR_PAWNPLAYER_SHORTGREY_SOLDIER_DEF</li>
+                <li>ZR_PLAYER_PAWN_HUMAN_HYBRID_DEF</li>
+                <li>ZR_PLAYER_PAWN_GERZEE_HYBRID_DEF</li>
+                <li>ZR_PLAYER_PAWN_FORSAKEN_HYBRID_DEF</li>
+                <li>ZR_PLAYER_PAWN_THRUMKIN_HYBRID_DEF</li>
+                <li>ZR_PLAYER_PAWN_SCALEMEN_HYBRID_DEF</li>
+                <li>ZR_PLAYER_PAWN_CACTOID_HYBRID_DEF</li>
+                <li>ZR_PLAYER_PAWN_MOYO_HYBRID_DEF</li>
+                <li>ZR_PLAYER_PAWN_MANTIS_HYBRID_DEF</li>
+                <li>ZR_PLAYER_PAWN_ASTORIEL_HYBRID_DEF</li>
+                <li>ZR_PLAYER_PAWN_DROW_HYBRID_DEF</li>
+                <li>ZR_PLAYER_PAWN_NIGHTELF_HYBRID_DEF</li>
+              </kindDefs>
+              <chance>6</chance>
+            </li>
+          </pawnKindEntries>
+          <factionDefs>
+            <li>PlayerTribe</li>
+          </factionDefs>
+        </li>
+      </alienwandererkinds>-->  
+
+    </pawnKindSettings>
+</AlienRace.RaceSettings>
+  
+</Defs>

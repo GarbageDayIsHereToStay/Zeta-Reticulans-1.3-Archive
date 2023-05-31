@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    
+  <FactionDef>
+    <defName>GDZR_HIDDEN_Trader</defName>
+    <label>Zeta Reticulan</label>
+    <description>Reticulan drone fleet.</description>
+    <hidden>true</hidden>
+    
+    <humanlikeFaction>false</humanlikeFaction>
+    <isPlayer>false</isPlayer>
+    <permanentEnemyToEveryoneExcept>
+      <li>GDZR_FACTION_Player</li>
+    </permanentEnemyToEveryoneExcept>
+    
+    <fixedName>Zeta Reticulan</fixedName>
+    <factionNameMaker>GDZR_RULEPACK_NamerFaction</factionNameMaker>
+    <settlementNameMaker>GDZR_RULEPACK_NamerSettlement</settlementNameMaker>
+    <playerInitialSettlementNameMaker>GDZR_RULEPACK_NamerSettlement</playerInitialSettlementNameMaker>
+    
+    
+    <basicMemberKind>GDZR_PAWNPLAYER_ShortThrumkin_Procurer</basicMemberKind>
+    <baseTraderKinds>
+      <li>GDZR_TRADER_OrbitalCanteenLow</li>
+      <li>GDZR_TRADER_OrbitalRebateLow</li>
+      <li>GDZR_TRADER_OrbitaVivariumLow</li>
+    </baseTraderKinds>
+    <!--<pawnNameMaker>GDZR_RULEPACK_Namer</pawnNameMaker>-->
+    <pawnSingular>researcher</pawnSingular>
+    
+    <pawnsPlural>researchers</pawnsPlural>
+    
+    <techLevel>Ultra</techLevel>
+    
+    <factionIconPath>World/WorldObjects/ZR_Faction_Base</factionIconPath>
+
+    <apparelStuffFilter>
+      <thingDefs>
+        <li>Hyperweave</li>
+      </thingDefs>
+    </apparelStuffFilter>
+    
+    <raidLootValueFromPointsCurve>
+      <points>
+        <li>(35,     15)</li>
+        <li>(100,   120)</li>
+        <li>(1000,  500)</li>
+        <li>(2000,  800)</li>
+        <li>(4000, 1000)</li>
+      </points>
+    </raidLootValueFromPointsCurve>
+  </FactionDef>
+  
+</Defs>

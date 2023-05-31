@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    
+    <!--■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ BACKSTORIES CHILD ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+        ■■■ SHORT GREY MALE/FEMALE ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■-->
+    <AlienRace.BackstoryDef>
+        <!-- Dev note: I think this was glitch protection? I think it's important but i'm looking at this years after i put it in and forget -->
+        <defName>GDZR_BACKSTORIES_ShortGreyChildBasicMF</defName>
+        <title>bio-printed</title>
+        <titleShort>bio-printed</titleShort>
+        <baseDescription>adjunct cladebio-printed in vast numbers short greys form the vast bulk on Reticulan Workwork adjuvant to  [PAWN_nameDef] was bio-printed.</baseDescription>
+        
+        <slot>Childhood</slot>
+        
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <bodyTypeMale>Male</bodyTypeMale>
+        
+        <spawnCategories>
+            <li>GDZR_Backstories_ShortGreyChild_CAT</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+    <!--■■■ GREY THIN ■■■-->
+    <AlienRace.BackstoryDef>
+        <defName>GDZR_BACKSTORIES_ShortGreyChildBasic</defName>
+        <title>bio-printed</title>
+        <titleShort>bio-printed</titleShort>
+        <baseDescription>adjunct cladebio-printed in vast numbers short greys form the vast bulk on Reticulan Workwork adjuvant to  [PAWN_nameDef] was bio-printed.</baseDescription>
+        
+        <slot>Childhood</slot>
+        
+        <bodyTypeGlobal>Thin</bodyTypeGlobal>
+        
+        <spawnCategories>
+            <li>GDZR_Backstories_ShortGreyChild_CAT</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+    <!--■■■ ASTORIEL ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+    <AlienRace.BackstoryDef>
+        <defName>ZR_BACKSTORY_BIOPRINTED_ASTORIEL_HYBRID_DEF</defName>
+        <title>bio-printed: ATL hybrid</title>
+        <titleShort>astoriel hybrid</titleShort>
+        <baseDescription>[PAWN_nameDef] was bio-printed.</baseDescription>
+        
+        <slot>Childhood</slot>
+        
+        <spawnCategories>
+            <li>ZR_BackstoriesChild_Astoriel_CAT</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>-->
+    <!--■■■ BLOODELF ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+    <AlienRace.BackstoryDef>
+        <defName>ZR_BACKSTORY_BIOPRINTED_BLOODELF_HYBRID_DEF</defName>
+        <title>bio-printed: BDE hybrid</title>
+        <titleShort>blood elf hybrid</titleShort>
+        <baseDescription>[PAWN_nameDef] was bio-printed.</baseDescription>
+        
+        <slot>Childhood</slot>
+        
+        <spawnCategories>
+            <li>ZR_BackstoriesChild_BloodElf_CAT</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>-->
+    <!--■■■ CACTOID ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+    <AlienRace.BackstoryDef>
+        <defName>ZR_BACKSTORY_BIOPRINTED_CACTOID_HYBRID_DEF</defName>
+        <title>bio-printed: CT hybrid</title>
+        <titleShort>cactoid hybrid</titleShort>
+        <baseDescription>[PAWN_nameDef] was bio-printed.</baseDescription>
+        
+        <slot>Childhood</slot>
+       
+        <spawnCategories>
+            <li>ZR_BackstoriesChild_Cactoid_CAT</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>-->
+    <!--■■■ DROW ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+    <AlienRace.BackstoryDef>
+        <defName>ZR_BACKSTORY_BIOPRINTED_DROW_HYBRID_DEF</defName>
+        <title>bio-printed: DRW hybrid</title>
+        <titleShort>drow hybrid</titleShort>
+        <baseDescription>[PAWN_nameDef] was bio-printed.</baseDescription>
+        
+        <slot>Childhood</slot>
+        
+        <spawnCategories>
+            <li>ZR_BackstoriesChild_Drow_CAT</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>-->
+    <!--■■■ FORSAKEN ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■-->
+    <AlienRace.BackstoryDef>
+        <defName>GDZR_BACKSTORIES_ShortForsakenChildBasic</defName>
+        <title>bio-printed: FS hybrid</title>
+        <titleShort>forsaken hybrid</titleShort>
+        <baseDescription>[PAWN_nameDef] was bio-printed.</baseDescription>
+        
+        <slot>Childhood</slot>
+        
+        <spawnCategories>
+            <li>GDZR_Backstories_ShortForsakenChild_CAT</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+    <!--■■■ GREEZEE ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+    <AlienRace.BackstoryDef>
+        <defName>ZR_BACKSTORY_BIOPRINTED_GERZEE_HYBRID_DEF</defName>
+        <title>bio-printed: GZ hybrid</title>
+        <titleShort>gerzee hybrid</titleShort>
+        <baseDescription>[PAWN_nameDef] was bio-printed.</baseDescription>
+        
+        <slot>Childhood</slot>
+        
+        <disallowedTraits>
+            <li><defName>ShootingAccuracy</defName></li>
+        </disallowedTraits>
+        
+        <spawnCategories>
+            <li>ZR_BackstoriesChild_Gerzee_CAT</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>-->
+    <!--■■■ HUMAN ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■-->
+    <AlienRace.BackstoryDef>
+        <defName>GDZR_BACKSTORIES_ShortHumanChildBasic</defName>
+        <title>bio-printed: HU hybrid</title>
+        <titleShort>human hybrid</titleShort>
+        <baseDescription>[PAWN_nameDef] was bio-printed.</baseDescription>
+        
+        <slot>Childhood</slot>
+        
+        <spawnCategories>
+            <li>GDZR_Backstories_ShortHumanChild_CAT</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+    <!--■■■ MANTIS ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■-->
+    <AlienRace.BackstoryDef>
+        <defName>GDZR_BACKSTORIES_ShortMantisChildBasic</defName>
+        <title>bio-printed: MT hybrid</title>
+        <titleShort>mantis hybrid</titleShort>
+        <baseDescription>[PAWN_nameDef] was bio-printed.</baseDescription>
+        
+        <slot>Childhood</slot>
+     
+        <spawnCategories>
+            <li>GDZR_Backstories_ShortMantisChild_CAT</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+    <!--■■■ MOYO ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■-->
+    <AlienRace.BackstoryDef>
+        <defName>GDZR_BACKSTORIES_ShortMoyoChildBasic</defName>
+        <title>bio-printed: MY hybrid</title>
+        <titleShort>moyo hybrid</titleShort>
+        <baseDescription>[PAWN_nameDef] was bio-printed.</baseDescription>
+        
+        <slot>Childhood</slot>
+        
+        <spawnCategories>
+            <li>GDZR_Backstories_ShortMoyoChild_CAT</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+    <!--■■■ NIGHTELF ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+    <AlienRace.BackstoryDef>
+        <defName>ZR_BACKSTORY_BIOPRINTED_NIGHTELF_HYBRID_DEF</defName>
+        <title>bio-printed: NTE hybrid</title>
+        <titleShort>night elf hybrid</titleShort>
+        <baseDescription>[PAWN_nameDef] was bio-printed.</baseDescription>
+        
+        <slot>Childhood</slot>
+        
+        <spawnCategories>
+            <li>ZR_BackstoriesChild_NightElf_CAT</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>-->
+    <!--■■■ SCALEMEN ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■-->
+    <AlienRace.BackstoryDef>
+        <defName>GDZR_BACKSTORIES_ShortScalemenChildBasic</defName>
+        <title>bio-printed: SM hybrid</title>
+        <titleShort>scalemen hybrid</titleShort>
+        <baseDescription>[PAWN_nameDef] was bio-printed.</baseDescription>
+        
+        <slot>Childhood</slot>
+
+        <spawnCategories>
+            <li>GDZR_Backstories_ShortScalemenChild_CAT</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+    <!--■■■ THRUMKIN ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■-->
+    <AlienRace.BackstoryDef>
+        <defName>GDZR_BACKSTORIES_ShortThrumkinChildBasic</defName>
+        <title>bio-printed: TK hybrid</title>
+        <titleShort>thrumkin hybrid</titleShort>
+        <baseDescription>[PAWN_nameDef] was bio-printed.</baseDescription>
+        
+        <slot>Childhood</slot>
+
+        <spawnCategories>
+            <li>GDZR_Backstories_ShortThrumkinChild_CAT</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+</Defs>
