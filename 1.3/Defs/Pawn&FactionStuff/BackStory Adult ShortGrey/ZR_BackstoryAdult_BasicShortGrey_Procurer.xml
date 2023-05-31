@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <!--■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ BACKSTORIES ADULT ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+    ■■■ PROCURER ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■-->
+    <AlienRace.BackstoryDef>
+        <defName>ZR_BACKSTORYADULT_SHORTGREY_PROCURER_DEF</defName>
+        <title>procurer</title>
+        <titleShort>procurer</titleShort>
+        <baseDescription>[PAWN_nameDef]'s neural epigraft expertise is in the retrieval of new research material.</baseDescription>
+        
+        <slot>Adulthood</slot>
+       
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <bodyTypeMale>Thin</bodyTypeMale>
+        
+       
+        <spawnCategories>
+            <li>ZR_BackstoriesAdult_ShortGrey_Procurer_CAT</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+    <AlienRace.BackstoryDef>
+        <defName>ZR_BACKSTORYADULT_SHORTGREY_PROCURERTHIN_DEF</defName>
+        <title>procurer</title>
+        <titleShort>procurer</titleShort>
+        <baseDescription>[PAWN_nameDef]'s neural epigraft expertise is in the retrieval of new research material.</baseDescription>
+        
+        <slot>Adulthood</slot>
+        
+        <bodyTypeGlobal>Thin</bodyTypeGlobal>
+        
+       
+        <spawnCategories>
+            <li>ZR_BackstoriesAdult_ShortGrey_Procurer_CAT</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+</Defs>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <!--■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ BACKSTORIES ADULT ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+        ■■■ AGRONOMIST ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■-->
+    <AlienRace.BackstoryDef>
+        <defName>ZR_BACKSTORYADULT_SHORTGREY_AGRONOMIST_DEF</defName>
+        <title>agronomist</title>
+        <titleShort>agronomist</titleShort>
+        <baseDescription>Production of flora for use in chemical synthesis, fabrication, and nutrition is [PAWN_nameDef]'s specialty.</baseDescription>
+        
+        <slot>Adulthood</slot>
+   
+        <bodyTypeFemale>Female</bodyTypeFemale>
+        <bodyTypeMale>Thin</bodyTypeMale>
+   
+       
+        <spawnCategories>
+            <li>ZR_BackstoriesAdult_ShortGrey_Agronomist_CAT</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+    <AlienRace.BackstoryDef>
+        <defName>ZR_BACKSTORYADULT_SHORTGREY_AGRONOMISTTHIN_DEF</defName>
+        <title>agronomist</title>
+        <titleShort>agronomist</titleShort>
+        <baseDescription>Production of flora for use in chemical synthesis, fabrication, and nutrition is [PAWN_nameDef]'s specialty.</baseDescription>
+        
+        <slot>Adulthood</slot>
+
+        <bodyTypeGlobal>Thin</bodyTypeGlobal>
+        
+       
+        <spawnCategories>
+            <li>ZR_BackstoriesAdult_ShortGrey_Agronomist_CAT</li>
+        </spawnCategories>
+    </AlienRace.BackstoryDef>
+</Defs>

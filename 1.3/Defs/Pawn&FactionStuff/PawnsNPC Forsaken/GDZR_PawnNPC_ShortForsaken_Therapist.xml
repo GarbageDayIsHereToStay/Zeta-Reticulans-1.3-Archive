@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    
+    <!--■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ NPC Pawn, Short Forsaken, Therapist ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■-->
+    <PawnKindDef ParentName="GDZR_PAWNNPC_TherapistBase">
+        <defName>GDZR_PAWNNPC_ShortForsaken_Therapist</defName>
+        <label>forsaken hybrid</label>	
+        <race>GDZR_RACE_ShortForsaken</race>
+        
+        <backstoryFiltersOverride>
+            <li>
+                <categories>
+                    <li>GDZR_Backstories_ShortForsakenChild_CAT</li>
+                    <li>ZR_BackstoriesAdult_ShortForsaken_Therapist_CAT</li>
+                </categories>
+            </li>
+        </backstoryFiltersOverride>
+    </PawnKindDef>
+</Defs>
