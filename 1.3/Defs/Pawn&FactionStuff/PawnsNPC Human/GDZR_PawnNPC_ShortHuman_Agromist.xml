@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    
+    <!--■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ NPC Pawn, Short Human, Agronomist ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■-->
+    <PawnKindDef ParentName="GDZR_PAWNNPC_AgronomistBase">
+        <defName>GDZR_PAWNNPC_ShortHuman_Agronomist</defName>
+        <label>human hybrid</label>	
+        <race>GDZR_RACE_ShortHuman</race>
+        
+        <maxGenerationAge>70</maxGenerationAge>     
+        
+        <backstoryFiltersOverride>
+            <li>
+                <categories>
+                    <li>GDZR_Backstories_ShortHumanChild_CAT</li>
+                    <li>ZR_BackstoriesAdult_ShortHuman_Agronomist_CAT</li>
+                </categories>
+            </li>
+        </backstoryFiltersOverride>
+    </PawnKindDef>
+</Defs>
