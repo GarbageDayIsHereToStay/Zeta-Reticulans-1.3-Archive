@@ -1,0 +1,69 @@
+﻿<Defs>
+  <!--■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ EFFECTER DEF ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■-->
+  <EffecterDef>
+    <defName>GDZR_EFFECTER_IntracranialAneurysmPawn</defName>
+    <children>
+      <li>
+        <moteDef>GDZR_MOTE_AneurysmBolt</moteDef>
+        <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+        <spawnLocType>OnSource</spawnLocType> 
+        <burstCount>1</burstCount>
+        <positionOffset>0,0,0.8</positionOffset>
+        
+        <scale>1</scale>
+        
+        <chancePerTick>0.035</chancePerTick>
+        
+       
+        <airTime>2~3</airTime>
+        
+       <!-- <angle>90~90</angle>-->
+        <rotation>0</rotation>
+   
+        
+        <!--<positionRadius>0.24</positionRadius>-->
+      </li>
+    </children>
+  </EffecterDef>
+  
+  <!--■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ MOTE DEFS ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■-->
+  <ThingDef Name="ANMoteBase" Abstract="True">
+    <thingClass>MoteText</thingClass>
+    <label>Mote</label>
+    <category>Mote</category>
+    <graphicData>
+      <graphicClass>Graphic_Mote</graphicClass>
+      <shaderType>Mote</shaderType>
+    </graphicData>
+    <altitudeLayer>MoteLow</altitudeLayer>
+    <tickerType>Normal</tickerType>
+    <useHitPoints>false</useHitPoints>
+    <isSaveable>false</isSaveable>
+    <rotatable>false</rotatable>
+  </ThingDef>
+ 
+  
+  
+  <ThingDef ParentName="MoteBase">
+   <defName>GDZR_MOTE_AneurysmBolt</defName>
+     <graphicData>
+       <texPath>Motes/Electrical/GDZR_ElectricalBolt</texPath>
+      <shaderType>MoteGlow</shaderType>
+      <drawSize>1</drawSize>
+    </graphicData> 
+    
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    
+    <drawOffscreen>true</drawOffscreen>
+    <mote>
+      <fadeInTime>0.02</fadeInTime>
+      <fadeOutTime>0.175</fadeOutTime>
+      <solidTime>2</solidTime>
+      <growthRate>0</growthRate>
+      <collide>false</collide>
+    </mote>
+  </ThingDef>
+  
+
+ 
+</Defs>

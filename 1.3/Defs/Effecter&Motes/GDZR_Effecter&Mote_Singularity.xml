@@ -1,0 +1,434 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+ <!--■■■■■■■■■■■■■■■■■
+     1. EFFECTER 
+     2. MOTE
+     ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ 1. MOTES ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■-->
+  <ThingDef ParentName="MoteBase">
+    <defName>ZR_MOTE_SINGULARITYLIGHT_GRE1_DEF</defName>
+    <thingClass>MoteThrownAttached</thingClass>
+    
+    <graphicData>
+      <texPath>Motes/Singularity/ZR_Gre1Light</texPath>
+      <shaderType>TransparentPostLight</shaderType>
+      <!--<shaderType>Mote</shaderType><shaderParameters>
+        <_distortionIntensity>0.3</_distortionIntensity>
+        <_brightnessMultiplier>1.1</_brightnessMultiplier>
+        <_DistortionTex>/Motes/Singularity/ZR_Gre1LightRingDistortion</_DistortionTex>
+      </shaderParameters>-->
+    </graphicData>
+    
+    <altitudeLayer>PawnUnused</altitudeLayer>
+<!--    <altitudeLayer>Gas</altitudeLayer>-->
+    <mote>
+      <fadeInTime>0.02</fadeInTime>
+      <fadeOutTime>0.175</fadeOutTime>
+      <solidTime>20</solidTime>
+      <growthRate>0</growthRate>
+    </mote>
+  </ThingDef>
+  <!--■■■ OUTER LIGHT RING ■■■-->  
+  <ThingDef ParentName="MoteBase">
+    <defName>ZR_MOTE_SINGULARITYLIGHTOUTER_GRE1_DEF</defName>
+    <thingClass>MoteThrownAttached</thingClass>
+    
+    <graphicData>
+      <texPath>Motes/Singularity/ZR_Gre1Light</texPath>
+      <shaderType>MoteGlow</shaderType>
+      <!--<shaderType>Mote</shaderType><shaderParameters>
+        <_distortionIntensity>0.3</_distortionIntensity>
+        <_brightnessMultiplier>1.1</_brightnessMultiplier>
+        <_DistortionTex>/Motes/Singularity/ZR_Gre1LightRingDistortion</_DistortionTex>
+      </shaderParameters>-->
+      
+      <drawSize>4</drawSize> 
+    </graphicData>
+    
+    <altitudeLayer>PawnState</altitudeLayer>
+    <mote>
+      <fadeInTime>0.02</fadeInTime>
+      <fadeOutTime>0.175</fadeOutTime>
+      <solidTime>20</solidTime>
+      <growthRate>0</growthRate>
+    </mote>
+  </ThingDef>
+  <!--■■■ INNER DISTORTION RING ■■■-->  
+  <ThingDef ParentName="MoteBase">
+    <defName>ZR_MOTE_SINGULARITYINNERRING_GRE1_DEF</defName>
+    <thingClass>MoteThrownAttached</thingClass>
+    
+    <graphicData>
+      <texPath>Things/Mote/Black</texPath>
+      <shaderType>MoteGlowDistortBackground</shaderType>
+      <shaderParameters>
+        <_distortionIntensity>0.5</_distortionIntensity>
+        <_brightnessMultiplier>1.1</_brightnessMultiplier>
+        <_DistortionTex>/Motes/Singularity/ZR_Gre1LightRingDistortion</_DistortionTex>
+      </shaderParameters>
+      
+      <drawSize>3</drawSize> 
+    </graphicData>
+    
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <mote>
+      <fadeInTime>0.02</fadeInTime>
+      <fadeOutTime>0.175</fadeOutTime>
+      <solidTime>20</solidTime>
+      <growthRate>0</growthRate>
+    </mote>
+  </ThingDef>
+  <!--■■■ RADIUS SPIRAL ■■■-->  
+  <ThingDef ParentName="MoteBase">
+    <defName>ZR_MOTE_SINGULARITYRADIUSSPIRAL_GRE1_DEF</defName>
+    <thingClass>MoteThrownAttached</thingClass>
+    
+    <graphicData>
+      <texPath>Things/Mote/Black</texPath>
+      <shaderType>MoteGlowDistortBackground</shaderType>
+      <shaderParameters>
+        <_distortionIntensity>0.01</_distortionIntensity>
+        <_brightnessMultiplier>2</_brightnessMultiplier>
+        <_DistortionTex>/Motes/Singularity/ZR_Gre1RadiusSpiralDistortion</_DistortionTex>
+      </shaderParameters>
+      
+      <drawSize>1</drawSize>
+    </graphicData>
+    
+    <altitudeLayer>PawnUnused</altitudeLayer>
+    <mote>
+      <fadeInTime>0.02</fadeInTime>
+      <fadeOutTime>0.175</fadeOutTime>
+      <solidTime>20</solidTime>
+      <growthRate>0</growthRate>
+    </mote>
+  </ThingDef>
+  <!--■■■ RADIUS RINGS ■■■-->  
+  <ThingDef ParentName="MoteBase">
+    <defName>ZR_MOTE_SINGULARITYRADIUSCIRCLE1_GRE1_DEF</defName>
+    <thingClass>MoteThrownAttached</thingClass>
+    
+    <graphicData>
+      <texPath>Things/Mote/Black</texPath>
+      <shaderType>MoteGlowDistortBackground</shaderType>
+      <shaderParameters>
+        <_distortionIntensity>0.5</_distortionIntensity>
+        <_brightnessMultiplier>1.1</_brightnessMultiplier>
+        <_DistortionTex>/Motes/Singularity/ZR_Gre1LightRingDistortion</_DistortionTex>
+      </shaderParameters>
+      
+      <drawSize>4</drawSize> 
+    </graphicData>
+    
+    <altitudeLayer>Blueprint</altitudeLayer>
+    <mote>
+      <fadeInTime>0.02</fadeInTime>
+      <fadeOutTime>0.175</fadeOutTime>
+      <solidTime>20</solidTime>
+      <growthRate>0</growthRate>
+    </mote>
+  </ThingDef>
+  <ThingDef ParentName="MoteBase">
+    <defName>ZR_MOTE_SINGULARITYRADIUSCIRCLE2_GRE1_DEF</defName>
+    <thingClass>MoteThrownAttached</thingClass>
+    
+    <graphicData>
+      <texPath>Things/Mote/Black</texPath>
+      <shaderType>MoteGlowDistortBackground</shaderType>
+      <shaderParameters>
+        <_distortionIntensity>0.3</_distortionIntensity>
+        <_brightnessMultiplier>1.1</_brightnessMultiplier>
+        <_DistortionTex>/Motes/Singularity/ZR_Gre1LightRingDistortion</_DistortionTex>
+      </shaderParameters>
+      
+      <drawSize>4</drawSize> 
+    </graphicData>
+    
+    <altitudeLayer>Blueprint</altitudeLayer>
+    <mote>
+      <fadeInTime>0.02</fadeInTime>
+      <fadeOutTime>0.175</fadeOutTime>
+      <solidTime>20</solidTime>
+      <growthRate>0</growthRate>
+    </mote>
+  </ThingDef>
+  <ThingDef ParentName="MoteBase">
+    <defName>ZR_MOTE_SINGULARITYRADIUSOUTERCIRCLE_GRE1_DEF</defName>
+    <thingClass>MoteThrownAttached</thingClass>
+    
+    <graphicData>
+      <texPath>Things/Mote/Black</texPath>
+      <shaderType>MoteGlowDistortBackground</shaderType>
+      <shaderParameters>
+        <_distortionIntensity>0.1</_distortionIntensity>
+        <_brightnessMultiplier>1.1</_brightnessMultiplier>
+        <_DistortionTex>/Motes/Singularity/ZR_Gre1OuterRingDistortion</_DistortionTex>
+      </shaderParameters>
+      
+      <drawSize>4</drawSize> 
+    </graphicData>
+    
+    <altitudeLayer>Blueprint</altitudeLayer>
+    <mote>
+      <fadeInTime>0.02</fadeInTime>
+      <fadeOutTime>0.175</fadeOutTime>
+      <solidTime>20</solidTime>
+      <growthRate>0</growthRate>
+    </mote>
+  </ThingDef>
+  
+  <!--■■■ SINGULARITYS ■■■-->  
+  <FleckDef ParentName="FleckBase">
+    <defName>ZR_FLECK_SINGULARITYBLACKEXPANDING_GRE1_DEF</defName>
+    
+    <graphicData>
+      <texPath>Motes/Singularity/ZR_Gre1SingularityMain</texPath>  
+      <shaderType>Cutout</shaderType>
+      
+      <drawSize>2.42</drawSize>
+    </graphicData>
+    
+    <altitudeLayer>Gas</altitudeLayer>
+    
+    <fadeInTime>0.02</fadeInTime>
+    <fadeOutTime>0.05</fadeOutTime>
+    <solidTime>0.5</solidTime>
+    <growthRate>0.1</growthRate>
+  </FleckDef>
+  <FleckDef ParentName="FleckBase">
+    <defName>ZR_FLECK_SINGULARITYBLACKSHRINKING_GRE1_DEF</defName>
+    
+    <graphicData>
+      <texPath>Motes/Singularity/ZR_Gre1SingularityMain</texPath>  
+      <shaderType>Mote</shaderType>
+      
+      <drawSize>2.42</drawSize>
+    </graphicData>
+    
+    <altitudeLayer>Gas</altitudeLayer>
+    
+    <fadeInTime>0.02</fadeInTime>
+    <fadeOutTime>0.05</fadeOutTime>
+    <solidTime>0.5</solidTime>
+    <growthRate>-0.1</growthRate>
+  </FleckDef>
+  
+  <!--■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ 2. EFFECTERS ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■-->
+    <EffecterDef>
+    <defName>GDZR_EFFECTER_SingularityGrenade</defName>
+     <children>   
+      <li>
+        <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+        <spawnLocType>OnSource</spawnLocType>
+        
+        <moteDef>ZR_MOTE_SINGULARITYLIGHT_GRE1_DEF</moteDef>
+        <burstCount>1</burstCount>
+        
+        <scale>6</scale>
+        
+        <airTime>21.8</airTime>
+      </li>
+       <li>
+         <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+         <spawnLocType>OnSource</spawnLocType>
+         
+         <moteDef>ZR_MOTE_SINGULARITYINNERRING_GRE1_DEF</moteDef>
+         <burstCount>1</burstCount>
+         
+         <positionOffset>0,0,0</positionOffset> 
+         
+         
+         <airTime>21.8</airTime>
+         <positionRadius>0</positionRadius>
+         <rotation>340~360</rotation>
+         <rotationRate>80</rotationRate>
+       </li>
+       <li>
+         <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+         <spawnLocType>OnSource</spawnLocType>
+         
+         <moteDef>ZR_MOTE_SINGULARITYRADIUSSPIRAL_GRE1_DEF</moteDef>
+         <burstCount>1</burstCount>
+         
+         <positionOffset>0,0,0</positionOffset> 
+         
+         <scale>8.4</scale>
+         <airTime>21.8</airTime>
+         <positionRadius>0</positionRadius>
+         <rotation>120~180</rotation>
+         <rotationRate>150</rotationRate>
+       </li>
+       <li>
+         <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+         <spawnLocType>OnSource</spawnLocType>
+         
+         <moteDef>ZR_MOTE_SINGULARITYRADIUSCIRCLE1_GRE1_DEF</moteDef>
+         <burstCount>1</burstCount>
+         
+         <positionOffset>0,0,0</positionOffset> 
+         
+         <scale>1.08</scale>
+         <airTime>21.8</airTime>
+         <positionRadius>0</positionRadius>
+         <rotation>80~220</rotation>
+         <rotationRate>20~40</rotationRate>
+       </li>
+       <li>
+         <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+         <spawnLocType>OnSource</spawnLocType>
+         
+         <moteDef>ZR_MOTE_SINGULARITYRADIUSCIRCLE2_GRE1_DEF</moteDef>
+         <burstCount>1</burstCount>
+         
+         <positionOffset>0,0,0</positionOffset> 
+         
+         <scale>1.34</scale>
+         <airTime>21.8</airTime>
+         <positionRadius>0</positionRadius>
+         <rotation>120~220</rotation>
+         <rotationRate>20~50</rotationRate>
+       </li>
+       <li>
+         <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+         <spawnLocType>OnSource</spawnLocType>
+         
+         <moteDef>ZR_MOTE_SINGULARITYRADIUSOUTERCIRCLE_GRE1_DEF</moteDef>
+         <burstCount>1</burstCount>
+         
+         <positionOffset>0,0,0</positionOffset> 
+         
+         <scale>1.44</scale>
+         <airTime>21.8</airTime>
+         <positionRadius>0</positionRadius>
+         <rotation>160~300</rotation>
+         <rotationRate>50~80</rotationRate>
+       </li>
+       <li>
+         <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+         <spawnLocType>OnSource</spawnLocType>
+         
+         <moteDef>ZR_MOTE_SINGULARITYRADIUSOUTERCIRCLE_GRE1_DEF</moteDef>
+         <burstCount>1</burstCount>
+         
+         <positionOffset>0,0,0</positionOffset> 
+         
+         <scale>1.54</scale>
+         <airTime>21.8</airTime>
+         <positionRadius>0</positionRadius>
+         <rotation>240~360</rotation>
+         <rotationRate>50~80</rotationRate>
+       </li>
+       <li>
+         <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+         <spawnLocType>OnSource</spawnLocType>
+         
+         <moteDef>ZR_MOTE_SINGULARITYRADIUSOUTERCIRCLE_GRE1_DEF</moteDef>
+         <burstCount>1</burstCount>
+         
+         <positionOffset>0,0,0</positionOffset> 
+         
+         <scale>1.61</scale>
+         <airTime>21.8</airTime>
+         <positionRadius>0</positionRadius>
+         <rotation>160~340</rotation>
+         <rotationRate>50~80</rotationRate>
+       </li>
+       <li>
+         <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+         <spawnLocType>OnSource</spawnLocType>
+         
+         <moteDef>ZR_MOTE_SINGULARITYRADIUSOUTERCIRCLE_GRE1_DEF</moteDef>
+         <burstCount>1</burstCount>
+         
+         <positionOffset>0,0,0</positionOffset> 
+         
+         <scale>1.68</scale>
+         <airTime>21.8</airTime>
+         <positionRadius>0</positionRadius>
+         <rotation>200~300</rotation>
+         <rotationRate>50~80</rotationRate>
+       </li>
+       <li>
+         <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+         <spawnLocType>OnSource</spawnLocType>
+         
+         <moteDef>ZR_MOTE_SINGULARITYRADIUSOUTERCIRCLE_GRE1_DEF</moteDef>
+         <burstCount>1</burstCount>
+         
+         <positionOffset>0,0,0</positionOffset> 
+         
+         <scale>1.74</scale>
+         <airTime>21.8</airTime>
+         <positionRadius>0</positionRadius>
+         <rotation>200~300</rotation>
+         <rotationRate>50~80</rotationRate>
+       </li>
+       <li>
+         <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+         <spawnLocType>OnSource</spawnLocType>
+         
+         <moteDef>ZR_MOTE_SINGULARITYRADIUSOUTERCIRCLE_GRE1_DEF</moteDef>
+         <burstCount>1</burstCount>
+         
+         <positionOffset>0,0,0</positionOffset> 
+         
+         <scale>1.80</scale>
+         <airTime>21.8</airTime>
+         <positionRadius>0</positionRadius>
+         <rotation>200~300</rotation>
+         <rotationRate>60~100</rotationRate>
+       </li>
+       <li>
+         <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+         <spawnLocType>OnSource</spawnLocType>
+         
+         <moteDef>ZR_MOTE_SINGULARITYRADIUSOUTERCIRCLE_GRE1_DEF</moteDef>
+         <burstCount>1</burstCount>
+         
+         <positionOffset>0,0,0</positionOffset> 
+         
+         <scale>1.87</scale>
+         <airTime>21.8</airTime>
+         <positionRadius>0</positionRadius>
+         <rotation>20~40</rotation>
+         <rotationRate>90~100</rotationRate>
+       </li>
+       <li>
+         <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+         <spawnLocType>OnSource</spawnLocType>
+         
+         <moteDef>ZR_MOTE_SINGULARITYRADIUSOUTERCIRCLE_GRE1_DEF</moteDef>
+         <burstCount>1</burstCount>
+         
+         <positionOffset>0,0,0</positionOffset> 
+         
+         <scale>1.93</scale>
+         <airTime>21.8</airTime>
+         <positionRadius>0</positionRadius>
+         <rotation>60~80</rotation>
+         <rotationRate>90~100</rotationRate>
+       </li>
+       <li>
+         <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+         <spawnLocType>OnSource</spawnLocType>
+         
+         <moteDef>ZR_MOTE_SINGULARITYRADIUSOUTERCIRCLE_GRE1_DEF</moteDef>
+         <burstCount>1</burstCount>
+         
+         <positionOffset>0,0,0</positionOffset> 
+         
+         <scale>1.97</scale>
+         <airTime>21.8</airTime>
+         <positionRadius>0</positionRadius>
+         <rotation>120~180</rotation>
+         <rotationRate>120~140</rotationRate>
+       </li>
+       <li>
+         <subEffecterClass>SubEffecter_SoundTriggered</subEffecterClass>
+         <soundDef>GDZR_SOUND_SingularitySustain</soundDef>
+         <spawnLocType>OnSource</spawnLocType>
+       </li>
+    </children>
+  </EffecterDef>
+  
+
+</Defs>

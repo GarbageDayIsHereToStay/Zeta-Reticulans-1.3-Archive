@@ -1,0 +1,350 @@
+﻿<Defs>
+  <!--■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ EFFECTER DEF ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■-->
+  <EffecterDef>
+    <defName>GDZR_EFFECTER_TonicSeizureArea</defName>
+    <children>
+      <!--■■■ MIDDLE, Sides ■■■-->   
+      <li>
+        <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+        <spawnLocType>OnSource</spawnLocType>
+        
+        <moteDef>GDZR_MOTE_CODEDENERGYBIGMiddle</moteDef>
+        <burstCount>1</burstCount>
+        
+        <positionOffset>0,0,0</positionOffset> 
+        
+        <positionRadius>0</positionRadius>
+      </li>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+        <spawnLocType>OnSource</spawnLocType>
+        
+        <moteDef>GDZR_MOTE_CODEDENERGYBIGONE</moteDef>
+        <burstCount>1</burstCount>
+        
+        <positionOffset>0.6,0,0</positionOffset> 
+        
+        <positionRadius>0.04</positionRadius>
+        
+      </li>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+        <spawnLocType>OnSource</spawnLocType>
+        
+        <moteDef>GDZR_MOTE_CODEDENERGYBIGONE</moteDef>
+        <burstCount>1</burstCount>
+        
+        <positionOffset>-0.6,0,0</positionOffset> 
+        
+        <positionRadius>0.04</positionRadius>
+        
+      </li>
+      <!--■■■ TRIANGLE TOP, BL, BR ■■■-->
+      <li>
+        <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+        <spawnLocType>OnSource</spawnLocType>
+        
+        <moteDef>GDZR_MOTE_CODEDENERGYBIGONE</moteDef>
+        <burstCount>1</burstCount>
+        
+        <positionOffset>0,0,0.6</positionOffset> 
+        
+        <positionRadius>0.04</positionRadius>
+
+      </li>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+        <spawnLocType>OnSource</spawnLocType>
+        
+        <moteDef>GDZR_MOTE_CODEDENERGYBIGONE</moteDef>
+        <burstCount>1</burstCount>
+        
+        <positionOffset>0.4,0,-0.4</positionOffset> 
+        
+        <positionRadius>0.04</positionRadius>
+      </li>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+        <spawnLocType>OnSource</spawnLocType>
+        
+        <moteDef>GDZR_MOTE_CODEDENERGYBIGONE</moteDef>
+        <burstCount>1</burstCount>
+        
+        <positionOffset>-0.4,0,-0.4</positionOffset> 
+        
+        <positionRadius>0.04</positionRadius>
+      </li>
+      <!--■■■ TRIANGLE BOTTOM, TL, TR ■■■-->
+      <li>
+        <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+        <spawnLocType>OnSource</spawnLocType>
+        
+        <moteDef>GDZR_MOTE_CODEDENERGYBIGONE</moteDef>
+        <burstCount>1</burstCount>
+        
+        <positionOffset>0,0,-0.6</positionOffset> 
+        
+        <positionRadius>0.04</positionRadius>
+        
+      </li>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+        <spawnLocType>OnSource</spawnLocType>
+        
+        <moteDef>GDZR_MOTE_CODEDENERGYBIGONE</moteDef>
+        <burstCount>1</burstCount>
+        
+        <positionOffset>0.4,0,0.4</positionOffset> 
+        
+        <positionRadius>0.04</positionRadius>
+      </li>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+        <spawnLocType>OnSource</spawnLocType>
+        
+        <moteDef>GDZR_MOTE_CODEDENERGYBIGONE</moteDef>
+        <burstCount>1</burstCount>
+        
+        <positionOffset>-0.4,0,0.4</positionOffset> 
+        
+        <positionRadius>0.04</positionRadius>
+      </li>
+      <!--■■■ Random One ■■■-->
+      <li>
+        <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+        <spawnLocType>OnSource</spawnLocType>
+        
+        <moteDef>GDZR_MOTE_AreaSeizureRandomOne</moteDef>
+        <burstCount>1~2</burstCount>
+        
+        <positionOffset>0.0,0,0</positionOffset> 
+        
+        <positionRadius>0.34</positionRadius>
+        
+      </li>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+        <spawnLocType>OnSource</spawnLocType>
+        
+        <moteDef>GDZR_MOTE_AreaSeizureRandomOne</moteDef>
+        <burstCount>1~2</burstCount>
+        
+        <positionOffset>0.5,0,0</positionOffset> 
+        
+        <positionRadius>0.34</positionRadius>        
+      </li>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+        <spawnLocType>OnSource</spawnLocType>
+        
+        <moteDef>GDZR_MOTE_AreaSeizureRandomOne</moteDef>
+        <burstCount>1~2</burstCount>
+        
+        <positionOffset>-0.5,0,0</positionOffset> 
+        
+        <positionRadius>0.34</positionRadius>
+      </li>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+        <spawnLocType>OnSource</spawnLocType>
+        
+        <moteDef>GDZR_MOTE_AreaSeizureRandomOne</moteDef>
+        <burstCount>1~2</burstCount>
+        
+        <positionOffset>0,0,0.5</positionOffset> 
+        
+        <positionRadius>0.34</positionRadius>
+      </li>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+        <spawnLocType>OnSource</spawnLocType>
+        
+        <moteDef>GDZR_MOTE_AreaSeizureRandomOne</moteDef>
+        <burstCount>1~2</burstCount>
+        
+        <positionOffset>0,0,0.5</positionOffset> 
+        
+        <positionRadius>0.34</positionRadius>
+      </li>
+      <!--■■■ Random Two ■■■-->
+      <li>
+        <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+        <spawnLocType>OnSource</spawnLocType>
+        
+        <moteDef>GDZR_MOTE_AreaSeizureRandomTwo</moteDef>
+        <burstCount>1~2</burstCount>
+        
+        <positionOffset>0.0,0,0</positionOffset> 
+        
+        <positionRadius>0.34</positionRadius>
+      </li>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+        <spawnLocType>OnSource</spawnLocType>
+        
+        <moteDef>GDZR_MOTE_AreaSeizureRandomTwo</moteDef>
+        <burstCount>1~2</burstCount>
+        
+        <positionOffset>0.5,0,0</positionOffset> 
+        
+        <positionRadius>0.34</positionRadius>
+      </li>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+        <spawnLocType>OnSource</spawnLocType>
+        
+        <moteDef>GDZR_MOTE_AreaSeizureRandomTwo</moteDef>
+        <burstCount>1~2</burstCount>
+        
+        <positionOffset>-0.5,0,0</positionOffset> 
+        
+        <positionRadius>0.34</positionRadius>
+      </li>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+        <spawnLocType>OnSource</spawnLocType>
+        
+        <moteDef>GDZR_MOTE_AreaSeizureRandomTwo</moteDef>
+        <burstCount>1~2</burstCount>
+        
+        <positionOffset>0,0,0.5</positionOffset> 
+        
+        <positionRadius>0.34</positionRadius>
+      </li>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+        <spawnLocType>OnSource</spawnLocType>
+        
+        <moteDef>GDZR_MOTE_AreaSeizureRandomTwo</moteDef>
+        <burstCount>1~2</burstCount>
+        
+        <positionOffset>0,0,0.5</positionOffset> 
+        
+        <positionRadius>0.34</positionRadius>
+      </li>
+    
+    </children>
+  </EffecterDef>
+  
+  <!--■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ MOTE DEFS ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
+      ■■■ BASE ■■■-->   
+  <ThingDef Abstract="True" Name="GDZR_MOTE_DISTORTIONCIRCLEBASE_DEF" ParentName="MoteBase">
+    <graphicData>
+      <shaderType>MoteGlowDistortBackground</shaderType>
+      <shaderParameters>
+        <_distortionIntensity>0.3</_distortionIntensity>
+        <_brightnessMultiplier>2</_brightnessMultiplier>
+        <_DistortionTex>/Motes/Distortion/ZR_DistortionCircleOne</_DistortionTex>
+      </shaderParameters>
+    </graphicData>
+  </ThingDef>
+  
+  <!--■■■ Big Flash Triangle ■■■-->   
+  <ThingDef ParentName="MoteBase">
+    <defName>GDZR_MOTE_CODEDENERGYBIGONE</defName>
+    
+    <graphicData>
+      <texPath>Motes/Electrical/GDZR_AreaSeizure/GDZR_AreaSeizureOne</texPath>
+      <shaderType>MoteGlow</shaderType>
+      <drawSize>0.6</drawSize>
+      <color>250,250,250</color>
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    
+    <mote>
+    <fadeInTime>0.02</fadeInTime>
+    <fadeOutTime>0.375</fadeOutTime>
+    <solidTime>0.1</solidTime>
+    <collide>false</collide>
+    </mote>
+  </ThingDef>
+  
+  <!--■■■ Big Flash Middle ■■■-->   
+  <ThingDef ParentName="MoteBase">
+    <defName>GDZR_MOTE_CODEDENERGYBIGMiddle</defName>
+    
+    <graphicData>
+      <texPath>Motes/Electrical/GDZR_AreaSeizure/GDZR_AreaSeizureTwo</texPath>
+      <shaderType>MoteGlow</shaderType>
+      <drawSize>0.8</drawSize>
+      <color>250,250,250</color>
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    
+    <mote>
+      <fadeInTime>0.02</fadeInTime>
+      <fadeOutTime>0.375</fadeOutTime>
+      <solidTime>0.1</solidTime>
+      <collide>false</collide>
+    </mote>
+  </ThingDef>
+  
+  <!--■■■ Random Flash One ■■■-->   
+  <ThingDef ParentName="MoteBase">
+    <defName>GDZR_MOTE_AreaSeizureRandomOne</defName>
+    
+    <graphicData>
+      <texPath>Motes/Electrical/GDZR_AreaSeizure/GDZR_RandomAreaSeizureOne</texPath>
+      <shaderType>MoteGlow</shaderType>
+      <drawSize>0.4</drawSize>
+      <color>250,250,250</color>
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    
+    <mote>
+      <fadeInTime>0.02</fadeInTime>
+      <fadeOutTime>0.375</fadeOutTime>
+      <solidTime>0.1</solidTime>
+      <collide>false</collide>
+    </mote>
+  </ThingDef>
+  <ThingDef ParentName="MoteBase">
+    <defName>GDZR_MOTE_AreaSeizureRandomTwo</defName>
+    
+    <graphicData>
+      <texPath>Motes/Electrical/GDZR_AreaSeizure/GDZR_RandomAreaSeizureTwo</texPath>
+      <shaderType>MoteGlow</shaderType>
+      <drawSize>0.4</drawSize>
+      <color>250,250,250</color>
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    
+    <mote>
+      <fadeInTime>0.02</fadeInTime>
+      <fadeOutTime>0.375</fadeOutTime>
+      <solidTime>0.1</solidTime>
+      <collide>false</collide>
+    </mote>
+  </ThingDef>
+  <!--■■■ HIDDEN LIGHT ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■-->   
+  <ThingDef>
+    <defName>GDZR_THING_HIDDENGASLIGHT_DEF</defName>
+    <thingClass>ThingWithComps</thingClass>
+    <!-- <thingClass>Zetas.ReefBuildingHediff</thingClass>-->
+    <label>distortion light</label>
+    
+    <altitudeLayer>Filth</altitudeLayer>
+    <useHitPoints>false</useHitPoints>
+    <drawerType>MapMeshOnly</drawerType>
+    
+    <graphicData>
+      <texPath>Hidden/Hidden</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+
+    <tickerType>Normal</tickerType>
+    <comps>
+     <!-- <li Class="CompProperties_FleckEmitter">
+        <fleck>ZR_FLECK_DISTORTIONRING1_DEF</fleck>
+        <emissionInterval>80</emissionInterval>
+      </li>-->
+      <li Class="CompProperties_DestroyAfterDelay">
+        <delayTicks>1200</delayTicks>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>7</glowRadius>
+        <glowColor>(250,250,250,0)</glowColor>
+      </li>
+    </comps>
+  </ThingDef>
+</Defs>

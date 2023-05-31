@@ -1,0 +1,106 @@
+﻿<Defs>
+  <!--■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ EFFECTER DEF ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■-->
+  <EffecterDef>
+    <defName>GDZR_EFFECTER_TonicSeizurePawn</defName>
+    <children>
+      <li>
+        <moteDef>GDZR_MOTE_SeizureSpeck</moteDef>
+        <subEffecterClass>SubEffecter_DrifterEmoteChance</subEffecterClass>
+        <spawnLocType>OnSource</spawnLocType> 
+        <burstCount>1</burstCount>
+        <positionOffset>0,0,0.8</positionOffset>
+        
+        <scale>1</scale>
+        
+        <chancePerTick>0.035</chancePerTick> <!--0.04 is nice-->
+        
+        <speed>0.05~0.2</speed>
+        <airTime>2~3</airTime>
+        <positionLerpFactor>0.01</positionLerpFactor>
+        
+        <rotationRate>240</rotationRate>
+        <angle>180~80</angle>
+        
+        <positionRadius>0.24</positionRadius>
+      </li>
+    </children>
+  </EffecterDef>
+  
+  <!-- <EffecterDef>
+    <defName>GDZR_EFFECTER_TonicSeizurePawn</defName>
+    <children>
+      <li>
+        <moteDef>GDZR_MOTE_SeizureSpeck</moteDef>
+      <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+        <subEffecterClass>SubEffecter_DrifterEmoteChance</subEffecterClass>
+        <spawnLocType>OnSource</spawnLocType> 
+        <burstCount>1</burstCount>
+        <positionOffset>0,0,0.8</positionOffset>
+        
+        <scale>1</scale>
+        
+        <chancePerTick>0.07</chancePerTick> 
+        
+        <speed>0.1~0.5</speed>
+        <airTime>2~3</airTime>
+        <positionLerpFactor>0.01</positionLerpFactor>
+        
+        <rotationRate>240</rotationRate>
+        <angle>180~80</angle>
+        
+        <positionRadius>0.24</positionRadius>
+      </li>
+    </children>
+  </EffecterDef>-->
+  
+  <!--<EffecterDef>
+    <defName>GDZR_EFFECTER_TonicSeizureArea</defName>
+    <children>
+      <li>
+        <moteDef>GDZR_Mote_PowerBeam</moteDef>
+        
+        <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+        <spawnLocType>OnSource</spawnLocType>
+        <burstCount>50</burstCount>
+        <positionOffset>0,0,0</positionOffset>
+        
+        <scale>1</scale>
+        
+        <chancePerTick>0.005</chancePerTick>
+        
+        <speed>0.1~0.5</speed>
+        <airTime>2~3</airTime>
+        <positionLerpFactor>0.01</positionLerpFactor>
+        
+        <rotationRate>240</rotationRate>
+        <angle>100~250</angle>
+        
+        <positionRadius>0.24</positionRadius>
+      </li>
+ 
+    </children>
+  </EffecterDef>-->
+  <!--■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ MOTE DEFS ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■-->
+ <ThingDef ParentName="MoteBase">
+    <defName>GDZR_MOTE_SeizureSpeck</defName>
+    <graphicData>
+      <texPath>Motes/Electrical/GDZR_ElectricalSpeck</texPath>
+      <shaderType>MoteGlow</shaderType>
+      <drawSize>0.5</drawSize>
+    </graphicData> 
+    
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    
+    <drawOffscreen>true</drawOffscreen>
+    <mote>
+      <fadeInTime>0.02</fadeInTime>
+      <fadeOutTime>0.175</fadeOutTime>
+      <solidTime>2</solidTime>
+      <growthRate>0</growthRate>
+      <collide>true</collide>
+    </mote>
+  </ThingDef>
+  
+
+ 
+</Defs>
