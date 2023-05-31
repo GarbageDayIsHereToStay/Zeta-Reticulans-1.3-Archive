@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    
+    <!--■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ Pawn, Short Grey, Disassembler ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■-->
+    <PawnKindDef ParentName="GDZR_PAWNPLAYER_DisassemblerBase">
+        <defName>GDZR_PAWNPLAYER_ShortGrey_Disassembler</defName>
+        <label>short grey</label>	
+        <race>GDZR_RACE_ShortZetaReticulan</race>
+        
+        <backstoryFiltersOverride>
+            <li>
+                <categories>
+                    <li>GDZR_Backstories_ShortGreyChild_CAT</li>
+                    <li>ZR_BackstoriesAdult_ShortGrey_Disassembler_CAT</li>
+                </categories>
+            </li>
+        </backstoryFiltersOverride>
+    </PawnKindDef>
+</Defs>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    
+    <!--■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ Pawn Player, Short Thrumkin, Procurer ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■-->
+    <PawnKindDef ParentName="GDZR_PAWNPLAYER_ProcurerBase">
+        <defName>GDZR_PAWNPLAYER_ShortThrumkin_Procurer</defName>
+        <label>thrumkin hybrid</label>	
+        <race>GDZR_RACE_ShortThrumkin</race>
+       
+        <backstoryFiltersOverride>
+            <li>
+                <categories>
+                    <li>GDZR_Backstories_ShortThrumkinChild_CAT</li>
+                    <li>ZR_BackstoriesAdult_ShortThrumkin_Procurer_CAT</li>
+                </categories>
+            </li>
+        </backstoryFiltersOverride>
+    </PawnKindDef>
+</Defs>

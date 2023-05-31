@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    
+    <!--■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ Pawn Player, Short Moyo, Agronomist ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■-->
+    <PawnKindDef ParentName="GDZR_PAWNPLAYER_AgronomistBase">
+        <defName>GDZR_PAWNPLAYER_ShortMoyo_Agronomist</defName>
+        <label>moyo hybrid</label>	
+        <race>GDZR_RACE_ShortMoyo</race>
+        
+        <maxGenerationAge>110</maxGenerationAge>
+        
+        <backstoryFiltersOverride>
+            <li>
+                <categories>
+                    <li>GDZR_Backstories_ShortMoyoChild_CAT</li>
+                    <li>GDZR_BACKSTORYCAT_AdultShortMoyo_Agronomist_CAT</li>
+                </categories>
+            </li>
+        </backstoryFiltersOverride>
+    </PawnKindDef>
+</Defs>

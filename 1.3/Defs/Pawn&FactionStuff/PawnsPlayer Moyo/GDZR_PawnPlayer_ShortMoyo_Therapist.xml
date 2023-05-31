@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    
+    <!--■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ Pawn Player, Short Moyo, Therapist ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■-->
+    <PawnKindDef ParentName="GDZR_PAWNPLAYER_TherapistBase">
+        <defName>GDZR_PAWNPLAYER_ShortMoyo_Therapist</defName>
+        <label>moyo hybrid</label>	
+        <race>GDZR_RACE_ShortMoyo</race>
+        
+        <maxGenerationAge>200</maxGenerationAge>
+        
+        <backstoryFiltersOverride>
+            <li>
+                <categories>
+                    <li>GDZR_Backstories_ShortMoyoChild_CAT</li>
+                    <li>GDZR_BACKSTORYCAT_AdultShortMoyo_Therapist_CAT</li>
+                </categories>
+            </li>
+        </backstoryFiltersOverride>
+    </PawnKindDef>
+</Defs>

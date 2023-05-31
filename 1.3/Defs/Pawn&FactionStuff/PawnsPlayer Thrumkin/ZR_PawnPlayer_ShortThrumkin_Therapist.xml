@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    
+    <!--■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ Pawn Player, Short Thrumkin, Therapist ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■-->
+    <PawnKindDef ParentName="GDZR_PAWNPLAYER_TherapistBase">
+        <defName>GDZR_PAWNPLAYER_ShortThrumkin_Therapist</defName>
+        <label>thrumkin hybrid</label>	
+        <race>GDZR_RACE_ShortThrumkin</race>
+        
+        <backstoryFiltersOverride>
+            <li>
+                <categories>
+                    <li>GDZR_Backstories_ShortThrumkinChild_CAT</li>
+                    <li>ZR_BackstoriesAdult_ShortThrumkin_Therapist_CAT</li>
+                </categories>
+            </li>
+        </backstoryFiltersOverride>
+    </PawnKindDef>
+</Defs>
