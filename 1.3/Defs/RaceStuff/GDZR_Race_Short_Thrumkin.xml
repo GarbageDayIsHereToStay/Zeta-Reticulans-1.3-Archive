@@ -1,0 +1,1545 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+<AlienRace.ThingDef_AlienRace ParentName="BasePawn">
+    <defName>GDZR_RACE_ShortThrumkin</defName>
+    <label>thrumkin hybrid, short</label>
+  <description>Dense muscle steels against damage and helps this Hybrid lift heavier loads than most Zeta. It's silky soft coat may help ingratiate it with other bio-forms.
+    
+    Devnote: I need to write more for this! (Search keyword: StopBeingShit)
+    
+    \n&lt;size=16&gt;Gameplay:&lt;/size&gt;\nHybrid stats are mostly averaged between Zetas and the hybrid's orginal race minus a few balance expections. 
+    \nHybrid skill learning factor and research speed stats are docked below this 50/50 average on normally stated races and set at 1.1 and 1.2 respectively (Rather then a 1.25 average)<!--\nIf you play using Syrchalis' orginal stand alone, crossover, or Mlie's continued Thrumkin these hybrids become shearable for an wool amount 1/2 that of pure strain Thrumkin.--></description>
+
+  <!--■■■■■■■■■■■■■■■■■■STAT BASES■■■■■■■■■■■■■■■■■■■■■■■-->
+  <statBases>
+    <MarketValue>7500</MarketValue>
+    <Flammability>0.75</Flammability>  <!--(Zetas 1)(Thrumkin= 0.5)(Human 1)--> 
+    <MoveSpeed>4.3</MoveSpeed> <!--(Zetas 4)(Thrumkin 4.6)(Human 4.6)--> 
+    
+    <ComfyTemperatureMin>1</ComfyTemperatureMin> <!--(Zetas -5)(Thrumkin 6) (Human +16) -5 + (1/2 < = 6)-->
+    <ComfyTemperatureMax>18</ComfyTemperatureMax> <!--(Zetas 10)(Thrumkin 26)(Human 26) 10 + (1/2 < = 8)-->
+    <Mass>62.5</Mass> <!--(Zetas 45)(Thrumkin 80)-->
+    
+    <PainShockThreshold>0.875</PainShockThreshold>  <!--(0.95 Zetas)(Thrumkin 0.80)(Human 0.80)-->
+    <ImmunityGainSpeed>0.925</ImmunityGainSpeed> <!--(0.85 Zetas)(Human 1)-->
+    
+    <AimingDelayFactor>1.155</AimingDelayFactor> <!--(Thrumkin 1.33)-->
+    
+    <IncomingDamageFactor>0.9</IncomingDamageFactor> <!--(Thrumkin 0.8)(Zeta 1)-->
+    <ArmorRating_Sharp>0.15</ArmorRating_Sharp> <!--(Thrumkin 0.30)(Zeta 0)-->
+    <ArmorRating_Blunt>0.05</ArmorRating_Blunt> <!--(Thrumkin 0.10)(Zeta )-->
+    <ArmorRating_Heat>0.10</ArmorRating_Heat> <!--(Thrumkin 0.20)(Zeta 0)-->
+    
+    <CarryingCapacity>100</CarryingCapacity> <!--(Thrumkin 125)(Base 75)-->
+    
+    <ConstructionSpeed>0.9</ConstructionSpeed>  <!--(0.8 Zetas)(Human 1)-->
+    <ConstructSuccessChance>1.1</ConstructSuccessChance>  <!--(1.2 Zetas)(Human 1)-->
+    <EatingSpeed>0.8</EatingSpeed>  <!--(0.6 Zetas)(Human 1)-->
+    <MiningSpeed>0.8</MiningSpeed>  <!--(0.6 Zetas)(Human 1)-->
+    <PlantWorkSpeed>1</PlantWorkSpeed> <!--(0.8 Zetas)(Thrumkin 1.2)(Human 1)-->
+    
+    <ResearchSpeed>0.95</ResearchSpeed> <!--(Hybrid Base 1.1)(Thrumkin 0.8)(Human 1)-->
+    <GlobalLearningFactor>1.2</GlobalLearningFactor> <!--(Hybrid Base 1.2)(1.5 Zetas)(Human 1)-->
+    
+    <DrugSynthesisSpeed>0.8</DrugSynthesisSpeed>
+    <MedicalTendSpeed>1</MedicalTendSpeed>
+    <MedicalTendQuality>1.2</MedicalTendQuality>
+    <MedicalOperationSpeed>1</MedicalOperationSpeed>
+    <MedicalSurgerySuccessChance>1.2</MedicalSurgerySuccessChance>
+    
+    <TameAnimalChance>0.75</TameAnimalChance> <!--(0.4 Zetas)(Thrumkin 1.1)(Human 1)-->
+    <TrainAnimalChance>0.75</TrainAnimalChance> <!--(0.4 Zetas)(Thrumkin 1.1)(Human 1)-->
+    <AnimalGatherYield>1.1</AnimalGatherYield> <!--(1 Zetas)(Thrumkin 1.2)(Human 1)-->
+    
+    <LeatherAmount>47</LeatherAmount><!--(Thrumkin 75)(Zeta 30)--> 
+    
+    
+    <PawnBeauty>0.25</PawnBeauty> <!--(Zetas 0)(Thrumkin 0.5)(Human 0)--> 
+    <NegotiationAbility>1.1</NegotiationAbility> <!--(Thrumkin 1.2) --> 
+    
+    <PsychicSensitivity>1.1</PsychicSensitivity> <!--(1.2 Zetas)(Thrumkin 1)(Human 1)-->
+    <RoyalFavorValue>6</RoyalFavorValue>
+  </statBases>
+    <!--■■■■■■■■■■■■■■■■■■COMPS■■■■■■■■■■■■■■■■■■■■■■■-->
+
+    <comps>
+      <li Class="CompProperties_Shearable">
+        <woolDef>Leather_Thrumbo</woolDef>
+        <shearIntervalDays>1</shearIntervalDays>
+        <woolAmount>10</woolAmount>
+      </li>
+      <!--    <li MayRequire="Mlie.SYRThrumkin" Class="CompProperties_Shearable">
+          <woolDef>Leather_Thrumbo</woolDef>
+          <shearIntervalDays>0</shearIntervalDays>
+          <woolAmount>10</woolAmount>
+     </li>
+
+   
+         <li MayRequire="syrchalis.thrumkin">
+        <li Class="CompProperties_Shearable">
+          <woolDef>Leather_Thrumbo</woolDef>
+          <shearIntervalDays>10</shearIntervalDays>
+          <woolAmount>10</woolAmount>
+        </li>
+      </li>
+      
+       <li MayRequire="Mlie.SYRThrumkin">
+        <li Class="CompProperties_Shearable">
+          <woolDef>Leather_Thrumbo</woolDef>
+          <shearIntervalDays>10</shearIntervalDays>
+          <woolAmount>10</woolAmount>
+        </li>
+      </li>-->
+    <!-- 
+      <li MayRequire="syrchalis.crossover">
+        <li Class="CompProperties_Shearable">
+          <woolDef>Leather_Thrumbo</woolDef>
+          <shearIntervalDays>10</shearIntervalDays>
+          <woolAmount>10</woolAmount>
+        </li>
+      </li>-->
+    </comps>
+  
+  <!--■■■■■■■■■■■■■■■■■■CORPUS■■■■■■■■■■■■■■■■■■■■■■■-->
+  <race>
+    <nameGenerator>GDZR_RULEPACK_Namer</nameGenerator>
+    <nameGeneratorFemale>GDZR_RULEPACK_NamerFemale</nameGeneratorFemale>
+    <hasGenders>true</hasGenders>
+    <thinkTreeMain>Humanlike</thinkTreeMain>
+    <thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
+    <intelligence>Humanlike</intelligence>
+    
+    <makesFootprints>true</makesFootprints>
+    <lifeExpectancy>250</lifeExpectancy> <!--(Zetas 300)(Thrumkin 200)(Human 80)-->
+    
+    <body>GDZR_BODY_Thrumkin</body>
+    <bloodDef>GDZR_FILTH_HybridBasicBlood</bloodDef>
+    <leatherDef>GDZR_LEATHER_Thrumkin</leatherDef>
+    <fleshType>GDZR_FLESH_HybridBasic</fleshType>
+    <baseBodySize>0.88</baseBodySize> <!--(Zetas 0.76)(Thrumkin 1)(Human 1)-->
+    <baseHealthScale>0.93</baseHealthScale> <!--(Zetas 0.76)(Thrumkin 1.1)(Human 1)-->     
+    <baseHungerRate>0.95</baseHungerRate> <!--(0.4 Zetas)(Thrumkin 1.5)(Human 1)-->     
+    
+    <foodType>OmnivoreHuman</foodType>
+    <gestationPeriodDays>62.5</gestationPeriodDays> <!--(Zetas 50)(Thumkin 75)(Human 45)-->   
+    <meatMarketValue>1.2</meatMarketValue>
+    <manhunterOnDamageChance>1</manhunterOnDamageChance> <!-- All zeta -->
+    <manhunterOnTameFailChance>0.04</manhunterOnTameFailChance> <!-- All zeta -->
+    
+    <nuzzleMtbHours>24</nuzzleMtbHours> <!--(Thrumkin 12)-->
+    
+    <lifeStageAges>
+      <li>
+        <def>HumanlikeBaby</def>
+        <minAge>0</minAge>
+      </li>
+      <li>
+        <def>HumanlikeToddler</def>
+        <minAge>0.2</minAge>
+      </li>
+      <li>
+        <def>HumanlikeChild</def>
+        <minAge>0.5</minAge>
+      </li>
+      <li>
+        <def>HumanlikeTeenager</def>
+        <minAge>0.75</minAge>
+      </li>
+      <li>
+        <def>HumanlikeAdult</def>
+        <minAge>1</minAge>
+      </li>
+    </lifeStageAges>
+    
+    <litterSizeCurve>
+      <points>
+        <li>(0.5, 0)</li>
+        <li>(1, 1)</li>
+        <li>(1.01, 0.02)</li>
+        <li>(3.5, 0)</li>
+      </points>
+    </litterSizeCurve>
+    
+    <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+    <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
+    <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+    <soundMeleeDodge>Pawn_MeleeDodge</soundMeleeDodge>
+    
+    <specialShadowData>
+      <volume>(0.3, 0.8, 0.4)</volume>
+      <offset>(0,0,-0.3)</offset>
+    </specialShadowData>
+    
+    <ageGenerationCurve>
+      <points>
+        <li>(1,0)</li>
+        <li>(4,20)</li>
+        <li>(15,100)</li>
+        <li>(30,100)</li>
+        <li>(60,100)</li>
+        <li>(90,50)</li>
+        <li>(120,20)</li>
+        <li>(150,10)</li>
+        <li>(190,10)</li>
+        <li>(220,2)</li>
+        <li>(250,0)</li>
+      </points>
+    </ageGenerationCurve>
+    
+    <hediffGiverSets>
+      <li>OrganicStandard</li>
+      <li>Human</li>
+      <li>GDZR_HEDIFFGIVER_NeedRemover</li>
+      <li>GDZR_HEDIFFGIVERS_ShortThrumkin</li>
+    </hediffGiverSets>
+  </race>
+
+<!--■■■■■■■■■■■■■■■■■■PERSENTATION + GENERAL SETTING■■■■■■■■■■■■■■■■■■■■■■■-->
+    <alienRace>
+      <graphicPaths>
+        <li>
+          <head>Heads/Thrumkin/</head>
+          <body>Bodies/Thrumkin/</body>
+        </li>
+      </graphicPaths>
+      
+      <styleSettings>
+        <li>
+          <key>HairDef</key>
+          <value>
+            <hasStyle>false</hasStyle>
+          </value>
+        </li>
+        <li>
+          <key>BeardDef</key>
+          <value>
+            <hasStyle>false</hasStyle>
+          </value>
+        </li>
+        <li>
+          <key>TattooDef</key>
+          <value>
+            <hasStyle>false</hasStyle>
+          </value>
+        </li>
+      </styleSettings>
+   
+      <generalSettings>	
+        <immuneToAge>false</immuneToAge>
+        
+        <maleGenderProbability>0.5</maleGenderProbability>
+        <allowHumanBios>false</allowHumanBios>
+        <humanRecipeImport>true</humanRecipeImport>
+        
+        <alienPartGenerator>
+          <aliencrowntypes>
+            <li>Head1</li>
+            <li>Head2</li>
+          </aliencrowntypes>
+          <customHeadDrawSize>(0.98, 0.98)</customHeadDrawSize>
+          <customPortraitHeadDrawSize>( 0.98, 0.98)</customPortraitHeadDrawSize>
+          <headOffset>(-0.03, -0.06)</headOffset>
+          
+          <alienbodytypes>
+            <li>Thin</li>
+            <li>Female</li>
+          </alienbodytypes>
+          <customDrawSize>(0.96, 0.96)</customDrawSize>
+          <customPortraitDrawSize>( 0.92, 0.92)</customPortraitDrawSize>
+          
+          <useGenderedHeads>false</useGenderedHeads>
+          <useGenderedBodies>false</useGenderedBodies>
+          
+         <colorChannels>
+            <li>
+              <name>skin</name>
+              <first Class="ColorGenerator_Options">
+                <options>
+                  <li>
+                    <weight>10</weight>
+                    <only>254,254,254</only>
+                  </li>
+                </options>
+              </first>
+            </li>
+            <li>
+              <name>hair</name>
+              <first Class="ColorGenerator_Options">
+                <options>
+                  <li>
+                    <weight>10</weight>
+                    <only>240,240,240</only>
+                  </li>
+                </options>
+              </first>
+            </li>
+          </colorChannels>	
+          
+          <bodyAddons>
+            <!--■■■■■■■■■■■■■■■■■■ HAIR ■■■■■■■■■■■■■■■■■■■■■■■-->
+            <li>
+              <path>Hair/Thrumkin/Mane</path> 
+              <colorChannel>skin</colorChannel>
+              <drawSize>0.95</drawSize>
+              <inFrontOfBody>true</inFrontOfBody>
+              <drawnDesiccated>false</drawnDesiccated>
+              <hiddenUnderApparelTag>
+                <li>GDZR_Apparel_HideHeadAddon_Tag</li>
+              </hiddenUnderApparelTag>
+              
+              <offsets>
+                <south>
+                  <layerOffset>-0.272</layerOffset>
+                  <bodyTypes>
+                    <Male>(0,0.2577)</Male>
+                    <Thin>(0,0.2577)</Thin>
+                    <Female>(0,0.2577)</Female>
+                  </bodyTypes>
+                </south>
+                <north>
+                  <layerOffset>-0.36</layerOffset>
+                  <bodyTypes>
+                    <Male>(0,0.2577)</Male>
+                    <Thin>(0,0.2115)</Thin>
+                    <Female>(0,0.2115)</Female>
+                  </bodyTypes>
+                </north>
+                <east>
+                  <layerOffset>-0.272</layerOffset>
+                  <bodyTypes>
+                    <Male>(0.0096, 0.2982)</Male>
+                    <Thin>(-0.0289, 0.2982)</Thin>
+                    <Female>(-0.0289, 0.2982)</Female>
+                  </bodyTypes>
+                </east>
+              </offsets>
+            </li>
+            
+            <!--■■■ RIGHT EYE ■■■-->
+            <li>
+              <path>Eyes/ZetaRight/EyeRight</path>
+              <colorChannel>skin</colorChannel>
+              <shaderType>Transparent</shaderType>
+              <bodyPart>right eye</bodyPart>
+              <drawSize>1</drawSize>
+              <inFrontOfBody>true</inFrontOfBody>
+              
+              <hediffGraphics>
+                <MissingBodyPart>Eyes/ZetaRight/Missing/EyeRightMissing</MissingBodyPart>
+                <Blindness>Eyes/ZetaRight/Blindness/EyeRightBlindness</Blindness>
+                <Cataract>Eyes/ZetaRight/Blindness/EyeRightBlindness</Cataract>
+                <Stab>Eyes/ZetaRight/Slices/EyeRightSlice</Stab>
+                <Cut>Eyes/ZetaRight/Slices/EyeRightSlice</Cut>
+                <SurgicalCut>Eyes/ZetaRight/Slices/EyeRightSlice</SurgicalCut>
+                <Scratch>Eyes/ZetaRight/Slices/EyeRightSlice</Scratch>
+                <Crush>Eyes/ZetaRight/Crush/EyeRightCrush</Crush>
+                <Bruise>Eyes/ZetaRight/Bruise/EyeRightBruise</Bruise>
+                <Gunshot>Eyes/ZetaRight/Crush/EyeRightCrush</Gunshot>
+                <SmokeleafHigh>Eyes/ZetaRight/Ayy/EyeRightAyy</SmokeleafHigh>
+                <YayoHigh>Eyes/ZetaRight/Wake/EyeRightWake</YayoHigh>
+                <WakeUpHigh>Eyes/ZetaRight/Wake/EyeRightWake</WakeUpHigh>
+                <FlakeHigh>Eyes/ZetaRight/Wake/EyeRightWake</FlakeHigh>
+                <PsychiteTeaHigh>Eyes/ZetaRight/Wake/EyeRightWake</PsychiteTeaHigh>
+                <GoJuiceHigh>Eyes/ZetaRight/Wake/EyeRightWake</GoJuiceHigh>
+                <AlcoholHigh>Eyes/ZetaRight/Drunk/EyeRightDrunk</AlcoholHigh>
+              </hediffGraphics>
+              <offsets>
+                <south>
+                  <layerOffset>-0.27</layerOffset>
+                  <bodyTypes>
+                    <Thin>(0,0.2977)</Thin>
+                    <Female>(0,0.2977)</Female>
+                  </bodyTypes>
+                  <crownTypes />
+                </south>
+                <north>
+                  <bodyTypes>
+                    <Thin>(0, 0)</Thin>
+                    <Female>(0, 0)</Female>
+                  </bodyTypes>
+                </north>
+                <east>
+                  <layerOffset>-0.27</layerOffset>
+                  <bodyTypes>
+                    <Thin>(-0.29582, 0.3029)</Thin>
+                    <Female>(-0.29582, 0.3029)</Female>
+                  </bodyTypes>
+                </east>
+              </offsets>
+              <hiddenUnderApparelFor />
+            </li>
+            <!--■■■ LEFT EYE ■■■-->        
+            <li> 
+              <path>Eyes/ZetaLeft/EyeLeft</path>
+              <colorChannel>skin</colorChannel>
+              <shaderType>Transparent</shaderType>
+              <bodyPart>left eye</bodyPart>
+              <drawSize>1.0</drawSize>
+              <inFrontOfBody>true</inFrontOfBody>
+              
+              <hediffGraphics> 
+                <MissingBodyPart>Eyes/ZetaLeft/Missing/EyeLeftMissing</MissingBodyPart>
+                <Blindness>Eyes/ZetaLeft/Blindness/EyeLeftBlindness</Blindness>
+                <Cataract>Eyes/ZetaLeft/Blindness/EyeLeftBlindness</Cataract>
+                <Stab>Eyes/ZetaLeft/Slices/EyeLeftSlice</Stab>
+                <Cut>Eyes/ZetaLeft/Slices/EyeLeftSlice</Cut>
+                <SurgicalCut>Eyes/ZetaLeft/Slices/EyeLeftSlice</SurgicalCut>
+                <Scratch>Eyes/ZetaLeft/Slices/EyeLeftSlice</Scratch>
+                <Crush>Eyes/ZetaLeft/Crush/EyeLeftCrush</Crush>
+                <Bruise>Eyes/ZetaLeft/Bruise/EyeLeftBruise</Bruise>
+                <Gunshot>Eyes/ZetaLeft/Crush/EyeLeftCrush</Gunshot>
+                <SmokeleafHigh>Eyes/ZetaLeft/Ayy/EyeLeftAyy</SmokeleafHigh>
+                <YayoHigh>Eyes/ZetaLeft/Wake/EyeLeftWake</YayoHigh>
+                <WakeUpHigh>Eyes/ZetaLeft/Wake/EyeLeftWake</WakeUpHigh>
+                <FlakeHigh>Eyes/ZetaLeft/Wake/EyeLeftWake</FlakeHigh>
+                <PsychiteTeaHigh>Eyes/ZetaLeft/Wake/EyeLeftWake</PsychiteTeaHigh>
+                <GoJuiceHigh>Eyes/ZetaLeft/Wake/EyeLeftWake</GoJuiceHigh>
+                <AlcoholHigh>Eyes/ZetaLeft/Drunk/EyeLeftDrunk</AlcoholHigh>
+              </hediffGraphics>
+              <offsets>
+                <south>
+                  <layerOffset>-0.27</layerOffset>
+                  <bodyTypes>
+                    <Thin>(0,0.2977)</Thin>
+                    <Female>(0,0.2977)</Female>
+                  </bodyTypes>
+                  <crownTypes />
+                </south>
+                <north>
+                  <bodyTypes>
+                    <Thin>(0, 0)</Thin>
+                    <Female>(0, 0)</Female>
+                  </bodyTypes>
+                </north>
+                <west>
+                  <layerOffset>-0.27</layerOffset>
+                  <bodyTypes>
+                    <Thin>(-0.29582, 0.3029)</Thin>
+                    <Female>(-0.29582, 0.3029)</Female>
+                  </bodyTypes>
+                </west>
+              </offsets>
+              
+              <hiddenUnderApparelFor />
+            </li>
+            
+            <!--■■■ LEFT EAR ■■■-->
+            <li>
+              <path>Addons/Thrumkin/Ears/EarLeft/EarLeft</path>
+              <colorChannel>skin</colorChannel>
+              <bodyPart>left ear</bodyPart>
+              <drawSize>1.0</drawSize>
+              <inFrontOfBody>true</inFrontOfBody>
+              
+              <defaultOffset>Head</defaultOffset>
+              
+              <offsets>
+                <south>
+                  <bodyTypes>
+                    <Thin>(0,-0.231)</Thin>
+                    <Female>(0,-0.231)</Female>
+                  </bodyTypes>
+                  <crownTypes />
+                </south>
+                <north>
+                  <bodyTypes>
+                    <Thin>(-0.0095, -0.0182)</Thin>
+                    <Female>(-0.0095, -0.0182)</Female>
+                  </bodyTypes>
+                </north>
+                <west>
+                  <layerOffset>-0.2571</layerOffset> 
+                  <bodyTypes>
+                    <Thin>(0.0256,-0.215)</Thin>
+                    <Female>(0.0256,-0.215)</Female>
+                  </bodyTypes>
+                </west>
+                <east>
+                  <layerOffset>-0.2829</layerOffset> 
+                  <bodyTypes>
+                    <Thin>(0.0256,-0.215)</Thin>
+                    <Female>(0.0256,-0.215)</Female>
+                  </bodyTypes>
+                </east>
+              </offsets>
+              
+              <hiddenUnderApparelFor />
+            </li>
+            
+            <!--■■■ RIGHT EAR ■■■-->
+            <li>
+              <path>Addons/Thrumkin/Ears/EarRight/EarRight</path>
+              <colorChannel>skin</colorChannel>
+              <bodyPart>right ear</bodyPart>
+              <drawSize>1</drawSize>
+              <inFrontOfBody>true</inFrontOfBody>
+              
+              <defaultOffset>Head</defaultOffset>
+              
+              <offsets>
+                <south>
+                  <bodyTypes>
+                    <Thin>(0,-0.231)</Thin>
+                    <Female>(0,-0.231)</Female>
+                  </bodyTypes>             
+                </south> 
+                <north>
+                  <bodyTypes>
+                    <Thin>(0, -0.0182)</Thin>
+                    <Female>(0, -0.0182)</Female>
+                  </bodyTypes>
+                </north>
+                <east>
+                  <bodyTypes>
+                    <Thin>(0.0387,-0.215)</Thin>
+                    <Female>(0.0387,-0.215)</Female>
+                  </bodyTypes>
+                </east>
+              </offsets>
+              <hiddenUnderApparelFor />
+            </li>
+            
+            <!--■■■ HORN ■■■-->
+            <li>
+              <drawSize>0.9</drawSize>
+              <path>Addons/Thrumkin/Horn/Thrumkin_Horn</path>
+              
+              <defaultOffset>Head</defaultOffset>
+              <inFrontOfBody>true</inFrontOfBody>
+              
+              <bodyPart>horn</bodyPart>
+              <hediffGraphics>
+                <MissingBodyPart>Addons/Thrumkin/Horn/Missing/HornMissing</MissingBodyPart>
+              </hediffGraphics>
+              <offsets>
+                <south>
+                  <layerOffset>0.025</layerOffset>
+                  <bodyTypes>
+                    <Thin>(-0.005, -0.366)</Thin>
+                    <Female>(-0.005, -0.366)</Female>
+                  </bodyTypes>
+                </south>
+                <north>
+                  <bodyTypes>
+                    <Thin>(0, -0.0182)</Thin>
+                    <Female>(0, -0.0182)</Female>
+                  </bodyTypes>
+                </north>
+                <east>
+                  <layerOffset>-0.2829</layerOffset> 
+                  <bodyTypes>
+                    <Thin>(-0.1542, -0.0662)</Thin>
+                    <Female>(-0.1542, -0.0662)</Female>
+                  </bodyTypes>
+                </east>
+              </offsets>
+            </li>
+            
+            <!--■■■ TAIL ■■■-->
+            <li>
+              <path>Addons/Thrumkin/Tail/Tail</path>
+              <colorChannel>skin</colorChannel>
+              <inFrontOfBody>true</inFrontOfBody>
+              <drawnInBed>false</drawnInBed>
+              
+              <defaultOffset>Tail</defaultOffset>
+              
+              <offsets>
+                <south>
+                  <bodyTypes>
+                    <Thin>(0, 0)</Thin>        
+                    <Female>(0, 0)</Female>    
+                  </bodyTypes>
+                </south>
+                <north>
+                  <bodyTypes>
+                    <Thin>(0.0, 0.0)</Thin>
+                    <Female>(0.0, 0.0)</Female>
+                  </bodyTypes>
+                </north>
+                <east>
+                  <layerOffset>-0.318</layerOffset> 
+                  <bodyTypes>
+                    <Thin>(-0.05136, 0.0843)</Thin>
+                    <Female>(0.0129, 0.0328)</Female>
+                  </bodyTypes>
+                </east>
+              </offsets>
+            </li>
+          </bodyAddons>
+</alienPartGenerator>
+    
+<!--■■■■■■■■■■■■■■■■■■TRAITS■■■■■■■■■■■■■■■■■■■■■■■-->
+    <additionalTraits>1</additionalTraits> 
+        
+    <disallowedTraits>
+      <!--■A■-->
+      <li><defName>Abrasive</defName></li>
+      <li><defName>AnnoyingVoice</defName></li>
+      <li><defName>Ascetic</defName></li>
+      <li><defName>Asexual</defName></li>   
+      <!--■B■-->
+      <li><defName>Brawler</defName></li>
+      <li><defName>Beauty</defName></li>
+      <li><defName>Bisexual</defName></li>
+      <li><defName>Bloodlust</defName></li>
+      <li><defName>BodyPurist</defName></li>
+      <!--■C■-->
+      <li><defName>Cannibal</defName></li>
+      <!--■D■-->
+      <li><defName>DislikesMen</defName></li> 
+      <li><defName>DislikesWomen</defName></li>
+      <li><defName>DrugDesire</defName></li>
+      <!--■G■-->
+      <li><defName>Gay</defName></li>
+      <li><defName>Gourmand</defName></li>
+      <li><defName>Greedy</defName></li>
+      <!--■I■-->
+     <li>
+        <defName>Industriousness</defName>
+        <degree>-2</degree>
+      </li>
+      <li>
+        <defName>Industriousness</defName>
+        <degree>-1</degree>
+      </li>  
+      <!--■J■-->
+      <li><defName>Jealous</defName></li>
+      <!--■K■-->
+      <li><defName>Kind</defName></li>
+      <!--■M■-->
+      <li><defName>Masochist</defName></li>
+      <!--■N■-->
+      <li><defName>NaturalMood</defName></li> 
+      <li>
+        <defName>Nerves</defName>
+        <degree>-1</degree>
+      </li>  
+      <li>
+        <defName>Nerves</defName>
+        <degree>-2</degree>
+      </li>
+      <li><defName>Neurotic</defName></li> 
+      <li><defName>NightOwl</defName></li>
+      <!--■P■-->
+      <li><defName>Psychopath</defName></li>
+      <li><defName>Pyromaniac</defName></li>
+      <!--■S■-->
+      <li><defName>SlowLearner</defName></li>
+      <li><defName>Undergrounder</defName></li>
+      <!--■T■-->
+      <li><defName>Tough</defName></li>
+      <li><defName>TorturedArtist</defName></li>
+      <li><defName>Transhumanist</defName></li>
+      <!--■W■-->
+      <li><defName>Wimp</defName></li>
+      <!--■X■-->
+      <li><defName>Xenophobia</defName></li>  
+      <!--■ ALTERED CARBON ■-->
+      <li MayRequire="Hlx.RimworldAlteredCarbon"><defName>AC_AntiStack</defName></li>
+      <li MayRequire="Hlx.RimworldAlteredCarbon"><defName>AC_Sleever</defName></li>
+    </disallowedTraits>
+  </generalSettings>
+    
+<!--■■■■■■■■■■■■■■■■■■ THOUGHTS SETTINGS ■■■■■■■■■■■■■■■■■■■■■■■-->
+  <thoughtSettings>
+    <!--   <butcherThoughtGeneral>
+      <thought>ZR_BUTCHER_ANIMAL1</thought> Thought applies to EVERY.. humanlike you butcher? animals tested did not work untill i tossed humanlike intelligence onto a horse
+      <knowThought>ZR_BUTCHER_ANIMAL1</knowThought>
+      <raceList><li>Turkey</li></raceList>
+    </butcherThoughtGeneral>-->
+
+    <butcherThoughtSpecific>
+      <li>
+        <thought>GDZR_THOUGHT_ButcheredHumanlikeHuman</thought>
+        <knowThought>GDZR_THOUGHT_ButcheredHumanlikeHuman</knowThought>
+        <raceList><li>GDZR_RACE_ShortZetaReticulan</li></raceList>
+      </li>
+      <li>
+        <thought>GDZR_THOUGHT_ButcheredHumanlikeHuman</thought>
+        <knowThought>GDZR_THOUGHT_ButcheredHumanlikeHuman</knowThought>
+        <raceList><li>Human</li></raceList>
+      </li>
+      <!--■■■ Animals (added through Harmony) ■■■-->
+      <!--■ Equids ■-->
+      <li>
+        <thought>GDZR_THOUGHT_ButcheredAnimalAlpaca</thought>
+        <knowThought>GDZR_THOUGHT_ButcheredAnimalAlpaca</knowThought>
+        <raceList><li>Alpaca</li></raceList>
+      </li>
+      <li>
+        <thought>GDZR_THOUGHT_ButcheredAnimalBoomalope</thought>
+        <knowThought>GDZR_THOUGHT_ButcheredAnimalBoomalope</knowThought>
+        <raceList><li>Boomalope</li></raceList>
+      </li>
+      <li>
+        <thought>GDZR_THOUGHT_ButcheredAnimalBison</thought>
+        <knowThought>GDZR_THOUGHT_ButcheredAnimalBison</knowThought>
+        <raceList><li>Bison</li></raceList>
+      </li>
+      <li>
+        <thought>GDZR_THOUGHT_ButcheredAnimalCaribou</thought>
+        <knowThought>GDZR_THOUGHT_ButcheredAnimalCaribou</knowThought>
+        <raceList><li>Caribou</li></raceList>
+      </li>
+      <li>
+        <thought>GDZR_THOUGHT_ButcheredAnimalCow</thought>
+        <knowThought>GDZR_THOUGHT_ButcheredAnimalCow</knowThought>
+        <raceList><li>Cow</li></raceList>
+      </li>
+      <li>
+        <thought>GDZR_THOUGHT_ButcheredAnimalHorse</thought>
+        <knowThought>GDZR_THOUGHT_ButcheredAnimalHorse</knowThought>
+        <raceList><li>Horse</li></raceList>
+      </li>
+      <li>
+        <thought>GDZR_THOUGHT_ButcheredAnimalDonkey</thought>
+        <knowThought>GDZR_THOUGHT_ButcheredAnimalDonkey</knowThought>
+        <raceList><li>Donkey</li></raceList>
+      </li>
+      <li>
+        <thought>GDZR_THOUGHT_ButcheredAnimalDeer</thought>
+        <knowThought>GDZR_THOUGHT_ButcheredAnimalDeer</knowThought>
+        <raceList><li>Deer</li></raceList>
+      </li>
+      <li>
+        <thought>GDZR_THOUGHT_ButcheredAnimalDromedary</thought>
+        <knowThought>GDZR_THOUGHT_ButcheredAnimalDromedary</knowThought>
+        <raceList><li>Dromedary</li></raceList>
+      </li>
+      <li>
+        <thought>GDZR_THOUGHT_ButcheredAnimalElk</thought>
+        <knowThought>GDZR_THOUGHT_ButcheredAnimalElk</knowThought>
+        <raceList><li>Elk</li></raceList>
+      </li>
+      <li>
+        <thought>GDZR_THOUGHT_ButcheredAnimalGazelle</thought>
+        <knowThought>GDZR_THOUGHT_ButcheredAnimalGazelle</knowThought>
+        <raceList><li>Gazelle</li></raceList>
+      </li>
+ 
+      <li>
+        <thought>GDZR_THOUGHT_ButcheredAnimalMuffalo</thought>
+        <knowThought>GDZR_THOUGHT_ButcheredAnimalMuffalo</knowThought>
+        <raceList><li>Muffalo</li></raceList>
+      </li>
+      <li>
+        <thought>GDZR_THOUGHT_ButcheredAnimalIbex</thought>
+        <knowThought>GDZR_THOUGHT_ButcheredAnimalIbex</knowThought>
+        <raceList><li>Ibex</li></raceList>
+      </li>
+   
+
+      <li>
+        <thought>GDZR_THOUGHT_ButcheredAnimalYak</thought>
+        <knowThought>GDZR_THOUGHT_ButcheredAnimalYak</knowThought>
+        <raceList><li>Yak</li></raceList>
+      </li>
+      <!-- Pig & Sheep likes -->
+      <li>
+        <thought>GDZR_THOUGHT_ButcheredAnimalGoat</thought>
+        <knowThought>GDZR_THOUGHT_ButcheredAnimalGoat</knowThought>
+        <raceList><li>Goat</li></raceList>
+      </li>
+      <li>
+        <thought>GDZR_THOUGHT_ButcheredAnimalSheep</thought>
+        <knowThought>GDZR_THOUGHT_ButcheredAnimalSheep</knowThought>
+        <raceList><li>Sheep</li></raceList>
+      </li>
+      <li>
+        <thought>GDZR_THOUGHT_ButcheredAnimalPig</thought>
+        <knowThought>GDZR_THOUGHT_ButcheredAnimalPig</knowThought>
+        <raceList><li>Pig</li></raceList>
+      </li>
+      <li>
+        <thought>GDZR_THOUGHT_ButcheredAnimalWildBoar</thought>
+        <knowThought>GDZR_THOUGHT_ButcheredAnimalWildBoar</knowThought>
+        <raceList><li>WildBoar</li></raceList>
+      </li>
+ 
+   
+      <!-- Giant Animals -->
+      <li>
+        <thought>GDZR_THOUGHT_ButcheredAnimalElephant</thought>
+        <knowThought>GDZR_THOUGHT_ButcheredAnimalElephant</knowThought>
+        <raceList><li>Elephant</li></raceList>
+      </li>
+      <li>
+        <thought>GDZR_THOUGHT_ButcheredAnimalMegasloth</thought>
+        <knowThought>GDZR_THOUGHT_ButcheredAnimalMegasloth</knowThought>
+        <raceList><li>Megasloth</li></raceList>
+      </li>
+      <li>
+        <thought>GDZR_THOUGHT_ButcheredAnimalRhinoceros</thought>
+        <knowThought>GDZR_THOUGHT_ButcheredAnimalRhinoceros</knowThought>
+        <raceList><li>Rhinoceros</li></raceList>
+      </li>
+      <li>
+        <thought>GDZR_THOUGHT_ButcheredAnimalThrumbo</thought>
+        <knowThought>GDZR_THOUGHT_ButcheredAnimalThrumbo</knowThought>
+        <raceList><li>Thrumbo</li></raceList>
+      </li>
+    
+      <!--■ Retiles, etc ■-->
+      <li>
+        <thought>GDZR_THOUGHT_ButcheredAnimalTortoise</thought>
+        <knowThought>GDZR_THOUGHT_ButcheredAnimalTortoise</knowThought>
+        <raceList><li>Tortoise</li></raceList>
+      </li>
+      <li>
+        <thought>GDZR_THOUGHT_ButcheredAnimalCobra</thought>
+        <knowThought>GDZR_THOUGHT_ButcheredAnimalCobra</knowThought>
+        <raceList><li>Cobra</li></raceList>
+      </li>
+      <li>
+        <thought>GDZR_THOUGHT_ButcheredAnimalIguana</thought>
+        <knowThought>GDZR_THOUGHT_ButcheredAnimalIguana</knowThought>
+        <raceList><li>Iguana</li></raceList>
+      </li>
+      <!--■ Bears ■-->
+      <li>
+        <thought>GDZR_THOUGHT_ButcheredAnimalBearGrizzly</thought>
+        <knowThought>GDZR_THOUGHT_ButcheredAnimalBearGrizzly</knowThought>
+        <raceList><li>Bear_Grizzly</li></raceList>
+      </li>
+      <li>
+        <thought>GDZR_THOUGHT_ButcheredAnimalBearPolar</thought>
+        <knowThought>GDZR_THOUGHT_ButcheredAnimalBearPolar</knowThought>
+        <raceList><li>Bear_Polar</li></raceList>
+      </li>
+      <!--■ Birds ■-->
+      <li>
+        <thought>GDZR_THOUGHT_ButcheredAnimalChicken</thought>
+        <knowThought>GDZR_THOUGHT_ButcheredAnimalChicken</knowThought>
+        <raceList><li>Chicken</li></raceList>
+      </li>
+      <li>
+        <thought>GDZR_THOUGHT_ButcheredAnimalDuck</thought>
+        <knowThought>GDZR_THOUGHT_ButcheredAnimalDuck</knowThought>
+        <raceList><li>Duck</li></raceList>
+      </li>
+      <li>
+        <thought>GDZR_THOUGHT_ButcheredAnimalTurkey</thought>
+        <knowThought>GDZR_THOUGHT_ButcheredAnimalTurkey</knowThought>
+        <raceList><li>Turkey</li></raceList>
+      </li>
+      <li>
+        <thought>GDZR_THOUGHT_ButcheredAnimalOstrich</thought>
+        <knowThought>GDZR_THOUGHT_ButcheredAnimalOstrich</knowThought>
+        <raceList><li>Ostrich</li></raceList>
+      </li>
+      <li>
+        <thought>GDZR_THOUGHT_ButcheredAnimalEmu</thought>
+        <knowThought>GDZR_THOUGHT_ButcheredAnimalEmu</knowThought>
+        <raceList><li>Emu</li></raceList>
+      </li>
+      <li>
+        <thought>GDZR_THOUGHT_ButcheredAnimalCassowary</thought>
+        <knowThought>GDZR_THOUGHT_ButcheredAnimalCassowary</knowThought>
+        <raceList><li>Cassowary</li></raceList>
+      </li>
+      <!--■ Cats ■-->
+      <li>
+        <thought>GDZR_THOUGHT_ButcheredAnimalCat</thought>
+        <knowThought>GDZR_THOUGHT_ButcheredAnimalCat</knowThought>
+        <raceList><li>Cat</li></raceList>
+      </li>
+      <li>
+        <thought>GDZR_THOUGHT_ButcheredAnimalCougar</thought>
+        <knowThought>GDZR_THOUGHT_ButcheredAnimalCougar</knowThought>
+        <raceList><li>Cougar</li></raceList>
+      </li>
+      <li>
+        <thought>GDZR_THOUGHT_ButcheredAnimalPanther</thought>
+        <knowThought>GDZR_THOUGHT_ButcheredAnimalPanther</knowThought>
+        <raceList><li>Panther</li></raceList>
+      </li>
+      <li>
+        <thought>GDZR_THOUGHT_ButcheredAnimalLynx</thought>
+        <knowThought>GDZR_THOUGHT_ButcheredAnimalLynx</knowThought>
+        <raceList><li>Lynx</li></raceList>
+      </li>
+      <!--■ Canines, Foxes ■-->
+      <li>
+        <thought>GDZR_THOUGHT_ButcheredAnimalWolfTimber</thought>
+        <knowThought>GDZR_THOUGHT_ButcheredAnimalWolfTimber</knowThought>
+        <raceList><li>Wolf_Timber</li></raceList>
+      </li>
+      <li>
+        <thought>GDZR_THOUGHT_ButcheredAnimalWolfArctic</thought>
+        <knowThought>GDZR_THOUGHT_ButcheredAnimalWolfArctic</knowThought>
+        <raceList><li>Wolf_Arctic</li></raceList>
+      </li>
+      <li>
+        <thought>GDZR_THOUGHT_ButcheredAnimalFoxFennec</thought>
+        <knowThought>GDZR_THOUGHT_ButcheredAnimalFoxFennec</knowThought>
+        <raceList><li>Fox_Fennec</li></raceList>
+      </li>
+      <li>
+        <thought>GDZR_THOUGHT_ButcheredAnimalFoxRed</thought>
+        <knowThought>GDZR_THOUGHT_ButcheredAnimalFoxRed</knowThought>
+        <raceList><li>Fox_Red</li></raceList>
+      </li>
+      <li>
+        <thought>GDZR_THOUGHT_ButcheredAnimalFoxArctic</thought>
+        <knowThought>GDZR_THOUGHT_ButcheredAnimalFoxArctic</knowThought>
+        <raceList><li>Fox_Arctic</li></raceList>
+      </li>
+      <li>
+        <thought>GDZR_THOUGHT_ButcheredAnimalWarg</thought>
+        <knowThought>GDZR_THOUGHT_ButcheredAnimalWarg</knowThought>
+        <raceList><li>Warg</li></raceList>
+      </li>
+      <!--■ Rodents, Etc ■-->
+      <li>
+        <thought>GDZR_THOUGHT_ButcheredAnimalAlphabeaver</thought>
+        <knowThought>GDZR_THOUGHT_ButcheredAnimalAlphabeaver</knowThought>
+        <raceList><li>Alphabeaver</li></raceList>
+      </li>
+      <li>
+        <thought>GDZR_THOUGHT_ButcheredAnimalBoomrat</thought>
+        <knowThought>GDZR_THOUGHT_ButcheredAnimalBoomrat</knowThought>
+        <raceList><li>Boomrat</li></raceList>
+      </li>
+      <li>
+        <thought>GDZR_THOUGHT_ButcheredAnimalCapybara</thought>
+        <knowThought>GDZR_THOUGHT_ButcheredAnimalCapybara</knowThought>
+        <raceList><li>Capybara</li></raceList>
+      </li>
+      <li>
+        <thought>GDZR_THOUGHT_ButcheredAnimalChinchilla</thought>
+        <knowThought>GDZR_THOUGHT_ButcheredAnimalChinchilla</knowThought>
+        <raceList><li>Chinchilla</li></raceList>
+      </li>
+      <li>
+        <thought>GDZR_THOUGHT_ButcheredAnimalHare</thought>
+        <knowThought>GDZR_THOUGHT_ButcheredAnimalHare</knowThought>
+        <raceList><li>Hare</li></raceList>
+      </li>
+      <li>
+        <thought>GDZR_THOUGHT_ButcheredAnimalRaccoon</thought>
+        <knowThought>GDZR_THOUGHT_ButcheredAnimalRaccoon</knowThought>
+        <raceList><li>Raccoon</li></raceList>
+      </li>
+      <li>
+        <thought>GDZR_THOUGHT_ButcheredAnimalRat</thought>
+        <knowThought>GDZR_THOUGHT_ButcheredAnimalRat</knowThought>
+        <raceList><li>Rat</li></raceList>
+      </li>
+      <li>
+        <thought>GDZR_THOUGHT_ButcheredAnimalSnowhare</thought>
+        <knowThought>GDZR_THOUGHT_ButcheredAnimalSnowhare</knowThought>
+        <raceList><li>Snowhare</li></raceList>
+      </li>
+      <li>
+        <thought>GDZR_THOUGHT_ButcheredAnimalSquirrel</thought> 
+        <knowThought>GDZR_THOUGHT_ButcheredAnimalSquirrel</knowThought>
+        <raceList><li>Squirrel</li></raceList>
+      </li>
+      <!--■ Insects ■-->
+      <li>
+        <thought>GDZR_THOUGHT_ButcheredAnimalMegaspider</thought>
+        <knowThought>GDZR_THOUGHT_ButcheredAnimalMegaspider</knowThought>
+        <raceList><li>Megaspider</li></raceList>
+      </li>
+      <li>
+        <thought>GDZR_THOUGHT_ButcheredAnimalSpelopede</thought>
+        <knowThought>GDZR_THOUGHT_ButcheredAnimalSpelopede</knowThought>
+        <raceList><li>Spelopede</li></raceList>
+      </li>
+      <li>
+        <thought>GDZR_THOUGHT_ButcheredAnimalMegascarab</thought>
+        <knowThought>GDZR_THOUGHT_ButcheredAnimalMegascarab</knowThought>
+        <raceList><li>Megascarab</li></raceList>
+      </li>
+    </butcherThoughtSpecific>
+
+    <!--What thoughts THIS race gets
+        
+        <butcherThoughtGeneral>
+        <thought>CRYST_TEST_DEF</thought>
+        <knowThought>CRYST_TEST_DEF</knowThought>
+        <raceList><li>Turkey</li></raceList>
+      </butcherThoughtGeneral>-->
+    
+    <!--<butcherThoughtGeneral>
+      <raceList><li>ZR_RACE_SHORTGREY_DEF</li></raceList>
+      <thought>ZR_WasImprisoned</thought>
+      <knowThought>ZR_WasImprisoned</knowThought>
+    </butcherThoughtGeneral>-->
+    <!--■■■ THOUGHT REPLACER LIST ■■■■■■■■■■■■■■■■■■■■■■■-->
+    <replacerList>
+      <!--■A■-->
+      <li>
+        <original>AteCorpse</original>
+        <replacer>GDZR_THOUGHT_AteCorpse</replacer>  
+      </li>
+      <li>
+        <original>AteKibble</original>
+        <replacer>GDZR_THOUGHT_AteKibble</replacer> 
+      </li>
+      <li>
+        <original>AteRawFood</original>
+        <replacer>GDZR_THOUGHT_AteRawFood</replacer> 
+      </li>
+      <li>
+        <original>AteRottenFood</original>
+        <replacer>GDZR_THOUGHT_AteRottenFood</replacer> 
+      </li>
+      <li>
+        <original>AttendedParty</original>
+        <replacer>GDZR_THOUGHT_AttendedParty</replacer>  
+      </li>
+      <li>
+        <original>Aurora</original>
+        <replacer>GDZR_THOUGHT_Aurora</replacer>  
+      </li>
+      <!--■B■-->
+      <li>
+        <original>ButcheredHumanlikeCorpse</original>
+        <replacer>GDZR_THOUGHT_ButcheredHumanlikeCorpse</replacer> 
+      </li>
+      <!--■C■-->
+      <li>
+        <original>CrashedTogether</original>
+        <replacer>GDZR_THOUGHT_CrashedTogether</replacer> 
+      </li>
+      <!--■F■-->
+      <li>
+        <original>FreedFromSlavery</original>
+        <replacer>GDZR_THOUGHT_FreedFromSlavery</replacer> 
+      </li>
+      <!--■H■-->
+      <li>
+        <original>HarvestedOrgan_Bloodlust</original>
+        <replacer>GDZR_THOUGHT_KnowOrganHarvested</replacer> 
+      </li>
+      <!--■K■-->
+      <li>
+        <original>KnowColonistOrganHarvested</original>
+        <replacer>GDZR_THOUGHT_KnowOrganHarvested</replacer> 
+      </li>
+      <li>
+        <original>KnowGuestOrganHarvested</original>
+        <replacer>GDZR_THOUGHT_KnowOrganHarvested</replacer> 
+      </li>
+      <li>
+        <original>KnowPrisonerSold</original>
+        <replacer>GDZR_THOUGHT_KnowPrisonerSold</replacer> 
+      </li>
+      <li>
+        <original>ReleasedHealthyPrisoner</original>
+        <replacer>GDZR_THOUGHT_ReleasedHealthyPrisoner</replacer> 
+      </li>
+      <li>
+        <original>KnowButcheredHumanlikeCorpse</original>
+        <replacer>GDZR_THOUGHT_KnowButcheredHumanlikeCorpse</replacer> 
+      </li>
+      <!--■N■-->
+      <li>
+        <original>NewColonyOptimism</original>
+        <replacer>GDZR_THOUGHT_NewColonyOptimism</replacer> 
+      </li>
+      <li>
+        <original>NewColonyHope</original>
+        <replacer>GDZR_THOUGHT_NewColonyHope</replacer> 
+      </li>
+      <li>
+        <original>SoakingWet</original>
+        <replacer>GDZR_THOUGHT_SoakingWet</replacer> 
+      </li>
+      <li>
+        <original>SleptInCold</original>
+        <replacer>GDZR_THOUGHT_SleptInCold</replacer> 
+      </li>
+      <li>
+        <original>SleptInHeat</original>
+        <replacer>GDZR_THOUGHT_SleptInHeat</replacer> 
+      </li>
+      <li>
+        <original>SleptOutside</original>
+        <replacer>GDZR_THOUGHT_SleptOutside</replacer> 
+      </li> 
+      <li>  
+        <original>SleptInBedroom</original>
+        <replacer>GDZR_THOUGHT_SleptInBedroom</replacer>  
+      </li>
+      <li>
+        <original>SleptInBarracks</original>
+        <replacer>GDZR_THOUGHT_SleptInBarracks</replacer>  
+      </li>
+      <li>
+        <original>SleepDisturbed</original>
+        <replacer>GDZR_THOUGHT_SleepDisturbed</replacer>  
+      </li>
+      <li>
+        <original>ColonistLost</original>
+        <replacer>GDZR_THOUGHT_ColonistLost</replacer>  
+      </li>
+      <li>
+        <original>KnowColonistDied</original>
+        <replacer>GDZR_THOUGHT_KnowColonistDied</replacer>  
+      </li>
+      <li>
+        <original>SleptOnGround</original>
+        <replacer>GDZR_THOUGHT_SleptOnGround</replacer>  
+      </li>
+      <li>
+        <original>KilledHumanlikeBloodlust</original>
+        <replacer>GDZR_THOUGHT_KilledHumanlikeBloodlust</replacer>  
+      </li>
+      <li>
+        <original>Catharsis</original>
+        <replacer>GDZR_THOUGHT_Catharsis</replacer>  
+      </li>
+
+      <!--■DUB'S BAD HYGIENE■-->
+      <li MayRequire="Dubwise.DubsBadHygiene">
+        <original>ColdBath</original>
+        <replacer>GDZR_THOUGHT_ColdBath</replacer>  
+      </li>
+      <li MayRequire="Dubwise.DubsBadHygiene">
+        <original>ColdShower</original>
+        <replacer>GDZR_THOUGHT_ColdShower</replacer>  
+      </li>
+      <li MayRequire="Dubwise.DubsBadHygiene">
+        <original>DrankDirtyWater</original>
+        <replacer>GDZR_THOUGHT_DrankDirtyWater</replacer>  
+      </li>
+      <li MayRequire="Dubwise.DubsBadHygiene">
+        <original>DrankUrine</original>
+        <replacer>GDZR_THOUGHT_DrankUrine</replacer>  
+      </li>
+      <li MayRequire="Dubwise.DubsBadHygiene">
+        <original>HotBath</original>
+        <replacer>GDZR_THOUGHT_HotBath</replacer>  
+      </li>
+      <li MayRequire="Dubwise.DubsBadHygiene">
+        <original>HotShower</original>
+        <replacer>GDZR_THOUGHT_HotShower</replacer>  
+      </li>
+      <li MayRequire="Dubwise.DubsBadHygiene">
+        <original>openDefecation</original>
+        <replacer>GDZR_THOUGHT_openDefecation</replacer>  
+      </li>
+      <li MayRequire="Dubwise.DubsBadHygiene">
+        <original>SoiledSelf</original>
+        <replacer>GDZR_THOUGHT_SoiledSelf</replacer>  
+      </li>
+      <!--■HARVEST ORGANS POST MORTEM■-->
+      <li MayRequire="Smuffle.HarvestOrgansPostMortem">
+        <original>HarvestedHumanlikeCorpse</original>
+        <replacer>GDZR_THOUGHT_HarvestedHumanlikeCorpse</replacer>  
+      </li>
+      <li MayRequire="Smuffle.HarvestOrgansPostMortem">
+        <original>KnowHarvestedHumanlikeCorpse</original>
+        <replacer>GDZR_THOUGHT_KnowHarvestedHumanlikeCorpse</replacer>  
+      </li>
+    </replacerList>
+    
+    <!--■■■ RESTRICTED THOUGHTS ■■■■■■■■■■■■■■■■■■■■■■■-->
+    <restrictedThoughts> 
+      <!--■A■-->      
+      <li>GDZR_THOUGHT_AteHumanlikeMeatDirect</li>
+      <li>GDZR_THOUGHT_AteKibble</li>
+      <li>GDZR_THOUGHT_AteInsectMeatDirect</li>
+      <li>GDZR_THOUGHT_Aurora</li>
+      <li>GDZR_THOUGHT_DoingPassionateWork</li>
+      <!--■E■-->
+      <li>GDZR_THOUGHT_EnvironmentBright</li>
+      <li>GDZR_THOUGHT_EnvironmentCold</li>
+      <li>GDZR_THOUGHT_EnvironmentDark</li>
+      <li>GDZR_THOUGHT_EnvironmentHot</li>
+      <li>GDZR_THOUGHT_Expectations</li>
+      <!--■H■-->
+      <li>GDZR_THOUGHT_HospitalPatientRoomStats</li>
+      <!--■M■-->
+      <!--■N■-->
+      <li>GDZR_THOUGHT_ClothedNudist</li>
+      <li>GDZR_THOUGHT_HappyNude</li>
+      <li>GDZR_THOUGHT_NeedBeauty</li>
+      <li>GDZR_THOUGHT_NeedFood</li>
+      <li>GDZR_THOUGHT_NeedRest</li>
+      <!--■P■-->
+      <li>GDZR_THOUGHT_Pain</li>
+      <li>GDZR_THOUGHT_PsychicEmanatorSoothe</li>
+      <li>GDZR_THOUGHT_PsychicDrone</li>
+      <!--■S■-->
+      <li>GDZR_THOUGHT_Sick</li>
+      <!--■ DRUGS, CORE ■-->
+      <li>GDZR_THOUGHT_AnestheticHigh</li>
+      <li>GDZR_THOUGHT_SmokeleafHigh</li>
+      <li>GDZR_THOUGHT_Inebriated</li>
+      <li>GDZR_THOUGHT_GoJuiceHigh</li>
+      <li>GDZR_THOUGHT_FlakeHigh</li>
+      <li>GDZR_THOUGHT_PsychiteTeaHigh</li>
+      <li>GDZR_THOUGHT_YayoHigh</li>
+      <li>GDZR_THOUGHT_WakeUpHigh</li>
+      <!--■ IMPLANTS, CORE ■-->
+      <li>GDZR_THOUGHT_Joywire</li>
+      <!--■DUB'S BAD HYGIENE■-->
+      <li MayRequire="Dubwise.DubsBadHygiene">ZR_BowelLevel</li>
+      <li MayRequire="Dubwise.DubsBadHygiene">GDZR_THOUGHT_ColdBath</li>
+      <li MayRequire="Dubwise.DubsBadHygiene">GDZR_THOUGHT_ColdShower</li>
+      <li MayRequire="Dubwise.DubsBadHygiene">GDZR_THOUGHT_DrankDirtyWater</li>
+      <li MayRequire="Dubwise.DubsBadHygiene">GDZR_THOUGHT_DrankUrine</li>
+      <li MayRequire="Dubwise.DubsBadHygiene">GDZR_THOUGHT_HotBath</li>
+      <li MayRequire="Dubwise.DubsBadHygiene">GDZR_THOUGHT_HotShower</li>
+      <li MayRequire="Dubwise.DubsBadHygiene">ZR_HygieneLevel</li>
+      <li MayRequire="Dubwise.DubsBadHygiene">GDZR_THOUGHT_openDefecation</li>
+      <li MayRequire="Dubwise.DubsBadHygiene">GDZR_THOUGHT_SoiledSelf</li>
+      <!--■PAWN MORPHER■-->
+      <li MayRequire="tachyonite.pawnmorpherpublic">ZR_FurryNoMutations</li>
+      <li MayRequire="tachyonite.pawnmorpherpublic">ZR_FurryMutationThoughtsHappy</li>
+    </restrictedThoughts>
+    <!--■■■ CANNOT RECEIVE THOUGHTS ■■■■■■■■■■■■■■■■■■■■■■■-->
+    <cannotReceiveThoughts>
+      <!--■A■-->
+      <li>Affair</li>
+      <li>ApparelDamaged</li>
+      <li>AnnoyingVoice</li>
+      <li>AteFineMeal</li>
+      <li>AteHumanlikeMeatAsIngredient</li>
+      <li>AteHumanlikeMeatDirect</li>
+      <li>AteKibble</li>
+      <li>AteInImpressiveDiningRoom</li>
+      <li>AteInsectMeatDirect</li>
+      <li>AteInsectMeatAsIngredient</li>
+      <li>AteLavishMeal</li>
+      <li>AteRawHumanlikeMeat</li>
+      <li>AteWithoutTable</li>
+      <li>AttendedConcert</li>
+      <li>AttendedWedding</li>
+      <li>Aurora</li>
+      <!--■B■-->
+      <li>BondedAnimalBanished</li>
+      <li>BondedAnimalDied</li>
+      <li>BondedAnimalLost</li>
+      <li>BondedAnimalMaster</li>
+      <li>BrokeUpWithMe</li>
+      <li>BrokeUpWithMeMood</li>
+      <li>ButcheredHumanlikeCorpse</li>
+      <li>ButcheredHumanlikeCorpseOpinion</li>
+      <!--■C■-->
+      <li>CheatedOnMe</li>
+      <li>CheatedOnMeMood</li>
+      <li>ChemicalInterestVsTeetotaler</li>
+      <li>ColonistBanished</li>
+      <li>ColonistBanishedToDie</li>
+      <li>ColonistLeftUnburied</li>
+      <li>CreepyBreathing</li>
+      <!--■D■-->
+      <li>DeadMansApparel</li>
+      <li>Disfigured</li>
+      <li>DivorcedMe</li>
+      <li>DoingPassionateWork</li>
+      <!--■E■-->
+      <li>EnvironmentCold</li>
+      <li>EnvironmentDark</li>
+      <li>EnvironmentHot</li>
+      <li>ExecutedPrisoner</li>
+      <li>Expectations</li>
+      <!--■F■-->
+      <li>FailedRomanceAttemptOnMe</li>
+      <li>FailedRomanceAttemptOnMeLowOpinionMood</li>
+      <li>FailedToRescueRelative</li>
+      <!--■G■-->
+      <li>GotMarried</li>
+      <li>GotSomeLovin</li>
+      <!--■H■-->
+      <li>HadAngeringFight</li>
+      <li>HadCatharticFight</li>
+      <li>HeldConcert</li>
+      <li>HoneymoonPhase</li>
+      <li>HospitalPatientRoomStats</li>
+      <li>HumanLeatherApparelSad</li>
+      <!--■I■-->
+      <li>Incestuous</li>
+      <li>Insulted</li>
+      <li>IRejectedTheirProposal</li>
+      <!--■J■-->
+      <li>JoyActivityInImpressiveRecRoom</li>
+      <!--■K■-->
+      <li>KilledColonist</li>
+      <li>KilledColonyAnimal</li>
+      <li>KilledMyBondedAnimal</li>
+      <li>KilledMyBrother</li>
+      <li>KilledMyDaughter</li>
+      <li>KilledMyFather</li>
+      <li>KilledMyFiance</li>
+      <li>KilledMyFriend</li>
+      <li>KilledMyKin</li>
+      <li>KilledMyLover</li>
+      <li>KilledMyMother</li>
+      <li>KilledMyRival</li>
+      <li>KilledMySister</li>
+      <li>KilledMySon</li>
+      <li>KilledMySpouse</li>
+      <li>KindWords</li>
+      <li>KindWordsMood</li>
+      <li>KnowBuriedInSarcophagus</li>
+      <li>KnowColonistExecuted</li>
+      <li>KnowGuestExecuted</li>
+      <li>KnowPrisonerDiedInnocent</li>
+      <!--■M■-->
+      <li>MyFianceDied</li>
+      <li>MyFianceeDied</li>
+      <li>MyUncleDied</li>
+      <li>MyCousinDied</li>
+      <li>MyKinDied</li>
+      <li>MyAuntDied</li>
+      <li>MyDaughterDied</li>
+      <li>MyGrandparentDied</li>
+      <li>MyHalfSiblingDied</li>
+      <li>MyHusbandDied</li>
+      <li>MyWifeDied</li>
+      <li>MyFatherDied</li>
+      <li>MyNephewDied</li>
+      <li>MyNieceDied</li>
+      <li>MySisterDied</li>
+      <li>MyAuntLost</li>
+      <li>MyBrotherDied</li>
+      <li>MyBrotherLost</li>
+      <li>MyCousinLost</li>
+      <li>MyDaughterLost</li>
+      <li>MyFatherLost</li>
+      <li>MyFianceLost</li>
+      <li>MyFianceeLost</li>
+      <li>MyGrandchildDied</li>
+      <li>MyGrandchildLost</li>
+      <li>MyGrandparentLost</li>
+      <li>MyHalfSiblingLost</li>
+      <li>MyHusbandLost</li>
+      <li>MyKinLost</li>
+      <li>MyLoverDied</li>
+      <li>MyLoverLost</li>
+      <li>MyMotherDied</li>
+      <li>MyMotherLost</li>
+      <li>MyNephewLost</li>
+      <li>MyNieceLost</li>
+      <li>MyOrganHarvested</li>
+      <li>MySisterLost</li>
+      <li>MySonDied</li>
+      <li>MySonLost</li>
+      <li>MyUncleLost</li>
+      <li>MyWifeLost</li>
+      <!--■N■-->
+      <li>Naked</li>
+      <li>NeedBeauty</li>
+      <li>NeedComfort</li>
+      <li>NeedFood</li>
+      <li>NeedJoy</li>
+      <li>NeedOutdoors</li>
+      <li>NeedRest</li>
+      <li>NeedRoomSize</li>
+      <li>NotBondedAnimalMaster</li>
+      <li>ClothedNudist</li>
+      <li>HappyNude</li>
+      <li>Nuzzled</li>
+      <!--■O■-->
+      <li>OpinionOfMyLover</li>
+      <li>ObservedLayingCorpse</li>
+      <li>ObservedLayingRottingCorpse</li>
+      <!--■P■-->
+      <li>Pain</li>
+      <li>PawnWithGoodOpinionDied</li>
+      <li>PawnWithGoodOpinionLost</li>
+      <li>PawnWithBadOpinionDied</li>
+      <li>PawnWithBadOpinionLost</li>
+      <li>Pretty</li>
+      <li>PrisonerBanishedToDie</li>
+      <li>PrisonBarracks</li>
+      <li>PrisonCell</li>
+      <li>PsychicEmanatorSoothe</li>
+      <li>PsychicDrone</li>
+      <!--■R■-->
+      <li>RebuffedMyRomanceAttempt</li>
+      <li>RebuffedMyRomanceAttemptMood</li>
+      <li>RejectedMyProposal</li>
+      <li>Rescued</li>
+      <li>RescuedMeByOfferingHelp</li>
+      <li>RescuedRelative</li>
+      <li>RescuedMe</li>
+      <!--■S■-->
+      <li>Sick</li>
+      <li>SleptInCold</li>
+      <li>Slighted</li>
+      <li>SoldPrisoner</li>
+      <li>SoldMyBondedAnimal</li>
+      <li>SoldMyBondedAnimalMood</li>
+      <li>SoldMyLovedOne</li>
+      <!--■T■-->
+      <!--■U■-->
+      <li>Ugly</li>
+      <!--■W■-->
+      <li>WantToSleepWithSpouseOrLover</li>
+      <li>WasImprisoned</li>
+      <li>WitnessedDeathAlly</li>
+      <li>WitnessedDeathNonAlly</li>
+      <li>WitnessedDeathFamily</li>
+      <li>WrongApparelGender</li>
+      <!--■ DRUGS, CORE ■-->
+      <li>AnestheticHigh</li>
+      <li>SmokeleafHigh</li>
+      <li>Inebriated</li>
+      <li>AmbrosiaHigh</li>
+      <li>GoJuiceHigh</li>
+      <li>FlakeHigh</li>
+      <li>PsychiteTeaHigh</li>
+      <li>YayoHigh</li>
+      <!--■ IMPLANTS, CORE ■-->
+      <li>Joywire</li>
+      <!--■DUB'S BAD HYGIENE■-->
+      <li MayRequire="Dubwise.DubsBadHygiene">BowelLevel</li>
+      <li MayRequire="Dubwise.DubsBadHygiene">ColdWater</li>
+      <li MayRequire="Dubwise.DubsBadHygiene">DrankCleanWater</li>
+      <li MayRequire="Dubwise.DubsBadHygiene">HygieneLevel</li>
+      <li MayRequire="Dubwise.DubsBadHygiene">ToiletPrivacy</li>
+      <li MayRequire="Dubwise.DubsBadHygiene">tookDump</li>
+      <li MayRequire="Dubwise.DubsBadHygiene">UsedPrivateBathroom</li>
+      <li MayRequire="Dubwise.DubsBadHygiene">WashPrivacy</li>
+      <!--■RIM JOB WORLD■-->
+      <li MayRequire="rim.job.world">NeedSex</li>
+      <!--■PAWN MORPHER■-->
+      <li MayRequire="tachyonite.pawnmorpherpublic">FurryNoMutations</li>
+      <li MayRequire="tachyonite.pawnmorpherpublic">FurryMutationThoughtsHappy</li>
+    </cannotReceiveThoughts>
+  </thoughtSettings>
+  
+ 
+<!--■■■RELATION SETTINGS■■■-->
+    <relationSettings>
+      <relationChanceModifierChild>0</relationChanceModifierChild>
+      <relationChanceModifierExLover>0</relationChanceModifierExLover>
+      <relationChanceModifierExSpouse>0</relationChanceModifierExSpouse>
+      <relationChanceModifierFiance>0</relationChanceModifierFiance>
+      <relationChanceModifierLover>0</relationChanceModifierLover>
+      <relationChanceModifierParent>0</relationChanceModifierParent>
+      <relationChanceModifierSibling>1</relationChanceModifierSibling>
+      <relationChanceModifierSpouse>0</relationChanceModifierSpouse>
+        
+      <renamer>
+        <li>
+          <relation>Child</relation>
+          <label>Previous co-op partner</label>
+          <femaleLabel>Previous co-op partner</femaleLabel>
+        </li>
+        <li>
+          <relation>ExLover</relation>
+          <label>Previous co-op partner</label>
+          <femaleLabel>Previous co-op partner</femaleLabel>
+        </li>
+        <li>
+          <relation>ExSpouse</relation>
+          <label>Previous co-op partner</label>
+          <femaleLabel>Previous co-op partner</femaleLabel>
+        </li>
+        <li>
+          <relation>Fiance</relation>
+          <label>Previous co-op partner</label>
+          <femaleLabel>Previous co-op partner</femaleLabel>
+        </li>
+        <li>
+          <relation>Lover</relation>
+          <label>Previous co-op partner</label>
+          <femaleLabel>Previous co-op partner</femaleLabel>
+        </li>
+        <li>
+          <relation>Parent</relation>
+          <label>Previous co-op partner</label>
+          <femaleLabel>Previous co-op partner</femaleLabel>
+        </li>
+        <li>
+          <relation>Sibling</relation>
+          <label>Previous co-op partner</label>
+          <femaleLabel>Previous co-op partner</femaleLabel>
+        </li>
+        <li>
+          <relation>Spouse</relation>
+          <label>Previous co-op partner</label>
+          <femaleLabel>Previous co-op partner</femaleLabel>
+        </li>
+      </renamer>
+    </relationSettings>
+      
+      <!--■■■■■■■■■■■■■■■■■■ RACE RESTRICTIONS ■■■■■■■■■■■■■■■■■■■■■■■-->
+      <raceRestriction>
+        
+        <recipeList>
+          <li>GDZR_RECIPE_StaringParalysis</li>
+        </recipeList>
+      </raceRestriction>
+    </alienRace>
+
+  <!--■■■■■■■■■■■■■■■■■■TOOLS■■■■■■■■■■■■■■■■■■■■■■■-->
+  <!--■■■EYES■■■-->
+  <tools>
+    <li>
+      <label>staring procedure</label>
+      <capacities>
+        <li>GDZR_MANEUVER_Stare_CAP</li>
+      </capacities>
+      <power>20</power>
+      <cooldownTime>2.4</cooldownTime>
+      <linkedBodyPartsGroup>Eyes</linkedBodyPartsGroup>
+      <chanceFactor>3.5</chanceFactor>
+      
+      <soundMeleeHit>GDZR_SOUND_StareHit</soundMeleeHit><!-- Needed here as opposed to the damage def since stare is no-dmg in the newest retro fit-->
+      <soundMeleeMiss>GDZR_SOUND_StareMiss</soundMeleeMiss>
+    </li>
+    
+    
+    <!--■■■HEAD■■■-->
+    <li>
+      <label>head</label>
+      <capacities>
+        <li>Blunt</li>
+      </capacities>
+      <power>3</power>
+      <cooldownTime>2.4</cooldownTime>
+      <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+      <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+      <chanceFactor>0.1</chanceFactor>
+    </li>
+    
+    <!--■■■TEETH■■■-->
+    <li>
+      <label>teeth</label>
+      <capacities>
+        <li>Bite</li>
+      </capacities>
+      <power>6</power>
+      <cooldownTime>2.4</cooldownTime>
+      <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+      <chanceFactor>0.05</chanceFactor>
+      <soundMeleeHit>Pawn_Melee_HumanBite_Hit</soundMeleeHit> 
+      <soundMeleeMiss>Pawn_Melee_HumanBite_Miss</soundMeleeMiss>
+    </li>
+    
+    <!--■■■FISTS■■■-->
+    <li>
+      <label>left fist</label>
+      <capacities>
+        <li>Blunt</li>
+      </capacities>
+      <power>6</power>
+      <cooldownTime>2.4</cooldownTime>
+      <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+      <chanceFactor>0.5</chanceFactor>
+    </li>
+    <li>
+      <label>right fist</label>
+      <capacities>
+        <li>Blunt</li>
+      </capacities>
+      <power>6</power>
+      <cooldownTime>2.4</cooldownTime>
+      <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+      <chanceFactor>0.4</chanceFactor>
+    </li>
+  </tools>
+  
+</AlienRace.ThingDef_AlienRace>
+
+</Defs>
