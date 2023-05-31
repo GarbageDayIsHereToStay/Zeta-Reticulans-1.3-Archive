@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!--■■■■■■■■■■■■■■■■■
+        Leather
+     1) Zeta Reticulan (Base)
+     2) Hybrid Red/Grey Blood (Base; for generic red blood races)
+     3) Forsaken
+     4) Mantis
+     5) Moyo
+     ■■■■■■■■■■■■■■■■■■ 1) Leather, Zeta Reticulan ■■■■■■■■■■■■■■■■■■■■■■■-->
+  <ThingDef ParentName="LeatherBase">
+    <defName>GDZR_LEATHER_Zeta</defName>
+    <label>Zeta reticulan leather</label>
+    <description>The tanned, dried, scraped skin of a zeta reticulan. Most people find this material horrifying. Some find it fascinating. While a decent leather, it neither protects nor insulates particularly well.</description>
+    <graphicData>
+      <color>(146,146,146)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>5.5</MarketValue>
+      <StuffPower_Armor_Sharp>0.40</StuffPower_Armor_Sharp>
+      <StuffPower_Insulation_Cold>8</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>8</StuffPower_Insulation_Heat>
+    </statBases>
+    <stuffProps>
+      <color>(146,146,146)</color>
+      <commonality>0.01</commonality>
+      <statFactors>
+        <Beauty>2</Beauty>
+      </statFactors>
+    </stuffProps>
+  </ThingDef>
+  
+  <!--■■■■■■■■■■■■■■■■■■ 2) Leather, Forsaken ■■■■■■■■■■■■■■■■■■■■■■■-->
+  <ThingDef ParentName="LeatherBase">
+    <defName>GDZR_LEATHER_Forsaken</defName>
+    <label>Forsaken hybrid leather</label>
+    <description>The tanned, dried, scraped skin of a forsaken hybrid. Most people find this material horrifying. Some find it fascinating. While a decent leather, it neither protects nor insulates particularly well.</description>
+    <graphicData>
+      <color>(65,65,65)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>6.5</MarketValue>
+      <StuffPower_Armor_Sharp>0.40</StuffPower_Armor_Sharp>
+      <StuffPower_Insulation_Cold>12</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>8</StuffPower_Insulation_Heat>
+    </statBases>
+    <stuffProps>
+      <color>(122,255,255)</color>
+      <commonality>0.01</commonality>
+      <statFactors>
+        <Beauty>2</Beauty>
+      </statFactors>
+    </stuffProps>
+  </ThingDef>
+  
+  <!--■■■■■■■■■■■■■■■■■■ 4) Leather, Moyo ■■■■■■■■■■■■■■■■■■■■■■■-->
+  <ThingDef ParentName="LeatherBase">
+    <defName>GDZR_LEATHER_Moyo</defName>
+    <label>Moyo hybrid leather</label>
+    <description>The tanned, dried, scraped skin of a moyo hybrid. Most people find this material horrifying. Some find it fascinating. While a decent leather, it neither protects nor insulates particularly well.</description>
+    <graphicData>
+      <color>(255,247,247)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>6.5</MarketValue>
+      <StuffPower_Armor_Sharp>0.40</StuffPower_Armor_Sharp>
+      <StuffPower_Insulation_Cold>12</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>8</StuffPower_Insulation_Heat>
+    </statBases>
+    <stuffProps>
+      <color>(73,116,165)</color>
+      <commonality>0.01</commonality>
+      <statFactors>
+        <Beauty>2</Beauty>
+      </statFactors>
+    </stuffProps>
+  </ThingDef>
+ 
+  <!--■■■■■■■■■■■■■■■■■■ 4) Leather, Thrunkim ■■■■■■■■■■■■■■■■■■■■■■■-->
+  <ThingDef ParentName="LeatherBase">
+    <defName>GDZR_LEATHER_Thrumkin</defName>
+    <label>Thrumkin hybrid leather</label>
+    <description>The tanned, dried, scraped skin of a thrumkin hybrid. Most people find this material horrifying. Some find it fascinating. While a decent leather, it neither protects nor insulates particularly well.</description>
+    <graphicData>
+      <color>(255,247,247)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>6.5</MarketValue>
+      <StuffPower_Armor_Sharp>0.40</StuffPower_Armor_Sharp>
+      <StuffPower_Insulation_Cold>12</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>8</StuffPower_Insulation_Heat>
+    </statBases>
+    <stuffProps>
+      <color>(122,255,255)</color>
+      <commonality>0.01</commonality>
+      <statFactors>
+        <Beauty>2</Beauty>
+      </statFactors>
+    </stuffProps>
+  </ThingDef>
+  
+  
+  
+</Defs>

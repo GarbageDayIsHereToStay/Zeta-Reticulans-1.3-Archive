@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!--■■■■■■■■■■■■■■■■■
+        Blood
+    1) Zeta Reticulan (Base)
+    2) Hybrid Red/Grey Blood (Base; for generic red blood races)
+    3) Forsaken
+    4) Mantis
+    5) Moyo
+    ■■■■■■■■■■■■■■■■■■ 1) Blood, Zeta Reticulan ■■■■■■■■■■■■■■■■■■■■■■■-->
+     <ThingDef ParentName="BaseFilth">
+    <defName>GDZR_FILTH_BloodZeta</defName>
+    <label>blood</label>
+    <statBases>
+      <Beauty>-30</Beauty>
+      <Cleanliness>-10</Cleanliness>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Filth/Spatter</texPath>
+      <color>(52, 52, 52)</color>
+    </graphicData>
+    <filth>
+      <rainWashes>true</rainWashes>
+      <cleaningWorkToReduceThickness>90</cleaningWorkToReduceThickness>
+      <canFilthAttach>true</canFilthAttach>
+    </filth>
+  </ThingDef> 
+  
+  <!--■■■■■■■■■■■■■■■■■■ 2) Blood, Hybrid Red/Grey ■■■■■■■■■■■■■■■■■■■■■■■-->
+  <ThingDef ParentName="BaseFilth">
+    <defName>GDZR_FILTH_HybridBasicBlood</defName>
+    <label>blood</label>
+    <graphicData>
+      <texPath>Things/Filth/Spatter</texPath>
+      <color>(114, 47, 55)</color>
+    </graphicData>
+    <statBases>
+      <Beauty>-30</Beauty>
+      <Cleanliness>-10</Cleanliness>
+    </statBases>
+    <filth>
+      <rainWashes>true</rainWashes>
+      <cleaningWorkToReduceThickness>90</cleaningWorkToReduceThickness>
+      <canFilthAttach>true</canFilthAttach>
+    </filth>
+  </ThingDef> 
+
+  
+  <!--■■■■■■■■■■■■■■■■■■ 3) Blood, Forsaken ■■■■■■■■■■■■■■■■■■■■■■■-->
+  <ThingDef ParentName="BaseFilth">
+    <defName>GDZR_BLOOD_ForsakenBlood</defName>
+    <label>blood</label>
+    <statBases>
+      <Beauty>-30</Beauty>
+      <Cleanliness>-10</Cleanliness>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Filth/Spatter</texPath>
+      <shaderType>TransparentPostLight</shaderType>
+      <color>(243,230,113)</color>
+    </graphicData>
+    <filth>
+      <rainWashes>true</rainWashes>
+      <cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
+      <canFilthAttach>true</canFilthAttach>
+    </filth>
+  </ThingDef>
+ 
+  <!--■■■■■■■■■■■■■■■■■■ 4) Blood, Mantis ■■■■■■■■■■■■■■■■■■■■■■■-->
+  <ThingDef ParentName="BaseFilth">
+    <defName>GDZR_FLITH_MantisBlood</defName>
+    <label>blood</label>
+    <statBases>
+      <Beauty>-30</Beauty>
+      <Cleanliness>-10</Cleanliness>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Filth/Spatter</texPath>
+      <color>(118,141,113)</color>
+    </graphicData>
+    <filth>
+      <rainWashes>true</rainWashes>
+      <cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
+      <canFilthAttach>true</canFilthAttach>
+    </filth>
+  </ThingDef>
+ 
+  <!--■■■■■■■■■■■■■■■■■■ 5) Blood, Moyo ■■■■■■■■■■■■■■■■■■■■■■■-->
+  <ThingDef ParentName="BaseFilth">
+    <defName>GDZR_FLITH_MoyoBlood</defName>
+    <label>blood</label>
+    <statBases>
+      <Beauty>-30</Beauty>
+      <Cleanliness>-10</Cleanliness>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Filth/Spatter</texPath>
+      <color>(28, 53, 130, 180)</color>
+    </graphicData>
+    <filth>
+      <rainWashes>true</rainWashes>
+      <cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
+      <canFilthAttach>true</canFilthAttach>
+    </filth>
+  </ThingDef>
+
+</Defs>
